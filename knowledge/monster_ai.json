@@ -1,0 +1,5341 @@
+{
+  "_meta": {
+    "total_entries": 110,
+    "note": "所有Boss + 精英 + 常见小怪。数值格式: [普通, 进阶]。进阶HP对应AscensionLevel.ToughEnemies，进阶伤害对应AscensionLevel.DeadlyEnemies",
+    "last_updated": "2026-03-15",
+    "additions_2026_03_15": "新增11个精英怪(KnightsElite/MechaKnightElite/DecimillipedeElite/EntomancerElite/InfestedPrismsElite/BygoneEffigyElite/ByrdonisElite/PhrogParasiteElite/SkulkingColonyElite/PhantasmalGardenersElite/TerrorEelElite) + 7个Boss(TestSubjectBoss/KaiserCrabBoss/VantomBoss/CeremonialBeastBoss/TheKinBoss/SoulFyshBoss/LagavulinMatriarchBoss)",
+    "type_distribution": {
+      "Boss": 16,
+      "Boss随从": 4,
+      "Elite": 16,
+      "Boss组件(KaiserCrab左臂)": 1,
+      "精英": 7,
+      "普通怪": 30,
+      "Boss(教程/进阶)": 3,
+      "随从(Fabricator)": 4,
+      "随从(Fogmog/Obscura)": 1,
+      "Elite组件": 1,
+      "Elite组件(PhrogParasite随从)": 1,
+      "Boss组件(KaiserCrab右臂)": 1,
+      "Boss组件(TheKin)": 1,
+      "Boss随从(TheKin)": 1
+    },
+    "additions_2026_03_15_monsters": "新增23个普通怪遭遇: Flyconid, FuzzyWurm, Inklets, Nibbits, OvergrowthCrawlers, RubyRaiders, ShrinkerBeetle, Slimes, SlitheringStrangler, SnappingJaxfruit, Bowlbugs, Exoskeletons, Mytes, Ovicopter, SlumberingBeetle, ThievingHopper, Axebots, ConstructMenagerie, DevotedSculptor, GlobeHead, ScrollsOfBiting, TheLostAndForgotten, TurretOperator"
+  },
+  "Queen": {
+    "name_cn": "女王",
+    "type": "Boss",
+    "hp": {
+      "normal": [
+        400,
+        400
+      ],
+      "ascension": [
+        419,
+        419
+      ]
+    },
+    "moves": [
+      {
+        "id": "PUPPET_STRINGS_MOVE",
+        "effects": [
+          "施加束缚之链(ChainsOfBinding)3层"
+        ],
+        "intent": "CardDebuff"
+      },
+      {
+        "id": "YOUR_MINE_MOVE",
+        "effects": [
+          "施加99层脆弱+99层虚弱+99层易伤"
+        ],
+        "intent": "Debuff"
+      },
+      {
+        "id": "BURN_BRIGHT_FOR_ME_MOVE",
+        "effects": [
+          "所有队友+1力量",
+          "自身获得20格挡"
+        ],
+        "intent": "Buff+Defend"
+      },
+      {
+        "id": "OFF_WITH_YOUR_HEAD_MOVE",
+        "damage": [
+          3,
+          4
+        ],
+        "hits": 5,
+        "effects": [
+          "5次攻击"
+        ],
+        "intent": "MultiAttack"
+      },
+      {
+        "id": "EXECUTION_MOVE",
+        "damage": [
+          15,
+          18
+        ],
+        "effects": [
+          "单次攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "ENRAGE_MOVE",
+        "effects": [
+          "自身+2力量"
+        ],
+        "intent": "Buff"
+      }
+    ],
+    "ai_pattern": "提线→你是我的(施加99层三debuff)→如果融合体存活:反复为它燃烧(buff队友+自身格挡)→融合体死后:砍头5连击→处决→暴怒→砍头→处决→暴怒循环。融合体死亡时如果当前招式是燃烧则立刻切换为暴怒。",
+    "special": "与TorchHeadAmalgam(融合体)组队出现。融合体存活时女王只做辅助，死后进入攻击模式。"
+  },
+  "TorchHeadAmalgam": {
+    "name_cn": "火炬头融合体",
+    "type": "Boss随从",
+    "hp": {
+      "normal": [
+        199,
+        199
+      ],
+      "ascension": [
+        211,
+        211
+      ]
+    },
+    "moves": [
+      {
+        "id": "TACKLE_1/2_MOVE",
+        "damage": [
+          18,
+          19
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "BEAM_MOVE",
+        "damage": [
+          8,
+          8
+        ],
+        "hits": 3,
+        "effects": [
+          "3次攻击"
+        ],
+        "intent": "MultiAttack"
+      },
+      {
+        "id": "TACKLE_3/4_MOVE",
+        "damage": [
+          14,
+          15
+        ],
+        "effects": [
+          "弱攻击"
+        ],
+        "intent": "SingleAttack"
+      }
+    ],
+    "ai_pattern": "冲撞→冲撞→光束(3连)→弱冲撞→弱冲撞→光束→弱冲撞→弱冲撞循环。有MinionPower(随从)。",
+    "special": "女王Boss战的随从"
+  },
+  "Doormaker": {
+    "name_cn": "造门者",
+    "type": "Boss",
+    "hp": {
+      "normal": [
+        489,
+        489
+      ],
+      "ascension": [
+        512,
+        512
+      ]
+    },
+    "moves": [
+      {
+        "id": "WHAT_IS_IT_MOVE",
+        "effects": [
+          "眩晕(不行动)"
+        ],
+        "intent": "Stun"
+      },
+      {
+        "id": "BEAM_MOVE",
+        "damage": [
+          31,
+          34
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "GET_BACK_IN_MOVE",
+        "damage": [
+          40,
+          45
+        ],
+        "effects": [
+          "攻击",
+          "自身+5力量",
+          "复活Door并增强",
+          "撤退回Door内"
+        ],
+        "intent": "SingleAttack+Buff+Escape"
+      }
+    ],
+    "ai_pattern": "第1回合不动(说话)→光束攻击→回去(攻击+5力量+复活Door)→之后一直重复回去。每次回去后Door的力量和HP都增加。",
+    "special": "与Door组队。造门者回到门内后从场上消失，下次Door死亡/半死时重新出现。"
+  },
+  "Door": {
+    "name_cn": "门",
+    "type": "Boss随从",
+    "hp": {
+      "normal": [
+        155,
+        155
+      ],
+      "ascension": [
+        165,
+        165
+      ]
+    },
+    "moves": [
+      {
+        "id": "DRAMATIC_OPEN_MOVE",
+        "damage": [
+          25,
+          28
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "DOOR_SLAM_MOVE",
+        "damage": [
+          15,
+          15
+        ],
+        "hits": 2,
+        "effects": [
+          "2次攻击"
+        ],
+        "intent": "MultiAttack"
+      },
+      {
+        "id": "ENFORCE_MOVE",
+        "damage": 20,
+        "effects": [
+          "攻击",
+          "自身+3/4力量"
+        ],
+        "intent": "SingleAttack+Buff"
+      },
+      {
+        "id": "DEAD_MOVE",
+        "effects": [
+          "死亡状态(不行动)"
+        ],
+        "intent": "None"
+      }
+    ],
+    "ai_pattern": "猛开→门砸(2连)→执行(攻击+力量)→猛开循环。拥有DoorRevivalPower可复活。死后进入DEAD状态等待造门者复活。每次复活后HP上限和力量增加。",
+    "special": "不会被毁灭(ShouldDisappearFromDoom=false)"
+  },
+  "KnowledgeDemon": {
+    "name_cn": "知识恶魔",
+    "type": "Boss",
+    "hp": {
+      "normal": [
+        379,
+        379
+      ],
+      "ascension": [
+        399,
+        399
+      ]
+    },
+    "moves": [
+      {
+        "id": "CURSE_OF_KNOWLEDGE_MOVE",
+        "effects": [
+          "玩家从两张诅咒中选一张加入牌组(共3组)"
+        ],
+        "intent": "Debuff"
+      },
+      {
+        "id": "SLAP_MOVE",
+        "damage": [
+          17,
+          18
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "KNOWLEDGE_OVERWHELMING_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "hits": 3,
+        "effects": [
+          "3次攻击"
+        ],
+        "intent": "MultiAttack"
+      },
+      {
+        "id": "PONDER_MOVE",
+        "damage": [
+          11,
+          13
+        ],
+        "effects": [
+          "攻击",
+          "回复30HP(×玩家数)",
+          "自身+2/3力量"
+        ],
+        "intent": "SingleAttack+Heal+Buff"
+      }
+    ],
+    "ai_pattern": "知识诅咒→耳光→知识压制(3连)→沉思(攻击+回血+力量)→条件分支: 如果诅咒次数<3则回到知识诅咒，否则回到耳光。所以前3个大循环有诅咒，之后进入纯攻击循环(耳光→压制→沉思→耳光...)。",
+    "special": "诅咒组: 第1组(瓦解/心智腐朽)，第2组(瓦解/怠惰)，第3组(瓦解/消磨)。沉思每次回复30HP×玩家数。"
+  },
+  "MechaKnight": {
+    "name_cn": "机械骑士",
+    "type": "精英",
+    "hp": {
+      "normal": [
+        300,
+        300
+      ],
+      "ascension": [
+        320,
+        320
+      ]
+    },
+    "moves": [
+      {
+        "id": "CHARGE_MOVE",
+        "damage": [
+          25,
+          30
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "FLAMETHROWER_MOVE",
+        "effects": [
+          "往手牌塞4张灼伤(Burn)"
+        ],
+        "intent": "Status(4)"
+      },
+      {
+        "id": "WINDUP_MOVE",
+        "effects": [
+          "获得15格挡",
+          "自身+5力量"
+        ],
+        "intent": "Defend+Buff"
+      },
+      {
+        "id": "HEAVY_CLEAVE_MOVE",
+        "damage": [
+          35,
+          40
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      }
+    ],
+    "ai_pattern": "冲锋→喷火(手牌塞4张灼伤)→蓄力(15格挡+5力量)→重劈→喷火→蓄力→重劈循环。开场3层神器(Artifact)。",
+    "special": "蓄力后视觉状态改变(IsWoundUp)。重劈伤害非常高(35/40+力量)。",
+    "act": "Glory",
+    "key_mechanics": [
+      "3层神器使最初3次负面效果无效",
+      "喷火往手牌塞4张灼伤(Burn)",
+      "蓄力后重劈伤害极高(35/40+力量)"
+    ],
+    "danger_moves": [
+      {
+        "name": "重劈(HEAVY_CLEAVE)",
+        "effect": "35/40伤害+力量叠加",
+        "counter": "蓄力回合积累格挡，或此前消耗神器"
+      },
+      {
+        "name": "喷火(FLAMETHROWER)",
+        "effect": "手牌塞4张灼伤",
+        "counter": "保持手牌空间或快速出牌"
+      }
+    ]
+  },
+  "SlimedBerserker": {
+    "name_cn": "黏液狂战士",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        266,
+        266
+      ],
+      "ascension": [
+        276,
+        276
+      ]
+    },
+    "moves": [
+      {
+        "id": "VOMIT_ICHOR_MOVE",
+        "effects": [
+          "往弃牌堆塞10张状态牌"
+        ],
+        "intent": "Status(10)"
+      },
+      {
+        "id": "FURIOUS_PUMMELING_MOVE",
+        "damage": [
+          4,
+          5
+        ],
+        "hits": 4,
+        "effects": [
+          "4次攻击"
+        ],
+        "intent": "MultiAttack"
+      },
+      {
+        "id": "LEECHING_HUG_MOVE",
+        "effects": [
+          "施加3层虚弱",
+          "自身+3力量"
+        ],
+        "intent": "Debuff+Buff"
+      },
+      {
+        "id": "SMOTHER_MOVE",
+        "damage": [
+          30,
+          33
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      }
+    ],
+    "ai_pattern": "呕吐(塞状态牌)→猛击(4连)→吸取拥抱(虚弱+力量)→窒息(重击)→呕吐循环。持续给牌组塞垃圾同时自我强化。"
+  },
+  "Crusher": {
+    "name_cn": "碎壳者",
+    "type": "Boss组件(KaiserCrab左臂)",
+    "act": "Hive",
+    "hp": {
+      "normal": [
+        199,
+        199
+      ],
+      "ascension": [
+        209,
+        209
+      ]
+    },
+    "moves": [
+      {
+        "name": "猛击",
+        "id": "THRASH_MOVE",
+        "damage": [
+          12,
+          14
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "膨胀击",
+        "id": "ENLARGING_STRIKE_MOVE",
+        "damage": [
+          4,
+          4
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "虫刺",
+        "id": "BUG_STING_MOVE",
+        "damage": [
+          6,
+          7
+        ],
+        "hits": [
+          2,
+          2
+        ],
+        "type": "multi_attack+debuff",
+        "effects": [
+          "2层虚弱+2层脆弱"
+        ]
+      },
+      {
+        "name": "适应",
+        "id": "ADAPT_MOVE",
+        "type": "buff",
+        "effects": [
+          "+2力量"
+        ]
+      },
+      {
+        "name": "护击",
+        "id": "GUARDED_STRIKE_MOVE",
+        "damage": [
+          12,
+          14
+        ],
+        "type": "single_attack+defend",
+        "effects": [
+          "获得18格挡"
+        ]
+      }
+    ],
+    "ai_pattern": "猛击→膨胀击→虫刺→适应→护击循环。开场BackAttackLeftPower+CrabRagePower。"
+  },
+  "WaterfallGiant": {
+    "name_cn": "瀑布巨人",
+    "type": "Boss",
+    "hp": {
+      "normal": [
+        250,
+        250
+      ],
+      "ascension": [
+        260,
+        260
+      ]
+    },
+    "moves": [
+      {
+        "id": "PRESSURIZE_MOVE",
+        "effects": [
+          "增压buff"
+        ],
+        "intent": "Buff"
+      },
+      {
+        "id": "STOMP_MOVE",
+        "damage": [
+          15,
+          16
+        ],
+        "effects": [
+          "攻击",
+          "debuff",
+          "buff"
+        ],
+        "intent": "SingleAttack+Debuff+Buff"
+      },
+      {
+        "id": "RAM_MOVE",
+        "damage": [
+          10,
+          11
+        ],
+        "effects": [
+          "攻击",
+          "buff"
+        ],
+        "intent": "SingleAttack+Buff"
+      },
+      {
+        "id": "SIPHON_MOVE",
+        "effects": [
+          "回复15HP",
+          "buff"
+        ],
+        "intent": "Heal+Buff"
+      },
+      {
+        "id": "PRESSURE_GUN_MOVE",
+        "damage": "动态(初始20/23，每次+5)",
+        "effects": [
+          "攻击(伤害递增)",
+          "buff"
+        ],
+        "intent": "SingleAttack+Buff"
+      },
+      {
+        "id": "PRESSURE_UP_MOVE",
+        "damage": [
+          13,
+          14
+        ],
+        "effects": [
+          "攻击",
+          "buff"
+        ],
+        "intent": "SingleAttack+Buff"
+      },
+      {
+        "id": "ABOUT_TO_BLOW_MOVE",
+        "effects": [
+          "眩晕(即将爆炸)"
+        ],
+        "intent": "Stun"
+      },
+      {
+        "id": "EXPLODE_MOVE",
+        "damage": "动态(蒸汽爆发)",
+        "effects": [
+          "致死一击"
+        ],
+        "intent": "DeathBlow"
+      }
+    ],
+    "ai_pattern": "增压→踩踏→冲撞→虹吸→之后循环压力枪(伤害每次+5)和压力蓄积。最终进入即将爆炸→爆发(致死级伤害)。压力机制: 伤害不断递增直到爆发。",
+    "special": "压力系统: 压力枪初始伤害20/23，每次+5。最终会进入爆炸状态造成巨量伤害。"
+  },
+  "LagavulinMatriarch": {
+    "name_cn": "拉格武林族长",
+    "type": "Boss",
+    "act": "Underdocks",
+    "hp": {
+      "normal": [
+        222,
+        222
+      ],
+      "ascension": [
+        233,
+        233
+      ]
+    },
+    "moves": [
+      {
+        "name": "沉睡",
+        "id": "SLEEP_MOVE",
+        "type": "sleep"
+      },
+      {
+        "name": "斩击",
+        "id": "SLASH_MOVE",
+        "damage": [
+          19,
+          21
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "斩击II",
+        "id": "SLASH2_MOVE",
+        "damage": [
+          12,
+          14
+        ],
+        "type": "attack+defend"
+      },
+      {
+        "name": "开膛",
+        "id": "DISEMBOWEL_MOVE",
+        "damage": [
+          9,
+          10
+        ],
+        "hits": 2,
+        "type": "multi_attack"
+      },
+      {
+        "name": "灵魂虹吸",
+        "id": "SOUL_SIPHON_MOVE",
+        "type": "debuff+buff"
+      }
+    ],
+    "ai_pattern": "开局沉睡(可安全输出)→觉醒后斩击/开膛/灵魂虹吸循环",
+    "key_mechanics": [
+      "开场Plating(12层镀甲): 受到伤害时先消耗镀甲层数",
+      "开场AsleepPower(3层睡眠): 受到攻击伤害时-1层，减到0时觉醒",
+      "睡眠状态下每回合什么都不做，直到被打醒",
+      "觉醒后SOUL_SIPHON每次玩家-2力量-2敏捷，持续削弱",
+      "觉醒后SLASH2攻击同时自身格挡，攻防结合"
+    ],
+    "danger_moves": [
+      {
+        "name": "灵魂虹吸(觉醒后)",
+        "effect": "玩家-2力量-2敏捷，叠加后极其衰弱",
+        "counter": "觉醒后尽快结束战斗或用净化"
+      },
+      {
+        "name": "大斩(觉醒后)",
+        "effect": "19/21高单伤",
+        "counter": "高格挡"
+      }
+    ]
+  },
+  "InfestedPrism": {
+    "name_cn": "寄生棱镜",
+    "type": "精英",
+    "act": "Hive",
+    "hp": {
+      "normal": [
+        200,
+        200
+      ],
+      "ascension": [
+        215,
+        215
+      ]
+    },
+    "moves": [
+      {
+        "name": "刺击",
+        "id": "JAB_MOVE",
+        "damage": [
+          22,
+          24
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "辐射",
+        "id": "RADIATE_MOVE",
+        "damage": [
+          16,
+          18
+        ],
+        "type": "attack+defend"
+      },
+      {
+        "name": "旋风",
+        "id": "WHIRLWIND_MOVE",
+        "damage": [
+          9,
+          10
+        ],
+        "hits": 3,
+        "type": "multi_attack"
+      },
+      {
+        "name": "脉动",
+        "id": "PULSATE_MOVE",
+        "type": "buff+defend"
+      }
+    ],
+    "ai_pattern": "刺击→辐射→旋风→脉动→刺击→循环(固定4招轮转)",
+    "danger_moves": [
+      {
+        "name": "刺击",
+        "effect": "22/24高伤单体",
+        "counter": "脉动后必接刺击，提前叠挡"
+      }
+    ],
+    "key_mechanics": [
+      "固定4招循环，高度可预测",
+      "脉动回合同时获得大量格挡(20/22)和力量(4/5)",
+      "辐射攻击同时自身格挡"
+    ]
+  },
+  "OwlMagistrate": {
+    "name_cn": "猫头鹰审判官",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        234,
+        234
+      ],
+      "ascension": [
+        243,
+        243
+      ]
+    },
+    "moves": [
+      {
+        "id": "MAGISTRATE_SCRUTINY",
+        "damage": [
+          16,
+          17
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "PECK_ASSAULT",
+        "damage": [
+          4,
+          4
+        ],
+        "hits": 6,
+        "effects": [
+          "6次攻击"
+        ],
+        "intent": "MultiAttack"
+      },
+      {
+        "id": "JUDICIAL_FLIGHT",
+        "effects": [
+          "获得Soar能力(飞行)"
+        ],
+        "intent": "Buff"
+      },
+      {
+        "id": "VERDICT",
+        "damage": [
+          33,
+          36
+        ],
+        "effects": [
+          "攻击",
+          "施加4层易伤"
+        ],
+        "intent": "SingleAttack+Debuff"
+      }
+    ],
+    "ai_pattern": "审视→啄击突袭(6连)→起飞(飞行buff)→判决(重击+4层易伤)→审视循环。固定4招循环。飞行状态下仅受特定攻击影响。"
+  },
+  "FrogKnight": {
+    "name_cn": "蛙骑士",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        191,
+        191
+      ],
+      "ascension": [
+        199,
+        199
+      ]
+    },
+    "moves": [
+      {
+        "id": "TONGUE_LASH",
+        "damage": [
+          13,
+          14
+        ],
+        "effects": [
+          "攻击",
+          "施加2层脆弱"
+        ],
+        "intent": "SingleAttack+Debuff"
+      },
+      {
+        "id": "STRIKE_DOWN_EVIL",
+        "damage": [
+          21,
+          23
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "FOR_THE_QUEEN",
+        "effects": [
+          "自身+5力量"
+        ],
+        "intent": "Buff"
+      },
+      {
+        "id": "BEETLE_CHARGE",
+        "damage": [
+          35,
+          40
+        ],
+        "effects": [
+          "攻击(仅一次)"
+        ],
+        "intent": "SingleAttack"
+      }
+    ],
+    "ai_pattern": "舌鞭(攻+脆弱)→惩恶→为女王(+5力量)→条件分支: 如果HP<50%且未使用过甲虫冲锋则使用甲虫冲锋(35/40伤害)，否则回到舌鞭。开场有15/19板甲。",
+    "special": "甲虫冲锋只能使用一次(HasBeetleCharged标记)。HP低于50%时触发。"
+  },
+  "Entomancer": {
+    "name_cn": "虫术师",
+    "type": "精英",
+    "act": "Hive",
+    "hp": {
+      "normal": [
+        145,
+        145
+      ],
+      "ascension": [
+        155,
+        155
+      ]
+    },
+    "moves": [
+      {
+        "name": "信息素喷射",
+        "id": "PHEROMONE_SPIT_MOVE",
+        "type": "buff"
+      },
+      {
+        "name": "蜂群",
+        "id": "BEES_MOVE",
+        "damage": [
+          3,
+          3
+        ],
+        "hits": [
+          7,
+          8
+        ],
+        "type": "multi_attack"
+      },
+      {
+        "name": "长矛",
+        "id": "SPEAR_MOVE",
+        "damage": [
+          18,
+          20
+        ],
+        "type": "single_attack"
+      }
+    ],
+    "ai_pattern": "群蜂(7/8连)→长矛→信息素(buff)→群蜂循环。开场PersonalHive(1)。信息素: 蜂巢<3则+1蜂巢+1力量; 蜂巢≥3则+2力量。",
+    "danger_moves": [
+      {
+        "name": "蜂群",
+        "effect": "3×7/8多段攻击(难以完全格挡)",
+        "counter": "高格挡或Intangible"
+      }
+    ],
+    "key_mechanics": [
+      "蜂巢逐渐累积到3，然后每次+2力量",
+      "群蜂7/8次连击可快速消耗格挡"
+    ]
+  },
+  "SoulNexus": {
+    "name_cn": "灵魂连结",
+    "type": "精英",
+    "act": "Glory",
+    "hp": {
+      "normal": [
+        234,
+        234
+      ],
+      "ascension": [
+        254,
+        254
+      ]
+    },
+    "moves": [
+      {
+        "name": "灵魂焚烧",
+        "id": "SOUL_BURN_MOVE",
+        "damage": [
+          29,
+          31
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "漩涡",
+        "id": "MAELSTROM_MOVE",
+        "damage": [
+          6,
+          7
+        ],
+        "hits": [
+          4,
+          4
+        ],
+        "type": "multi_attack"
+      },
+      {
+        "name": "汲取生命",
+        "id": "DRAIN_LIFE_MOVE",
+        "damage": [
+          18,
+          19
+        ],
+        "type": "single_attack+debuff"
+      }
+    ],
+    "ai_pattern": "开局灵魂焚烧→之后三招随机(不连续重复)",
+    "key_mechanics": [
+      "三招随机不重复",
+      "汲取生命附带强debuff",
+      "HP高(234/254)"
+    ],
+    "danger_moves": [
+      {
+        "name": "灵魂焚烧",
+        "effect": "29/31单体高伤",
+        "counter": "高格挡"
+      }
+    ]
+  },
+  "HunterKiller": {
+    "name_cn": "猎杀者",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        121,
+        121
+      ],
+      "ascension": [
+        126,
+        126
+      ]
+    },
+    "moves": [
+      {
+        "id": "TENDERIZING_GOOP_MOVE",
+        "effects": [
+          "施加TenderPower(嫩化)"
+        ],
+        "intent": "Debuff"
+      },
+      {
+        "id": "BITE_MOVE",
+        "damage": [
+          17,
+          19
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "PUNCTURE_MOVE",
+        "damage": [
+          7,
+          8
+        ],
+        "hits": 3,
+        "effects": [
+          "3次攻击"
+        ],
+        "intent": "MultiAttack"
+      }
+    ],
+    "ai_pattern": "嫩化粘液(debuff)→随机分支: 咬(不连续重复)或穿刺(3连, 权重2)。之后每招都转到随机分支。"
+  },
+  "Fabricator": {
+    "name_cn": "制造者",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        150,
+        150
+      ],
+      "ascension": [
+        155,
+        155
+      ]
+    },
+    "moves": [
+      {
+        "id": "FABRICATE_MOVE",
+        "effects": [
+          "召唤1个防御机器人+1个攻击机器人"
+        ],
+        "intent": "Summon"
+      },
+      {
+        "id": "FABRICATING_STRIKE_MOVE",
+        "damage": [
+          18,
+          21
+        ],
+        "effects": [
+          "攻击",
+          "召唤1个攻击机器人"
+        ],
+        "intent": "SingleAttack+Summon"
+      },
+      {
+        "id": "DISINTEGRATE_MOVE",
+        "damage": [
+          11,
+          13
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      }
+    ],
+    "ai_pattern": "条件分支: 如果队友<4个则随机(制造/制造击, 各50%)，如果队友≥4个则瓦解(纯攻击)。不断召唤机器人直到满编。",
+    "special": "攻击机器人: Zapbot/Stabbot。防御机器人: Guardbot/Noisebot。不会连续召唤同种机器人。"
+  },
+  "Fogmog": {
+    "name_cn": "雾魔",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        74,
+        74
+      ],
+      "ascension": [
+        78,
+        78
+      ]
+    },
+    "moves": [
+      {
+        "id": "ILLUSION_MOVE",
+        "effects": [
+          "召唤EyeWithTeeth(幻象)"
+        ],
+        "intent": "Summon"
+      },
+      {
+        "id": "SWIPE_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "effects": [
+          "攻击",
+          "自身+1力量"
+        ],
+        "intent": "SingleAttack+Buff"
+      },
+      {
+        "id": "HEADBUTT_MOVE",
+        "damage": [
+          14,
+          16
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      }
+    ],
+    "ai_pattern": "幻象(召唤)→横扫(攻+力量)→随机分支: 横扫(40%不重复)/头槌(60%不重复)。横扫后→头槌，头槌后→横扫。持续获得力量。"
+  },
+  "LouseProgenitor": {
+    "name_cn": "虱母",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        134,
+        141
+      ],
+      "ascension": [
+        138,
+        141
+      ]
+    },
+    "moves": [
+      {
+        "id": "WEB_CANNON_MOVE",
+        "damage": [
+          9,
+          10
+        ],
+        "effects": [
+          "攻击",
+          "施加2层脆弱"
+        ],
+        "intent": "SingleAttack+Debuff"
+      },
+      {
+        "id": "CURL_AND_GROW_MOVE",
+        "effects": [
+          "获得14/18格挡",
+          "自身+5力量"
+        ],
+        "intent": "Defend+Buff"
+      },
+      {
+        "id": "POUNCE_MOVE",
+        "damage": [
+          14,
+          16
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      }
+    ],
+    "ai_pattern": "蛛网炮(攻+脆弱)→蜷缩生长(格挡+5力量)→猛扑→蛛网炮循环。开场有CurlUpPower(蜷缩, 14/18格挡, 受击时触发)。",
+    "special": "蜷缩生长一次+5力量非常强，需要在它蓄力前尽快击杀。"
+  },
+  "SpinyToad": {
+    "name_cn": "刺蟾蜍",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        116,
+        124
+      ],
+      "ascension": [
+        121,
+        124
+      ]
+    },
+    "moves": [
+      {
+        "id": "PROTRUDING_SPIKES_MOVE",
+        "effects": [
+          "自身+5荆棘(Thorns)"
+        ],
+        "intent": "Buff"
+      },
+      {
+        "id": "SPIKE_EXPLOSION_MOVE",
+        "damage": [
+          23,
+          25
+        ],
+        "effects": [
+          "攻击(移除荆棘)"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "TONGUE_LASH_MOVE",
+        "damage": [
+          17,
+          19
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      }
+    ],
+    "ai_pattern": "竖刺(+5荆棘)→刺爆(攻击,移除荆棘)→舌鞭→竖刺循环。荆棘阶段攻击它会受反伤。"
+  },
+  "Chomper": {
+    "name_cn": "啃咬者",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        60,
+        64
+      ],
+      "ascension": [
+        63,
+        67
+      ]
+    },
+    "moves": [
+      {
+        "id": "CLAMP_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "hits": 2,
+        "effects": [
+          "2次攻击"
+        ],
+        "intent": "MultiAttack"
+      },
+      {
+        "id": "SCREECH_MOVE",
+        "effects": [
+          "塞3张状态牌"
+        ],
+        "intent": "Status(3)"
+      }
+    ],
+    "ai_pattern": "前排先攻击后尖叫交替，后排先尖叫后攻击交替。开场有2层神器(Artifact)。",
+    "special": "_screamFirst决定初始招式。成对出现时前后排行为不同。"
+  },
+  "FlailKnight": {
+    "name_cn": "连枷骑士",
+    "type": "精英",
+    "act": "Glory",
+    "hp": {
+      "normal": [
+        101,
+        101
+      ],
+      "ascension": [
+        108,
+        108
+      ]
+    },
+    "moves": [
+      {
+        "name": "战吼",
+        "id": "WAR_CHANT",
+        "type": "buff"
+      },
+      {
+        "name": "连枷",
+        "id": "FLAIL_MOVE",
+        "damage": [
+          9,
+          10
+        ],
+        "hits": 2,
+        "type": "multi_attack"
+      },
+      {
+        "name": "冲撞",
+        "id": "RAM_MOVE",
+        "damage": [
+          15,
+          17
+        ],
+        "type": "single_attack"
+      }
+    ],
+    "ai_pattern": "战吼→连枷→冲撞→循环"
+  },
+  "MysteriousKnight": {
+    "name_cn": "神秘骑士",
+    "type": "普通怪",
+    "hp": "继承FlailKnight",
+    "moves": "同FlailKnight",
+    "ai_pattern": "同连枷骑士，但开场额外有+6力量和+6板甲。强化版连枷骑士。"
+  },
+  "SpectralKnight": {
+    "name_cn": "幽灵骑士",
+    "type": "精英",
+    "act": "Glory",
+    "hp": {
+      "normal": [
+        93,
+        93
+      ],
+      "ascension": [
+        97,
+        97
+      ]
+    },
+    "moves": [
+      {
+        "name": "诅咒",
+        "id": "HEX",
+        "type": "debuff"
+      },
+      {
+        "name": "灵魂斩",
+        "id": "SOUL_SLASH",
+        "damage": [
+          15,
+          17
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "灵魂火",
+        "id": "SOUL_FLAME",
+        "damage": [
+          3,
+          4
+        ],
+        "hits": 3,
+        "type": "multi_attack"
+      }
+    ],
+    "ai_pattern": "诅咒→灵魂斩→灵魂火→循环"
+  },
+  "MagiKnight": {
+    "name_cn": "魔法骑士",
+    "type": "精英",
+    "act": "Glory",
+    "hp": {
+      "normal": [
+        82,
+        82
+      ],
+      "ascension": [
+        89,
+        89
+      ]
+    },
+    "moves": [
+      {
+        "name": "能量盾",
+        "id": "POWER_SHIELD_MOVE",
+        "damage": [
+          6,
+          7
+        ],
+        "type": "attack+defend"
+      },
+      {
+        "name": "减弱",
+        "id": "DAMPEN_MOVE",
+        "type": "debuff"
+      },
+      {
+        "name": "准备",
+        "id": "PREP_MOVE",
+        "type": "defend"
+      },
+      {
+        "name": "魔法炸弹",
+        "id": "MAGIC_BOMB",
+        "damage": [
+          35,
+          40
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "长矛",
+        "id": "RAM_MOVE",
+        "damage": [
+          10,
+          11
+        ],
+        "type": "single_attack"
+      }
+    ],
+    "ai_pattern": "能量盾→减弱→准备→魔法炸弹(35/40高伤!)→长矛→循环",
+    "danger_moves": [
+      {
+        "name": "魔法炸弹",
+        "effect": "35/40单体巨额伤害",
+        "counter": "在准备回合叠格挡"
+      }
+    ]
+  },
+  "Mawler": {
+    "name_cn": "撕咬者",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        72,
+        72
+      ],
+      "ascension": [
+        76,
+        76
+      ]
+    },
+    "moves": [
+      {
+        "id": "RIP_AND_TEAR_MOVE",
+        "damage": [
+          14,
+          16
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "ROAR_MOVE",
+        "effects": [
+          "施加3层易伤"
+        ],
+        "intent": "Debuff"
+      },
+      {
+        "id": "CLAW_MOVE",
+        "damage": [
+          4,
+          5
+        ],
+        "hits": 2,
+        "effects": [
+          "2次攻击"
+        ],
+        "intent": "MultiAttack"
+      }
+    ],
+    "ai_pattern": "初始: 爪击(2连)→随机分支(三招不重复): 撕裂(不重复)/嘶吼(仅一次)/爪击(不重复)。嘶吼施加3层易伤后不再使用。"
+  },
+  "Tunneler": {
+    "name_cn": "掘地者",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        87,
+        87
+      ],
+      "ascension": [
+        92,
+        92
+      ]
+    },
+    "moves": [
+      {
+        "id": "BITE_MOVE",
+        "damage": [
+          13,
+          15
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "BURROW_MOVE",
+        "effects": [
+          "获得BurrowedPower(穴居)",
+          "获得32/37格挡"
+        ],
+        "intent": "Buff+Defend"
+      },
+      {
+        "id": "BELOW_MOVE",
+        "damage": [
+          23,
+          26
+        ],
+        "effects": [
+          "攻击(地下)"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "DIZZY_MOVE",
+        "effects": [
+          "眩晕(不行动)"
+        ],
+        "intent": "Stun"
+      }
+    ],
+    "ai_pattern": "咬→穴居(格挡+穴居状态)→地下攻击(重击,循环)。穴居后获得大量格挡并进入地下状态。如果被眩晕则跳过→咬。"
+  },
+  "CorpseSlug": {
+    "name_cn": "腐尸蛞蝓",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        25,
+        27
+      ],
+      "ascension": [
+        27,
+        29
+      ]
+    },
+    "moves": [
+      {
+        "id": "WHIP_SLAP_MOVE",
+        "damage": 3,
+        "hits": 2,
+        "effects": [
+          "2次攻击"
+        ],
+        "intent": "MultiAttack"
+      },
+      {
+        "id": "GLOMP_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "GOOP_MOVE",
+        "effects": [
+          "施加2层脆弱"
+        ],
+        "intent": "Debuff"
+      }
+    ],
+    "ai_pattern": "根据StarterMoveIdx决定初始招式(三招轮转入口不同)。鞭击(2连)→吞噬→粘液(脆弱)→鞭击循环。开场有RavenousPower(贪食, 4/5力量相关)。"
+  },
+  "CalcifiedCultist": {
+    "name_cn": "石化教徒",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        38,
+        41
+      ],
+      "ascension": [
+        39,
+        42
+      ]
+    },
+    "moves": [
+      {
+        "id": "INCANTATION_MOVE",
+        "effects": [
+          "自身获得2层仪式(Ritual, 每回合+2力量)"
+        ],
+        "intent": "Buff"
+      },
+      {
+        "id": "DARK_STRIKE_MOVE",
+        "damage": [
+          9,
+          11
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      }
+    ],
+    "ai_pattern": "咏唱(+2仪式)→黑暗打击→黑暗打击→黑暗打击(永远重复攻击)。第1回合仪式buff后持续攻击，伤害随仪式每回合递增。"
+  },
+  "Byrdonis": {
+    "name_cn": "鸟龙",
+    "type": "精英",
+    "act": "Overgrowth",
+    "hp": {
+      "normal": [
+        91,
+        94
+      ],
+      "ascension": [
+        99,
+        99
+      ]
+    },
+    "moves": [
+      {
+        "name": "啄击",
+        "id": "PECK_MOVE",
+        "damage": [
+          3,
+          4
+        ],
+        "hits": [
+          3,
+          3
+        ],
+        "type": "multi_attack"
+      },
+      {
+        "name": "俯冲",
+        "id": "SWOOP_MOVE",
+        "damage": [
+          16,
+          18
+        ],
+        "type": "single_attack"
+      }
+    ],
+    "ai_pattern": "开局俯冲→啄击→俯冲→啄击→交替",
+    "key_mechanics": [
+      "TerritorialPower(领地): 受到攻击时提升攻击",
+      "固定俯冲↔啄击交替节奏易于预判"
+    ],
+    "danger_moves": [
+      {
+        "name": "俯冲",
+        "effect": "16/18单伤",
+        "counter": "俯冲回合格挡"
+      }
+    ]
+  },
+  "VineShambler": {
+    "name_cn": "藤蔓蹒跚者",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        61,
+        61
+      ],
+      "ascension": [
+        64,
+        64
+      ]
+    },
+    "moves": [
+      {
+        "id": "GRASPING_VINES_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "effects": [
+          "攻击",
+          "施加Tangled(缠绕)"
+        ],
+        "intent": "SingleAttack+CardDebuff"
+      },
+      {
+        "id": "SWIPE_MOVE",
+        "damage": [
+          6,
+          7
+        ],
+        "hits": 2,
+        "effects": [
+          "2次攻击"
+        ],
+        "intent": "MultiAttack"
+      },
+      {
+        "id": "CHOMP_MOVE",
+        "damage": [
+          16,
+          18
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      }
+    ],
+    "ai_pattern": "横扫(2连)→缠绕藤蔓(攻+缠绕debuff)→大口咬→横扫循环。"
+  },
+  "HauntedShip": {
+    "name_cn": "闹鬼之船",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        63,
+        63
+      ],
+      "ascension": [
+        67,
+        67
+      ]
+    },
+    "moves": [
+      {
+        "id": "RAMMING_SPEED_MOVE",
+        "damage": [
+          10,
+          11
+        ],
+        "effects": [
+          "攻击",
+          "塞2张状态牌"
+        ],
+        "intent": "SingleAttack+Status"
+      },
+      {
+        "id": "SWIPE_MOVE",
+        "damage": [
+          13,
+          14
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "STOMP_MOVE",
+        "damage": [
+          4,
+          5
+        ],
+        "hits": 3,
+        "effects": [
+          "3次攻击"
+        ],
+        "intent": "MultiAttack"
+      },
+      {
+        "id": "HAUNT_MOVE",
+        "effects": [
+          "施加2层虚弱+2层脆弱+2层易伤"
+        ],
+        "intent": "Debuff"
+      }
+    ],
+    "ai_pattern": "随机分支，带回合数条件: 奇数回合倾向攻击招(撞击/横扫/踩踏各不重复)，偶数回合倾向作祟(三debuff,仅一次)。"
+  },
+  "TheForgotten": {
+    "name_cn": "被遗忘者",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        106,
+        106
+      ],
+      "ascension": [
+        111,
+        111
+      ]
+    },
+    "moves": [
+      {
+        "id": "MIASMA",
+        "effects": [
+          "玩家-2敏捷",
+          "自身获得8格挡+2敏捷"
+        ],
+        "intent": "Debuff+Defend+Buff"
+      },
+      {
+        "id": "DREAD",
+        "damage": [
+          15,
+          17
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      }
+    ],
+    "ai_pattern": "瘴气(debuff+自身buff)→恐惧(攻击)→瘴气→恐惧交替。开场有PossessSpeedPower。持续削弱玩家敏捷同时增强自身。"
+  },
+  "TheLost": {
+    "name_cn": "迷失者",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        93,
+        93
+      ],
+      "ascension": [
+        99,
+        99
+      ]
+    },
+    "moves": [
+      {
+        "id": "DEBILITATING_SMOG",
+        "effects": [
+          "玩家-2力量",
+          "自身+2力量"
+        ],
+        "intent": "Debuff+Buff"
+      },
+      {
+        "id": "EYE_LASERS",
+        "damage": [
+          4,
+          5
+        ],
+        "hits": 2,
+        "effects": [
+          "2次攻击"
+        ],
+        "intent": "MultiAttack"
+      }
+    ],
+    "ai_pattern": "衰弱烟雾(-2力量给玩家,+2力量给自己)→眼部激光(2连)→衰弱烟雾→激光交替。开场有PossessStrengthPower。"
+  },
+  "TheObscura": {
+    "name_cn": "暗影",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        123,
+        123
+      ],
+      "ascension": [
+        129,
+        129
+      ]
+    },
+    "moves": [
+      {
+        "id": "ILLUSION_MOVE",
+        "effects": [
+          "召唤幻象"
+        ],
+        "intent": "Summon"
+      },
+      {
+        "id": "PIERCING_GAZE_MOVE",
+        "damage": [
+          10,
+          11
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "SAIL_MOVE",
+        "effects": [
+          "所有队友+3力量"
+        ],
+        "intent": "Buff"
+      },
+      {
+        "id": "HARDENING_STRIKE_MOVE",
+        "damage": [
+          6,
+          7
+        ],
+        "effects": [
+          "攻击",
+          "获得6/7格挡"
+        ],
+        "intent": "SingleAttack+Defend"
+      }
+    ],
+    "ai_pattern": "幻象(召唤)→随机分支(四招不重复): 穿透凝视/嚎叫(队友+3力量)/硬化打击(攻+防)。"
+  },
+  "TheInsatiable": {
+    "name_cn": "贪食者",
+    "type": "Boss",
+    "hp": {
+      "normal": [
+        321,
+        321
+      ],
+      "ascension": [
+        341,
+        341
+      ]
+    },
+    "moves": [
+      {
+        "id": "LIQUIFY_GROUND_MOVE",
+        "effects": [
+          "buff",
+          "塞6张状态牌(流沙/Sandpit)"
+        ],
+        "intent": "Buff+Status(6)"
+      },
+      {
+        "id": "THRASH_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "hits": 2,
+        "effects": [
+          "2次攻击"
+        ],
+        "intent": "MultiAttack"
+      },
+      {
+        "id": "LUNGING_BITE_MOVE",
+        "damage": [
+          28,
+          31
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "SALIVATE_MOVE",
+        "effects": [
+          "自身增加力量"
+        ],
+        "intent": "Buff"
+      }
+    ],
+    "ai_pattern": "液化地面(流沙+buff)→鞭打(2连)→猛咬→流涎(力量)→鞭打→猛咬→流涎循环(鞭打1跳过后续固定循环)。持续给牌组塞流沙状态牌。"
+  },
+  "BygoneEffigy": {
+    "name_cn": "过往雕像",
+    "type": "精英",
+    "act": "Overgrowth",
+    "hp": {
+      "normal": [
+        127,
+        127
+      ],
+      "ascension": [
+        132,
+        132
+      ]
+    },
+    "moves": [
+      {
+        "name": "沉睡",
+        "id": "INITIAL_SLEEP_MOVE",
+        "type": "sleep"
+      },
+      {
+        "name": "觉醒",
+        "id": "WAKE_MOVE",
+        "type": "buff"
+      },
+      {
+        "name": "斩击",
+        "id": "SLASHES_MOVE",
+        "damage": [
+          15,
+          17
+        ],
+        "type": "single_attack"
+      }
+    ],
+    "ai_pattern": "开局沉睡→觉醒(buff)→之后无限斩击。类似STS1的Lagavulin：不攻击它就一直睡",
+    "key_mechanics": [
+      "开场有SlowPower(缓慢)，行动慢",
+      "唤醒时+10力量，之后每次斩击高达15/17+10=25/27以上伤害",
+      "初始睡眠回合是击杀窗口期"
+    ],
+    "danger_moves": [
+      {
+        "name": "斩击(+10力量后)",
+        "effect": "15/17 + 至少10力量=25+伤害",
+        "counter": "务必在唤醒前击杀或降低其力量"
+      }
+    ]
+  },
+  "LivingShield": {
+    "name_cn": "活盾",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        55,
+        55
+      ],
+      "ascension": [
+        65,
+        65
+      ]
+    },
+    "moves": [
+      {
+        "id": "SHIELD_SLAM_MOVE",
+        "damage": 6,
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "SMASH_MOVE",
+        "damage": [
+          16,
+          18
+        ],
+        "effects": [
+          "攻击",
+          "自身+3力量"
+        ],
+        "intent": "SingleAttack+Buff"
+      }
+    ],
+    "ai_pattern": "盾击→条件分支: 根据队友数量决定行为(可能继续盾击或转为猛砸)。猛砸后一直猛砸(+3力量越来越强)。开场有25层RampartPower(壁垒)。"
+  },
+  "GremlinMerc": {
+    "name_cn": "哥布林佣兵",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        47,
+        49
+      ],
+      "ascension": [
+        51,
+        53
+      ]
+    },
+    "moves": [
+      {
+        "id": "GIMME_MOVE",
+        "damage": [
+          7,
+          8
+        ],
+        "hits": 2,
+        "effects": [
+          "2次攻击",
+          "偷钱"
+        ],
+        "intent": "MultiAttack"
+      },
+      {
+        "id": "DOUBLE_SMASH_MOVE",
+        "damage": [
+          6,
+          7
+        ],
+        "hits": 2,
+        "effects": [
+          "2次攻击",
+          "偷钱",
+          "施加2层虚弱"
+        ],
+        "intent": "MultiAttack+Debuff"
+      },
+      {
+        "id": "HEHE_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "effects": [
+          "攻击",
+          "偷钱",
+          "自身+2力量"
+        ],
+        "intent": "SingleAttack+Buff"
+      }
+    ],
+    "ai_pattern": "给我(2连偷钱)→连砸(2连偷钱+虚弱)→嘿嘿(攻击偷钱+力量)→给我循环。开场有SurprisePower(突袭)和ThieveryPower(偷窃20金)。每次攻击都偷钱。"
+  },
+  "FatGremlin": {
+    "name_cn": "胖哥布林",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        13,
+        17
+      ],
+      "ascension": [
+        14,
+        18
+      ]
+    },
+    "moves": [
+      {
+        "id": "SPAWNED_MOVE",
+        "effects": [
+          "生成(眩晕)"
+        ],
+        "intent": "Stun"
+      },
+      {
+        "id": "FLEE_MOVE",
+        "effects": [
+          "逃跑"
+        ],
+        "intent": "Escape"
+      }
+    ],
+    "ai_pattern": "生成(不行动)→下一回合逃跑。只存在一回合，如果不击杀就会跑掉。"
+  },
+  "SneakyGremlin": {
+    "name_cn": "鬼祟哥布林",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        10,
+        14
+      ],
+      "ascension": [
+        11,
+        15
+      ]
+    },
+    "moves": [
+      {
+        "id": "SPAWNED_MOVE",
+        "effects": [
+          "生成(眩晕)"
+        ],
+        "intent": "Stun"
+      },
+      {
+        "id": "TACKLE_MOVE",
+        "damage": [
+          9,
+          10
+        ],
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      }
+    ],
+    "ai_pattern": "生成(不行动)→之后每回合冲撞攻击。低HP但伤害不低。"
+  },
+  "PhantasmalGardener": {
+    "name_cn": "幻影园丁",
+    "type": "精英",
+    "act": "Underdocks",
+    "encounter_count": 4,
+    "hp": {
+      "normal": [
+        28,
+        32
+      ],
+      "ascension": [
+        29,
+        33
+      ]
+    },
+    "notes": "4只独立个体同时出现，行动互相错开",
+    "moves": [
+      {
+        "name": "撕咬",
+        "id": "BITE_MOVE",
+        "damage": [
+          5,
+          5
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "鞭打",
+        "id": "LASH_MOVE",
+        "damage": [
+          7,
+          7
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "乱舞",
+        "id": "FLAIL_MOVE",
+        "damage": [
+          1,
+          1
+        ],
+        "hits": [
+          3,
+          3
+        ],
+        "type": "multi_attack"
+      },
+      {
+        "name": "膨大",
+        "id": "ENLARGE_MOVE",
+        "type": "buff",
+        "effects": [
+          "自身+2/3力量",
+          "体型增大(对数增长)"
+        ]
+      }
+    ],
+    "ai_pattern": "4只错开行动循环: 撕咬→鞭打→乱舞→膨大→撕咬。slot1从乱舞开始，slot2从撕咬，slot3从鞭打，slot4从膨大。开场SkittishPower(6/7): 受击后获得格挡。",
+    "key_mechanics": [
+      "4只同时行动，总DPS很高",
+      "SkittishPower受击获格挡，频繁打反而给它加格挡",
+      "膨大每次+2/3力量，且体型视觉增大(对数)",
+      "各只错开行动，每回合平均受到2-3次攻击"
+    ],
+    "danger_moves": [
+      {
+        "name": "4只轮番攻击",
+        "effect": "合计每回合约14-20伤害",
+        "counter": "大量格挡或AoE清场"
+      },
+      {
+        "name": "膨大叠加",
+        "effect": "力量随时间快速增长",
+        "counter": "尽快击杀高力量个体"
+      }
+    ]
+  },
+  "Byrdpip": {
+    "name_cn": "鸟崽",
+    "type": "普通怪",
+    "hp": {
+      "normal": "同Byrdonis系"
+    },
+    "moves": "小型飞行怪",
+    "ai_pattern": "与鸟龙类似的飞行小怪。"
+  },
+  "TheAdversaryMkOne": {
+    "name_cn": "对手Mk.I",
+    "type": "Boss(教程/进阶)",
+    "hp": {
+      "normal": [
+        100,
+        100
+      ],
+      "ascension": [
+        100,
+        100
+      ]
+    },
+    "moves": [
+      {
+        "id": "SMASH_MOVE",
+        "damage": 12,
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "BEAM_MOVE",
+        "damage": 15,
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "BARRAGE_MOVE",
+        "damage": 8,
+        "hits": 2,
+        "effects": [
+          "2次攻击",
+          "自身+2力量"
+        ],
+        "intent": "MultiAttack+Buff"
+      }
+    ],
+    "ai_pattern": "猛砸→光束→连射(2连+2力量)→猛砸循环。开场0层神器。固定3招循环。"
+  },
+  "TheAdversaryMkTwo": {
+    "name_cn": "对手Mk.II",
+    "type": "Boss(教程/进阶)",
+    "hp": {
+      "normal": [
+        200,
+        200
+      ],
+      "ascension": [
+        200,
+        200
+      ]
+    },
+    "moves": [
+      {
+        "id": "BASH_MOVE",
+        "damage": 13,
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "FLAME_BEAM_MOVE",
+        "damage": 16,
+        "effects": [
+          "攻击",
+          "塞1张状态牌"
+        ],
+        "intent": "SingleAttack+Status"
+      },
+      {
+        "id": "BARRAGE_MOVE",
+        "damage": 9,
+        "hits": 2,
+        "effects": [
+          "2次攻击",
+          "自身+3力量"
+        ],
+        "intent": "MultiAttack+Buff"
+      }
+    ],
+    "ai_pattern": "重击→火焰光束→连射(2连+3力量)→重击循环。开场1层神器。"
+  },
+  "TheAdversaryMkThree": {
+    "name_cn": "对手Mk.III",
+    "type": "Boss(教程/进阶)",
+    "hp": {
+      "normal": [
+        300,
+        300
+      ],
+      "ascension": [
+        300,
+        300
+      ]
+    },
+    "moves": [
+      {
+        "id": "CRASH_MOVE",
+        "damage": 15,
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "FLAME_BEAM_MOVE",
+        "damage": 18,
+        "effects": [
+          "攻击"
+        ],
+        "intent": "SingleAttack"
+      },
+      {
+        "id": "BARRAGE_MOVE",
+        "damage": 10,
+        "hits": 2,
+        "effects": [
+          "2次攻击",
+          "自身+4力量"
+        ],
+        "intent": "MultiAttack+Buff"
+      }
+    ],
+    "ai_pattern": "冲撞→火焰光束→连射(2连+4力量)→冲撞循环。开场2层神器。Mk.III版力量增长最快。"
+  },
+  "Seapunk": {
+    "name_cn": "海朋克",
+    "type": "普通怪",
+    "hp": "小型水系怪物",
+    "ai_pattern": "水系小怪，详见源码Seapunk.cs"
+  },
+  "PunchConstruct": {
+    "name_cn": "拳击构造体",
+    "type": "普通怪",
+    "hp": "中型构造体",
+    "ai_pattern": "攻击型构造体"
+  },
+  "CubexConstruct": {
+    "name_cn": "立方构造体",
+    "type": "普通怪",
+    "hp": "中型构造体",
+    "ai_pattern": "防御型构造体"
+  },
+  "Zapbot": {
+    "name_cn": "电击机器人",
+    "type": "随从(Fabricator)",
+    "ai_pattern": "制造者召唤的攻击型机器人"
+  },
+  "Stabbot": {
+    "name_cn": "刺击机器人",
+    "type": "随从(Fabricator)",
+    "ai_pattern": "制造者召唤的攻击型机器人"
+  },
+  "Guardbot": {
+    "name_cn": "守卫机器人",
+    "type": "随从(Fabricator)",
+    "ai_pattern": "制造者召唤的防御型机器人"
+  },
+  "Noisebot": {
+    "name_cn": "噪音机器人",
+    "type": "随从(Fabricator)",
+    "ai_pattern": "制造者召唤的防御型机器人"
+  },
+  "EyeWithTeeth": {
+    "name_cn": "有齿之眼",
+    "type": "随从(Fogmog/Obscura)",
+    "ai_pattern": "雾魔/暗影召唤的幻象随从"
+  },
+  "DampCultist": {
+    "name_cn": "潮湿教徒",
+    "type": "普通怪",
+    "ai_pattern": "教徒变种，可能带仪式buff"
+  },
+  "SludgeSpinner": {
+    "name_cn": "污泥纺织者",
+    "type": "普通怪",
+    "ai_pattern": "毒系/debuff型小怪"
+  },
+  "ScrollOfBiting": {
+    "name_cn": "噬咬卷轴",
+    "type": "普通怪",
+    "ai_pattern": "卷轴型怪物"
+  },
+  "Nibbit": {
+    "name_cn": "啃食者",
+    "type": "普通怪",
+    "ai_pattern": "小型啃食怪"
+  },
+  "LeafSlimeM": {
+    "name_cn": "叶片史莱姆(中)",
+    "type": "普通怪",
+    "ai_pattern": "中型史莱姆"
+  },
+  "LeafSlimeS": {
+    "name_cn": "叶片史莱姆(小)",
+    "type": "普通怪",
+    "ai_pattern": "小型史莱姆"
+  },
+  "TwigSlimeM": {
+    "name_cn": "树枝史莱姆(中)",
+    "type": "普通怪",
+    "ai_pattern": "中型史莱姆变种"
+  },
+  "TwigSlimeS": {
+    "name_cn": "树枝史莱姆(小)",
+    "type": "普通怪",
+    "ai_pattern": "小型史莱姆变种"
+  },
+  "SkulkingColony": {
+    "name_cn": "潜伏群落",
+    "type": "精英",
+    "act": "Underdocks",
+    "hp": {
+      "normal": [
+        79,
+        79
+      ],
+      "ascension": [
+        84,
+        84
+      ]
+    },
+    "moves": [
+      {
+        "name": "猛砸",
+        "id": "SMASH_MOVE",
+        "damage": [
+          9,
+          11
+        ],
+        "type": "single_attack+status(4)",
+        "effects": [
+          "造成伤害",
+          "往弃牌堆加4张晕眩(Dazed)牌"
+        ]
+      },
+      {
+        "name": "飞冲",
+        "id": "ZOOM_MOVE",
+        "damage": [
+          16,
+          17
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "惯性",
+        "id": "INERTIA_MOVE",
+        "type": "defend+buff",
+        "effects": [
+          "获得10/13格挡",
+          "自身+3力量"
+        ]
+      },
+      {
+        "name": "超级蟹爪",
+        "id": "SUPER_CRAB_MOVE",
+        "damage": [
+          6,
+          7
+        ],
+        "hits": [
+          2,
+          2
+        ],
+        "type": "multi_attack"
+      }
+    ],
+    "ai_pattern": "猛砸→飞冲→惯性(格挡+3力量)→超级蟹爪(2连)→猛砸循环。开场HardenedShell(20层硬化外壳)。",
+    "key_mechanics": [
+      "开场20层硬化外壳(HardenedShell)需先打穿",
+      "猛砸往弃牌堆塞4张晕眩牌污染牌组",
+      "惯性回合同时格挡+力量，不宜浪费输出",
+      "固定4招循环，易于预判"
+    ],
+    "danger_moves": [
+      {
+        "name": "猛砸",
+        "effect": "9/11伤+4张晕眩牌",
+        "counter": "格挡，接受晕眩牌污染"
+      },
+      {
+        "name": "飞冲",
+        "effect": "16/17高单伤",
+        "counter": "惯性后下一轮格挡"
+      }
+    ]
+  },
+  "Vantom": {
+    "name_cn": "幻象",
+    "type": "Boss",
+    "act": "Overgrowth",
+    "hp": {
+      "normal": [
+        173,
+        173
+      ],
+      "ascension": [
+        183,
+        183
+      ]
+    },
+    "moves": [
+      {
+        "name": "墨渍",
+        "id": "INK_BLOT_MOVE",
+        "damage": [
+          7,
+          8
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "墨枪",
+        "id": "INKY_LANCE_MOVE",
+        "damage": [
+          6,
+          7
+        ],
+        "hits": [
+          2,
+          2
+        ],
+        "type": "multi_attack"
+      },
+      {
+        "name": "分裂",
+        "id": "DISMEMBER_MOVE",
+        "damage": [
+          27,
+          30
+        ],
+        "type": "single_attack+status(3)",
+        "effects": [
+          "3张伤口(Wound)加入弃牌堆"
+        ]
+      },
+      {
+        "name": "蓄力",
+        "id": "PREPARE_MOVE",
+        "type": "buff",
+        "effects": [
+          "+2力量"
+        ]
+      }
+    ],
+    "ai_pattern": "墨渍→墨枪→分裂→蓄力→墨渍循环。开场SlipperyPower(9层滑溜)。分裂往弃牌堆加3张伤口牌并有大伤。",
+    "key_mechanics": [
+      "SlipperyPower(9): 前9次负面效果无效(类神器但更多层)",
+      "固定4招循环，易于预判",
+      "分裂加3张伤口(Wound)牌污染牌组",
+      "蓄力后下一轮墨渍伤害提升"
+    ],
+    "danger_moves": [
+      {
+        "name": "分裂",
+        "effect": "27/30伤+3张伤口牌",
+        "counter": "高格挡，接受伤口污染"
+      },
+      {
+        "name": "墨渍(蓄力后)",
+        "effect": "7/8+2力量=9/10伤",
+        "counter": "蓄力回合积攒格挡"
+      }
+    ]
+  },
+  "FossilStalker": {
+    "name_cn": "化石追猎者",
+    "type": "普通怪",
+    "ai_pattern": "化石系怪物"
+  },
+  "Toadpole": {
+    "name_cn": "蟾蝌蚪",
+    "type": "普通怪",
+    "ai_pattern": "蟾蜍幼体"
+  },
+  "SoulFysh": {
+    "name_cn": "灵魂鱼",
+    "type": "Boss",
+    "act": "Underdocks",
+    "hp": {
+      "normal": [
+        211,
+        211
+      ],
+      "ascension": [
+        221,
+        221
+      ]
+    },
+    "moves": [
+      {
+        "name": "召唤",
+        "id": "BECKON_MOVE",
+        "type": "status(2)",
+        "effects": [
+          "加2张召唤牌(Beckon): 1张在抽牌堆随机位置，1张在弃牌堆"
+        ]
+      },
+      {
+        "name": "喷气",
+        "id": "DE_GAS_MOVE",
+        "damage": [
+          16,
+          17
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "凝视",
+        "id": "GAZE_MOVE",
+        "damage": [
+          7,
+          8
+        ],
+        "type": "single_attack+status(1)",
+        "effects": [
+          "再加1张召唤牌到弃牌堆"
+        ]
+      },
+      {
+        "name": "隐身",
+        "id": "FADE_MOVE",
+        "type": "buff",
+        "effects": [
+          "获得Intangible(无形) 2层: 接下来2回合无视普通伤害(每次只受1伤)"
+        ]
+      },
+      {
+        "name": "嘶吼",
+        "id": "SCREAM_MOVE",
+        "damage": [
+          11,
+          12
+        ],
+        "type": "single_attack+debuff",
+        "effects": [
+          "3层易伤"
+        ]
+      }
+    ],
+    "ai_pattern": "召唤(2张召唤牌)→喷气→凝视(攻+1召唤)→隐身(无形2层)→嘶吼(攻+3易伤)→召唤循环。",
+    "key_mechanics": [
+      "召唤牌(Beckon): 打出时会发生负面效果(类诅咒)",
+      "隐身(Intangible 2层): 2回合内每次只受1伤，攻击无效",
+      "隐身回合不要浪费攻击，等无形耗尽再输出",
+      "嘶吼3层易伤使后续循环伤害大幅提升"
+    ],
+    "danger_moves": [
+      {
+        "name": "隐身+嘶吼组合",
+        "effect": "无形2回合后立刻嘶吼3层易伤",
+        "counter": "隐身结束后第一时间格挡"
+      },
+      {
+        "name": "召唤牌堆积",
+        "effect": "多轮后牌组大量召唤牌污染",
+        "counter": "挑好时机打出或避免触发召唤牌"
+      }
+    ]
+  },
+  "TerrorEel": {
+    "name_cn": "恐怖鳗",
+    "type": "精英",
+    "act": "Underdocks",
+    "hp": {
+      "normal": [
+        140,
+        140
+      ],
+      "ascension": [
+        150,
+        150
+      ]
+    },
+    "moves": [
+      {
+        "name": "冲撞",
+        "id": "CRASH_MOVE",
+        "damage": [
+          17,
+          19
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "横扫",
+        "id": "ThrashMove",
+        "damage": [
+          3,
+          4
+        ],
+        "hits": [
+          3,
+          3
+        ],
+        "type": "multi_attack+buff",
+        "effects": [
+          "3次攻击",
+          "自身获得7层活力(Vigor)"
+        ]
+      },
+      {
+        "name": "眩晕",
+        "id": "STUN_MOVE",
+        "type": "stun",
+        "effects": [
+          "ShriekPower触发，眩晕一回合"
+        ]
+      },
+      {
+        "name": "恐惧",
+        "id": "TERROR_MOVE",
+        "type": "debuff",
+        "effects": [
+          "对所有玩家施加99层易伤(Vulnerable)"
+        ]
+      }
+    ],
+    "ai_pattern": "冲撞→横扫→冲撞→横扫循环(ShriekPower正常时)。当ShriekPower(70/75)耗尽时被眩晕→恐惧(99层易伤!!!)→冲撞继续循环。横扫每次给自身+7活力。",
+    "key_mechanics": [
+      "开场ShriekPower(70/75): 受到伤害时消耗，耗尽后触发眩晕+恐惧",
+      "恐惧施加99层易伤，后续所有伤害×1.5",
+      "横扫每次+7活力(Vigor: 当回合力量+7效果，仅限当前回合)",
+      "控制ShriekPower耗尽时机很关键"
+    ],
+    "danger_moves": [
+      {
+        "name": "恐惧(TERROR)",
+        "effect": "99层易伤，后续伤害×1.5",
+        "counter": "在眩晕回合积攒最大格挡，准备承受超高伤"
+      },
+      {
+        "name": "冲撞+活力叠加后",
+        "effect": "17/19+活力值高伤",
+        "counter": "在恐惧触发前尽量击杀"
+      }
+    ]
+  },
+  "Parafright": {
+    "name_cn": "恐惧伞兵",
+    "type": "普通怪",
+    "ai_pattern": "飞行恐怖怪物"
+  },
+  "DecimillipedeSegment": {
+    "name_cn": "千足虫节段(×3)",
+    "type": "精英",
+    "act": "Hive",
+    "hp": {
+      "normal": [
+        42,
+        48
+      ],
+      "ascension": [
+        48,
+        56
+      ]
+    },
+    "moves": [
+      {
+        "name": "蠕动",
+        "id": "WRITHE_MOVE",
+        "damage": [
+          5,
+          6
+        ],
+        "hits": 2,
+        "type": "multi_attack"
+      },
+      {
+        "name": "膨胀",
+        "id": "BULK_MOVE",
+        "damage": [
+          6,
+          7
+        ],
+        "type": "attack+buff"
+      },
+      {
+        "name": "缠绕",
+        "id": "CONSTRICT_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "type": "attack+debuff"
+      },
+      {
+        "name": "重新连接",
+        "id": "REATTACH_MOVE",
+        "type": "heal"
+      }
+    ],
+    "ai_pattern": "3段体精英，每段独立行动。段死亡后可被其他段重新连接复活。需要同时AOE或集火",
+    "key_mechanics": [
+      "3段独立行动",
+      "段间可复活",
+      "AOE有效"
+    ]
+  },
+  "PhrogParasite": {
+    "name_cn": "蛙寄生虫",
+    "type": "精英",
+    "act": "Overgrowth",
+    "hp": {
+      "normal": [
+        61,
+        64
+      ],
+      "ascension": [
+        66,
+        68
+      ]
+    },
+    "moves": [
+      {
+        "name": "感染",
+        "id": "INFECT_MOVE",
+        "type": "status(3)",
+        "effects": [
+          "往弃牌堆加3张感染牌"
+        ]
+      },
+      {
+        "name": "鞭打",
+        "id": "LASH_MOVE",
+        "damage": [
+          4,
+          5
+        ],
+        "hits": [
+          4,
+          4
+        ],
+        "type": "multi_attack"
+      }
+    ],
+    "ai_pattern": "开场感染→随机切换感染/鞭打(不连续重复)。开场InfestedPower(4)。"
+  },
+  "TestSubject": {
+    "name_cn": "实验体",
+    "type": "Boss",
+    "act": "Glory",
+    "hp": {
+      "normal": "多阶段(见机制)",
+      "ascension": "多阶段(见机制)"
+    },
+    "moves": [
+      {
+        "name": "撕咬",
+        "id": "BITE_MOVE",
+        "damage": [
+          20,
+          22
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "头骨猛击",
+        "id": "SKULL_BASH_MOVE",
+        "damage": [
+          14,
+          16
+        ],
+        "type": "attack+debuff"
+      },
+      {
+        "name": "猛扑",
+        "id": "POUNCE_MOVE",
+        "damage": [
+          30,
+          32
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "多爪",
+        "id": "MULTI_CLAW_MOVE",
+        "damage": [
+          10,
+          11
+        ],
+        "hits": "动态",
+        "type": "multi_attack"
+      },
+      {
+        "name": "撕裂(P3)",
+        "id": "PHASE3_LACERATE_MOVE",
+        "damage": [
+          10,
+          11
+        ],
+        "hits": 3,
+        "type": "multi_attack"
+      },
+      {
+        "name": "大猛扑",
+        "id": "BIG_POUNCE_MOVE",
+        "damage": [
+          45,
+          45
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "燃烧咆哮",
+        "id": "BURNING_GROWL_MOVE",
+        "type": "status+buff"
+      }
+    ],
+    "ai_pattern": "多阶段Boss。死亡后复活(RESPAWN_MOVE)+buff。大猛扑45伤是最高单击伤害",
+    "key_mechanics": [
+      "多阶段复活",
+      "大猛扑45伤",
+      "阶段越后越强"
+    ],
+    "danger_moves": [
+      {
+        "name": "大猛扑",
+        "effect": "45单体巨额伤害",
+        "counter": "必须有高格挡或Intangible"
+      }
+    ]
+  },
+  "CeremonialBeast": {
+    "name_cn": "仪式兽",
+    "type": "Boss",
+    "act": "Overgrowth",
+    "hp": {
+      "normal": [
+        252,
+        252
+      ],
+      "ascension": [
+        262,
+        262
+      ]
+    },
+    "moves": [
+      {
+        "name": "践踏(buff)",
+        "id": "STAMP_MOVE",
+        "type": "buff"
+      },
+      {
+        "name": "犁地",
+        "id": "PLOW_MOVE",
+        "damage": [
+          18,
+          20
+        ],
+        "type": "attack+buff"
+      },
+      {
+        "name": "眩晕",
+        "id": "STUN_MOVE",
+        "type": "stun"
+      },
+      {
+        "name": "兽吼",
+        "id": "BEAST_CRY_MOVE",
+        "type": "debuff"
+      },
+      {
+        "name": "跺脚",
+        "id": "STOMP_MOVE",
+        "damage": [
+          15,
+          17
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "碾压",
+        "id": "CRUSH_MOVE",
+        "damage": [
+          17,
+          19
+        ],
+        "type": "attack+buff"
+      }
+    ],
+    "key_mechanics": [
+      "HP极高(252/262)",
+      "持续buff自身",
+      "长期战越打越强"
+    ]
+  },
+  "TheKin_KinPriest": {
+    "name_cn": "血族祭司(TheKin Boss主体)",
+    "type": "Boss",
+    "act": "Overgrowth",
+    "hp": {
+      "normal": [
+        190,
+        190
+      ],
+      "ascension": [
+        199,
+        199
+      ]
+    },
+    "moves": [
+      {
+        "name": "脆弱之球",
+        "id": "ORB_OF_FRAILTY_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "type": "attack+debuff(脆弱)"
+      },
+      {
+        "name": "虚弱之球",
+        "id": "ORB_OF_WEAKNESS_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "type": "attack+debuff(虚弱)"
+      },
+      {
+        "name": "光束",
+        "id": "BEAM_MOVE",
+        "damage": [
+          3,
+          3
+        ],
+        "hits": 3,
+        "type": "multi_attack"
+      },
+      {
+        "name": "仪式",
+        "id": "RITUAL_MOVE",
+        "type": "buff"
+      }
+    ],
+    "key_mechanics": [
+      "伴随KinFollower(58-63HP)×多个",
+      "持续debuff(脆弱+虚弱)",
+      "仪式buff增强自身"
+    ]
+  },
+  "TheKin_KinFollower": {
+    "name_cn": "血族追随者(TheKin随从)",
+    "type": "Boss随从",
+    "act": "Overgrowth",
+    "hp": {
+      "normal": [
+        58,
+        59
+      ],
+      "ascension": [
+        62,
+        63
+      ]
+    },
+    "moves": [
+      {
+        "name": "快斩",
+        "id": "QUICK_SLASH_MOVE",
+        "damage": [
+          5,
+          5
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "回旋镖",
+        "id": "BOOMERANG_MOVE",
+        "damage": [
+          2,
+          2
+        ],
+        "hits": 2,
+        "type": "multi_attack"
+      },
+      {
+        "name": "力量之舞",
+        "id": "POWER_DANCE_MOVE",
+        "type": "buff"
+      }
+    ],
+    "ai_pattern": "快斩/力量之舞开局→快斩→回旋镖→力量之舞→循环"
+  },
+  "KaiserCrab_Rocket": {
+    "name_cn": "火箭(碎壳蟹/KaiserCrab随从)",
+    "type": "Boss随从",
+    "act": "Hive",
+    "hp": {
+      "normal": [
+        189,
+        189
+      ],
+      "ascension": [
+        199,
+        199
+      ]
+    },
+    "moves": [
+      {
+        "name": "瞄准",
+        "id": "TARGETING_RETICLE_MOVE",
+        "damage": [
+          3,
+          4
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "精确光束",
+        "id": "PRECISION_BEAM_MOVE",
+        "damage": [
+          18,
+          20
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "充能",
+        "id": "CHARGE_UP_MOVE",
+        "type": "buff"
+      },
+      {
+        "name": "激光",
+        "id": "LASER_MOVE",
+        "damage": [
+          31,
+          35
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "充电",
+        "id": "RECHARGE_MOVE",
+        "type": "sleep"
+      }
+    ],
+    "ai_pattern": "瞄准→精确光束→充能→激光(31/35!)→充电→循环",
+    "danger_moves": [
+      {
+        "name": "激光",
+        "effect": "31/35巨额伤害",
+        "counter": "充能后必接激光，叠满挡"
+      }
+    ]
+  },
+  "KnightsElite": {
+    "name_cn": "骑士三人组",
+    "type": "Elite",
+    "act": "Glory",
+    "encounter": [
+      "FlailKnight",
+      "SpectralKnight",
+      "MagiKnight"
+    ],
+    "ai_pattern": "三体同场。连枷骑士(攻击型)、幽灵骑士(先诅咒再攻击)、法骑士(先护盾+抑制再蓄力大招)同时出现。分别见FlailKnight/SpectralKnight/MagiKnight条目。",
+    "key_mechanics": [
+      "连枷骑士有+3力量战吼，随机切换三招",
+      "幽灵骑士开场先施加Hex诅咒再高伤",
+      "法骑士开场抑制debuff + 蓄力后大招35/40伤害"
+    ],
+    "danger_moves": [
+      {
+        "name": "魔法炸弹(MagiKnight)",
+        "effect": "35/40单体大伤",
+        "counter": "在Prep回合多格挡"
+      },
+      {
+        "name": "诅咒(SpectralKnight)",
+        "effect": "Hex诅咒使技能费用增加",
+        "counter": "优先击杀幽灵骑士"
+      }
+    ]
+  },
+  "DecimillipedeElite": {
+    "name_cn": "蜈蚣节肢精英",
+    "type": "Elite",
+    "act": "Hive",
+    "encounter": [
+      "DecimillipedeSegmentFront",
+      "DecimillipedeSegmentMiddle",
+      "DecimillipedeSegmentBack"
+    ],
+    "hp": {
+      "normal": [
+        42,
+        48
+      ],
+      "ascension": [
+        48,
+        56
+      ]
+    },
+    "notes": "三节各HP不同(代码自动分配，确保三节HP不重复)，HP起点偶数",
+    "moves": [
+      {
+        "name": "扭动",
+        "id": "WRITHE_MOVE",
+        "damage": [
+          5,
+          6
+        ],
+        "hits": [
+          2,
+          2
+        ],
+        "type": "multi_attack"
+      },
+      {
+        "name": "膨胀",
+        "id": "BULK_MOVE",
+        "damage": [
+          6,
+          7
+        ],
+        "type": "single_attack+buff",
+        "effects": [
+          "自身+2力量"
+        ]
+      },
+      {
+        "name": "束缚",
+        "id": "CONSTRICT_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "type": "single_attack+debuff",
+        "effects": [
+          "目标+1虚弱"
+        ]
+      },
+      {
+        "name": "死亡",
+        "id": "DEAD_MOVE",
+        "type": "special",
+        "effects": [
+          "节肢死亡，等待复活"
+        ]
+      },
+      {
+        "name": "重接",
+        "id": "REATTACH_MOVE",
+        "type": "heal",
+        "effects": [
+          "复活本节，回复25HP"
+        ]
+      }
+    ],
+    "ai_pattern": "每节独立轮转: 束缚→膨胀→扭动→束缚循环(三节起点不同，由StarterMoveIdx错开)。节肢死亡时进入死亡→重接(回复25HP复活)→继续随机分支。",
+    "key_mechanics": [
+      "每节有ReattachPower(25): 死亡后下回合复活25HP，必须连续两回合打死同一节",
+      "三节错开行动，造成持续压力",
+      "束缚附加虚弱debuff使玩家输出减少",
+      "膨胀每次+2力量，越来越强"
+    ],
+    "danger_moves": [
+      {
+        "name": "复活(REATTACH)",
+        "effect": "打死后复活，必须准备爆发伤害",
+        "counter": "积攒爆发牌，一回合内处决一节"
+      },
+      {
+        "name": "膨胀叠加",
+        "effect": "力量随时间增长",
+        "counter": "尽早击杀高力量节肢"
+      }
+    ]
+  },
+  "PhrogParasiteElite": {
+    "name_cn": "蛙寄生精英组",
+    "type": "Elite",
+    "act": "Overgrowth",
+    "encounter": [
+      "PhrogParasite",
+      "Wriggler(多只)"
+    ],
+    "components": {
+      "PhrogParasite": {
+        "name_cn": "蛙寄生虫",
+        "hp": {
+          "normal": [
+            61,
+            64
+          ],
+          "ascension": [
+            66,
+            68
+          ]
+        },
+        "moves": [
+          {
+            "name": "感染",
+            "id": "INFECT_MOVE",
+            "type": "status(3)",
+            "effects": [
+              "往弃牌堆加3张感染(Infection)牌"
+            ]
+          },
+          {
+            "name": "鞭打",
+            "id": "LASH_MOVE",
+            "damage": [
+              4,
+              5
+            ],
+            "hits": [
+              4,
+              4
+            ],
+            "type": "multi_attack"
+          }
+        ],
+        "ai_pattern": "开场感染→随机切换感染/鞭打(不连续重复)。开场有InfestedPower(4)。",
+        "special": "InfestedPower: 每张感染牌被使用时触发效果"
+      },
+      "Wriggler": {
+        "name_cn": "蠕虫",
+        "hp": {
+          "normal": [
+            17,
+            21
+          ],
+          "ascension": [
+            18,
+            22
+          ]
+        },
+        "moves": [
+          {
+            "name": "恶咬",
+            "id": "NASTY_BITE_MOVE",
+            "damage": [
+              6,
+              7
+            ],
+            "type": "single_attack"
+          },
+          {
+            "name": "蠕动",
+            "id": "WRIGGLE_MOVE",
+            "type": "buff+status(1)",
+            "effects": [
+              "自身+2力量",
+              "加1张感染牌到弃牌堆"
+            ]
+          },
+          {
+            "name": "刚生成",
+            "id": "SPAWNED_MOVE",
+            "type": "stun",
+            "effects": [
+              "生成时眩晕一回合"
+            ]
+          }
+        ],
+        "ai_pattern": "slot1/3从恶咬开始，slot2/4从蠕动开始。恶咬↔蠕动交替。StartStunned时先眩晕再轮转。"
+      }
+    },
+    "key_mechanics": [
+      "蛙寄生持续往牌组塞感染(Infection)状态牌污染手牌",
+      "蠕虫每只会叠加力量并继续塞感染牌",
+      "感染牌越多压力越大，优先击杀蛙寄生"
+    ],
+    "danger_moves": [
+      {
+        "name": "感染风暴",
+        "effect": "多只蠕虫每回合塞多张感染牌",
+        "counter": "优先击杀主体PhrogParasite"
+      }
+    ]
+  },
+  "Wriggler": {
+    "name_cn": "蠕虫",
+    "type": "Elite组件(PhrogParasite随从)",
+    "act": "Overgrowth",
+    "hp": {
+      "normal": [
+        17,
+        21
+      ],
+      "ascension": [
+        18,
+        22
+      ]
+    },
+    "moves": [
+      {
+        "name": "恶咬",
+        "id": "NASTY_BITE_MOVE",
+        "damage": [
+          6,
+          7
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "蠕动",
+        "id": "WRIGGLE_MOVE",
+        "type": "buff+status(1)",
+        "effects": [
+          "自身+2力量",
+          "弃牌堆加1张感染牌"
+        ]
+      },
+      {
+        "name": "刚生成",
+        "id": "SPAWNED_MOVE",
+        "type": "stun"
+      }
+    ],
+    "ai_pattern": "slot1/3从恶咬开始，slot2/4从蠕动开始，恶咬↔蠕动交替。StartStunned时先眩晕一回合。"
+  },
+  "TestSubjectBoss": {
+    "name_cn": "实验体",
+    "type": "Boss",
+    "act": "Glory",
+    "hp": {
+      "phase1_normal": [
+        100,
+        100
+      ],
+      "phase1_ascension": [
+        111,
+        111
+      ],
+      "phase2_normal": [
+        200,
+        200
+      ],
+      "phase2_ascension": [
+        212,
+        212
+      ],
+      "phase3_normal": [
+        300,
+        300
+      ],
+      "phase3_ascension": [
+        313,
+        313
+      ],
+      "notes": "每阶段HP = 基础值 × 玩家数量"
+    },
+    "moves": [
+      {
+        "name": "咬击",
+        "id": "BITE_MOVE",
+        "damage": [
+          20,
+          22
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "颅击",
+        "id": "SKULL_BASH_MOVE",
+        "damage": [
+          14,
+          16
+        ],
+        "type": "single_attack+debuff",
+        "effects": [
+          "1层易伤"
+        ]
+      },
+      {
+        "name": "猛扑",
+        "id": "POUNCE_MOVE",
+        "damage": [
+          30,
+          32
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "多爪",
+        "id": "MULTI_CLAW_MOVE",
+        "damage": [
+          10,
+          11
+        ],
+        "hits_dynamic": "3+(每次使用后+1)",
+        "type": "multi_attack"
+      },
+      {
+        "name": "三爪撕裂",
+        "id": "PHASE3_LACERATE_MOVE",
+        "damage": [
+          10,
+          11
+        ],
+        "hits": [
+          3,
+          3
+        ],
+        "type": "multi_attack"
+      },
+      {
+        "name": "大猛扑",
+        "id": "BIG_POUNCE_MOVE",
+        "damage": [
+          45,
+          45
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "燃烧咆哮",
+        "id": "BURNING_GROWL_MOVE",
+        "type": "status+buff",
+        "effects": [
+          "加3/5张灼伤(Burn)到弃牌堆",
+          "自身+2/3力量"
+        ]
+      },
+      {
+        "name": "复活",
+        "id": "RESPAWN_MOVE",
+        "type": "heal+buff",
+        "effects": [
+          "复活到下一形态HP",
+          "形态1→获得PainfulStabs",
+          "形态2→获得Nemesis"
+        ]
+      }
+    ],
+    "ai_pattern": "第一形态: 咬击↔颅击交替。HP归零→复活进入第二形态(猛扑↔多爪交替，多爪命中数每次+1)。再次HP归零→复活进入第三形态(三爪撕裂→大猛扑→燃烧咆哮→三爪循环)。第三形态后不再复活。",
+    "key_mechanics": [
+      "开场AdaptablePower(可适应): 允许死亡2次复活",
+      "开场EnragePower(2/3): 受击时获得力量",
+      "多爪命中数随每次使用递增(3→4→5→...)",
+      "第二形态获得PainfulStabs(痛刺): 被攻击时玩家受额外伤",
+      "第三形态获得Nemesis: 玩家打出能量时受到复仇伤害",
+      "HP总量 = (100+200+300) × 玩家数"
+    ],
+    "danger_moves": [
+      {
+        "name": "大猛扑(第三形态)",
+        "effect": "45伤害，最高威胁",
+        "counter": "第三形态维持高格挡"
+      },
+      {
+        "name": "多爪(递增)",
+        "effect": "随时间命中数增加",
+        "counter": "尽快结束第二形态"
+      },
+      {
+        "name": "燃烧咆哮",
+        "effect": "牌组污染+力量增长",
+        "counter": "忍耐灼伤牌，快速出牌消耗"
+      }
+    ]
+  },
+  "KaiserCrabBoss": {
+    "name_cn": "凯泽螃蟹Boss",
+    "type": "Boss",
+    "act": "Hive",
+    "encounter": [
+      "Crusher(左臂)",
+      "Rocket(右臂)"
+    ],
+    "notes": "背景中巨型螃蟹主体，左右臂分别为独立战斗目标",
+    "components": {
+      "Crusher": {
+        "name_cn": "碎壳者(左臂)",
+        "hp": {
+          "normal": [
+            199,
+            199
+          ],
+          "ascension": [
+            209,
+            209
+          ]
+        },
+        "moves": [
+          {
+            "name": "猛击",
+            "id": "THRASH_MOVE",
+            "damage": [
+              12,
+              14
+            ],
+            "type": "single_attack"
+          },
+          {
+            "name": "膨胀击",
+            "id": "ENLARGING_STRIKE_MOVE",
+            "damage": [
+              4,
+              4
+            ],
+            "type": "single_attack"
+          },
+          {
+            "name": "虫刺",
+            "id": "BUG_STING_MOVE",
+            "damage": [
+              6,
+              7
+            ],
+            "hits": [
+              2,
+              2
+            ],
+            "type": "multi_attack+debuff",
+            "effects": [
+              "2层虚弱+2层脆弱"
+            ]
+          },
+          {
+            "name": "适应",
+            "id": "ADAPT_MOVE",
+            "type": "buff",
+            "effects": [
+              "+2力量"
+            ]
+          },
+          {
+            "name": "护击",
+            "id": "GUARDED_STRIKE_MOVE",
+            "damage": [
+              12,
+              14
+            ],
+            "type": "single_attack+defend",
+            "effects": [
+              "获得18格挡"
+            ]
+          }
+        ],
+        "ai_pattern": "猛击→膨胀击→虫刺→适应→护击→猛击循环。开场BackAttackLeftPower+CrabRagePower。固定5招循环。"
+      },
+      "Rocket": {
+        "name_cn": "火箭炮(右臂)",
+        "hp": {
+          "normal": [
+            189,
+            189
+          ],
+          "ascension": [
+            199,
+            199
+          ]
+        },
+        "moves": [
+          {
+            "name": "瞄准",
+            "id": "TARGETING_RETICLE_MOVE",
+            "damage": [
+              3,
+              4
+            ],
+            "type": "single_attack"
+          },
+          {
+            "name": "精准光束",
+            "id": "PRECISION_BEAM_MOVE",
+            "damage": [
+              18,
+              20
+            ],
+            "type": "single_attack"
+          },
+          {
+            "name": "充能",
+            "id": "CHARGE_UP_MOVE",
+            "type": "buff",
+            "effects": [
+              "+2力量"
+            ]
+          },
+          {
+            "name": "激光炮",
+            "id": "LASER_MOVE",
+            "damage": [
+              31,
+              35
+            ],
+            "type": "single_attack"
+          },
+          {
+            "name": "充电",
+            "id": "RECHARGE_MOVE",
+            "type": "sleep",
+            "effects": [
+              "眩晕/充电回合"
+            ]
+          }
+        ],
+        "ai_pattern": "瞄准→精准光束→充能→激光炮→充电→瞄准循环。开场SurroundedPower(玩家+1包围)+BackAttackRightPower+CrabRagePower。固定5招循环。"
+      }
+    },
+    "key_mechanics": [
+      "Crusher持续用虫刺叠加虚弱+脆弱双debuff，使玩家攻防受损",
+      "Rocket有激光炮(31/35高伤)且第4回合就发射",
+      "先打Rocket避免激光炮连续输出，或先打Crusher减少debuff积累",
+      "CrabRagePower: 两臂都有，受击时可能触发狂暴"
+    ],
+    "danger_moves": [
+      {
+        "name": "激光炮(Rocket)",
+        "effect": "31/35极高单伤+充能力量加成",
+        "counter": "充电回合前准备高格挡或击杀"
+      },
+      {
+        "name": "虫刺(Crusher)",
+        "effect": "每次叠加2虚弱+2脆弱",
+        "counter": "优先击杀Crusher或使用净化"
+      }
+    ]
+  },
+  "Rocket": {
+    "name_cn": "火箭炮",
+    "type": "Boss组件(KaiserCrab右臂)",
+    "act": "Hive",
+    "hp": {
+      "normal": [
+        189,
+        189
+      ],
+      "ascension": [
+        199,
+        199
+      ]
+    },
+    "moves": [
+      {
+        "name": "瞄准",
+        "id": "TARGETING_RETICLE_MOVE",
+        "damage": [
+          3,
+          4
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "精准光束",
+        "id": "PRECISION_BEAM_MOVE",
+        "damage": [
+          18,
+          20
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "充能",
+        "id": "CHARGE_UP_MOVE",
+        "type": "buff",
+        "effects": [
+          "+2力量"
+        ]
+      },
+      {
+        "name": "激光炮",
+        "id": "LASER_MOVE",
+        "damage": [
+          31,
+          35
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "充电",
+        "id": "RECHARGE_MOVE",
+        "type": "sleep"
+      }
+    ],
+    "ai_pattern": "瞄准→精准光束→充能→激光炮→充电→瞄准循环。开场SurroundedPower+BackAttackRightPower+CrabRagePower。"
+  },
+  "CeremonialBeastBoss": {
+    "name_cn": "仪典兽",
+    "type": "Boss",
+    "act": "Overgrowth",
+    "hp": {
+      "normal": [
+        252,
+        252
+      ],
+      "ascension": [
+        262,
+        262
+      ]
+    },
+    "moves": [
+      {
+        "name": "印记",
+        "id": "STAMP_MOVE",
+        "type": "buff",
+        "effects": [
+          "获得PlowPower(犁地: 150/160层护盾)"
+        ]
+      },
+      {
+        "name": "犁地冲锋",
+        "id": "PLOW_MOVE",
+        "damage": [
+          18,
+          20
+        ],
+        "type": "single_attack+buff",
+        "effects": [
+          "每次攻击+2力量"
+        ]
+      },
+      {
+        "name": "眩晕",
+        "id": "STUN_MOVE",
+        "type": "stun",
+        "effects": [
+          "PlowPower耗尽时外部触发眩晕"
+        ]
+      },
+      {
+        "name": "兽鸣",
+        "id": "BEAST_CRY_MOVE",
+        "type": "debuff",
+        "effects": [
+          "施加Ringing(鸣响)1层"
+        ]
+      },
+      {
+        "name": "踩踏",
+        "id": "STOMP_MOVE",
+        "damage": [
+          15,
+          17
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "碾压",
+        "id": "CRUSH_MOVE",
+        "damage": [
+          17,
+          19
+        ],
+        "type": "single_attack+buff",
+        "effects": [
+          "自身+3/4力量"
+        ]
+      }
+    ],
+    "ai_pattern": "印记(获得150/160层PlowPower)→犁地冲锋(循环: 冲→冲→冲直到PlowPower耗尽)→眩晕(PlowPower=0时触发)→兽鸣(Ringing)→踩踏→碾压→兽鸣→踩踏→碾压循环。",
+    "key_mechanics": [
+      "PlowPower(150/160层): 受伤害时消耗，相当于超大护盾。耗尽后beast被眩晕一回合",
+      "犁地冲锋每次+2力量，冲锋自循环直到PlowPower耗尽",
+      "耗尽PlowPower是关键: 之后beast进入高频攻击+debuff阶段",
+      "碾压每次+3/4力量，越来越危险",
+      "兽鸣Ringing debuff效果"
+    ],
+    "danger_moves": [
+      {
+        "name": "犁地冲锋阶段",
+        "effect": "每回合18/20伤且力量持续增长",
+        "counter": "用护甲/格挡扛过，专注打穿150/160层PlowPower"
+      },
+      {
+        "name": "碾压",
+        "effect": "17/19伤+3/4力量",
+        "counter": "眩晕后进入攻击阶段需持续高格挡"
+      }
+    ]
+  },
+  "TheKinBoss": {
+    "name_cn": "亲族",
+    "type": "Boss",
+    "act": "Overgrowth",
+    "encounter": [
+      "KinPriest(祭司)",
+      "KinFollower×3(随从)"
+    ],
+    "components": {
+      "KinPriest": {
+        "name_cn": "亲族祭司",
+        "hp": {
+          "normal": [
+            190,
+            190
+          ],
+          "ascension": [
+            199,
+            199
+          ]
+        },
+        "moves": [
+          {
+            "name": "脆弱球",
+            "id": "ORB_OF_FRAILTY_MOVE",
+            "damage": [
+              8,
+              9
+            ],
+            "type": "single_attack+debuff",
+            "effects": [
+              "1层脆弱"
+            ]
+          },
+          {
+            "name": "虚弱球",
+            "id": "ORB_OF_WEAKNESS_MOVE",
+            "damage": [
+              8,
+              9
+            ],
+            "type": "single_attack+debuff",
+            "effects": [
+              "1层虚弱"
+            ]
+          },
+          {
+            "name": "光束",
+            "id": "BEAM_MOVE",
+            "damage": [
+              3,
+              3
+            ],
+            "hits": [
+              3,
+              3
+            ],
+            "type": "multi_attack"
+          },
+          {
+            "name": "仪式",
+            "id": "RITUAL_MOVE",
+            "type": "buff",
+            "effects": [
+              "自身+2/3力量"
+            ]
+          }
+        ],
+        "ai_pattern": "脆弱球→虚弱球→光束(3连)→仪式(力量)→脆弱球循环。"
+      },
+      "KinFollower": {
+        "name_cn": "亲族随从",
+        "hp": {
+          "normal": [
+            58,
+            59
+          ],
+          "ascension": [
+            62,
+            63
+          ]
+        },
+        "moves": [
+          {
+            "name": "快斩",
+            "id": "QUICK_SLASH_MOVE",
+            "damage": [
+              5,
+              5
+            ],
+            "type": "single_attack"
+          },
+          {
+            "name": "飞刃",
+            "id": "BOOMERANG_MOVE",
+            "damage": [
+              2,
+              2
+            ],
+            "hits": [
+              2,
+              2
+            ],
+            "type": "multi_attack"
+          },
+          {
+            "name": "力量舞",
+            "id": "POWER_DANCE_MOVE",
+            "type": "buff",
+            "effects": [
+              "自身+2/3力量"
+            ]
+          }
+        ],
+        "ai_pattern": "快斩→飞刃→力量舞→快斩循环(部分随从从力量舞开始)。有MinionPower(随从)。随从死亡后祭司响应。"
+      }
+    },
+    "key_mechanics": [
+      "祭司持续叠加脆弱+虚弱双debuff，使玩家攻防全面受损",
+      "3只随从合计伤害不低，且都有力量buff",
+      "随从全部死亡后祭司有特殊响应(说话/行为改变)",
+      "优先击杀随从减轻持续伤害，再集中祭司"
+    ],
+    "danger_moves": [
+      {
+        "name": "debuff叠加(祭司)",
+        "effect": "每轮脆弱+虚弱双叠加，效果持久",
+        "counter": "净化debuff或快速结束战斗"
+      },
+      {
+        "name": "仪式(祭司力量)",
+        "effect": "力量持续增长使光束越来越强",
+        "counter": "在仪式多次前击杀祭司"
+      }
+    ]
+  },
+  "KinPriest": {
+    "name_cn": "亲族祭司",
+    "type": "Boss组件(TheKin)",
+    "act": "Overgrowth",
+    "hp": {
+      "normal": [
+        190,
+        190
+      ],
+      "ascension": [
+        199,
+        199
+      ]
+    },
+    "moves": [
+      {
+        "name": "脆弱球",
+        "id": "ORB_OF_FRAILTY_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "type": "single_attack+debuff",
+        "effects": [
+          "1层脆弱"
+        ]
+      },
+      {
+        "name": "虚弱球",
+        "id": "ORB_OF_WEAKNESS_MOVE",
+        "damage": [
+          8,
+          9
+        ],
+        "type": "single_attack+debuff",
+        "effects": [
+          "1层虚弱"
+        ]
+      },
+      {
+        "name": "光束",
+        "id": "BEAM_MOVE",
+        "damage": [
+          3,
+          3
+        ],
+        "hits": [
+          3,
+          3
+        ],
+        "type": "multi_attack"
+      },
+      {
+        "name": "仪式",
+        "id": "RITUAL_MOVE",
+        "type": "buff",
+        "effects": [
+          "自身+2/3力量"
+        ]
+      }
+    ],
+    "ai_pattern": "脆弱球→虚弱球→光束(3连)→仪式→脆弱球循环。固定4招循环。"
+  },
+  "KinFollower": {
+    "name_cn": "亲族随从",
+    "type": "Boss随从(TheKin)",
+    "act": "Overgrowth",
+    "hp": {
+      "normal": [
+        58,
+        59
+      ],
+      "ascension": [
+        62,
+        63
+      ]
+    },
+    "moves": [
+      {
+        "name": "快斩",
+        "id": "QUICK_SLASH_MOVE",
+        "damage": [
+          5,
+          5
+        ],
+        "type": "single_attack"
+      },
+      {
+        "name": "飞刃",
+        "id": "BOOMERANG_MOVE",
+        "damage": [
+          2,
+          2
+        ],
+        "hits": [
+          2,
+          2
+        ],
+        "type": "multi_attack"
+      },
+      {
+        "name": "力量舞",
+        "id": "POWER_DANCE_MOVE",
+        "type": "buff",
+        "effects": [
+          "自身+2/3力量"
+        ]
+      }
+    ],
+    "ai_pattern": "快斩→飞刃→力量舞→快斩循环。部分随从(StartsWithDance)从力量舞开始。MinionPower(随从)。"
+  },
+  "Flyconid": {
+    "name_cn": "飞孢虫",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        47,
+        49
+      ],
+      "ascension": [
+        51,
+        53
+      ]
+    },
+    "moves": [
+      {
+        "id": "VULNERABLE_SPORES_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Debuff",
+        "effects": [
+          "施加2层易伤"
+        ]
+      },
+      {
+        "id": "FRAIL_SPORES_MOVE",
+        "damage": 8,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack+Debuff",
+        "effects": [
+          "攻击+施加2层脆弱"
+        ],
+        "damage_asc": 9
+      },
+      {
+        "id": "SMASH_MOVE",
+        "damage": 11,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 12
+      }
+    ],
+    "ai_pattern": "首回合随机Frail孢子(权重2)或重击。之后随机：易伤孢子(权重3)、脆弱孢子(权重2)、重击(权重1)，不重复上一招。"
+  },
+  "FuzzyWurm": {
+    "name_cn": "毛虫爬行者",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        55,
+        57
+      ],
+      "ascension": [
+        58,
+        59
+      ]
+    },
+    "moves": [
+      {
+        "id": "ACID_GOOP",
+        "damage": 4,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 6
+      },
+      {
+        "id": "INHALE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Buff",
+        "effects": [
+          "自身+7力量"
+        ]
+      }
+    ],
+    "ai_pattern": "酸液攻击→吸气(+7力量)→酸液→吸气循环"
+  },
+  "Inklets": {
+    "name_cn": "墨精灵",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        11,
+        17
+      ],
+      "ascension": [
+        12,
+        18
+      ]
+    },
+    "moves": [
+      {
+        "id": "JAB_MOVE",
+        "damage": 3,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 4
+      },
+      {
+        "id": "WHIRLWIND_MOVE",
+        "damage": 2,
+        "hits": 3,
+        "block": 0,
+        "intent": "MultiAttack",
+        "effects": [
+          "3次攻击"
+        ],
+        "damage_asc": 3
+      },
+      {
+        "id": "PIERCING_GAZE_MOVE",
+        "damage": 10,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 11
+      }
+    ],
+    "ai_pattern": "群怪遭遇(3只)。自带Slippery(1层)。首回合随机戳或旋风。之后交替：穿刺凝视/旋风→戳→穿刺凝视/旋风循环。",
+    "special": "群怪遭遇，模拟器用单体最高HP。自带滑溜被动。"
+  },
+  "Nibbits": {
+    "name_cn": "尼比特",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        42,
+        46
+      ],
+      "ascension": [
+        44,
+        48
+      ]
+    },
+    "moves": [
+      {
+        "id": "BUTT_MOVE",
+        "damage": 12,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 13
+      },
+      {
+        "id": "SLICE_MOVE",
+        "damage": 6,
+        "hits": 1,
+        "block": 5,
+        "intent": "SingleAttack+Defend",
+        "effects": [
+          "攻击+获得5格挡"
+        ]
+      },
+      {
+        "id": "HISS_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Buff",
+        "effects": [
+          "自身+2力量"
+        ]
+      }
+    ],
+    "ai_pattern": "群怪遭遇(2只)。前排：切割→嘶吼→撞击→切割循环。后排：嘶吼→撞击→切割→嘶吼循环。"
+  },
+  "OvergrowthCrawlers": {
+    "name_cn": "丛生爬虫",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        55,
+        57
+      ],
+      "ascension": [
+        58,
+        59
+      ]
+    },
+    "moves": [
+      {
+        "id": "ACID_GOOP",
+        "damage": 4,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 6
+      },
+      {
+        "id": "INHALE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Buff",
+        "effects": [
+          "自身+7力量"
+        ]
+      },
+      {
+        "id": "SHRINKER_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Debuff",
+        "effects": [
+          "施加缩小(Shrink)"
+        ]
+      },
+      {
+        "id": "CHOMP_MOVE",
+        "damage": 7,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 8
+      },
+      {
+        "id": "STOMP_MOVE",
+        "damage": 13,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 14
+      }
+    ],
+    "ai_pattern": "遭遇包含ShrinkerBeetle+FuzzyWurmCrawler。模拟器用FuzzyWurm数据(HP更高)。甲虫：缩小→咀嚼→踩踏循环。毛虫：酸液→吸气→酸液循环。",
+    "special": "双怪遭遇，用HP最高的FuzzyWurmCrawler数据"
+  },
+  "RubyRaiders": {
+    "name_cn": "红宝石劫匪",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        30,
+        33
+      ],
+      "ascension": [
+        31,
+        34
+      ]
+    },
+    "moves": [
+      {
+        "id": "SWING_MOVE",
+        "damage": 5,
+        "hits": 1,
+        "block": 5,
+        "intent": "SingleAttack+Defend",
+        "effects": [
+          "攻击+格挡"
+        ],
+        "damage_asc": 6
+      },
+      {
+        "id": "BIG_SWING",
+        "damage": 12,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 13
+      },
+      {
+        "id": "KILLSHOT_MOVE",
+        "damage": 11,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 12
+      },
+      {
+        "id": "BEAT_MOVE",
+        "damage": 7,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 8
+      },
+      {
+        "id": "ROAR_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Buff",
+        "effects": [
+          "自身+3力量"
+        ]
+      }
+    ],
+    "ai_pattern": "群怪遭遇(3个随机劫匪)。取BruteRubyRaider(HP最高30-33/31-34)。劫匪类型混合：斧手(挥砍+格挡→大挥砍循环)、刺客(连续暗杀)、蛮力(殴打→咆哮循环)、弩手(装填→射击循环,射击14/16)、追踪者(追踪施脆弱→猎犬1x8/9多段)。",
+    "special": "3个随机劫匪，最强CrossbowRubyRaider射击14/16"
+  },
+  "ShrinkerBeetle": {
+    "name_cn": "缩小甲虫",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        38,
+        40
+      ],
+      "ascension": [
+        40,
+        42
+      ]
+    },
+    "moves": [
+      {
+        "id": "SHRINKER_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Debuff",
+        "effects": [
+          "施加缩小(Shrink)永久debuff"
+        ]
+      },
+      {
+        "id": "CHOMP_MOVE",
+        "damage": 7,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 8
+      },
+      {
+        "id": "STOMP_MOVE",
+        "damage": 13,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 14
+      }
+    ],
+    "ai_pattern": "缩小→咀嚼→踩踏→咀嚼→踩踏循环"
+  },
+  "Slimes": {
+    "name_cn": "史莱姆群",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        32,
+        35
+      ],
+      "ascension": [
+        33,
+        36
+      ]
+    },
+    "moves": [
+      {
+        "id": "CLUMP_SHOT",
+        "damage": 8,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 9
+      },
+      {
+        "id": "STICKY_SHOT",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Status",
+        "effects": [
+          "往弃牌堆加2张Slimed"
+        ]
+      },
+      {
+        "id": "CLUMP_SHOT_MOVE",
+        "damage": 11,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 12
+      },
+      {
+        "id": "STICKY_SHOT_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Status",
+        "effects": [
+          "往弃牌堆加1张Slimed"
+        ]
+      }
+    ],
+    "ai_pattern": "4只史莱姆(2M+2S)。用LeafSlimeM(HP最高32-35/33-36)。LeafSlimeM:黏液射击→团块射击交替。TwigSlimeM:随机(团块11/12权重2,黏液不重复)。小史莱姆只撞击。",
+    "special": "群怪遭遇，用HP最高的LeafSlimeM数据"
+  },
+  "SlitheringStrangler": {
+    "name_cn": "蜿蜒绞杀者",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        53,
+        55
+      ],
+      "ascension": [
+        54,
+        56
+      ]
+    },
+    "moves": [
+      {
+        "id": "CONSTRICT",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Debuff",
+        "effects": [
+          "施加3层绞缠(Constrict)，回合结束受3伤"
+        ]
+      },
+      {
+        "id": "TWACK",
+        "damage": 7,
+        "hits": 1,
+        "block": 5,
+        "intent": "SingleAttack+Defend",
+        "effects": [
+          "攻击+5格挡"
+        ],
+        "damage_asc": 8
+      },
+      {
+        "id": "LASH",
+        "damage": 12,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 13
+      }
+    ],
+    "ai_pattern": "绞缠→随机(拍击+格挡 或 鞭打)→绞缠→随机循环"
+  },
+  "SnappingJaxfruit": {
+    "name_cn": "咬合果",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        31,
+        33
+      ],
+      "ascension": [
+        34,
+        36
+      ]
+    },
+    "moves": [
+      {
+        "id": "ENERGY_ORB_MOVE",
+        "damage": 3,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack+Buff",
+        "effects": [
+          "攻击+自身+2力量"
+        ],
+        "damage_asc": 4
+      }
+    ],
+    "ai_pattern": "每回合：能量球攻击(3/4伤害)+自身+2力量。伤害每回合递增。"
+  },
+  "Bowlbugs": {
+    "name_cn": "碗虫群",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        45,
+        48
+      ],
+      "ascension": [
+        46,
+        49
+      ]
+    },
+    "moves": [
+      {
+        "id": "HEADBUTT_MOVE",
+        "damage": 15,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [
+          "自带Imbalanced(头撞后眩晕)"
+        ],
+        "damage_asc": 16
+      },
+      {
+        "id": "DIZZY_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Stun",
+        "effects": [
+          "眩晕(跳过回合)"
+        ]
+      },
+      {
+        "id": "BITE_MOVE",
+        "damage": 7,
+        "hits": 1,
+        "block": 7,
+        "intent": "SingleAttack+Defend",
+        "effects": [
+          "攻击+格挡"
+        ],
+        "damage_asc": 8
+      },
+      {
+        "id": "THRASH_MOVE",
+        "damage": 4,
+        "hits": 2,
+        "block": 0,
+        "intent": "MultiAttack",
+        "effects": [
+          "2次攻击"
+        ],
+        "damage_asc": 5
+      },
+      {
+        "id": "TOXIC_SPIT_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Debuff",
+        "effects": [
+          "施加1层虚弱"
+        ]
+      }
+    ],
+    "ai_pattern": "遭遇含BowlbugRock(领队)+2随机工蜂。用BowlbugRock(HP最高45-48/46-49)。Rock:自带Imbalanced→头撞→眩晕→头撞循环。工蜂各有分工：Egg咬+格挡,Silk拍2次+毒吐施弱,Nectar拍+buff力量(15/16)。",
+    "special": "群怪遭遇，用HP最高的BowlbugRock数据"
+  },
+  "Exoskeletons": {
+    "name_cn": "外骨骼虫群",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        24,
+        28
+      ],
+      "ascension": [
+        25,
+        29
+      ]
+    },
+    "moves": [
+      {
+        "id": "SKITTER_MOVE",
+        "damage": 1,
+        "hits": 3,
+        "block": 0,
+        "intent": "MultiAttack",
+        "effects": [
+          "3次攻击(进阶4次)"
+        ],
+        "damage_asc": 1,
+        "hits_asc": 4
+      },
+      {
+        "id": "MANDIBLE_MOVE",
+        "damage": 8,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 9
+      },
+      {
+        "id": "ENRAGE_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Buff",
+        "effects": [
+          "自身+2力量"
+        ]
+      }
+    ],
+    "ai_pattern": "4只外骨骼(各自不同起始招)。自带HardToKill(9层,HP≤9不会被一击打死)。各虫交替：急行多段/下颚咬/激怒+2力量。",
+    "special": "群怪遭遇(4只)，自带HardToKill(9)"
+  },
+  "Mytes": {
+    "name_cn": "螨虫",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        61,
+        67
+      ],
+      "ascension": [
+        64,
+        69
+      ]
+    },
+    "moves": [
+      {
+        "id": "TOXIC_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Status",
+        "effects": [
+          "往手牌加2张Toxic"
+        ]
+      },
+      {
+        "id": "BITE_MOVE",
+        "damage": 13,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 15
+      },
+      {
+        "id": "SUCK_MOVE",
+        "damage": 4,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack+Buff",
+        "effects": [
+          "攻击+自身+2力量(进阶+3)"
+        ],
+        "damage_asc": 6
+      }
+    ],
+    "ai_pattern": "2只螨虫。毒液→噬咬→吸血(+2/3力量)→毒液循环。"
+  },
+  "Ovicopter": {
+    "name_cn": "产卵飞行器",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        124,
+        130
+      ],
+      "ascension": [
+        126,
+        132
+      ]
+    },
+    "moves": [
+      {
+        "id": "LAY_EGGS_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Summon",
+        "effects": [
+          "召唤3个ToughEgg"
+        ]
+      },
+      {
+        "id": "SMASH_MOVE",
+        "damage": 16,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 17
+      },
+      {
+        "id": "TENDERIZER_MOVE",
+        "damage": 7,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack+Debuff",
+        "effects": [
+          "攻击+施加2层易伤"
+        ],
+        "damage_asc": 8
+      },
+      {
+        "id": "NUTRITIONAL_PASTE_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Buff",
+        "effects": [
+          "自身+3力量(进阶+4)，当队友满时代替产卵"
+        ]
+      }
+    ],
+    "ai_pattern": "产卵→重击→软化(+2易伤)→如果能产卵则产卵否则营养糊(+3/4力量)→重击→软化循环"
+  },
+  "SlumberingBeetle": {
+    "name_cn": "沉睡甲虫",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        86,
+        86
+      ],
+      "ascension": [
+        89,
+        89
+      ]
+    },
+    "moves": [
+      {
+        "id": "SNORE_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Sleep",
+        "effects": [
+          "睡眠中(不行动)"
+        ]
+      },
+      {
+        "id": "ROLL_OUT_MOVE",
+        "damage": 16,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack+Buff",
+        "effects": [
+          "攻击+自身+2力量"
+        ],
+        "damage_asc": 18
+      }
+    ],
+    "ai_pattern": "自带Plating(15/18层)和Slumber(3层,受击-1,到0时觉醒)。沉睡中打鼾不行动。觉醒后：翻滚攻击(16/18)+2力量循环。被唤醒时失去Plating。",
+    "special": "自带Plating(15/18护甲)和Slumber(3层)，被打3次后觉醒"
+  },
+  "ThievingHopper": {
+    "name_cn": "窃贼跳虫",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        79,
+        79
+      ],
+      "ascension": [
+        84,
+        84
+      ]
+    },
+    "moves": [
+      {
+        "id": "THIEVERY_MOVE",
+        "damage": 17,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack+CardDebuff",
+        "effects": [
+          "攻击+偷取1张牌"
+        ],
+        "damage_asc": 19
+      },
+      {
+        "id": "FLUTTER_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Buff",
+        "effects": [
+          "进入飞行状态+Flutter(5层闪避)"
+        ]
+      },
+      {
+        "id": "HAT_TRICK_MOVE",
+        "damage": 21,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 23
+      },
+      {
+        "id": "NAB_MOVE",
+        "damage": 14,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 16
+      },
+      {
+        "id": "ESCAPE_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Escape",
+        "effects": [
+          "逃跑(带走偷的牌)"
+        ]
+      }
+    ],
+    "ai_pattern": "自带EscapeArtist(5层)。偷窃(17/19+偷牌)→飞起(Flutter+5闪避)→帽子戏法(21/23)→抓取(14/16)→逃跑。5回合内击杀否则逃跑。",
+    "special": "会偷牌然后逃跑，需要快速击杀"
+  },
+  "Axebots": {
+    "name_cn": "斧机器人",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        40,
+        44
+      ],
+      "ascension": [
+        42,
+        46
+      ]
+    },
+    "moves": [
+      {
+        "id": "BOOT_UP_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 10,
+        "intent": "Defend+Buff",
+        "effects": [
+          "10格挡+1力量"
+        ]
+      },
+      {
+        "id": "ONE_TWO_MOVE",
+        "damage": 5,
+        "hits": 2,
+        "block": 0,
+        "intent": "MultiAttack",
+        "effects": [
+          "2次攻击"
+        ],
+        "damage_asc": 6
+      },
+      {
+        "id": "SHARPEN_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Buff",
+        "effects": [
+          "自身+4力量"
+        ]
+      },
+      {
+        "id": "HAMMER_UPPERCUT_MOVE",
+        "damage": 8,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack+Debuff",
+        "effects": [
+          "攻击+施加1层虚弱+1层脆弱"
+        ],
+        "damage_asc": 10
+      }
+    ],
+    "ai_pattern": "2只斧机器人。自带Stock(2层,死后可复活)。随机选择：一二连击(权重2)、磨刀(+4力量,不重复)、上勾拳(+弱+脆弱,权重2)。",
+    "special": "群怪遭遇(2只)，自带Stock(2层复活)"
+  },
+  "ConstructMenagerie": {
+    "name_cn": "构造体动物园",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        65,
+        65
+      ],
+      "ascension": [
+        70,
+        70
+      ]
+    },
+    "moves": [
+      {
+        "id": "CHARGE_UP_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Buff",
+        "effects": [
+          "自身+2力量"
+        ]
+      },
+      {
+        "id": "REPEATER_MOVE",
+        "damage": 7,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack+Buff",
+        "effects": [
+          "攻击+自身+2力量"
+        ],
+        "damage_asc": 8
+      },
+      {
+        "id": "EXPEL_BLAST",
+        "damage": 5,
+        "hits": 2,
+        "block": 0,
+        "intent": "MultiAttack",
+        "effects": [
+          "2次攻击"
+        ],
+        "damage_asc": 6
+      },
+      {
+        "id": "SUBMERGE_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 15,
+        "intent": "Defend",
+        "effects": [
+          "15格挡"
+        ]
+      },
+      {
+        "id": "STRONG_PUNCH_MOVE",
+        "damage": 14,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 16
+      },
+      {
+        "id": "FAST_PUNCH_MOVE",
+        "damage": 5,
+        "hits": 2,
+        "block": 0,
+        "intent": "MultiAttack+Debuff",
+        "effects": [
+          "2次攻击+1层虚弱"
+        ],
+        "damage_asc": 6
+      },
+      {
+        "id": "READY_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 10,
+        "intent": "Defend",
+        "effects": [
+          "10格挡"
+        ]
+      }
+    ],
+    "ai_pattern": "1xPunchConstruct+2xCubexConstruct。用CubexConstruct(HP最高65/70)。Cubex：充能(+2str)→连射(+2str)→连射→排斥2段→潜行(15block)→循环。Punch：准备(10block)→重拳(14/16)→快拳x2(+弱)→重拳循环。",
+    "special": "群怪遭遇，用HP最高的CubexConstruct数据。自带1层Artifact。"
+  },
+  "DevotedSculptor": {
+    "name_cn": "虔诚雕刻者",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        162,
+        162
+      ],
+      "ascension": [
+        172,
+        172
+      ]
+    },
+    "moves": [
+      {
+        "id": "FORBIDDEN_INCANTATION_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Buff",
+        "effects": [
+          "获得Ritual(9)，每回合+9力量"
+        ]
+      },
+      {
+        "id": "SAVAGE_MOVE",
+        "damage": 12,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 15
+      }
+    ],
+    "ai_pattern": "首回合：禁忌咏唱(获得Ritual 9，每回合永久+9力量)。之后每回合：野蛮攻击(12/15+累积力量)。需要速杀。"
+  },
+  "GlobeHead": {
+    "name_cn": "球头怪",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        148,
+        148
+      ],
+      "ascension": [
+        158,
+        158
+      ]
+    },
+    "moves": [
+      {
+        "id": "SHOCKING_SLAP",
+        "damage": 13,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack+Debuff",
+        "effects": [
+          "攻击+施加2层脆弱"
+        ],
+        "damage_asc": 14
+      },
+      {
+        "id": "THUNDER_STRIKE",
+        "damage": 6,
+        "hits": 3,
+        "block": 0,
+        "intent": "MultiAttack",
+        "effects": [
+          "3次攻击"
+        ],
+        "damage_asc": 7
+      },
+      {
+        "id": "GALVANIC_BURST",
+        "damage": 16,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack+Buff",
+        "effects": [
+          "攻击+自身+2力量"
+        ],
+        "damage_asc": 17
+      }
+    ],
+    "ai_pattern": "自带Galvanic(6层)。电击掌(+2脆弱)→雷击3连→电爆(+2str)→电击掌→雷击3连→电爆循环。",
+    "special": "自带Galvanic(6层)被动"
+  },
+  "ScrollsOfBiting": {
+    "name_cn": "噬咬卷轴群",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        31,
+        38
+      ],
+      "ascension": [
+        32,
+        39
+      ]
+    },
+    "moves": [
+      {
+        "id": "CHOMP",
+        "damage": 14,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 16
+      },
+      {
+        "id": "CHEW",
+        "damage": 5,
+        "hits": 2,
+        "block": 0,
+        "intent": "MultiAttack",
+        "effects": [
+          "2次攻击"
+        ],
+        "damage_asc": 6
+      },
+      {
+        "id": "MORE_TEETH",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Buff",
+        "effects": [
+          "自身+2力量"
+        ]
+      }
+    ],
+    "ai_pattern": "4只卷轴。自带PaperCuts(2层)。各卷轴不同起始招式轮转：咬碎(14/16)→长牙(+2str)→咀嚼x2→随机(咬碎或咀嚼x2)循环。",
+    "special": "群怪遭遇(4只)，自带PaperCuts(2层)"
+  },
+  "TheLostAndForgotten": {
+    "name_cn": "失落与被遗忘者",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        106,
+        106
+      ],
+      "ascension": [
+        111,
+        111
+      ]
+    },
+    "moves": [
+      {
+        "id": "DEBILITATING_SMOG",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Debuff+Buff",
+        "effects": [
+          "对玩家-2力量，自身+2力量"
+        ]
+      },
+      {
+        "id": "EYE_LASERS",
+        "damage": 4,
+        "hits": 2,
+        "block": 0,
+        "intent": "MultiAttack",
+        "effects": [
+          "2次攻击"
+        ],
+        "damage_asc": 5
+      },
+      {
+        "id": "MIASMA",
+        "damage": 0,
+        "hits": 0,
+        "block": 8,
+        "intent": "Debuff+Defend+Buff",
+        "effects": [
+          "对玩家-2敏捷，自身+2敏捷+8格挡"
+        ]
+      },
+      {
+        "id": "DREAD",
+        "damage": 15,
+        "hits": 1,
+        "block": 0,
+        "intent": "SingleAttack",
+        "effects": [],
+        "damage_asc": 17
+      }
+    ],
+    "ai_pattern": "遭遇含TheLost+TheForgotten。用TheForgotten(HP最高106/111)。Lost:自带PossessStrength→迷雾(-2str/+2str)→眼激光x2循环。Forgotten:自带PossessSpeed→瘴气(-2dex/+2dex+8block)→恐惧(15/17)循环。",
+    "special": "双怪遭遇，用HP最高的TheForgotten数据"
+  },
+  "TurretOperator": {
+    "name_cn": "炮塔操作员",
+    "type": "普通怪",
+    "hp": {
+      "normal": [
+        41,
+        41
+      ],
+      "ascension": [
+        51,
+        51
+      ]
+    },
+    "moves": [
+      {
+        "id": "UNLOAD_MOVE",
+        "damage": 3,
+        "hits": 5,
+        "block": 0,
+        "intent": "MultiAttack",
+        "effects": [
+          "5次攻击"
+        ],
+        "damage_asc": 4
+      },
+      {
+        "id": "RELOAD_MOVE",
+        "damage": 0,
+        "hits": 0,
+        "block": 0,
+        "intent": "Buff",
+        "effects": [
+          "自身+1力量"
+        ]
+      }
+    ],
+    "ai_pattern": "扫射x5(3/4伤害)→扫射x5→装填(+1力量)→扫射x5→扫射x5→装填循环"
+  }
+}

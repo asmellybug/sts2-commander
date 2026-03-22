@@ -1,0 +1,4598 @@
+{
+  "无色": [
+    {
+      "id": "Alchemize",
+      "name": "炼制药水",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Anointed",
+      "name": "天选",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Automation",
+      "name": "自动化",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "BeaconOfHope",
+      "name": "希望灯塔",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "BeatDown",
+      "name": "狠揍",
+      "cost": 3,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "BelieveInYou",
+      "name": "相信着你",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Bolas",
+      "name": "流星锤",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 3
+    },
+    {
+      "id": "Calamity",
+      "name": "灾祸",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Catastrophe",
+      "name": "横祸",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Coordinate",
+      "name": "协同配合",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Strength",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "DarkShackles",
+      "name": "黑暗镣铐",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Discovery",
+      "name": "发现",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "DramaticEntrance",
+      "name": "闪亮登场",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 11
+    },
+    {
+      "id": "Entropy",
+      "name": "熵",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Equilibrium",
+      "name": "均衡",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 13
+    },
+    {
+      "id": "EternalArmor",
+      "name": "永恒铠甲",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Plating",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "Fasten",
+      "name": "勒紧",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Finesse",
+      "name": "妙计",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 4
+    },
+    {
+      "id": "Fisticuffs",
+      "name": "拳斗",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 7
+    },
+    {
+      "id": "FlashOfSteel",
+      "name": "亮剑",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 5
+    },
+    {
+      "id": "GangUp",
+      "name": "群起攻之",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 5
+    },
+    {
+      "id": "GoldAxe",
+      "name": "金斧",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 1
+    },
+    {
+      "id": "HandOfGreed",
+      "name": "贪婪之手",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 20
+    },
+    {
+      "id": "HiddenGem",
+      "name": "未掘宝石",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "HuddleUp",
+      "name": "抱团",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Impatience",
+      "name": "急躁",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Intercept",
+      "name": "拦截",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 9
+    },
+    {
+      "id": "JackOfAllTrades",
+      "name": "花样百出",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Jackpot",
+      "name": "大奖",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 25
+    },
+    {
+      "id": "Knockdown",
+      "name": "击倒",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 10,
+      "powers": [
+        {
+          "type": "Knockdown",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "Lift",
+      "name": "托举",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 11
+    },
+    {
+      "id": "MasterOfStrategy",
+      "name": "战略大师",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Mayhem",
+      "name": "乱战",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Mimic",
+      "name": "拟态",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "MindBlast",
+      "name": "心灵震慑",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 1
+    },
+    {
+      "id": "Nostalgia",
+      "name": "怀旧",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Omnislice",
+      "name": "万向斩",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 8
+    },
+    {
+      "id": "Panache",
+      "name": "神气制胜",
+      "cost": 0,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "PanicButton",
+      "name": "应急按钮",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 30
+    },
+    {
+      "id": "PrepTime",
+      "name": "准备时间",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "PrepTime",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "Production",
+      "name": "生产制造",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Prolong",
+      "name": "延伸",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Prowess",
+      "name": "非凡技艺",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Strength",
+          "amount": 1
+        },
+        {
+          "type": "Dexterity",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Purity",
+      "name": "净化",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Rally",
+      "name": "集结",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "罕见",
+      "block": 12
+    },
+    {
+      "id": "Rend",
+      "name": "撕碎",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 5
+    },
+    {
+      "id": "Restlessness",
+      "name": "心神不宁",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "RollingBoulder",
+      "name": "滚石",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "RollingBoulder",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "Salvo",
+      "name": "箭雨",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 12
+    },
+    {
+      "id": "Scrawl",
+      "name": "潦草急就",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "SecretTechnique",
+      "name": "秘密技法",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "SecretWeapon",
+      "name": "秘密武器",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "SeekerStrike",
+      "name": "探寻打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 6
+    },
+    {
+      "id": "Shockwave",
+      "name": "震荡波",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Splash",
+      "name": "飞溅",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Stratagem",
+      "name": "计策",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "TagTeam",
+      "name": "双打组合",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 11
+    },
+    {
+      "id": "TheBomb",
+      "name": "炸弹",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "TheGambit",
+      "name": "孤注一掷",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见",
+      "block": 50
+    },
+    {
+      "id": "ThinkingAhead",
+      "name": "深谋远虑",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "ThrummingHatchet",
+      "name": "无休手斧",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 11
+    },
+    {
+      "id": "UltimateDefend",
+      "name": "究极防御",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 11
+    },
+    {
+      "id": "UltimateStrike",
+      "name": "究极打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 14
+    },
+    {
+      "id": "Volley",
+      "name": "连射",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 10
+    }
+  ],
+  "诅咒": [
+    {
+      "id": "AscendersBane",
+      "name": "进阶之灾",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "BadLuck",
+      "name": "霉运",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "Clumsy",
+      "name": "笨拙",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "CurseOfTheBell",
+      "name": "铃铛的诅咒",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "Debt",
+      "name": "债务",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "Decay",
+      "name": "腐朽",
+      "cost": null,
+      "type": "?",
+      "rarity": "?",
+      "damage": 2
+    },
+    {
+      "id": "Doubt",
+      "name": "疑虑",
+      "cost": null,
+      "type": "?",
+      "rarity": "?",
+      "powers": [
+        {
+          "type": "Weak",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Enthralled",
+      "name": "执迷",
+      "cost": 2,
+      "type": "诅咒",
+      "rarity": "诅咒"
+    },
+    {
+      "id": "Folly",
+      "name": "愚行",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "Greed",
+      "name": "贪婪",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "Guilty",
+      "name": "愧疚",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "Injury",
+      "name": "受伤",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "Normality",
+      "name": "凡庸",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "PoorSleep",
+      "name": "睡眠不佳",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "Regret",
+      "name": "悔恨",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "Shame",
+      "name": "羞耻",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "SporeMind",
+      "name": "孢子心灵",
+      "cost": 1,
+      "type": "诅咒",
+      "rarity": "诅咒"
+    },
+    {
+      "id": "Writhe",
+      "name": "苦恼",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    }
+  ],
+  "缺陷体": [
+    {
+      "id": "AdaptiveStrike",
+      "name": "适应打击",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 18
+    },
+    {
+      "id": "AllForOne",
+      "name": "万物一心",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 10
+    },
+    {
+      "id": "BallLightning",
+      "name": "球状闪电",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 7
+    },
+    {
+      "id": "Barrage",
+      "name": "弹幕齐射",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 5
+    },
+    {
+      "id": "BeamCell",
+      "name": "光束射线",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 3,
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "BiasedCognition",
+      "name": "偏差认知",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "CardRarity.Ancient",
+      "powers": [
+        {
+          "type": "Focus",
+          "amount": 4
+        },
+        {
+          "type": "BiasedCognition",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "BoostAway",
+      "name": "高速脱离",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 6
+    },
+    {
+      "id": "BootSequence",
+      "name": "启动流程",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 10
+    },
+    {
+      "id": "Buffer",
+      "name": "缓冲",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Buffer",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "BulkUp",
+      "name": "暴涨",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Strength",
+          "amount": 2
+        },
+        {
+          "type": "Dexterity",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "Capacitor",
+      "name": "扩容",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Chaos",
+      "name": "混沌",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "ChargeBattery",
+      "name": "充电",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 7
+    },
+    {
+      "id": "Chill",
+      "name": "冰寒",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Claw",
+      "name": "爪击",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 3
+    },
+    {
+      "id": "ColdSnap",
+      "name": "寒流",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 6
+    },
+    {
+      "id": "Compact",
+      "name": "压缩",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 6
+    },
+    {
+      "id": "CompileDriver",
+      "name": "编译冲击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 7
+    },
+    {
+      "id": "ConsumingShadow",
+      "name": "吞噬暗影",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "ConsumingShadow",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Coolant",
+      "name": "冷却剂",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Coolant",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "Coolheaded",
+      "name": "冷静头脑",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "CreativeAi",
+      "name": "创造性AI",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Darkness",
+      "name": "漆黑",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "DefendDefect",
+      "name": "防御",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "基础",
+      "block": 5
+    },
+    {
+      "id": "Defragment",
+      "name": "碎片整理",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Focus",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "DoubleEnergy",
+      "name": "双倍能量",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Dualcast",
+      "name": "双重释放",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "基础"
+    },
+    {
+      "id": "EchoForm",
+      "name": "回响形态",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "EnergySurge",
+      "name": "能量涌动",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Feral",
+      "name": "野性",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Feral",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "FightThrough",
+      "name": "强撑",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 13
+    },
+    {
+      "id": "FlakCannon",
+      "name": "散射炮",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 8
+    },
+    {
+      "id": "FocusedStrike",
+      "name": "集中打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 9,
+      "powers": [
+        {
+          "type": "Focus",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Ftl",
+      "name": "超越光速",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 5
+    },
+    {
+      "id": "Fusion",
+      "name": "聚变",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "GeneticAlgorithm",
+      "name": "遗传算法",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Glacier",
+      "name": "冰川",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 6
+    },
+    {
+      "id": "Glasswork",
+      "name": "玻璃工艺",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 5
+    },
+    {
+      "id": "GoForTheEyes",
+      "name": "眼部攻击",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 3,
+      "powers": [
+        {
+          "type": "Weak",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "GunkUp",
+      "name": "污秽攻击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 4
+    },
+    {
+      "id": "Hailstorm",
+      "name": "冰雹风暴",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Hailstorm",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "HelixDrill",
+      "name": "螺旋钻击",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 3
+    },
+    {
+      "id": "Hologram",
+      "name": "全息影像",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 3
+    },
+    {
+      "id": "Hotfix",
+      "name": "热修复",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "普通",
+      "powers": [
+        {
+          "type": "Focus",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "Hyperbeam",
+      "name": "超能光束",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 26,
+      "powers": [
+        {
+          "type": "Focus",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "IceLance",
+      "name": "冰之长枪",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 19
+    },
+    {
+      "id": "Ignition",
+      "name": "引火",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Iteration",
+      "name": "迭代",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Iteration",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "Leap",
+      "name": "飞跃",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 9
+    },
+    {
+      "id": "LightningRod",
+      "name": "引雷针",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 4,
+      "powers": [
+        {
+          "type": "LightningRod",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "Loop",
+      "name": "循环",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "MachineLearning",
+      "name": "机器学习",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "MeteorStrike",
+      "name": "陨石打击",
+      "cost": 5,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 24
+    },
+    {
+      "id": "Modded",
+      "name": "模组改造",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "MomentumStrike",
+      "name": "趁势打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 10
+    },
+    {
+      "id": "MultiCast",
+      "name": "多重释放",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Null",
+      "name": "空无",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 10,
+      "powers": [
+        {
+          "type": "Weak",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "Overclock",
+      "name": "超频",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Quadcast",
+      "name": "四重释放",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "CardRarity.Ancient"
+    },
+    {
+      "id": "Rainbow",
+      "name": "彩虹",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Reboot",
+      "name": "重启",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Refract",
+      "name": "折射",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 9
+    },
+    {
+      "id": "RocketPunch",
+      "name": "火箭飞拳",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 13
+    },
+    {
+      "id": "Scavenge",
+      "name": "再利用",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Scrape",
+      "name": "刮削",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 7
+    },
+    {
+      "id": "ShadowShield",
+      "name": "暗影之盾",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 11
+    },
+    {
+      "id": "Shatter",
+      "name": "打碎",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 11
+    },
+    {
+      "id": "SignalBoost",
+      "name": "信号增强",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "SignalBoost",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Skim",
+      "name": "快速检索",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Smokestack",
+      "name": "烟囱",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Smokestack",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "Spinner",
+      "name": "旋转工艺",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Spinner",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Storm",
+      "name": "雷暴",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Storm",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "StrikeDefect",
+      "name": "打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "基础",
+      "damage": 6
+    },
+    {
+      "id": "Subroutine",
+      "name": "子程序",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Sunder",
+      "name": "分离",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 24
+    },
+    {
+      "id": "Supercritical",
+      "name": "超临界态",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "SweepingBeam",
+      "name": "扫荡射线",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 6
+    },
+    {
+      "id": "Synchronize",
+      "name": "同步",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Synthesis",
+      "name": "人工合成",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 12
+    },
+    {
+      "id": "Tempest",
+      "name": "暴风雨",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "TeslaCoil",
+      "name": "特斯拉线圈",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 3
+    },
+    {
+      "id": "Thunder",
+      "name": "雷霆",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Thunder",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "TrashToTreasure",
+      "name": "化废为宝",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Turbo",
+      "name": "内核加速",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "Uproar",
+      "name": "骚动",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 5
+    },
+    {
+      "id": "Voltaic",
+      "name": "电流相生",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "WhiteNoise",
+      "name": "白噪音",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Zap",
+      "name": "电击",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "基础"
+    }
+  ],
+  "铁甲战士": [
+    {
+      "id": "Aggression",
+      "name": "好勇斗狠",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Anger",
+      "name": "愤怒",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 6
+    },
+    {
+      "id": "Armaments",
+      "name": "武装",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 5
+    },
+    {
+      "id": "AshenStrike",
+      "name": "灰烬打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 3
+    },
+    {
+      "id": "Barricade",
+      "name": "壁垒",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Bash",
+      "name": "痛击",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "基础",
+      "damage": 8,
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "BattleTrance",
+      "name": "战斗专注",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "BloodWall",
+      "name": "血墙",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 16
+    },
+    {
+      "id": "Bloodletting",
+      "name": "放血",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "Bludgeon",
+      "name": "重锤",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 32
+    },
+    {
+      "id": "BodySlam",
+      "name": "全身撞击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 1
+    },
+    {
+      "id": "Brand",
+      "name": "烙印",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Strength",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Break",
+      "name": "破击",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "CardRarity.Ancient",
+      "damage": 20,
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "Breakthrough",
+      "name": "突破",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 9
+    },
+    {
+      "id": "Bully",
+      "name": "欺凌",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 2
+    },
+    {
+      "id": "BurningPact",
+      "name": "燃烧契约",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Cascade",
+      "name": "倾泻",
+      "cost": null,
+      "type": "?",
+      "rarity": "?"
+    },
+    {
+      "id": "Cinder",
+      "name": "余烬",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 17
+    },
+    {
+      "id": "Colossus",
+      "name": "巨像",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见",
+      "block": 5
+    },
+    {
+      "id": "Conflagration",
+      "name": "焚烧",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 2
+    },
+    {
+      "id": "Corruption",
+      "name": "腐化",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "CardRarity.Ancient"
+    },
+    {
+      "id": "CrimsonMantle",
+      "name": "绯红披风",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "CrimsonMantle",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "id": "Cruelty",
+      "name": "残酷",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Cruelty",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": "DarkEmbrace",
+      "name": "黑暗之拥",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "DefendIronclad",
+      "name": "防御",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "基础",
+      "block": 5
+    },
+    {
+      "id": "DemonForm",
+      "name": "恶魔形态",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Strength",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "DemonicShield",
+      "name": "恶魔护盾",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Dismantle",
+      "name": "拆卸",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 8
+    },
+    {
+      "id": "Dominate",
+      "name": "主宰",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "DrumOfBattle",
+      "name": "战鼓",
+      "cost": 0,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "DrumOfBattle",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "EvilEye",
+      "name": "邪眼",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 8
+    },
+    {
+      "id": "ExpectAFight",
+      "name": "ExpectAFight",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Feed",
+      "name": "狂宴",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 10
+    },
+    {
+      "id": "FeelNoPain",
+      "name": "无惧疼痛",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "FiendFire",
+      "name": "恶魔之焰",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 7
+    },
+    {
+      "id": "FightMe",
+      "name": "与我一战！",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 5,
+      "powers": [
+        {
+          "type": "Strength",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "FlameBarrier",
+      "name": "火焰屏障",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 12
+    },
+    {
+      "id": "ForgottenRitual",
+      "name": "被遗忘的仪式",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Grapple",
+      "name": "擒拿",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 7,
+      "powers": [
+        {
+          "type": "Grapple",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "Havoc",
+      "name": "破灭",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "Headbutt",
+      "name": "头槌",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 9
+    },
+    {
+      "id": "Hellraiser",
+      "name": "地狱狂徒",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Hemokinesis",
+      "name": "御血术",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 14
+    },
+    {
+      "id": "HowlFromBeyond",
+      "name": "彼岸咆哮",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 16
+    },
+    {
+      "id": "Impervious",
+      "name": "岿然不动",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "罕见",
+      "block": 30
+    },
+    {
+      "id": "InfernalBlade",
+      "name": "地狱之刃",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Inferno",
+      "name": "狱火",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Inferno",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "Inflame",
+      "name": "燃烧",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Strength",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "IronWave",
+      "name": "铁斩波",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 5,
+      "block": 5
+    },
+    {
+      "id": "Juggernaut",
+      "name": "势不可当",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Juggernaut",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "Juggling",
+      "name": "杂耍",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Mangle",
+      "name": "凌虐",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 15
+    },
+    {
+      "id": "MoltenFist",
+      "name": "熔融之拳",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 10
+    },
+    {
+      "id": "Offering",
+      "name": "祭品",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "OneTwoPunch",
+      "name": "连环拳",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "PactsEnd",
+      "name": "契约终结",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 17
+    },
+    {
+      "id": "PerfectedStrike",
+      "name": "完美打击",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 2
+    },
+    {
+      "id": "Pillage",
+      "name": "劫掠",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 6
+    },
+    {
+      "id": "PommelStrike",
+      "name": "剑柄打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 9
+    },
+    {
+      "id": "PrimalForce",
+      "name": "原始力量",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Pyre",
+      "name": "薪火之源",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Rage",
+      "name": "狂怒",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Rampage",
+      "name": "暴走",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 9
+    },
+    {
+      "id": "Rupture",
+      "name": "撕裂",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Strength",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "SecondWind",
+      "name": "重振精神",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 5
+    },
+    {
+      "id": "SetupStrike",
+      "name": "预备打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 7,
+      "powers": [
+        {
+          "type": "Strength",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "ShrugItOff",
+      "name": "耸肩无视",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 8
+    },
+    {
+      "id": "Spite",
+      "name": "怨恨",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 6
+    },
+    {
+      "id": "Stampede",
+      "name": "惊逃",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Stoke",
+      "name": "添柴",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Stomp",
+      "name": "踩踏",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 12
+    },
+    {
+      "id": "StoneArmor",
+      "name": "岩石铠甲",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Plating",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "StrikeIronclad",
+      "name": "打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "基础",
+      "damage": 6
+    },
+    {
+      "id": "SwordBoomerang",
+      "name": "飞剑回旋镖",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 3
+    },
+    {
+      "id": "Tank",
+      "name": "肉盾",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Taunt",
+      "name": "挑衅",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 7,
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "TearAsunder",
+      "name": "扯碎",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 5
+    },
+    {
+      "id": "Thrash",
+      "name": "痛殴",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 4
+    },
+    {
+      "id": "Thunderclap",
+      "name": "闪电霹雳",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 4,
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Tremble",
+      "name": "战栗",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "TrueGrit",
+      "name": "坚毅",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 7
+    },
+    {
+      "id": "TwinStrike",
+      "name": "双重打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 5
+    },
+    {
+      "id": "Unmovable",
+      "name": "坚定不移",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Unrelenting",
+      "name": "无情猛攻",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 12
+    },
+    {
+      "id": "Uppercut",
+      "name": "上勾拳",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 13
+    },
+    {
+      "id": "Vicious",
+      "name": "凶恶",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Whirlwind",
+      "name": "旋风斩",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 5
+    }
+  ],
+  "亡灵契约师": [
+    {
+      "id": "Afterlife",
+      "name": "来生",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "BansheesCry",
+      "name": "女妖之嚎",
+      "cost": 6,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 33
+    },
+    {
+      "id": "BlightStrike",
+      "name": "荒疫打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 8
+    },
+    {
+      "id": "Bodyguard",
+      "name": "护卫",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "基础"
+    },
+    {
+      "id": "BoneShards",
+      "name": "碎骨",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 9,
+      "block": 9
+    },
+    {
+      "id": "BorrowedTime",
+      "name": "预借时间",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Doom",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "Bury",
+      "name": "埋葬",
+      "cost": 4,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 52
+    },
+    {
+      "id": "Calcify",
+      "name": "钙化",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Calcify",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "CallOfTheVoid",
+      "name": "虚空之唤",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "CaptureSpirit",
+      "name": "捕捉灵魂",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "damage": 3
+    },
+    {
+      "id": "Cleanse",
+      "name": "洁净",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Countdown",
+      "name": "倒数计时",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Countdown",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "DanseMacabre",
+      "name": "死亡之舞",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "DanseMacabre",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "DeathMarch",
+      "name": "死亡行军",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 3
+    },
+    {
+      "id": "Deathbringer",
+      "name": "死亡使者",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Doom",
+          "amount": 21
+        },
+        {
+          "type": "Weak",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "DeathsDoor",
+      "name": "死亡之门",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 6
+    },
+    {
+      "id": "Debilitate",
+      "name": "摧残",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 7,
+      "powers": [
+        {
+          "type": "Debilitate",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "DefendNecrobinder",
+      "name": "防御",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "基础",
+      "block": 5
+    },
+    {
+      "id": "Defile",
+      "name": "玷污",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 13
+    },
+    {
+      "id": "Defy",
+      "name": "违逆",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 6,
+      "powers": [
+        {
+          "type": "Weak",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Delay",
+      "name": "拖延",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 11
+    },
+    {
+      "id": "Demesne",
+      "name": "领域",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "DevourLife",
+      "name": "吞噬生命",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "DevourLife",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Dirge",
+      "name": "挽歌",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "DrainPower",
+      "name": "能量汲取",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 10
+    },
+    {
+      "id": "Dredge",
+      "name": "清淤",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Eidolon",
+      "name": "幻景",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "EndOfDays",
+      "name": "末日降临",
+      "cost": 3,
+      "type": "技能",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Doom",
+          "amount": 29
+        }
+      ]
+    },
+    {
+      "id": "EnfeeblingTouch",
+      "name": "弱化之触",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Eradicate",
+      "name": "根除",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 11
+    },
+    {
+      "id": "Fear",
+      "name": "恐惧",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 7,
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Fetch",
+      "name": "取回",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 3
+    },
+    {
+      "id": "Flatten",
+      "name": "重压",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 12
+    },
+    {
+      "id": "ForbiddenGrimoire",
+      "name": "禁忌魔典",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "CardRarity.Ancient"
+    },
+    {
+      "id": "Friendship",
+      "name": "友谊",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Strength",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "GlimpseBeyond",
+      "name": "彼岸一瞥",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "GraveWarden",
+      "name": "守墓人",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 8
+    },
+    {
+      "id": "Graveblast",
+      "name": "坟冢爆射",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 4
+    },
+    {
+      "id": "Hang",
+      "name": "吊杀",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 10
+    },
+    {
+      "id": "Haunt",
+      "name": "纠缠",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "HighFive",
+      "name": "击掌",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 11,
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "Invoke",
+      "name": "唤起",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "LegionOfBone",
+      "name": "骸骨军团",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Lethality",
+      "name": "致死性",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Lethality",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "Melancholy",
+      "name": "忧郁",
+      "cost": 3,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 13
+    },
+    {
+      "id": "Misery",
+      "name": "苦难",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 7
+    },
+    {
+      "id": "NecroMastery",
+      "name": "亡灵精通",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "NegativePulse",
+      "name": "负能量脉冲",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 5,
+      "powers": [
+        {
+          "type": "Doom",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "Neurosurge",
+      "name": "精神过载",
+      "cost": 0,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Neurosurge",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "NoEscape",
+      "name": "无处可逃",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Oblivion",
+      "name": "湮灭",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Doom",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "Pagestorm",
+      "name": "书页风暴",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Parse",
+      "name": "领会",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Poke",
+      "name": "戳击",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 6
+    },
+    {
+      "id": "Protector",
+      "name": "守护者",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "CardRarity.Ancient",
+      "damage": 1
+    },
+    {
+      "id": "PullAggro",
+      "name": "吸引仇恨",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 7
+    },
+    {
+      "id": "PullFromBelow",
+      "name": "亡魂牵引",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 5
+    },
+    {
+      "id": "Putrefy",
+      "name": "腐败",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Rattle",
+      "name": "猛晃",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 7
+    },
+    {
+      "id": "Reanimate",
+      "name": "死者苏生",
+      "cost": 3,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Reap",
+      "name": "收割",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 27
+    },
+    {
+      "id": "ReaperForm",
+      "name": "死神形态",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Reave",
+      "name": "剥夺",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 9
+    },
+    {
+      "id": "RightHandHand",
+      "name": "得力助手",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 4
+    },
+    {
+      "id": "Sacrifice",
+      "name": "牺牲",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Scourge",
+      "name": "鞭打",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "powers": [
+        {
+          "type": "Doom",
+          "amount": 13
+        }
+      ]
+    },
+    {
+      "id": "SculptingStrike",
+      "name": "雕琢打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 8
+    },
+    {
+      "id": "Seance",
+      "name": "降灵",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "SentryMode",
+      "name": "哨卫模式",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "SentryMode",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Severance",
+      "name": "切断",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 13
+    },
+    {
+      "id": "SharedFate",
+      "name": "命运同担",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Shroud",
+      "name": "厄运之衣",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "block": 2
+    },
+    {
+      "id": "SicEm",
+      "name": "紧追不放",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 5,
+      "powers": [
+        {
+          "type": "SicEm",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "SleightOfFlesh",
+      "name": "血肉戏法",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "SleightOfFlesh",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "id": "Snap",
+      "name": "抓取",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 7
+    },
+    {
+      "id": "SoulStorm",
+      "name": "灵魂风暴",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 2
+    },
+    {
+      "id": "Sow",
+      "name": "播种",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 8
+    },
+    {
+      "id": "SpiritOfAsh",
+      "name": "灰烬之灵",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Spur",
+      "name": "增生",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Squeeze",
+      "name": "榨取",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 5
+    },
+    {
+      "id": "StrikeNecrobinder",
+      "name": "打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "基础",
+      "damage": 6
+    },
+    {
+      "id": "TheScythe",
+      "name": "巨镰",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "罕见"
+    },
+    {
+      "id": "TimesUp",
+      "name": "大限已至",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 1
+    },
+    {
+      "id": "Transfigure",
+      "name": "重构",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Undeath",
+      "name": "不死",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见",
+      "block": 7
+    },
+    {
+      "id": "Unleash",
+      "name": "出击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "基础",
+      "damage": 1
+    },
+    {
+      "id": "Veilpiercer",
+      "name": "刺破帷幕",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 10
+    },
+    {
+      "id": "Wisp",
+      "name": "鬼火",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "普通"
+    }
+  ],
+  "储君": [
+    {
+      "id": "Alignment",
+      "name": "星位序列",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Arsenal",
+      "name": "武器库",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Arsenal",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "AstralPulse",
+      "name": "星界脉冲",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 14
+    },
+    {
+      "id": "BeatIntoShape",
+      "name": "锻打成型",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 5
+    },
+    {
+      "id": "Begone",
+      "name": "下去！",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 4
+    },
+    {
+      "id": "BigBang",
+      "name": "大爆炸",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "BlackHole",
+      "name": "黑洞",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "BlackHole",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "Bombardment",
+      "name": "轰击",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 18
+    },
+    {
+      "id": "Bulwark",
+      "name": "铸墙",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 13
+    },
+    {
+      "id": "BundleOfJoy",
+      "name": "新生之喜",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "CelestialMight",
+      "name": "天穹之力",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 6
+    },
+    {
+      "id": "Charge",
+      "name": "冲锋！！",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "ChildOfTheStars",
+      "name": "群星之子",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "CloakOfStars",
+      "name": "群星斗篷",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 7
+    },
+    {
+      "id": "CollisionCourse",
+      "name": "碰撞轨迹",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 9
+    },
+    {
+      "id": "Comet",
+      "name": "彗星",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 33,
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 3
+        },
+        {
+          "type": "Weak",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "Conqueror",
+      "name": "征服者",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Convergence",
+      "name": "汇流",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "CosmicIndifference",
+      "name": "宇宙冷漠",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 6
+    },
+    {
+      "id": "CrashLanding",
+      "name": "迫降",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 21
+    },
+    {
+      "id": "CrescentSpear",
+      "name": "新月长矛",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 2
+    },
+    {
+      "id": "CrushUnder",
+      "name": "下砸",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 7
+    },
+    {
+      "id": "DecisionsDecisions",
+      "name": "抉择，抉择",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "DefendRegent",
+      "name": "防御",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "基础",
+      "block": 5
+    },
+    {
+      "id": "Devastate",
+      "name": "葬送",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 30
+    },
+    {
+      "id": "DyingStar",
+      "name": "星灭",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 9
+    },
+    {
+      "id": "FallingStar",
+      "name": "陨星",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "基础",
+      "damage": 7,
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 1
+        },
+        {
+          "type": "Weak",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "ForegoneConclusion",
+      "name": "既定事项",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Furnace",
+      "name": "熔炉",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "GammaBlast",
+      "name": "伽马爆破",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 13,
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 2
+        },
+        {
+          "type": "Weak",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "GatherLight",
+      "name": "收集光辉",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 7
+    },
+    {
+      "id": "Genesis",
+      "name": "创世纪",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Glimmer",
+      "name": "微光",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Glitterstream",
+      "name": "流光溢彩",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 11
+    },
+    {
+      "id": "Glow",
+      "name": "辉光",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "Guards",
+      "name": "护驾！！！",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "GuidingStar",
+      "name": "引导之星",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 12
+    },
+    {
+      "id": "HammerTime",
+      "name": "锤子时间",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "HeavenlyDrill",
+      "name": "天际钻头",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 8
+    },
+    {
+      "id": "Hegemony",
+      "name": "霸权",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 15
+    },
+    {
+      "id": "HeirloomHammer",
+      "name": "传承之锤",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 17
+    },
+    {
+      "id": "HiddenCache",
+      "name": "隐秘藏品",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "powers": [
+        {
+          "type": "StarNextTurn",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "IAmInvincible",
+      "name": "IAmInvincible",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见",
+      "block": 9
+    },
+    {
+      "id": "KinglyKick",
+      "name": "王者之踢",
+      "cost": 4,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 24
+    },
+    {
+      "id": "KinglyPunch",
+      "name": "王者之拳",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 8
+    },
+    {
+      "id": "KnockoutBlow",
+      "name": "决胜一击",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 30
+    },
+    {
+      "id": "KnowThyPlace",
+      "name": "何人僭越",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "普通",
+      "powers": [
+        {
+          "type": "Weak",
+          "amount": 1
+        },
+        {
+          "type": "Vulnerable",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Largesse",
+      "name": "慷慨捐助",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "LunarBlast",
+      "name": "月面射击",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 4
+    },
+    {
+      "id": "MakeItSo",
+      "name": "如此甚好",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 6
+    },
+    {
+      "id": "ManifestAuthority",
+      "name": "君权自授",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 7
+    },
+    {
+      "id": "MeteorShower",
+      "name": "流星雨",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "CardRarity.Ancient",
+      "damage": 14,
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 2
+        },
+        {
+          "type": "Weak",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "MonarchsGaze",
+      "name": "王之凝视",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Monologue",
+      "name": "独白",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "NeutronAegis",
+      "name": "中子护盾",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Plating",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "id": "Orbit",
+      "name": "环绕轨道",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "PaleBlueDot",
+      "name": "暗淡蓝点",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Parry",
+      "name": "招架",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Parry",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "ParticleWall",
+      "name": "粒子墙",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 9
+    },
+    {
+      "id": "Patter",
+      "name": "星星点点",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 8,
+      "powers": [
+        {
+          "type": "Vigor",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "PhotonCut",
+      "name": "光子切割",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 10
+    },
+    {
+      "id": "PillarOfCreation",
+      "name": "创世之柱",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "block": 3
+    },
+    {
+      "id": "Prophesize",
+      "name": "预言",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Quasar",
+      "name": "类星体",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Radiate",
+      "name": "辐射",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 3
+    },
+    {
+      "id": "RefineBlade",
+      "name": "淬炼刀刃",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "Reflect",
+      "name": "倒映",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 17
+    },
+    {
+      "id": "Resonance",
+      "name": "共鸣",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Strength",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "RoyalGamble",
+      "name": "胜券在王",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Royalties",
+      "name": "王国资产",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "SeekingEdge",
+      "name": "追踪之刃",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "SevenStars",
+      "name": "七星",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 7
+    },
+    {
+      "id": "ShiningStrike",
+      "name": "明耀打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 8
+    },
+    {
+      "id": "SolarStrike",
+      "name": "太阳打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 8
+    },
+    {
+      "id": "SpectrumShift",
+      "name": "光谱偏移",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "SpoilsOfBattle",
+      "name": "战利品",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "Stardust",
+      "name": "星尘",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 5
+    },
+    {
+      "id": "StrikeRegent",
+      "name": "打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "基础",
+      "damage": 6
+    },
+    {
+      "id": "SummonForth",
+      "name": "征召上前",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Supermassive",
+      "name": "超质量体",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 3
+    },
+    {
+      "id": "SwordSage",
+      "name": "剑圣",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "SwordSage",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Terraforming",
+      "name": "地形改造",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Vigor",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": "TheSealedThrone",
+      "name": "封印王座",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "CardRarity.Ancient"
+    },
+    {
+      "id": "TheSmith",
+      "name": "铸剑者",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Tyranny",
+      "name": "暴政",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Venerate",
+      "name": "崇拜",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "基础"
+    },
+    {
+      "id": "VoidForm",
+      "name": "虚空形态",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "VoidForm",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "WroughtInWar",
+      "name": "战火铸就",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 7
+    }
+  ],
+  "静默猎手": [
+    {
+      "id": "Abrasive",
+      "name": "磨蚀",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Thorns",
+          "amount": 4
+        },
+        {
+          "type": "Dexterity",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Accelerant",
+      "name": "触媒",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Accuracy",
+      "name": "精准",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Accuracy",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "Acrobatics",
+      "name": "杂技",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "Adrenaline",
+      "name": "肾上腺素",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Afterimage",
+      "name": "余像",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Afterimage",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Anticipate",
+      "name": "预判",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "普通",
+      "powers": [
+        {
+          "type": "Dexterity",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "Assassinate",
+      "name": "刺杀",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 10,
+      "powers": [
+        {
+          "type": "Vulnerable",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Backflip",
+      "name": "后空翻",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 5
+    },
+    {
+      "id": "Backstab",
+      "name": "背刺",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 11
+    },
+    {
+      "id": "BladeOfInk",
+      "name": "墨之刃",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Strength",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "BladeDance",
+      "name": "刀刃之舞",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "Blur",
+      "name": "残影",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 5
+    },
+    {
+      "id": "BouncingFlask",
+      "name": "弹跳药瓶",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Poison",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "BubbleBubble",
+      "name": "咕嘟冒泡",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Poison",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "id": "BulletTime",
+      "name": "子弹时间",
+      "cost": 3,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Burst",
+      "name": "爆发",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "CalculatedGamble",
+      "name": "计算下注",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "CloakAndDagger",
+      "name": "斗篷与匕首",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 6
+    },
+    {
+      "id": "CorrosiveWave",
+      "name": "腐蚀波",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "DaggerSpray",
+      "name": "匕首雨",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 4
+    },
+    {
+      "id": "DaggerThrow",
+      "name": "投掷匕首",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 9
+    },
+    {
+      "id": "Dash",
+      "name": "冲刺",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 10,
+      "block": 10
+    },
+    {
+      "id": "DeadlyPoison",
+      "name": "致命毒药",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "powers": [
+        {
+          "type": "Poison",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "DefendSilent",
+      "name": "防御",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "基础",
+      "block": 5
+    },
+    {
+      "id": "Deflect",
+      "name": "偏折",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 4
+    },
+    {
+      "id": "DodgeAndRoll",
+      "name": "闪躲翻滚",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 4
+    },
+    {
+      "id": "EchoingSlash",
+      "name": "回响斩击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 10
+    },
+    {
+      "id": "Envenom",
+      "name": "涂毒",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Envenom",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "EscapePlan",
+      "name": "逃脱计划",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 3
+    },
+    {
+      "id": "Expertise",
+      "name": "独门绝技",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Expose",
+      "name": "暴露",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "FanOfKnives",
+      "name": "刀扇",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Finisher",
+      "name": "终结技",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 6
+    },
+    {
+      "id": "Flanking",
+      "name": "夹击",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Flechettes",
+      "name": "飞镖",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 5
+    },
+    {
+      "id": "FlickFlack",
+      "name": "翻越撑击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 7
+    },
+    {
+      "id": "FollowThrough",
+      "name": "跟进",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 6,
+      "powers": [
+        {
+          "type": "Weak",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Footwork",
+      "name": "灵动步法",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Dexterity",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "GrandFinale",
+      "name": "华丽收场",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 50
+    },
+    {
+      "id": "HandTrick",
+      "name": "手上技法",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 7
+    },
+    {
+      "id": "Haze",
+      "name": "迷雾",
+      "cost": 3,
+      "type": "技能",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Poison",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "HiddenDaggers",
+      "name": "隐秘匕首",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "InfiniteBlades",
+      "name": "无尽刀刃",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "KnifeTrap",
+      "name": "刀刃陷阱",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "LeadingStrike",
+      "name": "先制打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 7
+    },
+    {
+      "id": "LegSweep",
+      "name": "扫腿",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有",
+      "block": 11,
+      "powers": [
+        {
+          "type": "Weak",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "Malaise",
+      "name": "萎靡",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "MasterPlanner",
+      "name": "谋划专家",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "MementoMori",
+      "name": "铭记死亡",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 4
+    },
+    {
+      "id": "Mirage",
+      "name": "蜃景",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Murder",
+      "name": "谋杀",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 1
+    },
+    {
+      "id": "Neutralize",
+      "name": "中和",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "基础",
+      "damage": 3,
+      "powers": [
+        {
+          "type": "Weak",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Nightmare",
+      "name": "夜魇",
+      "cost": 3,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "NoxiousFumes",
+      "name": "毒雾",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Outbreak",
+      "name": "毒性爆发",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Outbreak",
+          "amount": 11
+        }
+      ]
+    },
+    {
+      "id": "PhantomBlades",
+      "name": "幻影之刃",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "PhantomBlades",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "id": "PiercingWail",
+      "name": "尖啸",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "Pinpoint",
+      "name": "精密瞄准",
+      "cost": 3,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 17
+    },
+    {
+      "id": "PoisonedStab",
+      "name": "带毒刺击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 6,
+      "powers": [
+        {
+          "type": "Poison",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "Pounce",
+      "name": "猛扑",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 12
+    },
+    {
+      "id": "PreciseCut",
+      "name": "精确切击",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 2
+    },
+    {
+      "id": "Predator",
+      "name": "猎杀者",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 15
+    },
+    {
+      "id": "Prepared",
+      "name": "早有准备",
+      "cost": 0,
+      "type": "技能",
+      "rarity": "普通"
+    },
+    {
+      "id": "Reflex",
+      "name": "本能反应",
+      "cost": 3,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "Ricochet",
+      "name": "连续反弹",
+      "cost": 2,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 3
+    },
+    {
+      "id": "SerpentForm",
+      "name": "群蛇形态",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "SerpentForm",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "id": "ShadowStep",
+      "name": "暗影步",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Shadowmeld",
+      "name": "融入暗影",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Skewer",
+      "name": "串刺",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 7
+    },
+    {
+      "id": "Slice",
+      "name": "切割",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 6
+    },
+    {
+      "id": "Snakebite",
+      "name": "蛇咬",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "普通",
+      "powers": [
+        {
+          "type": "Poison",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "id": "Sneaky",
+      "name": "鬼祟",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见",
+      "powers": [
+        {
+          "type": "Sneaky",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Speedster",
+      "name": "速行者",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "稀有",
+      "powers": [
+        {
+          "type": "Speedster",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "StormOfSteel",
+      "name": "钢铁风暴",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Strangle",
+      "name": "紧勒",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "稀有",
+      "damage": 8,
+      "powers": [
+        {
+          "type": "Strangle",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "StrikeSilent",
+      "name": "打击",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "基础",
+      "damage": 6
+    },
+    {
+      "id": "SuckerPunch",
+      "name": "突然一拳",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "普通",
+      "damage": 8,
+      "powers": [
+        {
+          "type": "Weak",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "Suppress",
+      "name": "压制",
+      "cost": 0,
+      "type": "攻击",
+      "rarity": "CardRarity.Ancient",
+      "damage": 11,
+      "powers": [
+        {
+          "type": "Weak",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "Survivor",
+      "name": "生存者",
+      "cost": 1,
+      "type": "技能",
+      "rarity": "基础",
+      "block": 8
+    },
+    {
+      "id": "Tactician",
+      "name": "战术大师",
+      "cost": 3,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "TheHunt",
+      "name": "狩猎",
+      "cost": 1,
+      "type": "攻击",
+      "rarity": "罕见",
+      "damage": 10
+    },
+    {
+      "id": "ToolsOfTheTrade",
+      "name": "必备工具",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Tracking",
+      "name": "跟踪",
+      "cost": 2,
+      "type": "能力",
+      "rarity": "罕见"
+    },
+    {
+      "id": "Untouchable",
+      "name": "触不可及",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "普通",
+      "block": 9
+    },
+    {
+      "id": "UpMySleeve",
+      "name": "袖里乾坤",
+      "cost": 2,
+      "type": "技能",
+      "rarity": "稀有"
+    },
+    {
+      "id": "WellLaidPlans",
+      "name": "计划妥当",
+      "cost": 1,
+      "type": "能力",
+      "rarity": "稀有"
+    },
+    {
+      "id": "WraithForm",
+      "name": "幽魂形态",
+      "cost": 3,
+      "type": "能力",
+      "rarity": "CardRarity.Ancient",
+      "powers": [
+        {
+          "type": "Intangible",
+          "amount": 2
+        },
+        {
+          "type": "WraithForm",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

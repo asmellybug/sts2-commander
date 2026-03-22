@@ -1,0 +1,255 @@
+{
+  "Ashwater": {
+    "id": "Ashwater",
+    "name_cn": "灰水"
+  },
+  "AttackPotion": {
+    "id": "AttackPotion",
+    "name_cn": "攻击药水"
+  },
+  "BeetleJuice": {
+    "id": "BeetleJuice",
+    "name_cn": "甲虫汁"
+  },
+  "BlessingOfTheForge": {
+    "id": "BlessingOfTheForge",
+    "name_cn": "熔炉的祝福"
+  },
+  "BlockPotion": {
+    "id": "BlockPotion",
+    "name_cn": "格挡药水"
+  },
+  "BloodPotion": {
+    "id": "BloodPotion",
+    "name_cn": "鲜血药水"
+  },
+  "BoneBrew": {
+    "id": "BoneBrew",
+    "name_cn": "骨头酿"
+  },
+  "BottledPotential": {
+    "id": "BottledPotential",
+    "name_cn": "瓶装潜能"
+  },
+  "Clarity": {
+    "id": "Clarity",
+    "name_cn": "明晰提取物"
+  },
+  "ColorlessPotion": {
+    "id": "ColorlessPotion",
+    "name_cn": "无色药水"
+  },
+  "CosmicConcoction": {
+    "id": "CosmicConcoction",
+    "name_cn": "宇宙药剂"
+  },
+  "CunningPotion": {
+    "id": "CunningPotion",
+    "name_cn": "狡诈药水"
+  },
+  "CureAll": {
+    "id": "CureAll",
+    "name_cn": "痊愈药水"
+  },
+  "DeprecatedPotion": {
+    "id": "DeprecatedPotion",
+    "name_cn": "废弃药水"
+  },
+  "DexterityPotion": {
+    "id": "DexterityPotion",
+    "name_cn": "敏捷药水"
+  },
+  "DistilledChaos": {
+    "id": "DistilledChaos",
+    "name_cn": "精炼混沌"
+  },
+  "DropletOfPrecognition": {
+    "id": "DropletOfPrecognition",
+    "name_cn": "预知之滴"
+  },
+  "Duplicator": {
+    "id": "Duplicator",
+    "name_cn": "复制药水"
+  },
+  "EnergyPotion": {
+    "id": "EnergyPotion",
+    "name_cn": "能量药水"
+  },
+  "EntropicBrew": {
+    "id": "EntropicBrew",
+    "name_cn": "混沌药水"
+  },
+  "EssenceOfDarkness": {
+    "id": "EssenceOfDarkness",
+    "name_cn": "黑暗精华"
+  },
+  "ExplosiveAmpoule": {
+    "id": "ExplosiveAmpoule",
+    "name_cn": "爆炸安瓿"
+  },
+  "FairyInABottle": {
+    "id": "FairyInABottle"
+  },
+  "FirePotion": {
+    "id": "FirePotion",
+    "name_cn": "火焰药水"
+  },
+  "FlexPotion": {
+    "id": "FlexPotion",
+    "name_cn": "肌肉药水"
+  },
+  "FocusPotion": {
+    "id": "FocusPotion",
+    "name_cn": "集中药水"
+  },
+  "Fortifier": {
+    "id": "Fortifier",
+    "name_cn": "固化药水"
+  },
+  "FoulPotion": {
+    "id": "FoulPotion",
+    "name_cn": "污浊药水"
+  },
+  "FruitJuice": {
+    "id": "FruitJuice",
+    "name_cn": "果汁"
+  },
+  "FyshOil": {
+    "id": "FyshOil",
+    "name_cn": "异鱼之油"
+  },
+  "GamblersBrew": {
+    "id": "GamblersBrew",
+    "name_cn": "赌徒特酿"
+  },
+  "GhostInAJar": {
+    "id": "GhostInAJar"
+  },
+  "GigantificationPotion": {
+    "id": "GigantificationPotion",
+    "name_cn": "超巨化药水"
+  },
+  "GlowwaterPotion": {
+    "id": "GlowwaterPotion",
+    "name_cn": "发光水"
+  },
+  "HeartOfIron": {
+    "id": "HeartOfIron",
+    "name_cn": "铁心药水"
+  },
+  "KingsCourage": {
+    "id": "KingsCourage",
+    "name_cn": "王之勇气"
+  },
+  "LiquidBronze": {
+    "id": "LiquidBronze",
+    "name_cn": "流动铜液"
+  },
+  "LiquidMemories": {
+    "id": "LiquidMemories",
+    "name_cn": "液态记忆"
+  },
+  "LuckyTonic": {
+    "id": "LuckyTonic",
+    "name_cn": "幸运补剂"
+  },
+  "MazalethsGift": {
+    "id": "MazalethsGift",
+    "name_cn": "马萨雷斯的赠礼"
+  },
+  "OrobicAcid": {
+    "id": "OrobicAcid",
+    "name_cn": "欧洛巴斯之酸"
+  },
+  "PoisonPotion": {
+    "id": "PoisonPotion",
+    "name_cn": "毒药水"
+  },
+  "PotOfGhouls": {
+    "id": "PotOfGhouls",
+    "name_cn": "尸鬼瓮"
+  },
+  "PotionOfBinding": {
+    "id": "PotionOfBinding",
+    "name_cn": "缚魂药水"
+  },
+  "PotionOfCapacity": {
+    "id": "PotionOfCapacity",
+    "name_cn": "扩容药水"
+  },
+  "PotionOfDoom": {
+    "id": "PotionOfDoom",
+    "name_cn": "灾厄药水"
+  },
+  "PotionShapedRock": {
+    "id": "PotionShapedRock",
+    "name_cn": "药水形状的石头"
+  },
+  "PowderedDemise": {
+    "id": "PowderedDemise",
+    "name_cn": "消亡粉末"
+  },
+  "PowerPotion": {
+    "id": "PowerPotion",
+    "name_cn": "能力药水"
+  },
+  "RadiantTincture": {
+    "id": "RadiantTincture",
+    "name_cn": "明耀酊剂"
+  },
+  "RegenPotion": {
+    "id": "RegenPotion",
+    "name_cn": "再生药水"
+  },
+  "ShacklingPotion": {
+    "id": "ShacklingPotion",
+    "name_cn": "镣铐药水"
+  },
+  "ShipInABottle": {
+    "id": "ShipInABottle"
+  },
+  "SkillPotion": {
+    "id": "SkillPotion",
+    "name_cn": "技能药水"
+  },
+  "SneckoOil": {
+    "id": "SneckoOil",
+    "name_cn": "异蛇之油"
+  },
+  "SoldiersStew": {
+    "id": "SoldiersStew",
+    "name_cn": "士兵炖汤"
+  },
+  "SpeedPotion": {
+    "id": "SpeedPotion",
+    "name_cn": "速度药水"
+  },
+  "StableSerum": {
+    "id": "StableSerum",
+    "name_cn": "稳定血清"
+  },
+  "StarPotion": {
+    "id": "StarPotion",
+    "name_cn": "星星药水"
+  },
+  "StrengthPotion": {
+    "id": "StrengthPotion",
+    "name_cn": "力量药水"
+  },
+  "SwiftPotion": {
+    "id": "SwiftPotion",
+    "name_cn": "迅捷药水"
+  },
+  "TouchOfInsanity": {
+    "id": "TouchOfInsanity",
+    "name_cn": "癫狂之触"
+  },
+  "VulnerablePotion": {
+    "id": "VulnerablePotion",
+    "name_cn": "易伤药水"
+  },
+  "WeakPotion": {
+    "id": "WeakPotion",
+    "name_cn": "虚弱药水"
+  }
+}

@@ -1,0 +1,7957 @@
+{
+  "Abrasive": {
+    "id": "Abrasive",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Thorns",
+        "amount": 4
+      },
+      {
+        "type": "Dexterity",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "磨蚀",
+    "desc_cn": "获得?点敏捷。 获得?点荆棘。"
+  },
+  "Accelerant": {
+    "id": "Accelerant",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "触媒",
+    "desc_cn": "中毒会额外触发?次。"
+  },
+  "Accuracy": {
+    "id": "Accuracy",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Accuracy",
+        "amount": 4
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "精准",
+    "desc_cn": "小刀额外造成?点伤害。"
+  },
+  "Acrobatics": {
+    "id": "Acrobatics",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "杂技",
+    "desc_cn": "抽?张牌。 丢弃1张牌。"
+  },
+  "AdaptiveStrike": {
+    "id": "AdaptiveStrike",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      18
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "适应打击",
+    "desc_cn": "造成?点伤害。 将这张牌的一张0?复制品添加到你的弃牌堆。"
+  },
+  "Adrenaline": {
+    "id": "Adrenaline",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "肾上腺素",
+    "desc_cn": "获得?。 抽2张牌。"
+  },
+  "Afterimage": {
+    "id": "Afterimage",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Afterimage",
+        "amount": 1
+      }
+    ],
+    "name_cn": "余像",
+    "desc_cn": "你每打出一张牌，都获得?点格挡。"
+  },
+  "Afterlife": {
+    "id": "Afterlife",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "upgrade": [
+      3
+    ],
+    "name_cn": "来生",
+    "desc_cn": "召唤?。"
+  },
+  "Aggression": {
+    "id": "Aggression",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "好勇斗狠",
+    "desc_cn": "在你的回合开始时，将你弃牌堆的一张随机攻击牌放入你的手牌并将其升级。"
+  },
+  "Alchemize": {
+    "id": "Alchemize",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "炼制药水",
+    "desc_cn": "获得一瓶随机药水。"
+  },
+  "Alignment": {
+    "id": "Alignment",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "星位序列",
+    "desc_cn": "获得?。"
+  },
+  "AllForOne": {
+    "id": "AllForOne",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "万物一心",
+    "desc_cn": "造成?点伤害。 将你弃牌堆中的所有0?牌放入你的手牌。"
+  },
+  "Anger": {
+    "id": "Anger",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "愤怒",
+    "desc_cn": "造成?点伤害。 将一张此牌的复制品加入你的弃牌堆。"
+  },
+  "Anointed": {
+    "id": "Anointed",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "天选",
+    "desc_cn": "将你抽牌堆中的所有稀有牌放入你的手牌。"
+  },
+  "Anticipate": {
+    "id": "Anticipate",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Dexterity",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "预判",
+    "desc_cn": "在本回合获得?点敏捷。"
+  },
+  "Apotheosis": {
+    "id": "Apotheosis",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "CardRarity.Ancient",
+    "target": "自身",
+    "name_cn": "神化",
+    "desc_cn": "升级你的全部卡牌。"
+  },
+  "Apparition": {
+    "id": "Apparition",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "CardRarity.Ancient",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Intangible",
+        "amount": 1
+      }
+    ],
+    "name_cn": "灵体",
+    "desc_cn": "获得?层无实体。"
+  },
+  "Armaments": {
+    "id": "Armaments",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      5
+    ],
+    "name_cn": "武装",
+    "desc_cn": "获得?点格挡。 升级你手牌中的?。"
+  },
+  "Arsenal": {
+    "id": "Arsenal",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Arsenal",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "武器库",
+    "desc_cn": "你每打出一张无色牌，都获得?点力量。"
+  },
+  "AscendersBane": {
+    "id": "AscendersBane",
+    "name_cn": "进阶之灾",
+    "desc_cn": ""
+  },
+  "AshenStrike": {
+    "id": "AshenStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "灰烬打击",
+    "desc_cn": "造成?点伤害。 你的消耗牌堆中每有一张牌，伤害增加?。"
+  },
+  "Assassinate": {
+    "id": "Assassinate",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      3,
+      1
+    ],
+    "name_cn": "刺杀",
+    "desc_cn": "造成?点伤害。 给予?层易伤。"
+  },
+  "AstralPulse": {
+    "id": "AstralPulse",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "全敌",
+    "damage": [
+      14
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "星界脉冲",
+    "desc_cn": "对所有敌人造成?点伤害。"
+  },
+  "Automation": {
+    "id": "Automation",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "自动化",
+    "desc_cn": "你每抽10张牌，获得?。"
+  },
+  "Backflip": {
+    "id": "Backflip",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      5
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "后空翻",
+    "desc_cn": "获得?点格挡。 抽2张牌。"
+  },
+  "Backstab": {
+    "id": "Backstab",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      11
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "背刺",
+    "desc_cn": "造成?点伤害。"
+  },
+  "BadLuck": {
+    "id": "BadLuck",
+    "name_cn": "霉运",
+    "desc_cn": "在你的回合结束时，如果这张牌在你的手牌中，则失去?点生命。"
+  },
+  "BallLightning": {
+    "id": "BallLightning",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "球状闪电",
+    "desc_cn": "造成?点伤害。 生成1个闪电充能球。"
+  },
+  "BansheesCry": {
+    "id": "BansheesCry",
+    "cost": 6,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "全敌",
+    "damage": [
+      33
+    ],
+    "upgrade": [
+      6
+    ],
+    "name_cn": "女妖之嚎",
+    "desc_cn": "对所有敌人造成?点伤害。 本场战斗中每打出过一张虚无牌，此牌费用就减少?。"
+  },
+  "Barrage": {
+    "id": "Barrage",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "弹幕齐射",
+    "desc_cn": "当前每有一个充能球，造成?点伤害。?次）|}"
+  },
+  "Barricade": {
+    "id": "Barricade",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "壁垒",
+    "desc_cn": "格挡不再在你的回合开始时消失。"
+  },
+  "Bash": {
+    "id": "Bash",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "基础",
+    "target": "单敌",
+    "damage": [
+      8
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "痛击",
+    "desc_cn": "造成?点伤害。 给予?层易伤。"
+  },
+  "BattleTrance": {
+    "id": "BattleTrance",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "战斗专注",
+    "desc_cn": "抽?张牌。 你在本回合内不能再抽任何牌。"
+  },
+  "BeaconOfHope": {
+    "id": "BeaconOfHope",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "希望灯塔",
+    "desc_cn": "每当你在你的回合获得格挡时，其他玩家获得相应一半的格挡。"
+  },
+  "BeamCell": {
+    "id": "BeamCell",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      3
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "光束射线",
+    "desc_cn": "造成?点伤害。 给予?层易伤。"
+  },
+  "BeatDown": {
+    "id": "BeatDown",
+    "cost": 3,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "TargetType.RandomEnemy",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "狠揍",
+    "desc_cn": "打出你弃牌堆中的?张随机攻击牌。"
+  },
+  "BeatIntoShape": {
+    "id": "BeatIntoShape",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      2,
+      2,
+      2
+    ],
+    "name_cn": "锻打成型",
+    "desc_cn": "造成?点伤害。 铸造?。 本回合此前你击中过该敌人几次，就额外铸造?。"
+  },
+  "Beckon": {
+    "id": "Beckon",
+    "cost": 1,
+    "type": "状态",
+    "rarity": "CardRarity.Status",
+    "target": "无",
+    "name_cn": "呼唤",
+    "desc_cn": "在你的回合结束时，如果这张牌在你的手牌中， 则失去?点生命。"
+  },
+  "Begone": {
+    "id": "Begone",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      4
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "下去！",
+    "desc_cn": "造成?点伤害。 选择你手牌中的一张牌，将其变化为?。"
+  },
+  "BelieveInYou": {
+    "id": "BelieveInYou",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "TargetType.AnyAlly",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "相信着你",
+    "desc_cn": "另一名玩家获得?。"
+  },
+  "BiasedCognition": {
+    "id": "BiasedCognition",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "CardRarity.Ancient",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Focus",
+        "amount": 4
+      },
+      {
+        "type": "BiasedCognition",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "偏差认知",
+    "desc_cn": "获得?点集中。 在你的回合开始时，失去?点集中。"
+  },
+  "BigBang": {
+    "id": "BigBang",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "大爆炸",
+    "desc_cn": "抽?张牌。 获得?。 获得?。 铸造?。"
+  },
+  "BlackHole": {
+    "id": "BlackHole",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "BlackHole",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "黑洞",
+    "desc_cn": "每当你使用或获得?时, 对所有敌人造成?点伤害。"
+  },
+  "BladeDance": {
+    "id": "BladeDance",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "刀刃之舞",
+    "desc_cn": "添加?张小刀到你的手牌。"
+  },
+  "BladeOfInk": {
+    "id": "BladeOfInk",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "墨之刃",
+    "desc_cn": "每当你在本回合打出一张攻击牌时，本回合获得?点力量。"
+  },
+  "BlightStrike": {
+    "id": "BlightStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      8
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "荒疫打击",
+    "desc_cn": "造成?点伤害。 给予等量于所造成伤害的灾厄。"
+  },
+  "BloodWall": {
+    "id": "BloodWall",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      16
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "血墙",
+    "desc_cn": "失去?点生命。 获得?点格挡。"
+  },
+  "Bloodletting": {
+    "id": "Bloodletting",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "放血",
+    "desc_cn": "失去?点生命。 获得?。"
+  },
+  "Bludgeon": {
+    "id": "Bludgeon",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      32
+    ],
+    "upgrade": [
+      10
+    ],
+    "name_cn": "重锤",
+    "desc_cn": "造成?点伤害。"
+  },
+  "Blur": {
+    "id": "Blur",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      5
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "残影",
+    "desc_cn": "获得?点格挡。 你的下一回合开始时格挡不会消失。"
+  },
+  "BodySlam": {
+    "id": "BodySlam",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      1
+    ],
+    "name_cn": "全身撞击",
+    "desc_cn": "造成你当前格挡值的伤害。?点伤害）|}"
+  },
+  "Bodyguard": {
+    "id": "Bodyguard",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "基础",
+    "target": "自身",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "护卫",
+    "desc_cn": "召唤?。"
+  },
+  "Bolas": {
+    "id": "Bolas",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "流星锤",
+    "desc_cn": "造成?点伤害。 在你的下个回合开始时，将此卡返回你的手牌。"
+  },
+  "Bombardment": {
+    "id": "Bombardment",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      18
+    ],
+    "upgrade": [
+      6
+    ],
+    "name_cn": "轰击",
+    "desc_cn": "造成?点伤害。 在你的回合开始时，从消耗牌堆打出这张牌。"
+  },
+  "BoneShards": {
+    "id": "BoneShards",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "全敌",
+    "damage": [
+      9
+    ],
+    "block": [
+      9
+    ],
+    "upgrade": [
+      3,
+      3
+    ],
+    "name_cn": "碎骨",
+    "desc_cn": "如果奥斯提存活，则他对所有敌人造成?点伤害并且你获得?点格挡。 然后奥斯提死去。"
+  },
+  "BoostAway": {
+    "id": "BoostAway",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "高速脱离",
+    "desc_cn": "获得?点格挡。 将一张眩晕添加到你的弃牌堆中。"
+  },
+  "BootSequence": {
+    "id": "BootSequence",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      10
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "启动流程",
+    "desc_cn": "获得?点格挡。"
+  },
+  "BorrowedTime": {
+    "id": "BorrowedTime",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Doom",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "预借时间",
+    "desc_cn": "给予自身?层灾厄。 获得?。"
+  },
+  "BouncingFlask": {
+    "id": "BouncingFlask",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "TargetType.RandomEnemy",
+    "powers": [
+      {
+        "type": "Poison",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "弹跳药瓶",
+    "desc_cn": "随机给予敌人?层中毒?次。"
+  },
+  "Brand": {
+    "id": "Brand",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "烙印",
+    "desc_cn": "失去?点生命。 消耗1张牌。 获得?点力量。"
+  },
+  "Break": {
+    "id": "Break",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "CardRarity.Ancient",
+    "target": "单敌",
+    "damage": [
+      20
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 5
+      }
+    ],
+    "upgrade": [
+      5,
+      2
+    ],
+    "name_cn": "破击",
+    "desc_cn": "造成?点伤害。 给予?层易伤。"
+  },
+  "Breakthrough": {
+    "id": "Breakthrough",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "全敌",
+    "damage": [
+      9
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "突破",
+    "desc_cn": "失去?点生命。 对所有敌人造成?点伤害。"
+  },
+  "BrightestFlame": {
+    "id": "BrightestFlame",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "CardRarity.Ancient",
+    "target": "自身",
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "至亮之焰",
+    "desc_cn": "获得?。 抽?张牌。 失去?点最大生命。"
+  },
+  "BubbleBubble": {
+    "id": "BubbleBubble",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "单敌",
+    "powers": [
+      {
+        "type": "Poison",
+        "amount": 9
+      }
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "咕嘟冒泡",
+    "desc_cn": "如果敌方拥有中毒，则给予?层中毒。"
+  },
+  "Buffer": {
+    "id": "Buffer",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Buffer",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "缓冲",
+    "desc_cn": "阻止下?次你受到的生命值损伤。"
+  },
+  "BulkUp": {
+    "id": "BulkUp",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 2
+      },
+      {
+        "type": "Dexterity",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "暴涨",
+    "desc_cn": "失去?个充能球栏位。 获得?点力量。 获得?点敏捷。"
+  },
+  "BulletTime": {
+    "id": "BulletTime",
+    "cost": 3,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "子弹时间",
+    "desc_cn": "你在本回合内不能再抽牌。你手牌中的所有牌在本回合免费打出。"
+  },
+  "Bully": {
+    "id": "Bully",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      2
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "欺凌",
+    "desc_cn": "造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。"
+  },
+  "Bulwark": {
+    "id": "Bulwark",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      13
+    ],
+    "upgrade": [
+      3,
+      3
+    ],
+    "name_cn": "铸墙",
+    "desc_cn": "获得?点格挡。 铸造?。"
+  },
+  "BundleOfJoy": {
+    "id": "BundleOfJoy",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "新生之喜",
+    "desc_cn": "将?张随机无色牌添加到你的手牌。"
+  },
+  "Burn": {
+    "id": "Burn",
+    "damage": [
+      2
+    ],
+    "name_cn": "灼伤",
+    "desc_cn": "在你的回合结束时，如果这张牌在你的手牌中，你受到?点伤害。"
+  },
+  "BurningPact": {
+    "id": "BurningPact",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "燃烧契约",
+    "desc_cn": "消耗1张牌。 抽?张牌。"
+  },
+  "Burst": {
+    "id": "Burst",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "爆发",
+    "desc_cn": "在这个回合，你打出的下??张技能牌会被额外打出一次。"
+  },
+  "Bury": {
+    "id": "Bury",
+    "cost": 4,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      52
+    ],
+    "upgrade": [
+      11
+    ],
+    "name_cn": "埋葬",
+    "desc_cn": "造成?点伤害。"
+  },
+  "ByrdSwoop": {
+    "id": "ByrdSwoop",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "CardRarity.Event",
+    "target": "单敌",
+    "damage": [
+      14
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "异鸟扑击",
+    "desc_cn": "造成?点伤害。"
+  },
+  "ByrdonisEgg": {
+    "id": "ByrdonisEgg",
+    "name_cn": "多尼斯异鸟蛋",
+    "desc_cn": "能在休息处被孵化。"
+  },
+  "Calamity": {
+    "id": "Calamity",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "灾祸",
+    "desc_cn": "每当你打出一张攻击牌时，将一张随机攻击牌添加到你的手牌。"
+  },
+  "Calcify": {
+    "id": "Calcify",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Calcify",
+        "amount": 4
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "钙化",
+    "desc_cn": "奥斯提的攻击额外造成?点伤害。"
+  },
+  "CalculatedGamble": {
+    "id": "CalculatedGamble",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "计算下注",
+    "desc_cn": "丢弃你的所有手牌, 然后抽相同数量的牌。"
+  },
+  "CallOfTheVoid": {
+    "id": "CallOfTheVoid",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "虚空之唤",
+    "desc_cn": "在你的回合开始时，将?张随机牌添加到你的手牌中。添加的牌会获得虚无。"
+  },
+  "Caltrops": {
+    "id": "Caltrops",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "CardRarity.Event",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Thorns",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "铁蒺藜",
+    "desc_cn": "每当你被攻击时，对攻击者造成?点伤害。"
+  },
+  "Capacitor": {
+    "id": "Capacitor",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "扩容",
+    "desc_cn": "获得?个充能球栏位。"
+  },
+  "CaptureSpirit": {
+    "id": "CaptureSpirit",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "捕捉灵魂",
+    "desc_cn": "敌人失去?点生命。 将?张灵魂加入你的抽牌堆。"
+  },
+  "Cascade": {
+    "id": "Cascade",
+    "name_cn": "倾泻",
+    "desc_cn": "打出你抽牌堆顶部的X?张牌。"
+  },
+  "Catastrophe": {
+    "id": "Catastrophe",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "横祸",
+    "desc_cn": "从你的抽牌堆中随机打出?张牌。"
+  },
+  "CelestialMight": {
+    "id": "CelestialMight",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "天穹之力",
+    "desc_cn": "造成?点伤害?次。"
+  },
+  "Chaos": {
+    "id": "Chaos",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "混沌",
+    "desc_cn": "生成?个随机充能球。"
+  },
+  "Charge": {
+    "id": "Charge",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "冲锋！！",
+    "desc_cn": "选择你抽牌堆中的?张 牌，将其变化为 ?。"
+  },
+  "ChargeBattery": {
+    "id": "ChargeBattery",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      7
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "充电",
+    "desc_cn": "获得?点格挡。 在下个回合获得?。"
+  },
+  "ChildOfTheStars": {
+    "id": "ChildOfTheStars",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "群星之子",
+    "desc_cn": "每当你花费?时，每花费一点?，获得?点格挡。"
+  },
+  "Chill": {
+    "id": "Chill",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "冰寒",
+    "desc_cn": "当前每有一名敌人，就生成1个冰霜充能球。"
+  },
+  "Cinder": {
+    "id": "Cinder",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      17
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "余烬",
+    "desc_cn": "造成?点伤害。 消耗你的抽牌堆顶部的牌。"
+  },
+  "Clash": {
+    "id": "Clash",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "CardRarity.Event",
+    "target": "单敌",
+    "damage": [
+      14
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "交锋",
+    "desc_cn": "只有在手牌中每一张牌都是攻击牌时才能被打出。 造成?点伤害。"
+  },
+  "Claw": {
+    "id": "Claw",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "爪击",
+    "desc_cn": "造成?点伤害。 本场战斗中所有爪击卡牌的伤害增加?点。"
+  },
+  "Cleanse": {
+    "id": "Cleanse",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "洁净",
+    "desc_cn": "召唤?。 从你的抽牌堆中选一张牌消耗。"
+  },
+  "CloakAndDagger": {
+    "id": "CloakAndDagger",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      6
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "斗篷与匕首",
+    "desc_cn": "获得?点格挡。 将?张小刀添加到你的手牌。"
+  },
+  "CloakOfStars": {
+    "id": "CloakOfStars",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      7
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "群星斗篷",
+    "desc_cn": "获得?点格挡。"
+  },
+  "Clumsy": {
+    "id": "Clumsy",
+    "name_cn": "笨拙",
+    "desc_cn": ""
+  },
+  "ColdSnap": {
+    "id": "ColdSnap",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "寒流",
+    "desc_cn": "造成?点伤害。 生成1个冰霜充能球。"
+  },
+  "CollisionCourse": {
+    "id": "CollisionCourse",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      9
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "碰撞轨迹",
+    "desc_cn": "造成?点伤害。 将一张碎屑添加至你的手牌。"
+  },
+  "Colossus": {
+    "id": "Colossus",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "block": [
+      5
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "巨像",
+    "desc_cn": "获得?点格挡。 在本回合中，有易伤状态的敌人对你造成的伤害降低50%。"
+  },
+  "Comet": {
+    "id": "Comet",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      33
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 3
+      },
+      {
+        "type": "Weak",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      11
+    ],
+    "name_cn": "彗星",
+    "desc_cn": "造成?点伤害。 给予?层虚弱。 给予?层易伤。"
+  },
+  "Compact": {
+    "id": "Compact",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      6
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "压缩",
+    "desc_cn": "获得?点格挡。 将你手牌中的全部状态牌变化为?。"
+  },
+  "CompileDriver": {
+    "id": "CompileDriver",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "编译冲击",
+    "desc_cn": "造成?点伤害。 你每有一种不同的充能球，就抽一张牌。?张牌）}"
+  },
+  "Conflagration": {
+    "id": "Conflagration",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "全敌",
+    "damage": [
+      2
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "焚烧",
+    "desc_cn": "对所有敌人造成?点伤害。 你在本回合中每打出过一张其他攻击牌，这张牌的伤害就提升?点。"
+  },
+  "Conqueror": {
+    "id": "Conqueror",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "单敌",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "征服者",
+    "desc_cn": "铸造?。 君王之剑在本回合对敌人造成双倍伤害。"
+  },
+  "ConsumingShadow": {
+    "id": "ConsumingShadow",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "ConsumingShadow",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "吞噬暗影",
+    "desc_cn": "生成?个黑暗充能球。 在你的回合结束时，激发你最左侧的充能球。"
+  },
+  "Convergence": {
+    "id": "Convergence",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "汇流",
+    "desc_cn": "在本回合保留你的手牌。 在下个回合， 获得?与?。"
+  },
+  "Coolant": {
+    "id": "Coolant",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Coolant",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "冷却剂",
+    "desc_cn": "在你的回合开始时，你每有一种不同的充能球，就获得?点格挡。"
+  },
+  "Coolheaded": {
+    "id": "Coolheaded",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "冷静头脑",
+    "desc_cn": "生成1个冰霜充能球。 抽?张牌。"
+  },
+  "Coordinate": {
+    "id": "Coordinate",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "TargetType.AnyAlly",
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 5
+      }
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "协同配合",
+    "desc_cn": "在本回合给予其他玩家?点力量。"
+  },
+  "CorrosiveWave": {
+    "id": "CorrosiveWave",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "腐蚀波",
+    "desc_cn": "打出此牌后，你在本回合每抽到一张牌，就给予所有敌人?层中毒。"
+  },
+  "Corruption": {
+    "id": "Corruption",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "CardRarity.Ancient",
+    "target": "自身",
+    "name_cn": "腐化",
+    "desc_cn": "技能牌消耗变为0?。 每当你打出一张技能牌时，将其消耗。"
+  },
+  "CosmicIndifference": {
+    "id": "CosmicIndifference",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "宇宙冷漠",
+    "desc_cn": "获得?点格挡。 将弃牌堆中的一张牌放到你的抽牌堆的顶部。"
+  },
+  "Countdown": {
+    "id": "Countdown",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Countdown",
+        "amount": 6
+      }
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "倒数计时",
+    "desc_cn": "在你的回合开始时，给予随机敌人?点灾厄。"
+  },
+  "CrashLanding": {
+    "id": "CrashLanding",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "全敌",
+    "damage": [
+      21
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "迫降",
+    "desc_cn": "对所有敌人造成?点伤害。 用碎屑填满你的手牌。"
+  },
+  "CreativeAi": {
+    "id": "CreativeAi",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "创造性AI",
+    "desc_cn": "在你的回合开始时，将一张随机能力牌加入你的手牌。"
+  },
+  "CrescentSpear": {
+    "id": "CrescentSpear",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      2
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "新月长矛",
+    "desc_cn": "造成?点伤害。 你每有一张拥有?耗能的卡牌，这张牌就额外造成?点伤害。"
+  },
+  "CrimsonMantle": {
+    "id": "CrimsonMantle",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "CrimsonMantle",
+        "amount": 8
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "绯红披风",
+    "desc_cn": "在你的回合开始时，失去1点生命并获得?点格挡。"
+  },
+  "Cruelty": {
+    "id": "Cruelty",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Cruelty",
+        "amount": 25
+      }
+    ],
+    "upgrade": [
+      25
+    ],
+    "name_cn": "残酷",
+    "desc_cn": "有易伤状态的敌人额外受到?%的伤害。"
+  },
+  "CrushUnder": {
+    "id": "CrushUnder",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "全敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "下砸",
+    "desc_cn": "对所有敌人造成?点伤害。所有敌人在本回合失去?点力量。"
+  },
+  "CurseOfTheBell": {
+    "id": "CurseOfTheBell",
+    "name_cn": "铃铛的诅咒",
+    "desc_cn": ""
+  },
+  "DaggerSpray": {
+    "id": "DaggerSpray",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "全敌",
+    "damage": [
+      4
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "匕首雨",
+    "desc_cn": "对所有敌人造成?点伤害两次。"
+  },
+  "DaggerThrow": {
+    "id": "DaggerThrow",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      9
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "投掷匕首",
+    "desc_cn": "造成?点伤害。 抽1张牌。 丢弃一张牌。"
+  },
+  "DanseMacabre": {
+    "id": "DanseMacabre",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "DanseMacabre",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "死亡之舞",
+    "desc_cn": "每当你打出一张耗能大于等于?的牌时，获得?点格挡。"
+  },
+  "DarkEmbrace": {
+    "id": "DarkEmbrace",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "黑暗之拥",
+    "desc_cn": "每当有一张牌被消耗时， 抽1张牌。"
+  },
+  "DarkShackles": {
+    "id": "DarkShackles",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "单敌",
+    "upgrade": [
+      6
+    ],
+    "name_cn": "黑暗镣铐",
+    "desc_cn": "使一名敌人在本回合失去?点力量。"
+  },
+  "Darkness": {
+    "id": "Darkness",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "漆黑",
+    "desc_cn": "生成1黑暗充能球。 触发所有黑暗充能球的被动?。"
+  },
+  "Dash": {
+    "id": "Dash",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "block": [
+      10
+    ],
+    "upgrade": [
+      3,
+      3
+    ],
+    "name_cn": "冲刺",
+    "desc_cn": "获得?点格挡。 造成?点伤害。"
+  },
+  "Dazed": {
+    "id": "Dazed",
+    "name_cn": "晕眩",
+    "desc_cn": ""
+  },
+  "DeadlyPoison": {
+    "id": "DeadlyPoison",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "单敌",
+    "powers": [
+      {
+        "type": "Poison",
+        "amount": 5
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "致命毒药",
+    "desc_cn": "给予?层中毒。"
+  },
+  "DeathMarch": {
+    "id": "DeathMarch",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "死亡行军",
+    "desc_cn": "造成?点伤害。 你在回合进行中每抽到一张牌，都会使其额外造成?点伤害。"
+  },
+  "Deathbringer": {
+    "id": "Deathbringer",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "全敌",
+    "powers": [
+      {
+        "type": "Doom",
+        "amount": 21
+      },
+      {
+        "type": "Weak",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "死亡使者",
+    "desc_cn": "给予所有敌人?层灾厄和?层虚弱。"
+  },
+  "DeathsDoor": {
+    "id": "DeathsDoor",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      6
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "死亡之门",
+    "desc_cn": "获得?点格挡。 如果你在本回合中曾给予过灾厄，则额外获得?次格挡。"
+  },
+  "Debilitate": {
+    "id": "Debilitate",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "powers": [
+      {
+        "type": "Debilitate",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "摧残",
+    "desc_cn": "造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。"
+  },
+  "Debris": {
+    "id": "Debris",
+    "cost": 1,
+    "type": "状态",
+    "rarity": "CardRarity.Status",
+    "target": "无",
+    "name_cn": "碎屑",
+    "desc_cn": ""
+  },
+  "Debt": {
+    "id": "Debt",
+    "name_cn": "债务",
+    "desc_cn": "在你的回合结束时，如果这张牌在你的手牌中，则失去?金币。"
+  },
+  "Decay": {
+    "id": "Decay",
+    "damage": [
+      2
+    ],
+    "name_cn": "腐朽",
+    "desc_cn": "在你的回合结束时，如果这张牌在你的手牌中, 你受到?点伤害。"
+  },
+  "DecisionsDecisions": {
+    "id": "DecisionsDecisions",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "抉择，抉择",
+    "desc_cn": "抽?张牌。 选择你手牌中的一张技能牌，并将其打出?次。"
+  },
+  "DefendDefect": {
+    "id": "DefendDefect",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "基础",
+    "target": "自身",
+    "block": [
+      5
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "防御",
+    "desc_cn": "获得?点格挡。"
+  },
+  "DefendIronclad": {
+    "id": "DefendIronclad",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "基础",
+    "target": "自身",
+    "block": [
+      5
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "防御",
+    "desc_cn": "获得?点格挡。"
+  },
+  "DefendNecrobinder": {
+    "id": "DefendNecrobinder",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "基础",
+    "target": "自身",
+    "block": [
+      5
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "防御",
+    "desc_cn": "获得?点格挡。"
+  },
+  "DefendRegent": {
+    "id": "DefendRegent",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "基础",
+    "target": "自身",
+    "block": [
+      5
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "防御",
+    "desc_cn": "获得?点格挡。"
+  },
+  "DefendSilent": {
+    "id": "DefendSilent",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "基础",
+    "target": "自身",
+    "block": [
+      5
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "防御",
+    "desc_cn": "获得?点格挡。"
+  },
+  "Defile": {
+    "id": "Defile",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      13
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "玷污",
+    "desc_cn": "造成?点伤害。"
+  },
+  "Deflect": {
+    "id": "Deflect",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      4
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "偏折",
+    "desc_cn": "获得?点格挡。"
+  },
+  "Defragment": {
+    "id": "Defragment",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Focus",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "碎片整理",
+    "desc_cn": "获得?点集中。"
+  },
+  "Defy": {
+    "id": "Defy",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "单敌",
+    "block": [
+      6
+    ],
+    "powers": [
+      {
+        "type": "Weak",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "违逆",
+    "desc_cn": "获得?点格挡。 给予?层虚弱。"
+  },
+  "Delay": {
+    "id": "Delay",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      11
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "拖延",
+    "desc_cn": "获得?点格挡。 在下个回合， 获得?。"
+  },
+  "Demesne": {
+    "id": "Demesne",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "领域",
+    "desc_cn": "在你的回合开始时，获得?并额外多抽?张牌。"
+  },
+  "DemonForm": {
+    "id": "DemonForm",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "恶魔形态",
+    "desc_cn": "在你的回合开始时，获得?点力量。"
+  },
+  "DemonicShield": {
+    "id": "DemonicShield",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "TargetType.AnyAlly",
+    "name_cn": "恶魔护盾",
+    "desc_cn": "失去?点生命。 给予另一位玩家你当前格挡值的格挡。?点格挡）|}"
+  },
+  "DeprecatedCard": {
+    "id": "DeprecatedCard",
+    "name_cn": "弃用卡牌",
+    "desc_cn": "这张卡牌已经从游戏中移除。"
+  },
+  "Devastate": {
+    "id": "Devastate",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      30
+    ],
+    "upgrade": [
+      10
+    ],
+    "name_cn": "葬送",
+    "desc_cn": "造成?点伤害。"
+  },
+  "DevourLife": {
+    "id": "DevourLife",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "DevourLife",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "吞噬生命",
+    "desc_cn": "每当你打出一张灵魂时，召唤?。"
+  },
+  "Dirge": {
+    "id": "Dirge",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "挽歌",
+    "desc_cn": "召唤?X次。 将X张?添加到你的抽牌堆中。"
+  },
+  "Discovery": {
+    "id": "Discovery",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "发现",
+    "desc_cn": "从3张随机牌中选择1张加入你的手牌。这张牌在本回合的耗能为0?。"
+  },
+  "Disintegration": {
+    "id": "Disintegration",
+    "powers": [
+      {
+        "type": "Disintegration",
+        "amount": 6
+      }
+    ],
+    "name_cn": "瓦解",
+    "desc_cn": "在你的回合结束时，受到?点伤害。"
+  },
+  "Dismantle": {
+    "id": "Dismantle",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      8
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "拆卸",
+    "desc_cn": "造成?点伤害。 如果该敌人有易伤状态，则攻击两次。"
+  },
+  "Distraction": {
+    "id": "Distraction",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "CardRarity.Event",
+    "target": "自身",
+    "name_cn": "声东击西",
+    "desc_cn": "将一张随机技能牌添加到你的手牌中。这张牌在本回合内可以免费打出。"
+  },
+  "DodgeAndRoll": {
+    "id": "DodgeAndRoll",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      4
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "闪躲翻滚",
+    "desc_cn": "获得?点格挡。 在下个回合，获得?点格挡。"
+  },
+  "Dominate": {
+    "id": "Dominate",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "单敌",
+    "name_cn": "主宰",
+    "desc_cn": "敌人身上每有一层易伤，就获得?点力量。"
+  },
+  "DoubleEnergy": {
+    "id": "DoubleEnergy",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "双倍能量",
+    "desc_cn": "将你的能量翻倍。"
+  },
+  "Doubt": {
+    "id": "Doubt",
+    "powers": [
+      {
+        "type": "Weak",
+        "amount": 1
+      }
+    ],
+    "name_cn": "疑虑",
+    "desc_cn": "在你的回合结束时，如果这张牌在你的手牌中，获得?层虚弱。"
+  },
+  "DrainPower": {
+    "id": "DrainPower",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "能量汲取",
+    "desc_cn": "造成?点伤害。 随机升级你弃牌堆中的?张牌。"
+  },
+  "DramaticEntrance": {
+    "id": "DramaticEntrance",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "全敌",
+    "damage": [
+      11
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "闪亮登场",
+    "desc_cn": "对所有敌人造成?点伤害。"
+  },
+  "Dredge": {
+    "id": "Dredge",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "清淤",
+    "desc_cn": "将?张牌从弃牌堆加入你的手牌。"
+  },
+  "DrumOfBattle": {
+    "id": "DrumOfBattle",
+    "cost": 0,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "DrumOfBattle",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "战鼓",
+    "desc_cn": "抽?张牌。 在你的回合开始时，消耗你的抽牌堆顶部的牌。"
+  },
+  "DualWield": {
+    "id": "DualWield",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "CardRarity.Event",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "双持",
+    "desc_cn": "选择一张攻击牌或能力牌。将?张此牌的复制品|一张此牌的复制品}加入你的手牌。"
+  },
+  "Dualcast": {
+    "id": "Dualcast",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "基础",
+    "target": "自身",
+    "name_cn": "双重释放",
+    "desc_cn": "激发你最右侧的充能球两次。"
+  },
+  "DyingStar": {
+    "id": "DyingStar",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "全敌",
+    "damage": [
+      9
+    ],
+    "upgrade": [
+      2,
+      2
+    ],
+    "name_cn": "星灭",
+    "desc_cn": "对所有敌人造成?点伤害。所有敌人在本回合中失去?点力量。"
+  },
+  "EchoForm": {
+    "id": "EchoForm",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "回响形态",
+    "desc_cn": "你每回合打出的第一张牌会被打出两次。"
+  },
+  "EchoingSlash": {
+    "id": "EchoingSlash",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "全敌",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "回响斩击",
+    "desc_cn": "对所有敌人造成?点伤害。 每有一名敌人被击杀，就重复此效果。"
+  },
+  "Eidolon": {
+    "id": "Eidolon",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "幻景",
+    "desc_cn": "消耗所有手牌。 如果有至少9张牌通过这个方法被消耗了，则获得1层无实体。"
+  },
+  "EndOfDays": {
+    "id": "EndOfDays",
+    "cost": 3,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "全敌",
+    "powers": [
+      {
+        "type": "Doom",
+        "amount": 29
+      }
+    ],
+    "upgrade": [
+      8
+    ],
+    "name_cn": "末日降临",
+    "desc_cn": "给予所有敌人?层灾厄。 杀死所有灾厄大于等于自身生命值的敌人。"
+  },
+  "EnergySurge": {
+    "id": "EnergySurge",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "TargetType.AllAllies",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "能量涌动",
+    "desc_cn": "所有玩家获得?。"
+  },
+  "EnfeeblingTouch": {
+    "id": "EnfeeblingTouch",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "单敌",
+    "upgrade": [
+      3
+    ],
+    "name_cn": "弱化之触",
+    "desc_cn": "让一名敌人在本回合内失去?点力量。"
+  },
+  "Enlightenment": {
+    "id": "Enlightenment",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "CardRarity.Event",
+    "target": "自身",
+    "name_cn": "开悟",
+    "desc_cn": "在这?，你当前手牌中所有牌的耗能降低至1。"
+  },
+  "Enthralled": {
+    "id": "Enthralled",
+    "cost": 2,
+    "type": "诅咒",
+    "rarity": "诅咒",
+    "target": "无",
+    "name_cn": "执迷",
+    "desc_cn": "如果这张牌在你的手牌中，你必须优先打出这张牌。"
+  },
+  "Entrench": {
+    "id": "Entrench",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "CardRarity.Event",
+    "target": "自身",
+    "name_cn": "巩固",
+    "desc_cn": "将你当前的格挡翻倍。"
+  },
+  "Entropy": {
+    "id": "Entropy",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "熵",
+    "desc_cn": "在你的回合开始时，变化你手牌中的?张牌。"
+  },
+  "Envenom": {
+    "id": "Envenom",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Envenom",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "涂毒",
+    "desc_cn": "每有一次攻击造成未被格挡的伤害，就给予?层中毒。"
+  },
+  "Equilibrium": {
+    "id": "Equilibrium",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      13
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "均衡",
+    "desc_cn": "获得?点格挡。 在本回合保留你的手牌。"
+  },
+  "Eradicate": {
+    "id": "Eradicate",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      11
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "根除",
+    "desc_cn": "造成?点伤害X次。"
+  },
+  "EscapePlan": {
+    "id": "EscapePlan",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      3
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "逃脱计划",
+    "desc_cn": "抽1张牌。 如果抽到的是技能牌，则获得?点格挡。"
+  },
+  "EternalArmor": {
+    "id": "EternalArmor",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Plating",
+        "amount": 7
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "永恒铠甲",
+    "desc_cn": "获得?层覆甲。"
+  },
+  "EvilEye": {
+    "id": "EvilEye",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      8
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "邪眼",
+    "desc_cn": "获得?点格挡。 如果你在本回合获得消耗过卡牌，则额外获得?点格挡。"
+  },
+  "ExpectAFight": {
+    "id": "ExpectAFight",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身"
+  },
+  "Expertise": {
+    "id": "Expertise",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "独门绝技",
+    "desc_cn": "抽牌直至你的手牌有?张牌。"
+  },
+  "Expose": {
+    "id": "Expose",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "单敌",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "暴露",
+    "desc_cn": "去除敌人身上的所有格挡值和人工制品。 并给予?层易伤。"
+  },
+  "Exterminate": {
+    "id": "Exterminate",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "CardRarity.Event",
+    "target": "全敌",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "杀灭",
+    "desc_cn": "对所有敌人造成?点伤害?次。"
+  },
+  "FallingStar": {
+    "id": "FallingStar",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "基础",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 1
+      },
+      {
+        "type": "Weak",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "陨星",
+    "desc_cn": "造成?点伤害。 给予?层虚弱。 给予?层易伤。"
+  },
+  "FanOfKnives": {
+    "id": "FanOfKnives",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "刀扇",
+    "desc_cn": "小刀现在会攻击所有敌人。 将?张小刀添加到你的手牌。"
+  },
+  "Fasten": {
+    "id": "Fasten",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "勒紧",
+    "desc_cn": "从“防御”牌中额外获得?点格挡。"
+  },
+  "Fear": {
+    "id": "Fear",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "恐惧",
+    "desc_cn": "造成?点伤害。 给予?层易伤。"
+  },
+  "Feed": {
+    "id": "Feed",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "狂宴",
+    "desc_cn": "造成?点伤害。 斩杀时，永久获得?点最大生命值。"
+  },
+  "FeedingFrenzy": {
+    "id": "FeedingFrenzy",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "CardRarity.Event",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 5
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "疯狂进食",
+    "desc_cn": "在本回合内获得?点力量。"
+  },
+  "FeelNoPain": {
+    "id": "FeelNoPain",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "无惧疼痛",
+    "desc_cn": "每当有一张牌被消耗时，获得?点格挡。"
+  },
+  "Feral": {
+    "id": "Feral",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Feral",
+        "amount": 1
+      }
+    ],
+    "name_cn": "野性",
+    "desc_cn": "毎ターン、コスト0?のアタックをプレイするたび、そのカードを手札に戻す（1ターンにつき?枚まで）。"
+  },
+  "Fetch": {
+    "id": "Fetch",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "取回",
+    "desc_cn": "奥斯提造成?点伤害。 如果这是这张牌第一次在本回合被打出，则抽?张牌。"
+  },
+  "FiendFire": {
+    "id": "FiendFire",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "恶魔之焰",
+    "desc_cn": "消耗所有手牌。 每张被消耗的牌造成?点伤害。"
+  },
+  "FightMe": {
+    "id": "FightMe",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "与我一战！",
+    "desc_cn": "造成?点伤害两次。 获得?点力量。 该敌人获得?点力量。"
+  },
+  "FightThrough": {
+    "id": "FightThrough",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      13
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "强撑",
+    "desc_cn": "获得?点格挡。 将2张伤口加入你的弃牌堆。"
+  },
+  "Finesse": {
+    "id": "Finesse",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      4
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "妙计",
+    "desc_cn": "获得?点格挡。 抽1张牌。"
+  },
+  "Finisher": {
+    "id": "Finisher",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "终结技",
+    "desc_cn": "在这个回合内每打出过一张攻击牌，就造成?点伤害一次。?次）|}"
+  },
+  "Fisticuffs": {
+    "id": "Fisticuffs",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "拳斗",
+    "desc_cn": "造成?点伤害。 获得等量于所造成伤害的格挡。"
+  },
+  "FlakCannon": {
+    "id": "FlakCannon",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "TargetType.RandomEnemy",
+    "damage": [
+      8
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "散射炮",
+    "desc_cn": "消耗你所有的状态牌。 每有一张被消耗的牌，就随机对敌人造成?点伤害。?次）|}"
+  },
+  "FlameBarrier": {
+    "id": "FlameBarrier",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      12
+    ],
+    "upgrade": [
+      4,
+      2
+    ],
+    "name_cn": "火焰屏障",
+    "desc_cn": "获得?点格挡。 你在这个回合每受到一次攻击，都会对攻击者造成?点伤害。"
+  },
+  "Flanking": {
+    "id": "Flanking",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "单敌",
+    "name_cn": "夹击",
+    "desc_cn": "一名敌人在本回合受到的来自其他玩家的伤害翻倍。"
+  },
+  "FlashOfSteel": {
+    "id": "FlashOfSteel",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "亮剑",
+    "desc_cn": "造成?点伤害。 抽1张牌。"
+  },
+  "Flatten": {
+    "id": "Flatten",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      12
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "重压",
+    "desc_cn": "奥斯提造成?点伤害。 如果奥斯提本回合攻击过，则这张牌的费用变为0?。"
+  },
+  "Flechettes": {
+    "id": "Flechettes",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "飞镖",
+    "desc_cn": "手牌中每有一张技能牌，造成?点伤害。?次）|}"
+  },
+  "FlickFlack": {
+    "id": "FlickFlack",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "全敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "翻越撑击",
+    "desc_cn": "对所有敌人造成?点伤害。"
+  },
+  "FocusedStrike": {
+    "id": "FocusedStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      9
+    ],
+    "powers": [
+      {
+        "type": "Focus",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "集中打击",
+    "desc_cn": "造成?点伤害。 在本回合获得?点集中。"
+  },
+  "FollowThrough": {
+    "id": "FollowThrough",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "全敌",
+    "damage": [
+      6
+    ],
+    "powers": [
+      {
+        "type": "Weak",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "跟进",
+    "desc_cn": "对所有敌人造成?点伤害。 如果在本回合，你打出的上一张牌是技能牌，则给予所有敌人?层虚弱。"
+  },
+  "Folly": {
+    "id": "Folly",
+    "name_cn": "愚行",
+    "desc_cn": ""
+  },
+  "Footwork": {
+    "id": "Footwork",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Dexterity",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "灵动步法",
+    "desc_cn": "获得?点敏捷。"
+  },
+  "ForbiddenGrimoire": {
+    "id": "ForbiddenGrimoire",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "CardRarity.Ancient",
+    "target": "自身",
+    "name_cn": "禁忌魔典",
+    "desc_cn": "在战斗结束时，你可以从你的牌组中选一张牌移除。"
+  },
+  "ForegoneConclusion": {
+    "id": "ForegoneConclusion",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "既定事项",
+    "desc_cn": "在下个回合，从你的抽牌堆中选择?张牌放入你的手牌。"
+  },
+  "ForgottenRitual": {
+    "id": "ForgottenRitual",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "被遗忘的仪式",
+    "desc_cn": "如果你在本回合消耗过卡牌，则获得?。"
+  },
+  "FranticEscape": {
+    "id": "FranticEscape",
+    "cost": 1,
+    "type": "状态",
+    "rarity": "CardRarity.Status",
+    "target": "自身",
+    "name_cn": "狂乱逃离",
+    "desc_cn": "远离。 将沙坑的计数加1。 这张牌的耗能加1。"
+  },
+  "Friendship": {
+    "id": "Friendship",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 2
+      }
+    ],
+    "name_cn": "友谊",
+    "desc_cn": "失去?点力量。 在每个回合开始时获得?。"
+  },
+  "Ftl": {
+    "id": "Ftl",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "超越光速",
+    "desc_cn": "造成?点伤害。 如果你在这回合打出的牌数小于?张，抽1张牌。"
+  },
+  "Fuel": {
+    "id": "Fuel",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "CardRarity.Token",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "燃料",
+    "desc_cn": "获得?。 抽?张牌。"
+  },
+  "Furnace": {
+    "id": "Furnace",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "熔炉",
+    "desc_cn": "在你的回合开始时，铸造?。"
+  },
+  "Fusion": {
+    "id": "Fusion",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "聚变",
+    "desc_cn": "生成1个等离子充能球。"
+  },
+  "GammaBlast": {
+    "id": "GammaBlast",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      13
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 2
+      },
+      {
+        "type": "Weak",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "伽马爆破",
+    "desc_cn": "造成?点伤害。 给予?层虚弱。 给予?层易伤。"
+  },
+  "GangUp": {
+    "id": "GangUp",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "群起攻之",
+    "desc_cn": "造成?点伤害。 本回合其他玩家攻击该敌人时，该牌就造成?点伤害。"
+  },
+  "GatherLight": {
+    "id": "GatherLight",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      7
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "收集光辉",
+    "desc_cn": "获得?点格挡。 获得?。"
+  },
+  "Genesis": {
+    "id": "Genesis",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "创世纪",
+    "desc_cn": "在你的回合开始时，获得?。"
+  },
+  "GeneticAlgorithm": {
+    "id": "GeneticAlgorithm",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "遗传算法",
+    "desc_cn": "获得?点格挡。 每打出一次，这张牌在本局游戏中的格挡值永久增加?点。"
+  },
+  "GiantRock": {
+    "id": "GiantRock",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "CardRarity.Token",
+    "target": "单敌",
+    "damage": [
+      16
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "巨石",
+    "desc_cn": "造成?点伤害。"
+  },
+  "Glacier": {
+    "id": "Glacier",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "冰川",
+    "desc_cn": "获得?点格挡。 生成2个冰霜充能球。"
+  },
+  "Glasswork": {
+    "id": "Glasswork",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      5
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "玻璃工艺",
+    "desc_cn": "获得?点格挡。 生成1个玻璃充能球。"
+  },
+  "Glimmer": {
+    "id": "Glimmer",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "微光",
+    "desc_cn": "抽?张牌。 将你手牌中的?张牌放到抽牌堆顶部。"
+  },
+  "GlimpseBeyond": {
+    "id": "GlimpseBeyond",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "TargetType.AllAllies",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "彼岸一瞥",
+    "desc_cn": "在所有玩家的抽牌堆中加入?张灵魂。"
+  },
+  "Glitterstream": {
+    "id": "Glitterstream",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      11
+    ],
+    "upgrade": [
+      2,
+      2
+    ],
+    "name_cn": "流光溢彩",
+    "desc_cn": "获得?点格挡。 在下一回合获得?点格挡。"
+  },
+  "Glow": {
+    "id": "Glow",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "辉光",
+    "desc_cn": "获得?。 抽?张牌。"
+  },
+  "GoForTheEyes": {
+    "id": "GoForTheEyes",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      3
+    ],
+    "powers": [
+      {
+        "type": "Weak",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "眼部攻击",
+    "desc_cn": "造成?点伤害。 如果敌人的意图是攻击，则给予?层虚弱。"
+  },
+  "GoldAxe": {
+    "id": "GoldAxe",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      1
+    ],
+    "name_cn": "金斧",
+    "desc_cn": "造成本场战斗中所打出牌数的伤害。?点伤害）|}"
+  },
+  "GrandFinale": {
+    "id": "GrandFinale",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "全敌",
+    "damage": [
+      50
+    ],
+    "upgrade": [
+      10
+    ],
+    "name_cn": "华丽收场",
+    "desc_cn": "只有当你的抽牌堆中没有牌时才能打出。对所有敌人造成?点伤害。"
+  },
+  "Grapple": {
+    "id": "Grapple",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "powers": [
+      {
+        "type": "Grapple",
+        "amount": 5
+      }
+    ],
+    "upgrade": [
+      2,
+      2
+    ],
+    "name_cn": "擒拿",
+    "desc_cn": "造成?点伤害。 当你在本回合获得格挡时，对该敌人造成?点伤害。"
+  },
+  "GraveWarden": {
+    "id": "GraveWarden",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      8
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "守墓人",
+    "desc_cn": "获得?点格挡。 将一张?放入你的抽牌堆中。"
+  },
+  "Graveblast": {
+    "id": "Graveblast",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      4
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "坟冢爆射",
+    "desc_cn": "造成?点伤害。 将弃牌堆中的一张牌放入你的手牌。"
+  },
+  "Greed": {
+    "id": "Greed",
+    "name_cn": "贪婪",
+    "desc_cn": ""
+  },
+  "Guards": {
+    "id": "Guards",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "护驾！！！",
+    "desc_cn": "将你手牌中的任意张牌变化为?。"
+  },
+  "GuidingStar": {
+    "id": "GuidingStar",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      12
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "引导之星",
+    "desc_cn": "造成?点伤害。 在下一回合抽?张牌。"
+  },
+  "Guilty": {
+    "id": "Guilty",
+    "name_cn": "愧疚",
+    "desc_cn": "在?场战斗后从你的牌组中移除。"
+  },
+  "GunkUp": {
+    "id": "GunkUp",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      4
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "污秽攻击",
+    "desc_cn": "造成?点伤害?次。 在你的弃牌堆中加入一张黏液。"
+  },
+  "Hailstorm": {
+    "id": "Hailstorm",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Hailstorm",
+        "amount": 6
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "冰雹风暴",
+    "desc_cn": "在你的回合结束时，如果你有冰霜充能球，则对所有敌人造成?点伤害。"
+  },
+  "HammerTime": {
+    "id": "HammerTime",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "锤子时间",
+    "desc_cn": "每当你铸造时，所有盟友也都铸造相同的数值。"
+  },
+  "HandOfGreed": {
+    "id": "HandOfGreed",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      20
+    ],
+    "upgrade": [
+      5,
+      5
+    ],
+    "name_cn": "贪婪之手",
+    "desc_cn": "造成?点伤害。 斩杀时，获得?金币。"
+  },
+  "HandTrick": {
+    "id": "HandTrick",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      7
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "手上技法",
+    "desc_cn": "获得?点格挡。 在本回合给你手牌中的一张技能牌添加奇巧。"
+  },
+  "Hang": {
+    "id": "Hang",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "吊杀",
+    "desc_cn": "造成?点伤害。 让所有“吊杀”牌对这名敌人造成的伤害翻倍。"
+  },
+  "Haunt": {
+    "id": "Haunt",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "纠缠",
+    "desc_cn": "每当你打出一张灵魂时，随机一名敌人失去?点生命。"
+  },
+  "Havoc": {
+    "id": "Havoc",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "name_cn": "破灭",
+    "desc_cn": "打出抽牌堆顶部的牌并将其消耗。"
+  },
+  "Haze": {
+    "id": "Haze",
+    "cost": 3,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "全敌",
+    "powers": [
+      {
+        "type": "Poison",
+        "amount": 4
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "迷雾",
+    "desc_cn": "给予所有敌人?层中毒。"
+  },
+  "Headbutt": {
+    "id": "Headbutt",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      9
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "头槌",
+    "desc_cn": "造成?点伤害。 将你弃牌堆中的一张牌放到抽牌堆顶部。"
+  },
+  "HeavenlyDrill": {
+    "id": "HeavenlyDrill",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      8
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "天际钻头",
+    "desc_cn": "造成?点伤害X次。 如果X的最终数值为?或以上，则将X的数值翻倍。"
+  },
+  "Hegemony": {
+    "id": "Hegemony",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      15
+    ],
+    "upgrade": [
+      3,
+      1
+    ],
+    "name_cn": "霸权",
+    "desc_cn": "造成?点伤害。 在下个回合获得?。"
+  },
+  "HeirloomHammer": {
+    "id": "HeirloomHammer",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      17
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "传承之锤",
+    "desc_cn": "造成?点伤害。 选择你手牌中的一张无色牌。将这张牌的一张复制品放入你的手牌。"
+  },
+  "HelixDrill": {
+    "id": "HelixDrill",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "螺旋钻击",
+    "desc_cn": "在本回合中，每个被使用的?，都会使此牌造成?点伤害一次。?次）|}"
+  },
+  "HelloWorld": {
+    "id": "HelloWorld",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "CardRarity.Event",
+    "target": "自身",
+    "name_cn": "你好世界",
+    "desc_cn": "在你的回合开始时，将一张随机普通牌加入你的手牌。"
+  },
+  "Hellraiser": {
+    "id": "Hellraiser",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "地狱狂徒",
+    "desc_cn": "每当你抽到名字中有“打击”的牌时，对一名随机敌人打出这张牌。"
+  },
+  "Hemokinesis": {
+    "id": "Hemokinesis",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      14
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "御血术",
+    "desc_cn": "失去?点生命。 造成?点伤害。"
+  },
+  "HiddenCache": {
+    "id": "HiddenCache",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "StarNextTurn",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "隐秘藏品",
+    "desc_cn": "获得?。 在下个回合获得?。"
+  },
+  "HiddenDaggers": {
+    "id": "HiddenDaggers",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "隐秘匕首",
+    "desc_cn": "丢弃?张牌。 将?张?加入你的手牌。"
+  },
+  "HiddenGem": {
+    "id": "HiddenGem",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "未掘宝石",
+    "desc_cn": "你抽牌堆中的一张随机牌获得?层重放。"
+  },
+  "HighFive": {
+    "id": "HighFive",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "全敌",
+    "damage": [
+      11
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "击掌",
+    "desc_cn": "奥斯提造成?点伤害 并且给予所有敌人 ?层易伤。"
+  },
+  "Hologram": {
+    "id": "Hologram",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      3
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "全息影像",
+    "desc_cn": "获得?点格挡。 将弃牌堆中的一张牌放入你的手牌。"
+  },
+  "Hotfix": {
+    "id": "Hotfix",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Focus",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "热修复",
+    "desc_cn": "在本回合获得?点集中。"
+  },
+  "HowlFromBeyond": {
+    "id": "HowlFromBeyond",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "全敌",
+    "damage": [
+      16
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "彼岸咆哮",
+    "desc_cn": "对所有敌人造成?点伤害。 在你的回合开始时，从消耗牌堆将此牌打出。"
+  },
+  "HuddleUp": {
+    "id": "HuddleUp",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "TargetType.AllAllies",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "抱团",
+    "desc_cn": "所有玩家抽?张牌。"
+  },
+  "Hyperbeam": {
+    "id": "Hyperbeam",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "全敌",
+    "damage": [
+      26
+    ],
+    "powers": [
+      {
+        "type": "Focus",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      8
+    ],
+    "name_cn": "超能光束",
+    "desc_cn": "对所有敌人造成?点伤害。 失去?点集中。"
+  },
+  "IAmInvincible": {
+    "id": "IAmInvincible",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "block": [
+      9
+    ],
+    "upgrade": [
+      3
+    ]
+  },
+  "IceLance": {
+    "id": "IceLance",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      19
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "冰之长枪",
+    "desc_cn": "造成?点伤害。 生成?个冰霜充能球。"
+  },
+  "Ignition": {
+    "id": "Ignition",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "TargetType.AnyAlly",
+    "name_cn": "引火",
+    "desc_cn": "使另一名玩家生成等离子充能球。"
+  },
+  "Impatience": {
+    "id": "Impatience",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "急躁",
+    "desc_cn": "如果你的手牌中没有攻击牌，抽?张牌。"
+  },
+  "Impervious": {
+    "id": "Impervious",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "block": [
+      30
+    ],
+    "upgrade": [
+      10
+    ],
+    "name_cn": "岿然不动",
+    "desc_cn": "获得?点格挡。"
+  },
+  "Infection": {
+    "id": "Infection",
+    "damage": [
+      3
+    ],
+    "name_cn": "感染",
+    "desc_cn": "在你的回合结束时，如果这张牌在你的手牌中，则受到?点伤害。"
+  },
+  "InfernalBlade": {
+    "id": "InfernalBlade",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "地狱之刃",
+    "desc_cn": "将一张随机攻击牌加入你的手牌。这张牌在本回合内可以免费打出。"
+  },
+  "Inferno": {
+    "id": "Inferno",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Inferno",
+        "amount": 6
+      }
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "狱火",
+    "desc_cn": "在你的回合开始时，失去1点生命。 每当你在你的回合内失去生命时，对所有敌人造成?点伤害。"
+  },
+  "InfiniteBlades": {
+    "id": "InfiniteBlades",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "无尽刀刃",
+    "desc_cn": "在你的回合开始时，在你的手牌中加入1张小刀。"
+  },
+  "Inflame": {
+    "id": "Inflame",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "燃烧",
+    "desc_cn": "获得?点力量。"
+  },
+  "Injury": {
+    "id": "Injury",
+    "name_cn": "受伤",
+    "desc_cn": ""
+  },
+  "Intercept": {
+    "id": "Intercept",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "TargetType.AnyAlly",
+    "block": [
+      9
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "拦截",
+    "desc_cn": "获得?点格挡。 将本回合所有要对另一名玩家发起的攻击转移到你的身上。"
+  },
+  "Invoke": {
+    "id": "Invoke",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "唤起",
+    "desc_cn": "在下个回合召唤?并获得?。"
+  },
+  "IronWave": {
+    "id": "IronWave",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "block": [
+      5
+    ],
+    "upgrade": [
+      2,
+      2
+    ],
+    "name_cn": "铁斩波",
+    "desc_cn": "获得?点格挡。 造成?点伤害。"
+  },
+  "Iteration": {
+    "id": "Iteration",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Iteration",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "迭代",
+    "desc_cn": "每回合你第一次抽到状态牌时，抽?张牌。"
+  },
+  "JackOfAllTrades": {
+    "id": "JackOfAllTrades",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "花样百出",
+    "desc_cn": "将?张随机无色牌加入你的手牌。"
+  },
+  "Jackpot": {
+    "id": "Jackpot",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      25
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "大奖",
+    "desc_cn": "造成?点伤害。 将?张随机?0?的牌加入你的手牌。"
+  },
+  "Juggernaut": {
+    "id": "Juggernaut",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Juggernaut",
+        "amount": 5
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "势不可当",
+    "desc_cn": "每当你获得格挡时，对随机敌人造成?点伤害。"
+  },
+  "Juggling": {
+    "id": "Juggling",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "杂耍",
+    "desc_cn": "将你在每回合打出的第三张攻击牌的复制品加入你的手牌。"
+  },
+  "KinglyKick": {
+    "id": "KinglyKick",
+    "cost": 4,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      24
+    ],
+    "upgrade": [
+      6
+    ],
+    "name_cn": "王者之踢",
+    "desc_cn": "造成?点伤害。 每当你抽到这张牌时，这张牌的耗能减少1。"
+  },
+  "KinglyPunch": {
+    "id": "KinglyPunch",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      8
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "王者之拳",
+    "desc_cn": "造成?点伤害。 每当你抽到这张牌时，在这场战斗中其伤害增加?。"
+  },
+  "KnifeTrap": {
+    "id": "KnifeTrap",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "单敌",
+    "name_cn": "刀刃陷阱",
+    "desc_cn": "将你消耗牌堆中的所有小刀?对一名敌人打出。?张小刀）|}"
+  },
+  "Knockdown": {
+    "id": "Knockdown",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "powers": [
+      {
+        "type": "Knockdown",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      4,
+      1
+    ],
+    "name_cn": "击倒",
+    "desc_cn": "造成?点伤害。 该敌人在本回合受到的来自其他玩家的伤害?。"
+  },
+  "KnockoutBlow": {
+    "id": "KnockoutBlow",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      30
+    ],
+    "upgrade": [
+      8
+    ],
+    "name_cn": "决胜一击",
+    "desc_cn": "造成?点伤害。 如果此牌击杀了敌人，获得?。"
+  },
+  "KnowThyPlace": {
+    "id": "KnowThyPlace",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "单敌",
+    "powers": [
+      {
+        "type": "Weak",
+        "amount": 1
+      },
+      {
+        "type": "Vulnerable",
+        "amount": 1
+      }
+    ],
+    "name_cn": "何人僭越",
+    "desc_cn": "给予?层虚弱。 给予?层易伤。"
+  },
+  "LanternKey": {
+    "id": "LanternKey",
+    "name_cn": "灯火钥匙",
+    "desc_cn": "在下一阶段解锁一个特殊事件。"
+  },
+  "Largesse": {
+    "id": "Largesse",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "TargetType.AnyAlly",
+    "name_cn": "慷慨捐助",
+    "desc_cn": "将一张随机的?无色牌添加至一位其他玩家的手牌中。"
+  },
+  "LeadingStrike": {
+    "id": "LeadingStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "先制打击",
+    "desc_cn": "造成?点伤害。 将?张小刀加入你的手牌。"
+  },
+  "Leap": {
+    "id": "Leap",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      9
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "飞跃",
+    "desc_cn": "获得?点格挡。"
+  },
+  "LegSweep": {
+    "id": "LegSweep",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "单敌",
+    "block": [
+      11
+    ],
+    "powers": [
+      {
+        "type": "Weak",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      3,
+      1
+    ],
+    "name_cn": "扫腿",
+    "desc_cn": "给予?层虚弱。 获得?点格挡。"
+  },
+  "LegionOfBone": {
+    "id": "LegionOfBone",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "TargetType.AllAllies",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "骸骨军团",
+    "desc_cn": "所有玩家召唤?。"
+  },
+  "Lethality": {
+    "id": "Lethality",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Lethality",
+        "amount": 50
+      }
+    ],
+    "upgrade": [
+      25
+    ],
+    "name_cn": "致死性",
+    "desc_cn": "每回合的第一张攻击牌会造成?%额外伤害。"
+  },
+  "Lift": {
+    "id": "Lift",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "TargetType.AnyAlly",
+    "block": [
+      11
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "托举",
+    "desc_cn": "给另一名玩家?点格挡。"
+  },
+  "LightningRod": {
+    "id": "LightningRod",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      4
+    ],
+    "powers": [
+      {
+        "type": "LightningRod",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "引雷针",
+    "desc_cn": "获得?点格挡。 在下?个回合开始时,生成1个闪电充能球。"
+  },
+  "Loop": {
+    "id": "Loop",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "循环",
+    "desc_cn": "在你的回合开始时，触发你最右侧的一个充能球的被动能力?。"
+  },
+  "Luminesce": {
+    "id": "Luminesce",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "CardRarity.Token",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "冷光",
+    "desc_cn": "获得?。"
+  },
+  "LunarBlast": {
+    "id": "LunarBlast",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      4
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "月面射击",
+    "desc_cn": "本回合中每打出过一张技能牌，此牌额外造成?点伤害一次。?次）|}"
+  },
+  "MachineLearning": {
+    "id": "MachineLearning",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "机器学习",
+    "desc_cn": "在你的回合开始时，额外抽?张牌。"
+  },
+  "MadScience": {
+    "id": "MadScience",
+    "damage": [
+      12
+    ],
+    "block": [
+      8
+    ],
+    "name_cn": "疯狂科学",
+    "desc_cn": "?点伤害?次|}。|获得?点格挡。|}?层虚弱。 给予?层易伤。|}?点生命。|}?。|}?张牌|}?。|}?点力量。 获得?点敏捷。|}??。|}?|?}"
+  },
+  "MakeItSo": {
+    "id": "MakeItSo",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "如此甚好",
+    "desc_cn": "造成?点伤害。 你每在一回合内打出?张技能牌，就将这张牌放入你的手牌。"
+  },
+  "Malaise": {
+    "id": "Malaise",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "单敌",
+    "name_cn": "萎靡",
+    "desc_cn": "敌人失去X?点力量。给予X?层虚弱。"
+  },
+  "Mangle": {
+    "id": "Mangle",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      15
+    ],
+    "upgrade": [
+      5,
+      5
+    ],
+    "name_cn": "凌虐",
+    "desc_cn": "造成?点伤害。 敌人在本回合失去?点力量。"
+  },
+  "ManifestAuthority": {
+    "id": "ManifestAuthority",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      7
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "君权自授",
+    "desc_cn": "获得?点格挡。 将一张随机?无色牌加入你的手牌。"
+  },
+  "MasterOfStrategy": {
+    "id": "MasterOfStrategy",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "战略大师",
+    "desc_cn": "抽?张牌。"
+  },
+  "MasterPlanner": {
+    "id": "MasterPlanner",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "谋划专家",
+    "desc_cn": "当你打出技能牌时，该牌获得奇巧。"
+  },
+  "Maul": {
+    "id": "Maul",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "CardRarity.Ancient",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "撕咬",
+    "desc_cn": "造成?点伤害两次。 在这场战斗中，将所有“撕咬”牌的伤害增加?。"
+  },
+  "Mayhem": {
+    "id": "Mayhem",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "乱战",
+    "desc_cn": "在你的回合开始时，打出你抽牌堆顶部的牌。"
+  },
+  "Melancholy": {
+    "id": "Melancholy",
+    "cost": 3,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      13
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "忧郁",
+    "desc_cn": "获得?点格挡。 每当有任何生物死亡时，这张牌的耗能减少?。"
+  },
+  "MementoMori": {
+    "id": "MementoMori",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      4
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "铭记死亡",
+    "desc_cn": "造成?点伤害。 本回合每丢弃过一张牌，则增加?点额外伤害。"
+  },
+  "Metamorphosis": {
+    "id": "Metamorphosis",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "CardRarity.Event",
+    "target": "自身",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "羽化",
+    "desc_cn": "在你的抽牌堆中加入?张随机攻击牌。它们在本场战斗中可以被免费打出。"
+  },
+  "MeteorShower": {
+    "id": "MeteorShower",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "CardRarity.Ancient",
+    "target": "全敌",
+    "damage": [
+      14
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 2
+      },
+      {
+        "type": "Weak",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      7
+    ],
+    "name_cn": "流星雨",
+    "desc_cn": "对所有敌人造成?点伤害。 给予所有敌人?层虚弱和易伤。"
+  },
+  "MeteorStrike": {
+    "id": "MeteorStrike",
+    "cost": 5,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      24
+    ],
+    "upgrade": [
+      6
+    ],
+    "name_cn": "陨石打击",
+    "desc_cn": "造成?点伤害。 生成3个等离子充能球。"
+  },
+  "Mimic": {
+    "id": "Mimic",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "TargetType.AnyAlly",
+    "name_cn": "拟态",
+    "desc_cn": "获得等同于另一位玩家格挡值的格挡。"
+  },
+  "MindBlast": {
+    "id": "MindBlast",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      1
+    ],
+    "name_cn": "心灵震慑",
+    "desc_cn": "造成你抽牌堆中剩余牌数的伤害。?点伤害）|}"
+  },
+  "MindRot": {
+    "id": "MindRot",
+    "powers": [
+      {
+        "type": "MindRot",
+        "amount": 1
+      }
+    ],
+    "name_cn": "心灵腐化",
+    "desc_cn": "每回合少抽?张牌。"
+  },
+  "MinionDiveBomb": {
+    "id": "MinionDiveBomb",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "CardRarity.Token",
+    "target": "单敌",
+    "damage": [
+      13
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "仆从俯冲",
+    "desc_cn": "造成?点伤害。"
+  },
+  "MinionSacrifice": {
+    "id": "MinionSacrifice",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "CardRarity.Token",
+    "target": "自身",
+    "block": [
+      9
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "仆从捐躯",
+    "desc_cn": "获得?点格挡。"
+  },
+  "MinionStrike": {
+    "id": "MinionStrike",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "CardRarity.Token",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "仆从打击",
+    "desc_cn": "造成?点伤害。 抽?张牌。"
+  },
+  "Mirage": {
+    "id": "Mirage",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "蜃景",
+    "desc_cn": "获得等同于所有敌人中毒层数的格挡。?点格挡）|}"
+  },
+  "Misery": {
+    "id": "Misery",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "苦难",
+    "desc_cn": "造成?点伤害。 给予其他敌人该名敌人身上的所有负面效果。"
+  },
+  "Modded": {
+    "id": "Modded",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "模组改造",
+    "desc_cn": "获得?个充能球栏位。 抽?张牌。这张牌的耗能加1。"
+  },
+  "MoltenFist": {
+    "id": "MoltenFist",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "熔融之拳",
+    "desc_cn": "造成?点伤害。 将该敌人身上的易伤层数翻倍。"
+  },
+  "MomentumStrike": {
+    "id": "MomentumStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "趁势打击",
+    "desc_cn": "造成?点伤害。 这张牌的耗能降为0?。"
+  },
+  "MonarchsGaze": {
+    "id": "MonarchsGaze",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "王之凝视",
+    "desc_cn": "每当你攻击敌人的时候，这名敌人在本回合失去?点力量。"
+  },
+  "Monologue": {
+    "id": "Monologue",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "独白",
+    "desc_cn": "每当你在本回合打出卡牌时，在本回合获得?点力量。"
+  },
+  "MultiCast": {
+    "id": "MultiCast",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "多重释放",
+    "desc_cn": "激发你最右侧的充能球?次。"
+  },
+  "Murder": {
+    "id": "Murder",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      1
+    ],
+    "name_cn": "谋杀",
+    "desc_cn": "造成?点伤害。 你在本场战斗中每抽过一张牌，此牌就额外造成?点伤害。"
+  },
+  "NecroMastery": {
+    "id": "NecroMastery",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      3
+    ],
+    "name_cn": "亡灵精通",
+    "desc_cn": "召唤?。 每当奥斯提失去生命值时， 所有敌人失去等量生命值。"
+  },
+  "NegativePulse": {
+    "id": "NegativePulse",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "全敌",
+    "block": [
+      5
+    ],
+    "powers": [
+      {
+        "type": "Doom",
+        "amount": 7
+      }
+    ],
+    "upgrade": [
+      1,
+      4
+    ],
+    "name_cn": "负能量脉冲",
+    "desc_cn": "获得?点格挡。 给予所有敌人?层灾厄。"
+  },
+  "NeowsFury": {
+    "id": "NeowsFury",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "CardRarity.Ancient",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "涅奥之怒",
+    "desc_cn": "造成?点伤害。 将你弃牌堆中的?张随机牌放入你的手牌。"
+  },
+  "Neurosurge": {
+    "id": "Neurosurge",
+    "cost": 0,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Neurosurge",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "精神过载",
+    "desc_cn": "获得?。 抽?张牌。 在你的回合开始时，给予自身?层灾厄。"
+  },
+  "Neutralize": {
+    "id": "Neutralize",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "基础",
+    "target": "单敌",
+    "damage": [
+      3
+    ],
+    "powers": [
+      {
+        "type": "Weak",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "中和",
+    "desc_cn": "造成?点伤害。 给予?层虚弱。"
+  },
+  "NeutronAegis": {
+    "id": "NeutronAegis",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Plating",
+        "amount": 8
+      }
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "中子护盾",
+    "desc_cn": "获得?层覆甲。"
+  },
+  "Nightmare": {
+    "id": "Nightmare",
+    "cost": 3,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "夜魇",
+    "desc_cn": "选择一张牌。 在下个回合将这张牌的3张复制品加入你的手牌。"
+  },
+  "NoEscape": {
+    "id": "NoEscape",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "单敌",
+    "upgrade": [
+      5
+    ],
+    "name_cn": "无处可逃",
+    "desc_cn": "给予?层灾厄，敌人身上每有?层灾厄，则额外给予这名敌人?层灾厄。?层灾厄）|}"
+  },
+  "Normality": {
+    "id": "Normality",
+    "name_cn": "凡庸",
+    "desc_cn": "你在本回合不能打出超过3张牌。?张牌）|}"
+  },
+  "Nostalgia": {
+    "id": "Nostalgia",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "怀旧",
+    "desc_cn": "将你每回合打出第一张攻击或技能牌，置于你的抽牌堆顶端。"
+  },
+  "NoxiousFumes": {
+    "id": "NoxiousFumes",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "毒雾",
+    "desc_cn": "在你的回合开始时，给予所有敌人?层中毒。"
+  },
+  "Null": {
+    "id": "Null",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "powers": [
+      {
+        "type": "Weak",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      3,
+      1
+    ],
+    "name_cn": "空无",
+    "desc_cn": "造成?点伤害。 给予?层虚弱。 生成1个黑暗充能球。"
+  },
+  "Oblivion": {
+    "id": "Oblivion",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "单敌",
+    "powers": [
+      {
+        "type": "Doom",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "湮灭",
+    "desc_cn": "你在本回合内每打出一张牌，就给予该敌人?层灾厄。"
+  },
+  "Offering": {
+    "id": "Offering",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "祭品",
+    "desc_cn": "失去?点生命。 获得?。 抽?张牌。"
+  },
+  "Omnislice": {
+    "id": "Omnislice",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      8
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "万向斩",
+    "desc_cn": "造成?点伤害。 对所有其他敌人造成等量的伤害。"
+  },
+  "OneTwoPunch": {
+    "id": "OneTwoPunch",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "连环拳",
+    "desc_cn": "在这个回合，你打出的下?张攻击牌会被额外打出一次。"
+  },
+  "Orbit": {
+    "id": "Orbit",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "环绕轨道",
+    "desc_cn": "你每花费?， 就获得?。"
+  },
+  "Outbreak": {
+    "id": "Outbreak",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Outbreak",
+        "amount": 11
+      }
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "毒性爆发",
+    "desc_cn": "每当你给予?次中毒，就对所有敌人造成?点伤害。"
+  },
+  "Outmaneuver": {
+    "id": "Outmaneuver",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "CardRarity.Event",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "抢占先机",
+    "desc_cn": "在下个回合获得?。"
+  },
+  "Overclock": {
+    "id": "Overclock",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "超频",
+    "desc_cn": "抽?张牌。 将一张灼伤加入你的弃牌堆。"
+  },
+  "PactsEnd": {
+    "id": "PactsEnd",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "全敌",
+    "damage": [
+      17
+    ],
+    "upgrade": [
+      6
+    ],
+    "name_cn": "契约终结",
+    "desc_cn": "只有在你的消耗牌堆拥有大于等于?张牌的时候才能被打出。 对所有敌人造成?点伤害。"
+  },
+  "Pagestorm": {
+    "id": "Pagestorm",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "书页风暴",
+    "desc_cn": "每当你抽到一张虚无牌时, 抽?张牌。"
+  },
+  "PaleBlueDot": {
+    "id": "PaleBlueDot",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "暗淡蓝点",
+    "desc_cn": "如果你在一回合内打出了大于等于?张牌，在下个回合开始时抽?张牌。"
+  },
+  "Panache": {
+    "id": "Panache",
+    "cost": 0,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      4
+    ],
+    "name_cn": "神气制胜",
+    "desc_cn": "每当你在一回合内打出五张牌时，对所有敌人造成?点伤害。"
+  },
+  "PanicButton": {
+    "id": "PanicButton",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      30
+    ],
+    "upgrade": [
+      10
+    ],
+    "name_cn": "应急按钮",
+    "desc_cn": "获得?点格挡。 你在接下来的?回合内无法再从卡牌中获得格挡。"
+  },
+  "Parry": {
+    "id": "Parry",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Parry",
+        "amount": 6
+      }
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "招架",
+    "desc_cn": "每当你打出君王之剑时，获得?点格挡。"
+  },
+  "Parse": {
+    "id": "Parse",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "领会",
+    "desc_cn": "抽?张牌。"
+  },
+  "ParticleWall": {
+    "id": "ParticleWall",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      9
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "粒子墙",
+    "desc_cn": "获得?点格挡。 将此牌返回你的手牌。"
+  },
+  "Patter": {
+    "id": "Patter",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      8
+    ],
+    "powers": [
+      {
+        "type": "Vigor",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "星星点点",
+    "desc_cn": "获得?点格挡。 获得?点活力。"
+  },
+  "Peck": {
+    "id": "Peck",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "CardRarity.Event",
+    "target": "单敌",
+    "damage": [
+      2
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "啄击",
+    "desc_cn": "造成?点伤害?次。"
+  },
+  "PerfectedStrike": {
+    "id": "PerfectedStrike",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      2
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "完美打击",
+    "desc_cn": "造成?点伤害。 你每有一张名字中含有“打击”的牌，伤害+?。"
+  },
+  "PhantomBlades": {
+    "id": "PhantomBlades",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "PhantomBlades",
+        "amount": 9
+      }
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "幻影之刃",
+    "desc_cn": "小刀获得保留。 你在每回合打出的第一张小刀额外造成?点伤害。"
+  },
+  "PhotonCut": {
+    "id": "PhotonCut",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      3,
+      1
+    ],
+    "name_cn": "光子切割",
+    "desc_cn": "造成?点伤害。 抽?张牌。 将手牌中的一张牌放到抽牌堆顶部。"
+  },
+  "PiercingWail": {
+    "id": "PiercingWail",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "全敌",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "尖啸",
+    "desc_cn": "所有敌人在本回合失去?点力量。"
+  },
+  "Pillage": {
+    "id": "Pillage",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "劫掠",
+    "desc_cn": "造成?点伤害。 抽牌直到你抽到一张非攻击牌。"
+  },
+  "PillarOfCreation": {
+    "id": "PillarOfCreation",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      3
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "创世之柱",
+    "desc_cn": "每当你生成一张卡牌, 就获得?点格挡。"
+  },
+  "Pinpoint": {
+    "id": "Pinpoint",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      17
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "精密瞄准",
+    "desc_cn": "造成?点伤害。 你在本回合中每打出过一张技能牌，其耗能减少1?。"
+  },
+  "PoisonedStab": {
+    "id": "PoisonedStab",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "powers": [
+      {
+        "type": "Poison",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "带毒刺击",
+    "desc_cn": "造成?点伤害。 给予?层中毒。"
+  },
+  "Poke": {
+    "id": "Poke",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "戳击",
+    "desc_cn": "奥斯提造成?点伤害。"
+  },
+  "PommelStrike": {
+    "id": "PommelStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      9
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "剑柄打击",
+    "desc_cn": "造成?点伤害。 抽?张牌。"
+  },
+  "PoorSleep": {
+    "id": "PoorSleep",
+    "name_cn": "睡眠不佳",
+    "desc_cn": ""
+  },
+  "Pounce": {
+    "id": "Pounce",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      12
+    ],
+    "upgrade": [
+      6
+    ],
+    "name_cn": "猛扑",
+    "desc_cn": "造成?点伤害。 你的下一张技能牌耗能变为0?。"
+  },
+  "PreciseCut": {
+    "id": "PreciseCut",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      2
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "精确切击",
+    "desc_cn": "造成?点伤害。 你的手牌中每有一张牌，此牌的伤害就降低?点。"
+  },
+  "Predator": {
+    "id": "Predator",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      15
+    ],
+    "upgrade": [
+      5
+    ],
+    "draw": [
+      2
+    ],
+    "name_cn": "猎杀者",
+    "desc_cn": "造成?点伤害。 在下个回合抽2张牌。"
+  },
+  "PrepTime": {
+    "id": "PrepTime",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "PrepTime",
+        "amount": 4
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "准备时间",
+    "desc_cn": "在你的回合开始时，获得?点活力。"
+  },
+  "Prepared": {
+    "id": "Prepared",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "早有准备",
+    "desc_cn": "抽?张牌。 丢弃?张牌。"
+  },
+  "PrimalForce": {
+    "id": "PrimalForce",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "原始力量",
+    "desc_cn": "将手牌中的所有攻击牌变化为?。"
+  },
+  "Production": {
+    "id": "Production",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "生产制造",
+    "desc_cn": "获得?。"
+  },
+  "Prolong": {
+    "id": "Prolong",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "延伸",
+    "desc_cn": "在下个回合获得等量于你当前格挡值的格挡。"
+  },
+  "Prophesize": {
+    "id": "Prophesize",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      3
+    ],
+    "name_cn": "预言",
+    "desc_cn": "抽?张牌。"
+  },
+  "Protector": {
+    "id": "Protector",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "CardRarity.Ancient",
+    "target": "单敌",
+    "damage": [
+      1
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "守护者",
+    "desc_cn": "奥斯提造成?点伤害。 额外造成等量于奥斯提最大生命值的伤害。"
+  },
+  "Prowess": {
+    "id": "Prowess",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 1
+      },
+      {
+        "type": "Dexterity",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "非凡技艺",
+    "desc_cn": "获得?点力量。 获得?点敏捷。"
+  },
+  "PullAggro": {
+    "id": "PullAggro",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      7
+    ],
+    "upgrade": [
+      1,
+      2
+    ],
+    "name_cn": "吸引仇恨",
+    "desc_cn": "召唤?。 获得?点格挡。"
+  },
+  "PullFromBelow": {
+    "id": "PullFromBelow",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "亡魂牵引",
+    "desc_cn": "本场战斗中每打出过一张虚无牌，此牌就造成?点伤害一次。?次）|}"
+  },
+  "Purity": {
+    "id": "Purity",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "净化",
+    "desc_cn": "从手牌中选择最多?张牌消耗。"
+  },
+  "Putrefy": {
+    "id": "Putrefy",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "单敌",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "腐败",
+    "desc_cn": "给予?层虚弱。 给予?层易伤。"
+  },
+  "Pyre": {
+    "id": "Pyre",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "薪火之源",
+    "desc_cn": "在回合开始时，获得?。"
+  },
+  "Quadcast": {
+    "id": "Quadcast",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "CardRarity.Ancient",
+    "target": "自身",
+    "name_cn": "四重释放",
+    "desc_cn": "激发你最右侧的充能球?次。"
+  },
+  "Quasar": {
+    "id": "Quasar",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "类星体",
+    "desc_cn": "从3张随机?无色牌中选择1张加入你的手牌。"
+  },
+  "Radiate": {
+    "id": "Radiate",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "全敌",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "辐射",
+    "desc_cn": "你在本回合每获得一点?，则此牌就所有敌人造成?点伤害一次。?次）|}"
+  },
+  "Rage": {
+    "id": "Rage",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "狂怒",
+    "desc_cn": "打出此牌后，你在这个回合内每打出一张攻击牌，获得?点格挡。"
+  },
+  "Rainbow": {
+    "id": "Rainbow",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "彩虹",
+    "desc_cn": "生成1个闪电充能球。 生成1个冰霜充能球。 生成1个黑暗充能球。"
+  },
+  "Rally": {
+    "id": "Rally",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "TargetType.AllAllies",
+    "block": [
+      12
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "集结",
+    "desc_cn": "所有玩家获得?点格挡。"
+  },
+  "Rampage": {
+    "id": "Rampage",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      9
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "暴走",
+    "desc_cn": "造成?点伤害。 将这张牌在本场战斗中的伤害增加?。"
+  },
+  "Rattle": {
+    "id": "Rattle",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "猛晃",
+    "desc_cn": "奥斯提造成?点伤害。 他在本回合每攻击过一次，此牌就额外造成一次伤害。?次）|}"
+  },
+  "Reanimate": {
+    "id": "Reanimate",
+    "cost": 3,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      5
+    ],
+    "name_cn": "死者苏生",
+    "desc_cn": "召唤?。"
+  },
+  "Reap": {
+    "id": "Reap",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      27
+    ],
+    "upgrade": [
+      6
+    ],
+    "name_cn": "收割",
+    "desc_cn": "造成?点伤害。"
+  },
+  "ReaperForm": {
+    "id": "ReaperForm",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "死神形态",
+    "desc_cn": "每当你的攻击造成伤害时，同时给予等量的灾厄。"
+  },
+  "Reave": {
+    "id": "Reave",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      9
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "剥夺",
+    "desc_cn": "造成?点伤害。 将一张?加入你的抽牌堆。"
+  },
+  "Reboot": {
+    "id": "Reboot",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "重启",
+    "desc_cn": "将你的所有未消耗的卡牌重新洗牌放入抽牌堆。 抽?张牌。"
+  },
+  "Rebound": {
+    "id": "Rebound",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "CardRarity.Event",
+    "target": "单敌",
+    "damage": [
+      9
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "弹回",
+    "desc_cn": "造成?点伤害。 将你在本回合打出的下一张牌放置到你的抽牌堆顶部。"
+  },
+  "RefineBlade": {
+    "id": "RefineBlade",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "upgrade": [
+      4
+    ],
+    "name_cn": "淬炼刀刃",
+    "desc_cn": "铸造?。 在下个回合获得?。"
+  },
+  "Reflect": {
+    "id": "Reflect",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      17
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "倒映",
+    "desc_cn": "获得?点格挡。 在本回合将你格挡掉的攻击伤害反弹给攻击者。"
+  },
+  "Reflex": {
+    "id": "Reflex",
+    "cost": 3,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "本能反应",
+    "desc_cn": "抽?张牌。"
+  },
+  "Refract": {
+    "id": "Refract",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      9
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "折射",
+    "desc_cn": "造成?点伤害两次。 生成?个玻璃充能球。"
+  },
+  "Regret": {
+    "id": "Regret",
+    "name_cn": "悔恨",
+    "desc_cn": "在你的回合结束时，如果这张牌在你的手牌中，失去相当于手牌数量的生命。"
+  },
+  "Relax": {
+    "id": "Relax",
+    "cost": 3,
+    "type": "技能",
+    "rarity": "CardRarity.Ancient",
+    "target": "自身",
+    "block": [
+      15
+    ],
+    "upgrade": [
+      2,
+      1,
+      1
+    ],
+    "name_cn": "放松",
+    "desc_cn": "获得?点格挡。 下个回合，抽?张牌并获得?。"
+  },
+  "Rend": {
+    "id": "Rend",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      3,
+      3
+    ],
+    "name_cn": "撕碎",
+    "desc_cn": "造成?点伤害。 该名敌人身上每有一种负面效果，就额外造成?点伤害。"
+  },
+  "Resonance": {
+    "id": "Resonance",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "全敌",
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "共鸣",
+    "desc_cn": "获得?点力量。所有敌人失去1点力量。"
+  },
+  "Restlessness": {
+    "id": "Restlessness",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "心神不宁",
+    "desc_cn": "如果你的手牌为空，则抽?张牌并获得?。"
+  },
+  "Ricochet": {
+    "id": "Ricochet",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "TargetType.RandomEnemy",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "连续反弹",
+    "desc_cn": "随机对敌人造成?点伤害?次。"
+  },
+  "RightHandHand": {
+    "id": "RightHandHand",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      4
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "得力助手",
+    "desc_cn": "奥斯提造成?点伤害。 每当你打出耗能为?或以上的牌，将此牌从弃牌堆放回你的手牌。"
+  },
+  "RipAndTear": {
+    "id": "RipAndTear",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "TargetType.RandomEnemy",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "狂乱撕扯",
+    "desc_cn": "随机对敌人造成?点伤害两次。"
+  },
+  "RocketPunch": {
+    "id": "RocketPunch",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      13
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "火箭飞拳",
+    "desc_cn": "造成?点伤害。 抽?张牌。 当有一张状态被生成时，将此牌的耗能在本回合降为0?。"
+  },
+  "RollingBoulder": {
+    "id": "RollingBoulder",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "RollingBoulder",
+        "amount": 5
+      }
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "滚石",
+    "desc_cn": "在你的回合开始时，对所有敌人造成?点伤害，然后将该伤害增加?点。"
+  },
+  "RoyalGamble": {
+    "id": "RoyalGamble",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "胜券在王",
+    "desc_cn": "获得??。"
+  },
+  "Royalties": {
+    "id": "Royalties",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      5
+    ],
+    "name_cn": "王国资产",
+    "desc_cn": "在战斗结束时，获得?金币。"
+  },
+  "Rupture": {
+    "id": "Rupture",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "撕裂",
+    "desc_cn": "每当你在你的回合失去生命值时, 获得?点力量。"
+  },
+  "Sacrifice": {
+    "id": "Sacrifice",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "牺牲",
+    "desc_cn": "如果奥斯提存活，则他死去，然后你获得等量于其双倍最大生命值的格挡。"
+  },
+  "Salvo": {
+    "id": "Salvo",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      12
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "箭雨",
+    "desc_cn": "造成?点伤害。 在本回合保留你的手牌。"
+  },
+  "Scavenge": {
+    "id": "Scavenge",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "再利用",
+    "desc_cn": "消耗一张牌。 在下个回合获得?。"
+  },
+  "Scourge": {
+    "id": "Scourge",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "单敌",
+    "powers": [
+      {
+        "type": "Doom",
+        "amount": 13
+      }
+    ],
+    "upgrade": [
+      3,
+      1
+    ],
+    "name_cn": "鞭打",
+    "desc_cn": "给予?层灾厄。 抽?张牌。"
+  },
+  "Scrape": {
+    "id": "Scrape",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      3,
+      1
+    ],
+    "name_cn": "刮削",
+    "desc_cn": "造成?点伤害。 抽?张牌。 丢弃抽到的牌中耗能不为0?的牌。"
+  },
+  "Scrawl": {
+    "id": "Scrawl",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "潦草急就",
+    "desc_cn": "抽牌直到抽满手牌。"
+  },
+  "SculptingStrike": {
+    "id": "SculptingStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      8
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "雕琢打击",
+    "desc_cn": "造成?点伤害。 将虚无添加至一张手牌。"
+  },
+  "Seance": {
+    "id": "Seance",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "降灵",
+    "desc_cn": "将你抽牌堆中的一张牌变化为?。"
+  },
+  "SecondWind": {
+    "id": "SecondWind",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      5
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "重振精神",
+    "desc_cn": "消耗手牌中所有非攻击牌，每张获得?点格挡。"
+  },
+  "SecretTechnique": {
+    "id": "SecretTechnique",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "秘密技法",
+    "desc_cn": "从抽牌堆中选择一张技能牌放入你的手牌。"
+  },
+  "SecretWeapon": {
+    "id": "SecretWeapon",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "秘密武器",
+    "desc_cn": "从抽牌堆中选择一张攻击牌放入你的手牌。"
+  },
+  "SeekerStrike": {
+    "id": "SeekerStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "探寻打击",
+    "desc_cn": "造成?点伤害。 从抽牌堆的随机?张牌中选择一张加入你的手牌。"
+  },
+  "SeekingEdge": {
+    "id": "SeekingEdge",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      4
+    ],
+    "name_cn": "追踪之刃",
+    "desc_cn": "铸造?。 君王之剑现在会对所有敌人造成伤害。"
+  },
+  "SentryMode": {
+    "id": "SentryMode",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "SentryMode",
+        "amount": 1
+      }
+    ],
+    "name_cn": "哨卫模式",
+    "desc_cn": "在你的回合开始时，将?张扫荡凝视加入你的手牌。"
+  },
+  "SerpentForm": {
+    "id": "SerpentForm",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "SerpentForm",
+        "amount": 4
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "群蛇形态",
+    "desc_cn": "你每打出一张牌，就对随机一名敌人造成?点伤害。"
+  },
+  "SetupStrike": {
+    "id": "SetupStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "powers": [
+      {
+        "type": "Strength",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "预备打击",
+    "desc_cn": "造成?点伤害。 在本回合内获得?点力量。"
+  },
+  "SevenStars": {
+    "id": "SevenStars",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "全敌",
+    "damage": [
+      7
+    ],
+    "name_cn": "七星",
+    "desc_cn": "对所有敌人造成?点伤害?次。"
+  },
+  "Severance": {
+    "id": "Severance",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      13
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "切断",
+    "desc_cn": "造成?点伤害。 将一张灵魂分别加入你的抽牌堆，手牌和弃牌堆中。"
+  },
+  "ShadowShield": {
+    "id": "ShadowShield",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      11
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "暗影之盾",
+    "desc_cn": "获得?点格挡。 生成1个黑暗充能球。"
+  },
+  "ShadowStep": {
+    "id": "ShadowStep",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "暗影步",
+    "desc_cn": "丢弃所有手牌。 在下个回合，你所有的攻击伤害翻倍。"
+  },
+  "Shadowmeld": {
+    "id": "Shadowmeld",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "融入暗影",
+    "desc_cn": "本回合你获得的格挡值翻倍。"
+  },
+  "Shame": {
+    "id": "Shame",
+    "name_cn": "羞耻",
+    "desc_cn": "在你的回合结束时，如果这张牌在你的手牌中，则获得?层脆弱。"
+  },
+  "SharedFate": {
+    "id": "SharedFate",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "单敌",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "命运同担",
+    "desc_cn": "失去?点力量。 敌人失去?点力量。"
+  },
+  "Shatter": {
+    "id": "Shatter",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "全敌",
+    "damage": [
+      11
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "打碎",
+    "desc_cn": "对所有敌人造成?点伤害。 激发所有充能球。"
+  },
+  "ShiningStrike": {
+    "id": "ShiningStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      8
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "明耀打击",
+    "desc_cn": "造成?点伤害。 获得?。 将这张牌放置于你的抽牌堆顶部。"
+  },
+  "Shiv": {
+    "id": "Shiv",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "CardRarity.Token",
+    "target": "单敌",
+    "damage": [
+      4
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "小刀",
+    "desc_cn": "?造成?点伤害。"
+  },
+  "Shockwave": {
+    "id": "Shockwave",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "全敌",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "震荡波",
+    "desc_cn": "给予所有敌人?层虚弱和易伤。"
+  },
+  "Shroud": {
+    "id": "Shroud",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      2
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "厄运之衣",
+    "desc_cn": "每当你给予灾厄时，获得?点格挡。"
+  },
+  "ShrugItOff": {
+    "id": "ShrugItOff",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      8
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "耸肩无视",
+    "desc_cn": "获得?点格挡。 抽?张牌。"
+  },
+  "SicEm": {
+    "id": "SicEm",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "powers": [
+      {
+        "type": "SicEm",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "紧追不放",
+    "desc_cn": "奥斯提造成?点伤害。 在本回合内，每当奥斯提攻击这名敌人时，召唤?。"
+  },
+  "SignalBoost": {
+    "id": "SignalBoost",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "SignalBoost",
+        "amount": 1
+      }
+    ],
+    "name_cn": "信号增强",
+    "desc_cn": "你的下一张能力牌会额外打出一次。"
+  },
+  "Skewer": {
+    "id": "Skewer",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "串刺",
+    "desc_cn": "造成?点伤害X次。"
+  },
+  "Skim": {
+    "id": "Skim",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "快速检索",
+    "desc_cn": "抽?张牌。"
+  },
+  "SleightOfFlesh": {
+    "id": "SleightOfFlesh",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "SleightOfFlesh",
+        "amount": 9
+      }
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "血肉戏法",
+    "desc_cn": "每当你给予一个敌人负面状态时，使其受到?点伤害。"
+  },
+  "Slice": {
+    "id": "Slice",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "切割",
+    "desc_cn": "造成?点伤害。"
+  },
+  "Slimed": {
+    "id": "Slimed",
+    "cost": 1,
+    "type": "状态",
+    "rarity": "CardRarity.Status",
+    "target": "无",
+    "name_cn": "黏液",
+    "desc_cn": "抽1张牌。"
+  },
+  "Sloth": {
+    "id": "Sloth",
+    "powers": [
+      {
+        "type": "Sloth",
+        "amount": 3
+      }
+    ],
+    "name_cn": "懒惰",
+    "desc_cn": "你在每个回合不能打出超过?张牌。"
+  },
+  "Smokestack": {
+    "id": "Smokestack",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Smokestack",
+        "amount": 5
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "烟囱",
+    "desc_cn": "每当你生成一张状态牌时，对所有敌人造成?点伤害。"
+  },
+  "Snakebite": {
+    "id": "Snakebite",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "单敌",
+    "powers": [
+      {
+        "type": "Poison",
+        "amount": 7
+      }
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "蛇咬",
+    "desc_cn": "给予?层中毒。"
+  },
+  "Snap": {
+    "id": "Snap",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "抓取",
+    "desc_cn": "奥斯提造成?点伤害。 给手牌中的一张牌添加保留。"
+  },
+  "Sneaky": {
+    "id": "Sneaky",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Sneaky",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "鬼祟",
+    "desc_cn": "每当其他玩家攻击一名敌人时，获得?点格挡。"
+  },
+  "SolarStrike": {
+    "id": "SolarStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      8
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "太阳打击",
+    "desc_cn": "造成?点伤害。 获得?。"
+  },
+  "Soot": {
+    "id": "Soot",
+    "name_cn": "煤灰",
+    "desc_cn": ""
+  },
+  "Soul": {
+    "id": "Soul",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "CardRarity.Token",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "灵魂",
+    "desc_cn": "抽?张牌。"
+  },
+  "SoulStorm": {
+    "id": "SoulStorm",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      2
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "灵魂风暴",
+    "desc_cn": "造成?点伤害。 你的消耗牌堆中每有一张灵魂，伤害增加?。"
+  },
+  "SovereignBlade": {
+    "id": "SovereignBlade",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "CardRarity.Token",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "name_cn": "君王之剑",
+    "desc_cn": "?造成?点伤害?次}。"
+  },
+  "Sow": {
+    "id": "Sow",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "全敌",
+    "damage": [
+      8
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "播种",
+    "desc_cn": "对所有敌人造成?点伤害。"
+  },
+  "SpectrumShift": {
+    "id": "SpectrumShift",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "光谱偏移",
+    "desc_cn": "在你的回合开始时，将?张随机无色牌添加到你的手牌中。"
+  },
+  "Speedster": {
+    "id": "Speedster",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Speedster",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "速行者",
+    "desc_cn": "每当你在回合进行中抽到一张牌时，对所有敌人造成?点伤害。"
+  },
+  "Spinner": {
+    "id": "Spinner",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Spinner",
+        "amount": 1
+      }
+    ],
+    "name_cn": "旋转工艺",
+    "desc_cn": "?在你的回合开始时，生成1个玻璃充能球。"
+  },
+  "SpiritOfAsh": {
+    "id": "SpiritOfAsh",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "灰烬之灵",
+    "desc_cn": "每当你打出一张虚无牌时，获得?点格挡。"
+  },
+  "Spite": {
+    "id": "Spite",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "怨恨",
+    "desc_cn": "造成?点伤害。 如果你在本回合失去过生命值，则抽?张牌。"
+  },
+  "Splash": {
+    "id": "Splash",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "飞溅",
+    "desc_cn": "从3张其他角色的?攻击牌中选择1张加入你的手牌。这张牌在本回合免费打出。"
+  },
+  "SpoilsMap": {
+    "id": "SpoilsMap",
+    "name_cn": "藏宝图",
+    "desc_cn": "在下一阶段的地图上，标记一个有?额外金币的地点。"
+  },
+  "SpoilsOfBattle": {
+    "id": "SpoilsOfBattle",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "upgrade": [
+      5
+    ],
+    "name_cn": "战利品",
+    "desc_cn": "铸造?。"
+  },
+  "SporeMind": {
+    "id": "SporeMind",
+    "cost": 1,
+    "type": "诅咒",
+    "rarity": "诅咒",
+    "target": "无",
+    "name_cn": "孢子心灵",
+    "desc_cn": ""
+  },
+  "Spur": {
+    "id": "Spur",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      2,
+      2
+    ],
+    "name_cn": "增生",
+    "desc_cn": "召唤?。 奥斯提回复?点生命。"
+  },
+  "Squash": {
+    "id": "Squash",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "CardRarity.Event",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "压扁",
+    "desc_cn": "造成?点伤害。 给予?层易伤。"
+  },
+  "Squeeze": {
+    "id": "Squeeze",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      5,
+      1
+    ],
+    "name_cn": "榨取",
+    "desc_cn": "奥斯提造成?点伤害。 你每有一张奥斯提的攻击牌，这张牌就额外造成?点伤害。"
+  },
+  "Stack": {
+    "id": "Stack",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "CardRarity.Event",
+    "target": "自身",
+    "upgrade": [
+      3
+    ],
+    "name_cn": "堆栈",
+    "desc_cn": "获得等量于与你当前弃牌堆中牌数?|}的格挡值。?点格挡。）|}"
+  },
+  "Stampede": {
+    "id": "Stampede",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "惊逃",
+    "desc_cn": "在你的回合结束时，随机打出你手牌中的?张攻击牌攻击随机敌人。"
+  },
+  "Stardust": {
+    "id": "Stardust",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "TargetType.RandomEnemy",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "星尘",
+    "desc_cn": "随机对敌人造成?点伤害X次。"
+  },
+  "Stoke": {
+    "id": "Stoke",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "添柴",
+    "desc_cn": "消耗所有手牌。 然后抽相同数量张牌。"
+  },
+  "Stomp": {
+    "id": "Stomp",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "全敌",
+    "damage": [
+      12
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "踩踏",
+    "desc_cn": "对所有敌人造成?点伤害。 你在本回合中每打出过一张攻击牌，其耗能减少1?。"
+  },
+  "StoneArmor": {
+    "id": "StoneArmor",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Plating",
+        "amount": 4
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "岩石铠甲",
+    "desc_cn": "获得?层覆甲。"
+  },
+  "Storm": {
+    "id": "Storm",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Storm",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "雷暴",
+    "desc_cn": "每当你打出一张能力牌时，生成?个闪电充能球。"
+  },
+  "StormOfSteel": {
+    "id": "StormOfSteel",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "钢铁风暴",
+    "desc_cn": "丢弃所有手牌。 每丢弃一张牌，就将一张?添加至你的手牌。"
+  },
+  "Strangle": {
+    "id": "Strangle",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      8
+    ],
+    "powers": [
+      {
+        "type": "Strangle",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "紧勒",
+    "desc_cn": "造成?点伤害。 你在这个回合内每出一张牌，该名敌人都会失去?点生命。"
+  },
+  "Stratagem": {
+    "id": "Stratagem",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "计策",
+    "desc_cn": "每当你的抽牌堆打乱洗牌时，选择一张牌放入你的手牌。"
+  },
+  "StrikeDefect": {
+    "id": "StrikeDefect",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "基础",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "打击",
+    "desc_cn": "造成?点伤害。"
+  },
+  "StrikeIronclad": {
+    "id": "StrikeIronclad",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "基础",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "打击",
+    "desc_cn": "造成?点伤害。"
+  },
+  "StrikeNecrobinder": {
+    "id": "StrikeNecrobinder",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "基础",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "打击",
+    "desc_cn": "造成?点伤害。"
+  },
+  "StrikeRegent": {
+    "id": "StrikeRegent",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "基础",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "打击",
+    "desc_cn": "造成?点伤害。"
+  },
+  "StrikeSilent": {
+    "id": "StrikeSilent",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "基础",
+    "target": "单敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "打击",
+    "desc_cn": "造成?点伤害。"
+  },
+  "Subroutine": {
+    "id": "Subroutine",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "子程序",
+    "desc_cn": "当你打出一张能力牌时，获得?。"
+  },
+  "SuckerPunch": {
+    "id": "SuckerPunch",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      8
+    ],
+    "powers": [
+      {
+        "type": "Weak",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      2,
+      1
+    ],
+    "name_cn": "突然一拳",
+    "desc_cn": "造成?点伤害。 给予?层虚弱。"
+  },
+  "SummonForth": {
+    "id": "SummonForth",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      3
+    ],
+    "name_cn": "征召上前",
+    "desc_cn": "铸造?。 不论何处，将君王之剑放入你的手牌。"
+  },
+  "Sunder": {
+    "id": "Sunder",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      24
+    ],
+    "upgrade": [
+      8
+    ],
+    "name_cn": "分离",
+    "desc_cn": "造成?点伤害。 如果这张牌击杀了敌人，则获得?。"
+  },
+  "Supercritical": {
+    "id": "Supercritical",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      2
+    ],
+    "name_cn": "超临界态",
+    "desc_cn": "获得?。"
+  },
+  "Supermassive": {
+    "id": "Supermassive",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "超质量体",
+    "desc_cn": "造成?点伤害。 你在本场战斗中每生成过一张牌，这张牌就额外造成?点伤害。"
+  },
+  "Suppress": {
+    "id": "Suppress",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "CardRarity.Ancient",
+    "target": "单敌",
+    "damage": [
+      11
+    ],
+    "powers": [
+      {
+        "type": "Weak",
+        "amount": 3
+      }
+    ],
+    "upgrade": [
+      6,
+      2
+    ],
+    "name_cn": "压制",
+    "desc_cn": "造成?点伤害。 给予?层虚弱。"
+  },
+  "Survivor": {
+    "id": "Survivor",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "基础",
+    "target": "自身",
+    "block": [
+      8
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "生存者",
+    "desc_cn": "获得?点格挡。 丢弃1张牌。"
+  },
+  "SweepingBeam": {
+    "id": "SweepingBeam",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "全敌",
+    "damage": [
+      6
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "扫荡射线",
+    "desc_cn": "对所有敌人造成?点伤害。 抽?张牌。"
+  },
+  "SweepingGaze": {
+    "id": "SweepingGaze",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "CardRarity.Token",
+    "target": "TargetType.RandomEnemy",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "扫荡凝视",
+    "desc_cn": "奥斯提对随机一名敌人造成?点伤害。"
+  },
+  "SwordBoomerang": {
+    "id": "SwordBoomerang",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "TargetType.RandomEnemy",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "飞剑回旋镖",
+    "desc_cn": "随机对敌人造成?点伤害?次。"
+  },
+  "SwordSage": {
+    "id": "SwordSage",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "SwordSage",
+        "amount": 1
+      }
+    ],
+    "name_cn": "剑圣",
+    "desc_cn": "君王之剑的耗能加1。君王之剑现在会额外命中一次。"
+  },
+  "Synchronize": {
+    "id": "Synchronize",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "同步",
+    "desc_cn": "你每有一种不同的充能球，就在本回合获得?点集中。?点集中）|}"
+  },
+  "Synthesis": {
+    "id": "Synthesis",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      12
+    ],
+    "upgrade": [
+      6
+    ],
+    "name_cn": "人工合成",
+    "desc_cn": "造成?点伤害。 你打出的下一张能力牌耗能变为0?。"
+  },
+  "Tactician": {
+    "id": "Tactician",
+    "cost": 3,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "战术大师",
+    "desc_cn": "获得?。"
+  },
+  "TagTeam": {
+    "id": "TagTeam",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      11
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "双打组合",
+    "desc_cn": "造成?点伤害。 其他玩家的下一张攻击牌将在该名敌人身上额外生效一次。"
+  },
+  "Tank": {
+    "id": "Tank",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "肉盾",
+    "desc_cn": "承受双倍来自敌人的伤害。 敌人的伤害对盟友减半。"
+  },
+  "Taunt": {
+    "id": "Taunt",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "单敌",
+    "block": [
+      7
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1,
+      1
+    ],
+    "name_cn": "挑衅",
+    "desc_cn": "获得?点格挡。 给予?层易伤。"
+  },
+  "TearAsunder": {
+    "id": "TearAsunder",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "扯碎",
+    "desc_cn": "造成?点伤害。 在本场战斗中，你每失去过一次生命值，这张牌就额外造成一次伤害。?次）|}"
+  },
+  "Tempest": {
+    "id": "Tempest",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "暴风雨",
+    "desc_cn": "生成?个闪电充能球。"
+  },
+  "Terraforming": {
+    "id": "Terraforming",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Vigor",
+        "amount": 6
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "地形改造",
+    "desc_cn": "获得?点活力。"
+  },
+  "TeslaCoil": {
+    "id": "TeslaCoil",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      3
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "特斯拉线圈",
+    "desc_cn": "造成?点伤害。 对该敌人触发你的所有闪电充能球的被动。"
+  },
+  "TheBomb": {
+    "id": "TheBomb",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      10
+    ],
+    "name_cn": "炸弹",
+    "desc_cn": "在?回合结束后，对所有敌人造成?点伤害。"
+  },
+  "TheGambit": {
+    "id": "TheGambit",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "block": [
+      50
+    ],
+    "upgrade": [
+      25
+    ],
+    "name_cn": "孤注一掷",
+    "desc_cn": "获得?点格挡。 如果你在本场战斗中受到未被格挡的伤害，则立刻死亡。"
+  },
+  "TheHunt": {
+    "id": "TheHunt",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      5
+    ],
+    "name_cn": "狩猎",
+    "desc_cn": "造成?点伤害。 斩杀时，额外获得一组卡牌奖励。"
+  },
+  "TheScythe": {
+    "id": "TheScythe",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "巨镰",
+    "desc_cn": "造成?点伤害。 这张牌在本局游戏中的伤害永久性增加?。"
+  },
+  "TheSealedThrone": {
+    "id": "TheSealedThrone",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "CardRarity.Ancient",
+    "target": "自身",
+    "name_cn": "封印王座",
+    "desc_cn": "你每打出一张牌，获得?。"
+  },
+  "TheSmith": {
+    "id": "TheSmith",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "upgrade": [
+      10
+    ],
+    "name_cn": "铸剑者",
+    "desc_cn": "铸造?。"
+  },
+  "ThinkingAhead": {
+    "id": "ThinkingAhead",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "深谋远虑",
+    "desc_cn": "抽?张牌。 将手牌中的一张牌放到你的抽牌堆的顶端。"
+  },
+  "Thrash": {
+    "id": "Thrash",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      4
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "痛殴",
+    "desc_cn": "造成?点伤害两次。 消耗你的手牌中随机一张攻击牌，并将它的伤害添加给这张牌。"
+  },
+  "ThrummingHatchet": {
+    "id": "ThrummingHatchet",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      11
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "无休手斧",
+    "desc_cn": "造成?点伤害。 在你的下个回合开始时，将此卡返回你的手牌。"
+  },
+  "Thunder": {
+    "id": "Thunder",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Thunder",
+        "amount": 6
+      }
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "雷霆",
+    "desc_cn": "每当你激发闪电充能球时，对被命中的敌人造成?点伤害。"
+  },
+  "Thunderclap": {
+    "id": "Thunderclap",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "全敌",
+    "damage": [
+      4
+    ],
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "闪电霹雳",
+    "desc_cn": "对所有敌人造成?点伤害，给予?层易伤。"
+  },
+  "TimesUp": {
+    "id": "TimesUp",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "单敌",
+    "damage": [
+      1
+    ],
+    "name_cn": "大限已至",
+    "desc_cn": "造成等量于该敌人身上的灾厄层数的伤害。?点伤害）|}"
+  },
+  "ToolsOfTheTrade": {
+    "id": "ToolsOfTheTrade",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "必备工具",
+    "desc_cn": "在你的回合开始时，抽1张牌，丢弃1张牌。"
+  },
+  "ToricToughness": {
+    "id": "ToricToughness",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "CardRarity.Event",
+    "target": "自身",
+    "block": [
+      5
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "坚韧之环",
+    "desc_cn": "获得?点格挡。 在接下来的?个回合开始时，获得?点格挡。"
+  },
+  "Toxic": {
+    "id": "Toxic",
+    "cost": 1,
+    "type": "状态",
+    "rarity": "CardRarity.Status",
+    "target": "无",
+    "damage": [
+      5
+    ],
+    "name_cn": "毒素",
+    "desc_cn": "在你的回合结束时，这张牌在你的手牌中，则受到?点伤害。"
+  },
+  "Tracking": {
+    "id": "Tracking",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "跟踪",
+    "desc_cn": "有虚弱状态的敌人，所受的攻击伤害翻倍。"
+  },
+  "Transfigure": {
+    "id": "Transfigure",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "重构",
+    "desc_cn": "给一张手牌添加重放。 其费用增加1?。"
+  },
+  "TrashToTreasure": {
+    "id": "TrashToTreasure",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "化废为宝",
+    "desc_cn": "每当你生成状态牌的时候，随机生成一个充能球。"
+  },
+  "Tremble": {
+    "id": "Tremble",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "单敌",
+    "powers": [
+      {
+        "type": "Vulnerable",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "战栗",
+    "desc_cn": "给予?层易伤。"
+  },
+  "TrueGrit": {
+    "id": "TrueGrit",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      7
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "坚毅",
+    "desc_cn": "获得?点格挡。 ?消耗1张牌。"
+  },
+  "Turbo": {
+    "id": "Turbo",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "内核加速",
+    "desc_cn": "获得?。 将一张虚空加入你的弃牌堆。"
+  },
+  "TwinStrike": {
+    "id": "TwinStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "双重打击",
+    "desc_cn": "造成?点伤害两次。"
+  },
+  "Tyranny": {
+    "id": "Tyranny",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "暴政",
+    "desc_cn": "在你的回合开始时，抽一张牌，并从你的手牌中消耗1张牌。"
+  },
+  "UltimateDefend": {
+    "id": "UltimateDefend",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "block": [
+      11
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "究极防御",
+    "desc_cn": "获得?点格挡。"
+  },
+  "UltimateStrike": {
+    "id": "UltimateStrike",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      14
+    ],
+    "upgrade": [
+      6
+    ],
+    "name_cn": "究极打击",
+    "desc_cn": "造成?点伤害。"
+  },
+  "Undeath": {
+    "id": "Undeath",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "block": [
+      7
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "不死",
+    "desc_cn": "获得?点格挡。 在弃牌堆放入一张此牌的复制品。"
+  },
+  "Unleash": {
+    "id": "Unleash",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "基础",
+    "target": "单敌",
+    "damage": [
+      1
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "出击",
+    "desc_cn": "奥斯提造成?点伤害。 这张牌额外造成等量于奥斯提当前生命值的伤害。"
+  },
+  "Unmovable": {
+    "id": "Unmovable",
+    "cost": 2,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "坚定不移",
+    "desc_cn": "翻倍你每回合第一次从卡牌中获得的格挡。"
+  },
+  "Unrelenting": {
+    "id": "Unrelenting",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      12
+    ],
+    "upgrade": [
+      6
+    ],
+    "name_cn": "无情猛攻",
+    "desc_cn": "造成?点伤害。 你打出的下一张攻击牌耗能变为0?。"
+  },
+  "Untouchable": {
+    "id": "Untouchable",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "block": [
+      9
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "触不可及",
+    "desc_cn": "获得?点格挡。"
+  },
+  "UpMySleeve": {
+    "id": "UpMySleeve",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "袖里乾坤",
+    "desc_cn": "将?张小刀加入你的手牌。 这张牌的耗能减少1。"
+  },
+  "Uppercut": {
+    "id": "Uppercut",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      13
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "上勾拳",
+    "desc_cn": "造成?点伤害。 给予?层虚弱。 给予?层易伤。"
+  },
+  "Uproar": {
+    "id": "Uproar",
+    "cost": 2,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      2
+    ],
+    "name_cn": "骚动",
+    "desc_cn": "造成?点伤害两次。 随机打出你的抽牌堆中的1张攻击牌。"
+  },
+  "Veilpiercer": {
+    "id": "Veilpiercer",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "单敌",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "刺破帷幕",
+    "desc_cn": "造成?点伤害。 你打出的下一张虚无牌耗能变为0?。"
+  },
+  "Venerate": {
+    "id": "Venerate",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "基础",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "崇拜",
+    "desc_cn": "获得?。"
+  },
+  "Vicious": {
+    "id": "Vicious",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "凶恶",
+    "desc_cn": "每当你给予易伤时，抽?张牌。"
+  },
+  "Void": {
+    "id": "Void",
+    "name_cn": "虚空",
+    "desc_cn": "每当你抽到这张牌时，失去?。"
+  },
+  "VoidForm": {
+    "id": "VoidForm",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "罕见",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "VoidForm",
+        "amount": 2
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "虚空形态",
+    "desc_cn": "结束你的回合。 你可以免费打出每回合的前?张牌。"
+  },
+  "Volley": {
+    "id": "Volley",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "TargetType.RandomEnemy",
+    "damage": [
+      10
+    ],
+    "upgrade": [
+      4
+    ],
+    "name_cn": "连射",
+    "desc_cn": "随机对敌人造成?点伤害X次。"
+  },
+  "Voltaic": {
+    "id": "Voltaic",
+    "cost": 2,
+    "type": "技能",
+    "rarity": "罕见",
+    "target": "自身",
+    "name_cn": "电流相生",
+    "desc_cn": "生成等量于你在这场战斗中生成过的闪电充能球数量的闪电充能球。?个闪电充能球）|}"
+  },
+  "WasteAway": {
+    "id": "WasteAway",
+    "powers": [
+      {
+        "type": "WasteAway",
+        "amount": 1
+      }
+    ],
+    "name_cn": "衰朽",
+    "desc_cn": "每回合失去?点?。"
+  },
+  "WellLaidPlans": {
+    "id": "WellLaidPlans",
+    "cost": 1,
+    "type": "能力",
+    "rarity": "稀有",
+    "target": "自身",
+    "upgrade": [
+      1
+    ],
+    "name_cn": "计划妥当",
+    "desc_cn": "在你的回合结束时，保留最多?张牌。"
+  },
+  "Whirlwind": {
+    "id": "Whirlwind",
+    "cost": 0,
+    "type": "攻击",
+    "rarity": "稀有",
+    "target": "全敌",
+    "damage": [
+      5
+    ],
+    "upgrade": [
+      3
+    ],
+    "name_cn": "旋风斩",
+    "desc_cn": "对所有敌人造成?点伤害X次。"
+  },
+  "Whistle": {
+    "id": "Whistle",
+    "cost": 3,
+    "type": "攻击",
+    "rarity": "CardRarity.Ancient",
+    "target": "单敌",
+    "damage": [
+      33
+    ],
+    "upgrade": [
+      11
+    ],
+    "name_cn": "吹哨",
+    "desc_cn": "造成?点伤害。 眩晕该敌人"
+  },
+  "WhiteNoise": {
+    "id": "WhiteNoise",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "自身",
+    "name_cn": "白噪音",
+    "desc_cn": "将一张随机能力牌加入你的手牌。这张牌在本回合内免费打出。"
+  },
+  "Wish": {
+    "id": "Wish",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "CardRarity.Ancient",
+    "target": "自身",
+    "name_cn": "许愿",
+    "desc_cn": "将你抽牌堆中的一张牌放入你的手牌。"
+  },
+  "Wisp": {
+    "id": "Wisp",
+    "cost": 0,
+    "type": "技能",
+    "rarity": "普通",
+    "target": "自身",
+    "name_cn": "鬼火",
+    "desc_cn": "获得?。"
+  },
+  "Wound": {
+    "id": "Wound",
+    "name_cn": "伤口",
+    "desc_cn": ""
+  },
+  "WraithForm": {
+    "id": "WraithForm",
+    "cost": 3,
+    "type": "能力",
+    "rarity": "CardRarity.Ancient",
+    "target": "自身",
+    "powers": [
+      {
+        "type": "Intangible",
+        "amount": 2
+      },
+      {
+        "type": "WraithForm",
+        "amount": 1
+      }
+    ],
+    "upgrade": [
+      1
+    ],
+    "name_cn": "幽魂形态",
+    "desc_cn": "获得?无实体。 在你的回合开始时，失去?点敏捷。"
+  },
+  "Writhe": {
+    "id": "Writhe",
+    "name_cn": "苦恼",
+    "desc_cn": ""
+  },
+  "WroughtInWar": {
+    "id": "WroughtInWar",
+    "cost": 1,
+    "type": "攻击",
+    "rarity": "普通",
+    "target": "单敌",
+    "damage": [
+      7
+    ],
+    "upgrade": [
+      2,
+      2
+    ],
+    "name_cn": "战火铸就",
+    "desc_cn": "造成?点伤害。 铸造?。"
+  },
+  "Zap": {
+    "id": "Zap",
+    "cost": 1,
+    "type": "技能",
+    "rarity": "基础",
+    "target": "自身",
+    "name_cn": "电击",
+    "desc_cn": "生成1个闪电充能球。"
+  }
+}

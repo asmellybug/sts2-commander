@@ -1,0 +1,2077 @@
+{
+  "_meta": {
+    "total_cards": 111,
+    "total_synergies": 200,
+    "sources": [
+      "archetype_matrix combo chains",
+      "mechanism keyword clustering"
+    ],
+    "version": "2.0-rebuilt"
+  },
+  "Accelerant": {
+    "name_cn": "触媒",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "NoxiousFumes",
+        "name_cn": "毒雾",
+        "reason": "NoxiousFumes(1费能力): 每回合给所有敌人+2毒(升级+3)。Accelerant(1费能力): AccelerantPower让PoisonPower的TriggerCount+1, 即毒素每回合多触发一次(不是翻倍!)。NoxiousFumes叠毒+Accelerant让毒每回合触发2次→实际伤害翻倍",
+        "combo_type": "指数(毒层数×触发次数双重叠加)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Accuracy": {
+    "name_cn": "精准",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "CloakAndDagger",
+        "name_cn": "斗篷与匕首",
+        "reason": "Accuracy(1费能力): 小刀额外造成伤害(+4, 升级+6)。CloakAndDagger(1费技能): 获得格挡+生成2张小刀。小刀基础4伤→Accuracy后8伤, 2小刀=16伤+格挡, 攻防兼备",
+        "combo_type": "线性(Accuracy叠加)",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "InfiniteBlades",
+        "name_cn": "无尽刀刃",
+        "reason": "InfiniteBlades(1费能力): 每回合自动生成1小刀到手牌。配Accuracy→每回合免费8+伤害。PhantomBlades(1费能力): 小刀获得保留+首张小刀额外伤害, 三件套=每回合2+张保留小刀+高额伤害",
+        "combo_type": "被动引擎(每回合自动生成)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Acrobatics": {
+    "name_cn": "杂技",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "Tactician",
+        "name_cn": "战术大师",
+        "reason": "Tactician(3费技能): 获得能量(实际是0费时通过弃牌触发获得能量的机制)。Acrobatics(1费技能): 抽牌+弃1张。弃掉Tactician→回能量→继续出牌。ToolsOfTheTrade(1费能力): 每回合自动抽1+弃1, 被动触发弃牌效果",
+        "combo_type": "能量引擎",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Afterimage": {
+    "name_cn": "余像",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "大量出牌",
+        "name_cn": "大量出牌",
+        "reason": "Afterimage(1费能力): 每打出一张牌获得格挡。静默手牌多+0费牌多→每回合打6-8张牌→Afterimage被动获得大量格挡。配合Footwork每次+敏捷→被动格挡也吃加成",
+        "combo_type": "出牌次数线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "AllForOne": {
+    "name_cn": "万物一心",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "Claw",
+        "name_cn": "爪击",
+        "reason": "Claw(0费攻击): 造成伤害+本场战斗所有Claw永久+2伤害。AllForOne(2费攻击): 造成伤害+弃牌堆所有0费牌回手牌。打Claw×2→AllForOne→2张Claw回手→再打=4次Claw触发, 每张+8伤害。指数增长",
+        "combo_type": "指数(永久叠加×AllForOne循环)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Arsenal": {
+    "name_cn": "武器库",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "SpectrumShift",
+        "name_cn": "光谱偏移",
+        "reason": "SpectrumShift(2费能力): 每回合自动将随机无色牌加入手牌。Arsenal(1费能力): 每打出一张无色牌获得力量。SpectrumShift每回合生成无色牌→Arsenal每张+力量→被动力量引擎",
+        "combo_type": "被动引擎(每回合+力量)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Barricade": {
+    "name_cn": "壁垒",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Impervious",
+        "name_cn": "岿然不动",
+        "reason": "Barricade(3费能力): 格挡不再在回合开始时消失(ShouldClearBlock→false)。Impervious(2费技能): 获得30格挡。Barricade保留格挡后, Impervious的30格挡永久保留→第二回合再叠→格挡破60",
+        "combo_type": "线性(每回合格挡累加永不消失)",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "BodySlam",
+        "name_cn": "全身撞击",
+        "reason": "BodySlam(1费攻击): 造成等于当前格挡的伤害。Barricade保留格挡后, BodySlam伤害=累积总格挡。3回合累积80格挡→BodySlam=80伤害, 防御即攻击",
+        "combo_type": "格挡积累型",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Bash": {
+    "name_cn": "痛击",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Dominate",
+        "name_cn": "主宰",
+        "reason": "Dominate(1费技能): 敌人身上每有一层易伤就获得力量。Bash(2费攻击): 造成伤害+给予易伤。先Bash给敌人易伤→Dominate转化为力量→后续所有攻击吃力量加成。Cruelty(能力)进一步加倍易伤伤害",
+        "combo_type": "易伤层数→力量转换",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "Bully",
+        "name_cn": "欺凌",
+        "reason": "痛击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Cruelty",
+        "name_cn": "残酷",
+        "reason": "痛击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MoltenFist",
+        "name_cn": "熔融之拳",
+        "reason": "痛击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "BeatIntoShape": {
+    "name_cn": "锻打成型",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "多次攻击",
+        "name_cn": "多次攻击",
+        "reason": "BeatIntoShape(1费攻击): 造成伤害+铸造+本回合击中敌人次数越多铸造越多。先用小攻击牌打→BeatIntoShape额外铸造。SwordSage(2费能力): 君王之剑费用+1但多打一次→铸造加速+输出翻倍",
+        "combo_type": "攻击次数→铸造加速",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "BiasedCognition": {
+    "name_cn": "偏差认知",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "Defragment",
+        "name_cn": "碎片整理",
+        "reason": "BiasedCognition(1费能力/Ancient): +4集中(升级+5)但每回合-1集中。配合多张Defragment或Artifact效果抵消负面。开局4集中→所有球被动效果+4, 爆炸性提升。STS2中BiasedCognition费用降为1费(从STS1的4费), 更易使用",
+        "combo_type": "前期爆发(逐回合递减)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "BloodWall": {
+    "name_cn": "血墙",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "CrimsonMantle",
+        "name_cn": "绯红披风",
+        "reason": "BloodWall(2费技能): 失去HP+获得格挡。CrimsonMantle: 回合开始自伤+格挡。两者都是「失去HP换格挡」, 配合Rupture形成: 自伤→力量+格挡的完整攻防循环。TearAsunder: 本场每失去一次HP就额外造成一次伤害, 自伤次数=伤害次数",
+        "combo_type": "自伤次数线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Blur": {
+    "name_cn": "残影",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "Footwork",
+        "name_cn": "灵动步法",
+        "reason": "Footwork(1费能力): +敏捷(每张格挡牌额外+格挡)。Blur(1费技能): 获得格挡+下回合格挡不消失。叠2张Footwork→每张格挡牌+4-6→Blur保留→下回合格挡基础上继续叠, 几回合后格挡破百",
+        "combo_type": "线性(Footwork层数×格挡牌数量)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "BodySlam": {
+    "name_cn": "全身撞击",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Barricade",
+        "name_cn": "壁垒",
+        "reason": "BodySlam(1费攻击): 造成等于当前格挡的伤害。Barricade保留格挡后, BodySlam伤害=累积总格挡。3回合累积80格挡→BodySlam=80伤害, 防御即攻击",
+        "combo_type": "格挡积累型",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Bombardment": {
+    "name_cn": "轰击",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "持续输出",
+        "name_cn": "持续输出",
+        "reason": "Bombardment(3费攻击): 造成伤害+每回合开始从消耗牌堆打出这张牌。3费打出一次→之后每回合免费自动打出。永久被动输出引擎",
+        "combo_type": "被动永久(每回合免费)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Break": {
+    "name_cn": "破击",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Bully",
+        "name_cn": "欺凌",
+        "reason": "破击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Cruelty",
+        "name_cn": "残酷",
+        "reason": "破击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Dominate",
+        "name_cn": "主宰",
+        "reason": "破击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MoltenFist",
+        "name_cn": "熔融之拳",
+        "reason": "破击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "Bully": {
+    "name_cn": "欺凌",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Bash",
+        "name_cn": "痛击",
+        "reason": "痛击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Break",
+        "name_cn": "破击",
+        "reason": "破击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MadScience",
+        "name_cn": "疯狂科学",
+        "reason": "疯狂科学(?费): ?点伤害?次|}。|获得?点格挡。|}?层虚弱。 给予?层易伤。|}?点生命。|}?。|}?张牌|}?。|}?点力量。  → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Shockwave",
+        "name_cn": "震荡波",
+        "reason": "震荡波(2费): 给予所有敌人?层虚弱和易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Squash",
+        "name_cn": "压扁",
+        "reason": "压扁(1费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Taunt",
+        "name_cn": "挑衅",
+        "reason": "挑衅(1费): 获得?点格挡。 给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Thunderclap",
+        "name_cn": "闪电霹雳",
+        "reason": "闪电霹雳(1费): 对所有敌人造成?点伤害，给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Tremble",
+        "name_cn": "战栗",
+        "reason": "战栗(1费): 给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Uppercut",
+        "name_cn": "上勾拳",
+        "reason": "上勾拳(2费): 造成?点伤害。 给予?层虚弱。 给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Vicious",
+        "name_cn": "凶恶",
+        "reason": "凶恶(1费): 每当你给予易伤时，抽?张牌。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "BundleOfJoy": {
+    "name_cn": "新生之喜",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "Regalite遗物",
+        "name_cn": "Regalite遗物",
+        "reason": "BundleOfJoy(2费技能): 将随机无色牌加入手牌。Regalite遗物: 每生成一张无色牌获得格挡。BundleOfJoy=无色牌+格挡(遗物)+PillarOfCreation格挡+Arsenal力量, 一张牌触发三重收益",
+        "combo_type": "多重联动",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Calcify": {
+    "name_cn": "钙化",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "Reanimate",
+        "name_cn": "死者苏生",
+        "reason": "Reanimate(3费技能): 召唤Osty(奥斯提)。Calcify(1费能力): Osty攻击额外造成伤害。召唤Osty→Calcify加伤→所有Osty攻击牌(Poke/Fetch/Flatten/Unleash等24张)都吃加成",
+        "combo_type": "Osty攻击次数线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "CalculatedGamble": {
+    "name_cn": "计算下注",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "弃牌触发",
+        "name_cn": "弃牌触发",
+        "reason": "CalculatedGamble(0费技能): 弃所有手牌→抽同等数量。配合ToughBandages遗物(每弃一张+格挡)/Tingsha遗物(每弃一张对随机敌人造成伤害)→大量弃牌=大量格挡+伤害",
+        "combo_type": "弃牌数量线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "CallOfTheVoid": {
+    "name_cn": "虚空之唤",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "虚无触发",
+        "name_cn": "虚无触发",
+        "reason": "CallOfTheVoid(1费能力): 每回合自动将随机牌加入手牌(获得虚无)。SpiritOfAsh(1费能力): 每打出一张虚无牌获得格挡。Pagestorm(1费能力): 每抽到虚无牌时抽额外牌。三件套=每回合获得虚无牌→抽牌+格挡+灵魂触发",
+        "combo_type": "虚无牌数量引擎",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "ChildOfTheStars": {
+    "name_cn": "群星之子",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "星辰消费牌",
+        "name_cn": "星辰消费牌",
+        "reason": "ChildOfTheStars(1费能力): 每当你花费★时, 每花1点★获得格挡。GatherLight(1费技能): 获得格挡+获得★。花★的牌(Radiate/Alignment等)触发ChildOfTheStars→花★=格挡+原效果, 攻防一体",
+        "combo_type": "★消费频率线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Claw": {
+    "name_cn": "爪击",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "AllForOne",
+        "name_cn": "万物一心",
+        "reason": "Claw(0费攻击): 造成伤害+本场战斗所有Claw永久+2伤害。AllForOne(2费攻击): 造成伤害+弃牌堆所有0费牌回手牌。打Claw×2→AllForOne→2张Claw回手→再打=4次Claw触发, 每张+8伤害。指数增长",
+        "combo_type": "指数(永久叠加×AllForOne循环)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "CloakAndDagger": {
+    "name_cn": "斗篷与匕首",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "Accuracy",
+        "name_cn": "精准",
+        "reason": "Accuracy(1费能力): 小刀额外造成伤害(+4, 升级+6)。CloakAndDagger(1费技能): 获得格挡+生成2张小刀。小刀基础4伤→Accuracy后8伤, 2小刀=16伤+格挡, 攻防兼备",
+        "combo_type": "线性(Accuracy叠加)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Conqueror": {
+    "name_cn": "征服者",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "SeekingEdge",
+        "name_cn": "追踪之刃",
+        "reason": "SeekingEdge(1费能力): 铸造+君王之剑变为攻击所有敌人。Conqueror(1费技能): 铸造+君王之剑本回合伤害翻倍。SeekingEdge让剑AOE→Conqueror翻倍→AOE双倍伤害的君王之剑",
+        "combo_type": "倍乘+AOE",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "ConsumingShadow": {
+    "name_cn": "吞噬暗影",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "暗球积累",
+        "name_cn": "暗球积累",
+        "reason": "ConsumingShadow(2费能力): 生成暗球+回合结束自动激发最左侧球。暗球在最右侧积累→ConsumingShadow激发最左侧(通常是闪电/冰霜)→暗球安全积累不被挤出。被动激发=每回合免费输出",
+        "combo_type": "被动激发引擎",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Corruption": {
+    "name_cn": "腐化",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "FeelNoPain",
+        "name_cn": "无惧疼痛",
+        "reason": "Corruption(3费能力): 所有技能牌费用变0但打出后消耗。FeelNoPain(1费能力): 每消耗一张牌获得格挡。组合=所有技能0费+每打出一张技能获得格挡, 回合内可连续打出多张0费技能并获得大量格挡",
+        "combo_type": "引擎型(技能数量×格挡)",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "DarkEmbrace",
+        "name_cn": "黑暗之拥",
+        "reason": "DarkEmbrace(2费能力): 每消耗一张牌抽1张。Corruption+DarkEmbrace=每打0费技能→消耗→抽牌→继续打下一张, 形成连锁循环。配合FeelNoPain三件套=每张技能0费+抽牌+格挡",
+        "combo_type": "引擎型(无限循环)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Countdown": {
+    "name_cn": "倒数计时",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "Shroud",
+        "name_cn": "厄运之衣",
+        "reason": "Shroud: 给予灾厄时获得格挡。Countdown(1费能力): 每回合自动给随机敌人灾厄。Countdown每回合被动叠灾厄→Shroud被动获得格挡。被动双引擎",
+        "combo_type": "被动攻防一体",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "CrimsonMantle": {
+    "name_cn": "绯红披风",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Rupture",
+        "name_cn": "撕裂",
+        "reason": "CrimsonMantle(1费能力): 每回合开始失去1HP+获得格挡。Rupture: 每次回合内失去HP→+力量。CrimsonMantle每回合自动触发自伤→Rupture每回合自动+力量+获得格挡, 无需额外操作的双引擎",
+        "combo_type": "被动引擎(每回合自动+力量+格挡)",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "BloodWall",
+        "name_cn": "血墙",
+        "reason": "BloodWall(2费技能): 失去HP+获得格挡。CrimsonMantle: 回合开始自伤+格挡。两者都是「失去HP换格挡」, 配合Rupture形成: 自伤→力量+格挡的完整攻防循环。TearAsunder: 本场每失去一次HP就额外造成一次伤害, 自伤次数=伤害次数",
+        "combo_type": "自伤次数线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Cruelty": {
+    "name_cn": "残酷",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Bash",
+        "name_cn": "痛击",
+        "reason": "痛击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Break",
+        "name_cn": "破击",
+        "reason": "破击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MadScience",
+        "name_cn": "疯狂科学",
+        "reason": "疯狂科学(?费): ?点伤害?次|}。|获得?点格挡。|}?层虚弱。 给予?层易伤。|}?点生命。|}?。|}?张牌|}?。|}?点力量。  → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Shockwave",
+        "name_cn": "震荡波",
+        "reason": "震荡波(2费): 给予所有敌人?层虚弱和易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Squash",
+        "name_cn": "压扁",
+        "reason": "压扁(1费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Taunt",
+        "name_cn": "挑衅",
+        "reason": "挑衅(1费): 获得?点格挡。 给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Thunderclap",
+        "name_cn": "闪电霹雳",
+        "reason": "闪电霹雳(1费): 对所有敌人造成?点伤害，给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Tremble",
+        "name_cn": "战栗",
+        "reason": "战栗(1费): 给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Uppercut",
+        "name_cn": "上勾拳",
+        "reason": "上勾拳(2费): 造成?点伤害。 给予?层虚弱。 给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Vicious",
+        "name_cn": "凶恶",
+        "reason": "凶恶(1费): 每当你给予易伤时，抽?张牌。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "DaggerSpray": {
+    "name_cn": "匕首雨",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "Envenom",
+        "name_cn": "涂毒",
+        "reason": "Envenom(2费能力): 每次攻击造成未被格挡伤害→给目标+1毒。DaggerSpray(1费攻击): 对所有敌人造成伤害2次。Envenom+DaggerSpray=2次攻击×每个敌人=快速叠毒触发Outbreak。配合飞刀(0费多次攻击)更快",
+        "combo_type": "攻击次数线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "DarkEmbrace": {
+    "name_cn": "黑暗之拥",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Corruption",
+        "name_cn": "腐化",
+        "reason": "DarkEmbrace(2费能力): 每消耗一张牌抽1张。Corruption+DarkEmbrace=每打0费技能→消耗→抽牌→继续打下一张, 形成连锁循环。配合FeelNoPain三件套=每张技能0费+抽牌+格挡",
+        "combo_type": "引擎型(无限循环)",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "FiendFire",
+        "name_cn": "恶魔之焰",
+        "reason": "FiendFire(2费攻击): 消耗所有手牌, 每张消耗的牌造成伤害。DarkEmbrace: 每消耗一张抽1张。FiendFire消耗4张→造成4次伤害+抽4张→下回合手牌充足。AshenStrike(1费攻击): 消耗牌堆每多1张牌+额外伤害, 与消耗流完美联动",
+        "combo_type": "爆发型",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Darkness": {
+    "name_cn": "漆黑",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "Dualcast",
+        "name_cn": "双重释放",
+        "reason": "Darkness(1费技能): 生成1暗球+触发所有暗球被动(每个暗球自增6+集中)。Dualcast(1费技能): 激发最右侧充能球2次。暗球积累5回合→Dualcast双激发=2×(6+集中)×5回合积累的伤害, 单发100+",
+        "combo_type": "时间积累型(每回合暗球被动自增)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Debilitate": {
+    "name_cn": "摧残",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "Fear",
+        "name_cn": "恐惧",
+        "reason": "恐惧(1费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 摧残(1费): 造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "HighFive",
+        "name_cn": "击掌",
+        "reason": "击掌(2费): 奥斯提造成?点伤害 并且给予所有敌人 ?层易伤。 → 给予易伤后 → 摧残(1费): 造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MadScience",
+        "name_cn": "疯狂科学",
+        "reason": "疯狂科学(?费): ?点伤害?次|}。|获得?点格挡。|}?层虚弱。 给予?层易伤。|}?点生命。|}?。|}?张牌|}?。|}?点力量。  → 给予易伤后 → 摧残(1费): 造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Putrefy",
+        "name_cn": "腐败",
+        "reason": "腐败(1费): 给予?层虚弱。 给予?层易伤。 → 给予易伤后 → 摧残(1费): 造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Shockwave",
+        "name_cn": "震荡波",
+        "reason": "震荡波(2费): 给予所有敌人?层虚弱和易伤。 → 给予易伤后 → 摧残(1费): 造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Squash",
+        "name_cn": "压扁",
+        "reason": "压扁(1费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 摧残(1费): 造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "Deflect": {
+    "name_cn": "偏折",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "Footwork",
+        "name_cn": "灵动步法",
+        "reason": "Deflect(0费技能): 获得4格挡。Footwork+2敏捷→0费6格挡。2层Footwork→0费8格挡。极致费效比, 0费防御=免费回合动作",
+        "combo_type": "线性(0费高效)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Defragment": {
+    "name_cn": "碎片整理",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "Glacier",
+        "name_cn": "冰川",
+        "reason": "Defragment(1费能力): +1集中(FocusPower增强所有充能球被动效果)。Glacier(2费技能): 获得格挡+生成2冰霜球。集中+1→每个冰霜球被动格挡+1/回合, 3个冰霜球=每回合被动+3格挡。高集中下每回合被动格挡20+",
+        "combo_type": "线性(集中层数×冰霜球数量)",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "BiasedCognition",
+        "name_cn": "偏差认知",
+        "reason": "BiasedCognition(1费能力/Ancient): +4集中(升级+5)但每回合-1集中。配合多张Defragment或Artifact效果抵消负面。开局4集中→所有球被动效果+4, 爆炸性提升。STS2中BiasedCognition费用降为1费(从STS1的4费), 更易使用",
+        "combo_type": "前期爆发(逐回合递减)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "DemonForm": {
+    "name_cn": "恶魔形态",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Mangle",
+        "name_cn": "凌虐",
+        "reason": "DemonForm(3费能力): 每回合+2力量(升级+3), StrengthPower对所有攻击牌加算力量值。Mangle(3费攻击): 造成高额伤害+敌人本回合失去力量。DemonForm叠到4力量后Mangle额外伤害+4, 且削弱敌人力量形成攻防差",
+        "combo_type": "线性(每回合+2力量)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Dominate": {
+    "name_cn": "主宰",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Bash",
+        "name_cn": "痛击",
+        "reason": "Dominate(1费技能): 敌人身上每有一层易伤就获得力量。Bash(2费攻击): 造成伤害+给予易伤。先Bash给敌人易伤→Dominate转化为力量→后续所有攻击吃力量加成。Cruelty(能力)进一步加倍易伤伤害",
+        "combo_type": "易伤层数→力量转换",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "Break",
+        "name_cn": "破击",
+        "reason": "破击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MadScience",
+        "name_cn": "疯狂科学",
+        "reason": "疯狂科学(?费): ?点伤害?次|}。|获得?点格挡。|}?层虚弱。 给予?层易伤。|}?点生命。|}?。|}?张牌|}?。|}?点力量。  → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Shockwave",
+        "name_cn": "震荡波",
+        "reason": "震荡波(2费): 给予所有敌人?层虚弱和易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Squash",
+        "name_cn": "压扁",
+        "reason": "压扁(1费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Taunt",
+        "name_cn": "挑衅",
+        "reason": "挑衅(1费): 获得?点格挡。 给予?层易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Thunderclap",
+        "name_cn": "闪电霹雳",
+        "reason": "闪电霹雳(1费): 对所有敌人造成?点伤害，给予?层易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Tremble",
+        "name_cn": "战栗",
+        "reason": "战栗(1费): 给予?层易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Uppercut",
+        "name_cn": "上勾拳",
+        "reason": "上勾拳(2费): 造成?点伤害。 给予?层虚弱。 给予?层易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Vicious",
+        "name_cn": "凶恶",
+        "reason": "凶恶(1费): 每当你给予易伤时，抽?张牌。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "Dualcast": {
+    "name_cn": "双重释放",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "Darkness",
+        "name_cn": "漆黑",
+        "reason": "Darkness(1费技能): 生成1暗球+触发所有暗球被动(每个暗球自增6+集中)。Dualcast(1费技能): 激发最右侧充能球2次。暗球积累5回合→Dualcast双激发=2×(6+集中)×5回合积累的伤害, 单发100+",
+        "combo_type": "时间积累型(每回合暗球被动自增)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "EchoForm": {
+    "name_cn": "回响形态",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "高价值牌",
+        "name_cn": "高价值牌",
+        "reason": "EchoForm(3费能力): 每回合第一张牌打出两次。配合Glacier=双倍格挡+4冰霜球; 配合Defragment=+2集中; 配合Darkness=双倍暗球生成。3费启动后永久翻倍首张牌价值",
+        "combo_type": "倍乘(永久)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Envenom": {
+    "name_cn": "涂毒",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "DaggerSpray",
+        "name_cn": "匕首雨",
+        "reason": "Envenom(2费能力): 每次攻击造成未被格挡伤害→给目标+1毒。DaggerSpray(1费攻击): 对所有敌人造成伤害2次。Envenom+DaggerSpray=2次攻击×每个敌人=快速叠毒触发Outbreak。配合飞刀(0费多次攻击)更快",
+        "combo_type": "攻击次数线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "FanOfKnives": {
+    "name_cn": "刀扇",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "小刀生成",
+        "name_cn": "小刀生成",
+        "reason": "FanOfKnives(2费能力): 小刀变为攻击所有敌人+生成小刀。让所有飞刀变AOE→配合CloakAndDagger/BladeDance大量生成→AOE清场。精英战/多体怪核心",
+        "combo_type": "AOE引擎",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Fear": {
+    "name_cn": "恐惧",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "Debilitate",
+        "name_cn": "摧残",
+        "reason": "恐惧(1费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 摧残(1费): 造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "FeelNoPain": {
+    "name_cn": "无惧疼痛",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Corruption",
+        "name_cn": "腐化",
+        "reason": "Corruption(3费能力): 所有技能牌费用变0但打出后消耗。FeelNoPain(1费能力): 每消耗一张牌获得格挡。组合=所有技能0费+每打出一张技能获得格挡, 回合内可连续打出多张0费技能并获得大量格挡",
+        "combo_type": "引擎型(技能数量×格挡)",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "SecondWind",
+        "name_cn": "重振精神",
+        "reason": "SecondWind(1费技能): 消耗手中所有非攻击牌, 每张获得格挡。FeelNoPain: 每消耗一张牌再额外获得格挡。一次SecondWind消耗3张非攻击牌=3×SecondWind格挡+3×FeelNoPain格挡, 单回合可叠50+格挡",
+        "combo_type": "手牌数量线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "FiendFire": {
+    "name_cn": "恶魔之焰",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "DarkEmbrace",
+        "name_cn": "黑暗之拥",
+        "reason": "FiendFire(2费攻击): 消耗所有手牌, 每张消耗的牌造成伤害。DarkEmbrace: 每消耗一张抽1张。FiendFire消耗4张→造成4次伤害+抽4张→下回合手牌充足。AshenStrike(1费攻击): 消耗牌堆每多1张牌+额外伤害, 与消耗流完美联动",
+        "combo_type": "爆发型",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Finisher": {
+    "name_cn": "终结技",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "大量小刀",
+        "name_cn": "大量小刀",
+        "reason": "Finisher(1费攻击): 本回合每打出过一张攻击牌就造成一次伤害。飞刀都是0费攻击牌, 打5张飞刀后Finisher=5次伤害。StormOfSteel: 弃所有手牌→每张生成小刀, 爆发回合可能10+张小刀→Finisher终结",
+        "combo_type": "出牌次数线性",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "StormOfSteel",
+        "name_cn": "钢铁风暴",
+        "reason": "StormOfSteel(1费技能): 弃所有手牌→每张生成小刀。弃5张→5张小刀(0费)→全部打出→Finisher(每张攻击牌=1次伤害)终结。弃牌→飞刀→终结的爆发连招",
+        "combo_type": "爆发型",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Flatten": {
+    "name_cn": "重压",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "Osty攻击链",
+        "name_cn": "Osty攻击链",
+        "reason": "Flatten(2费攻击): Osty造成伤害, 如果Osty本回合攻击过则费用变0。先Poke(0费)→Flatten变0费→免费高伤输出。Rattle: Osty本回合每攻击过一次就额外造成一次伤害, 3次Osty攻击后Rattle=3次伤害",
+        "combo_type": "Osty攻击链加速",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Footwork": {
+    "name_cn": "灵动步法",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "Blur",
+        "name_cn": "残影",
+        "reason": "Footwork(1费能力): +敏捷(每张格挡牌额外+格挡)。Blur(1费技能): 获得格挡+下回合格挡不消失。叠2张Footwork→每张格挡牌+4-6→Blur保留→下回合格挡基础上继续叠, 几回合后格挡破百",
+        "combo_type": "线性(Footwork层数×格挡牌数量)",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "Deflect",
+        "name_cn": "偏折",
+        "reason": "Deflect(0费技能): 获得4格挡。Footwork+2敏捷→0费6格挡。2层Footwork→0费8格挡。极致费效比, 0费防御=免费回合动作",
+        "combo_type": "线性(0费高效)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Ftl": {
+    "name_cn": "超越光速",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "快速出牌",
+        "name_cn": "快速出牌",
+        "reason": "Ftl(0费攻击): 造成伤害, 如果本回合出牌数<3就抽1张。0费流开局Ftl=0费伤害+抽牌→继续打0费→快速过牌。0费牌堆=每回合过大量牌",
+        "combo_type": "0费连锁",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Furnace": {
+    "name_cn": "熔炉",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "TheSmith",
+        "name_cn": "铸剑者",
+        "reason": "Furnace(1费能力): 每回合开始自动铸造。TheSmith(1费技能): 铸造。铸造(Forge)=升级君王之剑(储君的专属武器)。Furnace被动每回合铸造→君王之剑越来越强",
+        "combo_type": "被动永久成长(每回合自动铸造)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Glacier": {
+    "name_cn": "冰川",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "Defragment",
+        "name_cn": "碎片整理",
+        "reason": "Defragment(1费能力): +1集中(FocusPower增强所有充能球被动效果)。Glacier(2费技能): 获得格挡+生成2冰霜球。集中+1→每个冰霜球被动格挡+1/回合, 3个冰霜球=每回合被动+3格挡。高集中下每回合被动格挡20+",
+        "combo_type": "线性(集中层数×冰霜球数量)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Haunt": {
+    "name_cn": "纠缠",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "灵魂",
+        "name_cn": "灵魂",
+        "reason": "Haunt(1费能力): 每当你打出灵魂时, 随机敌人失去HP。灵魂是虚无牌→打出灵魂=敌人-HP+SpiritOfAsh格挡+Pagestorm抽牌。DevourLife(1费能力): 打出灵魂时召唤Osty, 灵魂→Osty+伤害+格挡+抽牌多重收益",
+        "combo_type": "灵魂数量线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Hemokinesis": {
+    "name_cn": "御血术",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Rupture",
+        "name_cn": "撕裂",
+        "reason": "Rupture(1费能力): STS2版——每当你在你的回合失去生命值时, 获得力量。Hemokinesis(1费攻击): 失去HP+造成14伤害。打出Hemokinesis→自伤触发Rupture→+力量→Hemokinesis本身也吃力量加成。既是输出牌又是力量引擎",
+        "combo_type": "每次自伤+力量",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "HighFive": {
+    "name_cn": "击掌",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "Debilitate",
+        "name_cn": "摧残",
+        "reason": "击掌(2费): 奥斯提造成?点伤害 并且给予所有敌人 ?层易伤。 → 给予易伤后 → 摧残(1费): 造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "Impervious": {
+    "name_cn": "岿然不动",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Barricade",
+        "name_cn": "壁垒",
+        "reason": "Barricade(3费能力): 格挡不再在回合开始时消失(ShouldClearBlock→false)。Impervious(2费技能): 获得30格挡。Barricade保留格挡后, Impervious的30格挡永久保留→第二回合再叠→格挡破60",
+        "combo_type": "线性(每回合格挡累加永不消失)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Inferno": {
+    "name_cn": "狱火",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Rupture",
+        "name_cn": "撕裂",
+        "reason": "Inferno(1费能力): 每回合开始失去1HP, 每当你在回合内失去HP时对所有敌人造成伤害。Rupture: 失去HP→+力量。Inferno每回合自伤→触发Rupture+力量→Inferno的AOE伤害也吃力量加成→越打力量越高AOE越痛",
+        "combo_type": "引擎型(自伤→力量→AOE伤害循环)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "InfiniteBlades": {
+    "name_cn": "无尽刀刃",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "Accuracy",
+        "name_cn": "精准",
+        "reason": "InfiniteBlades(1费能力): 每回合自动生成1小刀到手牌。配Accuracy→每回合免费8+伤害。PhantomBlades(1费能力): 小刀获得保留+首张小刀额外伤害, 三件套=每回合2+张保留小刀+高额伤害",
+        "combo_type": "被动引擎(每回合自动生成)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Inflame": {
+    "name_cn": "燃烧",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "SetupStrike",
+        "name_cn": "预备打击",
+        "reason": "SetupStrike(1费攻击): 造成伤害+本回合获得力量。Inflame(1费能力): 永久+2力量(升级+3)。两者都是低费快速起力量, 不依赖3费DemonForm。配合RuinedHelmet遗物(首次获得力量翻倍)起手爆发",
+        "combo_type": "一次性/永久",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Juggernaut": {
+    "name_cn": "势不可当",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "格挡牌",
+        "name_cn": "格挡牌",
+        "reason": "Juggernaut(2费能力): 每获得格挡时对随机敌人造成伤害。配合大量格挡牌=每次获得格挡都附带输出。Grapple(1费攻击): 造成伤害+本回合获得格挡时额外对该敌人造成伤害, 双重联动",
+        "combo_type": "格挡频率线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "KinglyPunch": {
+    "name_cn": "王者之拳",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "大量抽牌",
+        "name_cn": "大量抽牌",
+        "reason": "KinglyPunch(1费攻击): 造成伤害+每当你抽到这张牌时永久+伤害。ForegoneConclusion(1费技能): 下回合从抽牌堆选牌放入手牌。反复抽到KinglyPunch→永久叠加伤害, 中期单发30+",
+        "combo_type": "永久成长(每次被抽到+伤害)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Loop": {
+    "name_cn": "循环",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "暗球",
+        "name_cn": "暗球",
+        "reason": "Loop(1费能力): 每回合开始触发最右侧球被动。暗球在最右侧→Loop每回合自动触发暗球被动=每回合暗球额外自增一次。双倍积累速度",
+        "combo_type": "被动加速积累",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "MadScience": {
+    "name_cn": "疯狂科学",
+    "character": "无色",
+    "synergies": [
+      {
+        "card": "Bully",
+        "name_cn": "欺凌",
+        "reason": "疯狂科学(?费): ?点伤害?次|}。|获得?点格挡。|}?层虚弱。 给予?层易伤。|}?点生命。|}?。|}?张牌|}?。|}?点力量。  → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Cruelty",
+        "name_cn": "残酷",
+        "reason": "疯狂科学(?费): ?点伤害?次|}。|获得?点格挡。|}?层虚弱。 给予?层易伤。|}?点生命。|}?。|}?张牌|}?。|}?点力量。  → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Debilitate",
+        "name_cn": "摧残",
+        "reason": "疯狂科学(?费): ?点伤害?次|}。|获得?点格挡。|}?层虚弱。 给予?层易伤。|}?点生命。|}?。|}?张牌|}?。|}?点力量。  → 给予易伤后 → 摧残(1费): 造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Dominate",
+        "name_cn": "主宰",
+        "reason": "疯狂科学(?费): ?点伤害?次|}。|获得?点格挡。|}?层虚弱。 给予?层易伤。|}?点生命。|}?。|}?张牌|}?。|}?点力量。  → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MoltenFist",
+        "name_cn": "熔融之拳",
+        "reason": "疯狂科学(?费): ?点伤害?次|}。|获得?点格挡。|}?层虚弱。 给予?层易伤。|}?点生命。|}?。|}?张牌|}?。|}?点力量。  → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "Malaise": {
+    "name_cn": "萎靡",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "高敏捷防御",
+        "name_cn": "高敏捷防御",
+        "reason": "Malaise(X费技能): 敌人失去X力量+X层虚弱。X=3时敌人-3力量-3虚弱, 攻击伤害骤降。配合高敏捷格挡→对方伤害低+我方格挡高=几乎无伤",
+        "combo_type": "削弱型(X越大越安全)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Mangle": {
+    "name_cn": "凌虐",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "DemonForm",
+        "name_cn": "恶魔形态",
+        "reason": "DemonForm(3费能力): 每回合+2力量(升级+3), StrengthPower对所有攻击牌加算力量值。Mangle(3费攻击): 造成高额伤害+敌人本回合失去力量。DemonForm叠到4力量后Mangle额外伤害+4, 且削弱敌人力量形成攻防差",
+        "combo_type": "线性(每回合+2力量)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "MementoMori": {
+    "name_cn": "铭记死亡",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "大量弃牌",
+        "name_cn": "大量弃牌",
+        "reason": "MementoMori(1费攻击): 造成伤害+本回合每弃过一张牌额外+伤害。CalculatedGamble弃5张→MementoMori+5×额外伤害。弃牌越多单发伤害越高",
+        "combo_type": "弃牌数量线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Mirage": {
+    "name_cn": "蜃景",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "高毒层数",
+        "name_cn": "高毒层数",
+        "reason": "Mirage(1费技能): 获得等同于所有敌人中毒层数的格挡。毒素叠到30层→Mirage=30格挡, 毒素越高防御越强。毒素流后期毒层数50+→Mirage单张50+格挡",
+        "combo_type": "毒层数线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "MoltenFist": {
+    "name_cn": "熔融之拳",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Bash",
+        "name_cn": "痛击",
+        "reason": "痛击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Break",
+        "name_cn": "破击",
+        "reason": "破击(2费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MadScience",
+        "name_cn": "疯狂科学",
+        "reason": "疯狂科学(?费): ?点伤害?次|}。|获得?点格挡。|}?层虚弱。 给予?层易伤。|}?点生命。|}?。|}?张牌|}?。|}?点力量。  → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Shockwave",
+        "name_cn": "震荡波",
+        "reason": "震荡波(2费): 给予所有敌人?层虚弱和易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Squash",
+        "name_cn": "压扁",
+        "reason": "压扁(1费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Taunt",
+        "name_cn": "挑衅",
+        "reason": "挑衅(1费): 获得?点格挡。 给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Thunderclap",
+        "name_cn": "闪电霹雳",
+        "reason": "闪电霹雳(1费): 对所有敌人造成?点伤害，给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Tremble",
+        "name_cn": "战栗",
+        "reason": "战栗(1费): 给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Uppercut",
+        "name_cn": "上勾拳",
+        "reason": "上勾拳(2费): 造成?点伤害。 给予?层虚弱。 给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Vicious",
+        "name_cn": "凶恶",
+        "reason": "凶恶(1费): 每当你给予易伤时，抽?张牌。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "MonarchsGaze": {
+    "name_cn": "王之凝视",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "多次攻击",
+        "name_cn": "多次攻击",
+        "reason": "MonarchsGaze(3费能力): 每当你攻击敌人时, 敌人本回合失去力量。多次攻击=多次削弱敌人力量。配合SevenStars(对所有敌人造成伤害多次)→AOE多次攻击+削力量",
+        "combo_type": "攻击频率线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "MultiCast": {
+    "name_cn": "多重释放",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "高集中暗球",
+        "name_cn": "高集中暗球",
+        "reason": "MultiCast(0费技能): 激发最右侧充能球X次(X=当前能量)。3能量+暗球积累30伤→MultiCast=3×30=90伤害。配合Turbo/等离子球获得额外能量→X更大→一击秒杀",
+        "combo_type": "能量×暗球积累(爆发终结)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "NoEscape": {
+    "name_cn": "无处可逃",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "灾厄积累",
+        "name_cn": "灾厄积累",
+        "reason": "NoEscape(1费技能): 给予灾厄, 敌人身上每有一层灾厄就额外给予灾厄。敌人有20灾厄→NoEscape再+20+基础=40+灾厄。灾厄翻倍效果, 中后期一张牌让灾厄爆炸",
+        "combo_type": "灾厄层数指数增长",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "NoxiousFumes": {
+    "name_cn": "毒雾",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "Accelerant",
+        "name_cn": "触媒",
+        "reason": "NoxiousFumes(1费能力): 每回合给所有敌人+2毒(升级+3)。Accelerant(1费能力): AccelerantPower让PoisonPower的TriggerCount+1, 即毒素每回合多触发一次(不是翻倍!)。NoxiousFumes叠毒+Accelerant让毒每回合触发2次→实际伤害翻倍",
+        "combo_type": "指数(毒层数×触发次数双重叠加)",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "Outbreak",
+        "name_cn": "毒性爆发",
+        "reason": "Outbreak(1费能力): OutbreakPower每给敌人上毒3次后→对所有敌人造成11伤害(升级15)。NoxiousFumes每回合自动给所有敌人上毒→每3回合自动触发Outbreak AOE。配合DeadlyPoison/Snakebite额外上毒→加速Outbreak触发",
+        "combo_type": "被动AOE(上毒3次=1次AOE爆发)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Orbit": {
+    "name_cn": "环绕轨道",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "★循环",
+        "name_cn": "★循环",
+        "reason": "Orbit(2费能力): 每花费★就获得★(数量比例)。花★→回★→再花→再回, 形成★循环。配合ChildOfTheStars=花★→格挡+回★→无限格挡引擎",
+        "combo_type": "循环引擎",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Outbreak": {
+    "name_cn": "毒性爆发",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "NoxiousFumes",
+        "name_cn": "毒雾",
+        "reason": "Outbreak(1费能力): OutbreakPower每给敌人上毒3次后→对所有敌人造成11伤害(升级15)。NoxiousFumes每回合自动给所有敌人上毒→每3回合自动触发Outbreak AOE。配合DeadlyPoison/Snakebite额外上毒→加速Outbreak触发",
+        "combo_type": "被动AOE(上毒3次=1次AOE爆发)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "PillarOfCreation": {
+    "name_cn": "创世之柱",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "大量卡牌生成",
+        "name_cn": "大量卡牌生成",
+        "reason": "PillarOfCreation(1费能力): 每当你生成一张卡牌就获得格挡。SpectrumShift/BundleOfJoy/Quasar每张生成卡牌→PillarOfCreation被动格挡。卡牌生成=防御",
+        "combo_type": "卡牌生成频率线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Poke": {
+    "name_cn": "戳击",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "ReaperForm",
+        "name_cn": "死神形态",
+        "reason": "ReaperForm: 攻击造成伤害时给予等量灾厄。Poke(0费): Osty造成伤害→触发ReaperForm→Osty攻击同时叠灾厄。0费Osty攻击=0费灾厄积累, 超高效",
+        "combo_type": "Osty攻击→灾厄双引擎",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "PullFromBelow": {
+    "name_cn": "亡魂牵引",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "虚无积累",
+        "name_cn": "虚无积累",
+        "reason": "PullFromBelow(1费攻击): 本场战斗每打出过一张虚无牌就造成伤害1次。中期打出15张虚无牌→PullFromBelow=15次伤害。永久成长型输出",
+        "combo_type": "虚无牌累计永久线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Putrefy": {
+    "name_cn": "腐败",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "Debilitate",
+        "name_cn": "摧残",
+        "reason": "腐败(1费): 给予?层虚弱。 给予?层易伤。 → 给予易伤后 → 摧残(1费): 造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "Radiate": {
+    "name_cn": "辐射",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "大量★",
+        "name_cn": "大量★",
+        "reason": "Radiate(0费攻击): 本回合每获得1点★就对所有敌人造成伤害1次。TheSealedThrone+大量出牌→获得10★→Radiate=10次AOE伤害。0费AOE终结手段",
+        "combo_type": "★获取量线性(AOE爆发)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Reanimate": {
+    "name_cn": "死者苏生",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "Calcify",
+        "name_cn": "钙化",
+        "reason": "Reanimate(3费技能): 召唤Osty(奥斯提)。Calcify(1费能力): Osty攻击额外造成伤害。召唤Osty→Calcify加伤→所有Osty攻击牌(Poke/Fetch/Flatten/Unleash等24张)都吃加成",
+        "combo_type": "Osty攻击次数线性",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "Sacrifice",
+        "name_cn": "牺牲",
+        "reason": "Sacrifice(1费技能): Osty死去→获得Osty双倍最大HP的格挡。Reanimate: 重新召唤Osty。Sacrifice→获得大量格挡→Reanimate复活→继续攻击。Osty的死亡也是资源",
+        "combo_type": "Osty生死循环",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "ReaperForm": {
+    "name_cn": "死神形态",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "攻击牌",
+        "name_cn": "攻击牌",
+        "reason": "ReaperForm(3费能力): 每当你的攻击造成伤害时, 同时给予等量灾厄(Doom)。灾厄=每回合对敌人造成等量于灾厄层数的伤害。攻击10伤→敌人+10灾厄→之后每回合-10HP。攻击=投资, 灾厄=被动利息",
+        "combo_type": "攻击伤害→灾厄→被动伤害(指数投资回报)",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "Poke",
+        "name_cn": "戳击",
+        "reason": "ReaperForm: 攻击造成伤害时给予等量灾厄。Poke(0费): Osty造成伤害→触发ReaperForm→Osty攻击同时叠灾厄。0费Osty攻击=0费灾厄积累, 超高效",
+        "combo_type": "Osty攻击→灾厄双引擎",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Rupture": {
+    "name_cn": "撕裂",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Hemokinesis",
+        "name_cn": "御血术",
+        "reason": "Rupture(1费能力): STS2版——每当你在你的回合失去生命值时, 获得力量。Hemokinesis(1费攻击): 失去HP+造成14伤害。打出Hemokinesis→自伤触发Rupture→+力量→Hemokinesis本身也吃力量加成。既是输出牌又是力量引擎",
+        "combo_type": "每次自伤+力量",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "CrimsonMantle",
+        "name_cn": "绯红披风",
+        "reason": "CrimsonMantle(1费能力): 每回合开始失去1HP+获得格挡。Rupture: 每次回合内失去HP→+力量。CrimsonMantle每回合自动触发自伤→Rupture每回合自动+力量+获得格挡, 无需额外操作的双引擎",
+        "combo_type": "被动引擎(每回合自动+力量+格挡)",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "Inferno",
+        "name_cn": "狱火",
+        "reason": "Inferno(1费能力): 每回合开始失去1HP, 每当你在回合内失去HP时对所有敌人造成伤害。Rupture: 失去HP→+力量。Inferno每回合自伤→触发Rupture+力量→Inferno的AOE伤害也吃力量加成→越打力量越高AOE越痛",
+        "combo_type": "引擎型(自伤→力量→AOE伤害循环)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Sacrifice": {
+    "name_cn": "牺牲",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "Reanimate",
+        "name_cn": "死者苏生",
+        "reason": "Sacrifice(1费技能): Osty死去→获得Osty双倍最大HP的格挡。Reanimate: 重新召唤Osty。Sacrifice→获得大量格挡→Reanimate复活→继续攻击。Osty的死亡也是资源",
+        "combo_type": "Osty生死循环",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Scrape": {
+    "name_cn": "刮削",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "0费牌",
+        "name_cn": "0费牌",
+        "reason": "Scrape(1费攻击): 造成伤害+抽牌+弃掉抽到的非0费牌。0费流抽到的大部分是0费→保留→继续打。Scrape=1费过牌器, 把牌组过滤成纯0费手牌",
+        "combo_type": "牌组0费比例线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "SecondWind": {
+    "name_cn": "重振精神",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "FeelNoPain",
+        "name_cn": "无惧疼痛",
+        "reason": "SecondWind(1费技能): 消耗手中所有非攻击牌, 每张获得格挡。FeelNoPain: 每消耗一张牌再额外获得格挡。一次SecondWind消耗3张非攻击牌=3×SecondWind格挡+3×FeelNoPain格挡, 单回合可叠50+格挡",
+        "combo_type": "手牌数量线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "SeekingEdge": {
+    "name_cn": "追踪之刃",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "Conqueror",
+        "name_cn": "征服者",
+        "reason": "SeekingEdge(1费能力): 铸造+君王之剑变为攻击所有敌人。Conqueror(1费技能): 铸造+君王之剑本回合伤害翻倍。SeekingEdge让剑AOE→Conqueror翻倍→AOE双倍伤害的君王之剑",
+        "combo_type": "倍乘+AOE",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "SetupStrike": {
+    "name_cn": "预备打击",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Inflame",
+        "name_cn": "燃烧",
+        "reason": "SetupStrike(1费攻击): 造成伤害+本回合获得力量。Inflame(1费能力): 永久+2力量(升级+3)。两者都是低费快速起力量, 不依赖3费DemonForm。配合RuinedHelmet遗物(首次获得力量翻倍)起手爆发",
+        "combo_type": "一次性/永久",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Shockwave": {
+    "name_cn": "震荡波",
+    "character": "无色",
+    "synergies": [
+      {
+        "card": "Bully",
+        "name_cn": "欺凌",
+        "reason": "震荡波(2费): 给予所有敌人?层虚弱和易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Cruelty",
+        "name_cn": "残酷",
+        "reason": "震荡波(2费): 给予所有敌人?层虚弱和易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Debilitate",
+        "name_cn": "摧残",
+        "reason": "震荡波(2费): 给予所有敌人?层虚弱和易伤。 → 给予易伤后 → 摧残(1费): 造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Dominate",
+        "name_cn": "主宰",
+        "reason": "震荡波(2费): 给予所有敌人?层虚弱和易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MoltenFist",
+        "name_cn": "熔融之拳",
+        "reason": "震荡波(2费): 给予所有敌人?层虚弱和易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "Shroud": {
+    "name_cn": "厄运之衣",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "灾厄施加",
+        "name_cn": "灾厄施加",
+        "reason": "Shroud(1费能力): 每当你给予灾厄时获得格挡。ReaperForm让攻击=灾厄→Shroud让灾厄=格挡。攻击=灾厄+格挡, 攻防完全一体化",
+        "combo_type": "灾厄频率线性",
+        "source": "archetype_matrix"
+      },
+      {
+        "card": "Countdown",
+        "name_cn": "倒数计时",
+        "reason": "Shroud: 给予灾厄时获得格挡。Countdown(1费能力): 每回合自动给随机敌人灾厄。Countdown每回合被动叠灾厄→Shroud被动获得格挡。被动双引擎",
+        "combo_type": "被动攻防一体",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "ShrugItOff": {
+    "name_cn": "耸肩无视",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Unmovable",
+        "name_cn": "坚定不移",
+        "reason": "Unmovable(2费能力): 翻倍你每回合第一次从卡牌获得的格挡。ShrugItOff(1费技能): 获得格挡+抽1张。Unmovable让首次格挡翻倍→ShrugItOff 8格挡→16格挡+抽牌。配合Barricade=翻倍格挡永久保留",
+        "combo_type": "倍乘型",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "SicEm": {
+    "name_cn": "紧追不放",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "Osty连击",
+        "name_cn": "Osty连击",
+        "reason": "SicEm(1费攻击): Osty造成伤害+本回合每当Osty攻击这名敌人时召唤Osty。Osty攻击→召唤Osty→新Osty可以继续攻击(如果有牌), 形成Osty数量增长。配合BoneShards(如果Osty存活→Osty对全体造伤+获格挡→Osty死去)",
+        "combo_type": "Osty增殖",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "SoulStorm": {
+    "name_cn": "灵魂风暴",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "灵魂消耗",
+        "name_cn": "灵魂消耗",
+        "reason": "SoulStorm(1费攻击): 造成伤害+消耗牌堆每有一张灵魂+额外伤害。灵魂打出后消耗(虚无)→消耗牌堆灵魂数量增长→SoulStorm伤害持续增加。BansheesCry(6费但每打虚无牌-费用): 终极AOE, 中后期费用降到0-2",
+        "combo_type": "消耗牌堆灵魂数线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "SpectrumShift": {
+    "name_cn": "光谱偏移",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "Arsenal",
+        "name_cn": "武器库",
+        "reason": "SpectrumShift(2费能力): 每回合自动将随机无色牌加入手牌。Arsenal(1费能力): 每打出一张无色牌获得力量。SpectrumShift每回合生成无色牌→Arsenal每张+力量→被动力量引擎",
+        "combo_type": "被动引擎(每回合+力量)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Squash": {
+    "name_cn": "压扁",
+    "character": "无色",
+    "synergies": [
+      {
+        "card": "Bully",
+        "name_cn": "欺凌",
+        "reason": "压扁(1费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Cruelty",
+        "name_cn": "残酷",
+        "reason": "压扁(1费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Debilitate",
+        "name_cn": "摧残",
+        "reason": "压扁(1费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 摧残(1费): 造成?点伤害。 在接下来的?回合内，该敌人身上的易伤与虚弱效率翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Dominate",
+        "name_cn": "主宰",
+        "reason": "压扁(1费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MoltenFist",
+        "name_cn": "熔融之拳",
+        "reason": "压扁(1费): 造成?点伤害。 给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "Squeeze": {
+    "name_cn": "榨取",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "Osty攻击牌",
+        "name_cn": "Osty攻击牌",
+        "reason": "Squeeze(3费攻击): Osty造成伤害+你每有一张Osty攻击牌就额外造成伤害。牌组有8张Osty牌→Squeeze=基础+8×额外伤害, 纯Osty流终结技",
+        "combo_type": "Osty牌数量线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Storm": {
+    "name_cn": "雷暴",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "能力牌",
+        "name_cn": "能力牌",
+        "reason": "Storm(1费能力): 每打一张能力牌→生成闪电球。缺陷体能力牌多(Defragment/Capacitor/MachineLearning等)→大量闪电球=持续被动输出。Subroutine(1费能力): 打能力牌时获得能量, 与Storm联动让能力牌自我续费",
+        "combo_type": "能力牌数量线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "StormOfSteel": {
+    "name_cn": "钢铁风暴",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "Finisher",
+        "name_cn": "终结技",
+        "reason": "StormOfSteel(1费技能): 弃所有手牌→每张生成小刀。弃5张→5张小刀(0费)→全部打出→Finisher(每张攻击牌=1次伤害)终结。弃牌→飞刀→终结的爆发连招",
+        "combo_type": "爆发型",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "SummonForth": {
+    "name_cn": "征召上前",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "君王之剑",
+        "name_cn": "君王之剑",
+        "reason": "SummonForth(1费技能): 铸造+不论在何处将君王之剑放入手牌。确保每回合都能打出君王之剑→铸造+稳定输出。储君的核心循环: 铸造→打剑→铸造→打剑",
+        "combo_type": "稳定循环",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Supermassive": {
+    "name_cn": "超质量体",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "大量卡牌生成",
+        "name_cn": "大量卡牌生成",
+        "reason": "Supermassive(1费攻击): 造成伤害+本场战斗每生成过一张牌就额外+伤害。中后期累计生成20张牌→Supermassive=基础+20额外伤害。永久成长型输出",
+        "combo_type": "累计卡牌生成数永久线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Synchronize": {
+    "name_cn": "同步",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "多种充能球",
+        "name_cn": "多种充能球",
+        "reason": "Synchronize(1费技能): 每有一种不同充能球就本回合+集中。拥有闪电+冰霜+暗球=+3集中。配合Rainbow(生成3种球)→确保多样性→高临时集中",
+        "combo_type": "球种类线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Tactician": {
+    "name_cn": "战术大师",
+    "character": "静默猎手",
+    "synergies": [
+      {
+        "card": "Acrobatics",
+        "name_cn": "杂技",
+        "reason": "Tactician(3费技能): 获得能量(实际是0费时通过弃牌触发获得能量的机制)。Acrobatics(1费技能): 抽牌+弃1张。弃掉Tactician→回能量→继续出牌。ToolsOfTheTrade(1费能力): 每回合自动抽1+弃1, 被动触发弃牌效果",
+        "combo_type": "能量引擎",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Taunt": {
+    "name_cn": "挑衅",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Bully",
+        "name_cn": "欺凌",
+        "reason": "挑衅(1费): 获得?点格挡。 给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Cruelty",
+        "name_cn": "残酷",
+        "reason": "挑衅(1费): 获得?点格挡。 给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Dominate",
+        "name_cn": "主宰",
+        "reason": "挑衅(1费): 获得?点格挡。 给予?层易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MoltenFist",
+        "name_cn": "熔融之拳",
+        "reason": "挑衅(1费): 获得?点格挡。 给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "TeslaCoil": {
+    "name_cn": "特斯拉线圈",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "高集中",
+        "name_cn": "高集中",
+        "reason": "TeslaCoil(0费攻击): 造成伤害+对目标触发所有闪电球被动。0费=免费触发所有闪电球被动一次。3个闪电球+5集中→每个闪电球被动=8伤→TeslaCoil=0费24伤+基础伤害",
+        "combo_type": "闪电球数量×集中",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "TheSealedThrone": {
+    "name_cn": "封印王座",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "大量出牌",
+        "name_cn": "大量出牌",
+        "reason": "TheSealedThrone(1费能力/Ancient): 每打出一张牌获得★。储君37.5%的牌涉及★机制→TheSealedThrone让每张牌=+1★→★资源无限。配合ChildOfTheStars=每打牌+★→花★+格挡",
+        "combo_type": "出牌次数线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "TheSmith": {
+    "name_cn": "铸剑者",
+    "character": "储君",
+    "synergies": [
+      {
+        "card": "Furnace",
+        "name_cn": "熔炉",
+        "reason": "Furnace(1费能力): 每回合开始自动铸造。TheSmith(1费技能): 铸造。铸造(Forge)=升级君王之剑(储君的专属武器)。Furnace被动每回合铸造→君王之剑越来越强",
+        "combo_type": "被动永久成长(每回合自动铸造)",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Thunder": {
+    "name_cn": "雷霆",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "闪电球激发",
+        "name_cn": "闪电球激发",
+        "reason": "Thunder(1费能力): 每当激发闪电球时, 对被命中敌人造成额外伤害。闪电球被动每回合随机打→Thunder额外伤害; 配合Dualcast/MultiCast激发→Thunder多次触发。高集中下闪电球激发伤害30+再加Thunder=单次50+",
+        "combo_type": "激发次数线性",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Thunderclap": {
+    "name_cn": "闪电霹雳",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Bully",
+        "name_cn": "欺凌",
+        "reason": "闪电霹雳(1费): 对所有敌人造成?点伤害，给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Cruelty",
+        "name_cn": "残酷",
+        "reason": "闪电霹雳(1费): 对所有敌人造成?点伤害，给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Dominate",
+        "name_cn": "主宰",
+        "reason": "闪电霹雳(1费): 对所有敌人造成?点伤害，给予?层易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MoltenFist",
+        "name_cn": "熔融之拳",
+        "reason": "闪电霹雳(1费): 对所有敌人造成?点伤害，给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "TimesUp": {
+    "name_cn": "大限已至",
+    "character": "亡灵契约师",
+    "synergies": [
+      {
+        "card": "高灾厄",
+        "name_cn": "高灾厄",
+        "reason": "TimesUp(2费攻击): 造成等量于敌人灾厄层数的伤害。敌人50灾厄→TimesUp=50伤害(+力量)。灾厄的终结技: 被动灾厄积累→TimesUp一击秒杀",
+        "combo_type": "灾厄层数=伤害",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Tremble": {
+    "name_cn": "战栗",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Bully",
+        "name_cn": "欺凌",
+        "reason": "战栗(1费): 给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Cruelty",
+        "name_cn": "残酷",
+        "reason": "战栗(1费): 给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Dominate",
+        "name_cn": "主宰",
+        "reason": "战栗(1费): 给予?层易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MoltenFist",
+        "name_cn": "熔融之拳",
+        "reason": "战栗(1费): 给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "Unmovable": {
+    "name_cn": "坚定不移",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "ShrugItOff",
+        "name_cn": "耸肩无视",
+        "reason": "Unmovable(2费能力): 翻倍你每回合第一次从卡牌获得的格挡。ShrugItOff(1费技能): 获得格挡+抽1张。Unmovable让首次格挡翻倍→ShrugItOff 8格挡→16格挡+抽牌。配合Barricade=翻倍格挡永久保留",
+        "combo_type": "倍乘型",
+        "source": "archetype_matrix"
+      }
+    ]
+  },
+  "Uppercut": {
+    "name_cn": "上勾拳",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Bully",
+        "name_cn": "欺凌",
+        "reason": "上勾拳(2费): 造成?点伤害。 给予?层虚弱。 给予?层易伤。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Cruelty",
+        "name_cn": "残酷",
+        "reason": "上勾拳(2费): 造成?点伤害。 给予?层虚弱。 给予?层易伤。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Dominate",
+        "name_cn": "主宰",
+        "reason": "上勾拳(2费): 造成?点伤害。 给予?层虚弱。 给予?层易伤。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MoltenFist",
+        "name_cn": "熔融之拳",
+        "reason": "上勾拳(2费): 造成?点伤害。 给予?层虚弱。 给予?层易伤。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "Vicious": {
+    "name_cn": "凶恶",
+    "character": "铁甲战士",
+    "synergies": [
+      {
+        "card": "Bully",
+        "name_cn": "欺凌",
+        "reason": "凶恶(1费): 每当你给予易伤时，抽?张牌。 → 给予易伤后 → 欺凌(0费): 造成?点伤害。 该敌人身上每有一层易伤就额外造成?点伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Cruelty",
+        "name_cn": "残酷",
+        "reason": "凶恶(1费): 每当你给予易伤时，抽?张牌。 → 给予易伤后 → 残酷(1费): 有易伤状态的敌人额外受到?%的伤害。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "Dominate",
+        "name_cn": "主宰",
+        "reason": "凶恶(1费): 每当你给予易伤时，抽?张牌。 → 给予易伤后 → 主宰(1费): 敌人身上每有一层易伤，就获得?点力量。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      },
+      {
+        "card": "MoltenFist",
+        "name_cn": "熔融之拳",
+        "reason": "凶恶(1费): 每当你给予易伤时，抽?张牌。 → 给予易伤后 → 熔融之拳(1费): 造成?点伤害。 将该敌人身上的易伤层数翻倍。。易伤增伤50%(PaperPhrog遗物下75%)",
+        "combo_type": "debuff联动",
+        "source": "mechanism_cluster"
+      }
+    ]
+  },
+  "Voltaic": {
+    "name_cn": "电流相生",
+    "character": "缺陷体",
+    "synergies": [
+      {
+        "card": "闪电球积累",
+        "name_cn": "闪电球积累",
+        "reason": "Voltaic(2费技能): 生成等量于本场战斗中生成过的闪电球数量的闪电球。战斗中期累计生成10个闪电球→Voltaic一次性补满球位。配合Storm持续生成→Voltaic中期爆发填满球位",
+        "combo_type": "累计线性(中后期爆发)",
+        "source": "archetype_matrix"
+      }
+    ]
+  }
+}

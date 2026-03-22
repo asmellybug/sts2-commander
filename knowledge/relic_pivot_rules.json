@@ -1,0 +1,1152 @@
+{
+  "rules": [
+    {
+      "condition": {
+        "has_relic": "SelfFormingClay",
+        "character": "铁甲战士",
+        "has_relic_cn": "自成型黏土"
+      },
+      "action": "转自伤流",
+      "priority": 9,
+      "reason": "受伤下回合+3格挡→自伤变防御手段"
+    },
+    {
+      "condition": {
+        "has_relic": "RedSkull",
+        "character": "铁甲战士",
+        "has_relic_cn": "红头骨"
+      },
+      "action": "转力量流",
+      "priority": 9,
+      "reason": "如果没有Corruption/FeelNoPain但有红头骨→转力量流"
+    },
+    {
+      "condition": {
+        "has_relic": "Vajra",
+        "character": "铁甲战士",
+        "has_relic_cn": "金刚杵"
+      },
+      "action": "转力量流",
+      "priority": 9,
+      "reason": "早期+1力量遗物暗示力量方向"
+    },
+    {
+      "condition": {
+        "has_relic": "Shuriken",
+        "character": "静默猎手",
+        "has_relic_cn": "手里剑"
+      },
+      "action": "转飞刀流",
+      "priority": 9,
+      "reason": "3攻+1力量→如果同时有Accuracy→转飞刀流"
+    },
+    {
+      "condition": {
+        "has_relic": "Kunai",
+        "character": "静默猎手",
+        "has_relic_cn": "苦无"
+      },
+      "action": "转飞刀流/敏捷格挡流",
+      "priority": 9,
+      "reason": "3攻+1敏捷→飞刀或格挡都受益"
+    },
+    {
+      "condition": {
+        "has_relic": "TwistedFunnel",
+        "character": "静默猎手",
+        "has_relic_cn": "扭曲漏斗"
+      },
+      "action": "转毒素流",
+      "priority": 9,
+      "reason": "拿到扭曲漏斗→毒素流无条件更强→转毒素"
+    },
+    {
+      "condition": {
+        "has_relic": "Shuriken",
+        "character": "静默猎手",
+        "has_relic_cn": "手里剑"
+      },
+      "action": "转飞刀流",
+      "priority": 9,
+      "reason": "★拿到手里剑→飞刀流从B变S→值得all-in飞刀"
+    },
+    {
+      "condition": {
+        "has_relic": "TwistedFunnel",
+        "character": "静默猎手",
+        "has_relic_cn": "扭曲漏斗"
+      },
+      "action": "转毒素+格挡混合",
+      "priority": 9,
+      "reason": "敏捷格挡+被动毒素=攻防兼备"
+    },
+    {
+      "condition": {
+        "has_relic": "DataDisk",
+        "character": "缺陷体",
+        "has_relic_cn": "数据磁盘"
+      },
+      "action": "转Focus全能流",
+      "priority": 9,
+      "reason": "拿到数据磁盘→所有充能球策略都强化→Focus流无条件最优"
+    },
+    {
+      "condition": {
+        "has_relic": "Vajra",
+        "character": "储君",
+        "has_relic_cn": "金刚杵"
+      },
+      "action": "转力量星辰流",
+      "priority": 9,
+      "reason": "+1力量→如果有MonarchsGaze→转力量星辰"
+    },
+    {
+      "condition": {
+        "has_relic": "FencingManual",
+        "character": "储君",
+        "has_relic_cn": "击剑指南"
+      },
+      "action": "转锻造流",
+      "priority": 9,
+      "reason": "拿到击剑指南→锻造流变得可行"
+    },
+    {
+      "condition": {
+        "has_relic": "BoneFlute",
+        "character": "亡灵契约师",
+        "has_relic_cn": "骨笛"
+      },
+      "action": "转Osty亲卫流",
+      "priority": 9,
+      "reason": "拿到骨笛→Osty死亡不再是纯负面→值得All-in Osty"
+    },
+    {
+      "condition": {
+        "has_relic": "BookRepairKnife",
+        "character": "亡灵契约师",
+        "has_relic_cn": "修书小刀"
+      },
+      "action": "转末日流",
+      "priority": 9,
+      "reason": "拿到修书小刀→末日流更强→值得All-in"
+    },
+    {
+      "condition": {
+        "has_relic": "RedSkull",
+        "character": "铁甲战士",
+        "has_relic_cn": "红头骨"
+      },
+      "action": "强化力量流",
+      "priority": 8,
+      "reason": "HP<50%时+3力量，铁甲自带回血容易触发"
+    },
+    {
+      "condition": {
+        "has_relic": "Vajra",
+        "character": "铁甲战士",
+        "has_relic_cn": "金刚杵"
+      },
+      "action": "强化力量流",
+      "priority": 8,
+      "reason": "+1力量常驻，与HeavyBlade的×3倍率=+3基础伤害"
+    },
+    {
+      "condition": {
+        "has_relic": "CharonsAshes",
+        "character": "铁甲战士",
+        "has_relic_cn": "卡戎之灰"
+      },
+      "action": "强化消耗流",
+      "priority": 8,
+      "reason": "每消耗1牌→全体敌人3伤害。消耗流每回合消耗5-10张→15-30全体伤害/回合"
+    },
+    {
+      "condition": {
+        "has_relic": "SelfFormingClay",
+        "character": "铁甲战士",
+        "has_relic_cn": "自成型黏土"
+      },
+      "action": "强化自伤流",
+      "priority": 8,
+      "reason": "受伤→下回合+3格挡→自伤=防御手段"
+    },
+    {
+      "condition": {
+        "has_relic": "TwistedFunnel",
+        "character": "静默猎手",
+        "has_relic_cn": "扭曲漏斗"
+      },
+      "action": "强化毒素流",
+      "priority": 8,
+      "reason": "★战斗开始全体+3毒→NoxiousFumes第1回合就有3基础→Catalyst翻倍更快"
+    },
+    {
+      "condition": {
+        "has_relic": "SneckoSkull",
+        "character": "静默猎手",
+        "has_relic_cn": "异蛇头骨"
+      },
+      "action": "强化毒素流",
+      "priority": 8,
+      "reason": "上毒时额外+1毒→所有毒牌强化"
+    },
+    {
+      "condition": {
+        "has_relic": "Shuriken",
+        "character": "静默猎手",
+        "has_relic_cn": "手里剑"
+      },
+      "action": "强化飞刀流",
+      "priority": 8,
+      "reason": "★3次攻击+1力量→飞刀每回合5-8次攻击=+2-3力量/回合→飞刀伤害指数增长"
+    },
+    {
+      "condition": {
+        "has_relic": "Kunai",
+        "character": "静默猎手",
+        "has_relic_cn": "苦无"
+      },
+      "action": "强化飞刀流",
+      "priority": 8,
+      "reason": "★3次攻击+1敏捷→飞刀触发→格挡也增长"
+    },
+    {
+      "condition": {
+        "has_relic": "HelicalDart",
+        "character": "静默猎手",
+        "has_relic_cn": "螺线飞镖"
+      },
+      "action": "强化飞刀流",
+      "priority": 8,
+      "reason": "飞刀专属遗物(纪元6解锁)"
+    },
+    {
+      "condition": {
+        "has_relic": "ToughBandages",
+        "character": "静默猎手",
+        "has_relic_cn": "结实绷带"
+      },
+      "action": "强化弃牌流",
+      "priority": 8,
+      "reason": "弃牌+3格挡→弃5张=+15格挡→弃牌=防御手段"
+    },
+    {
+      "condition": {
+        "has_relic": "Kunai",
+        "character": "静默猎手",
+        "has_relic_cn": "苦无"
+      },
+      "action": "强化敏捷格挡流",
+      "priority": 8,
+      "reason": "3攻+1敏捷→与Footwork叠加"
+    },
+    {
+      "condition": {
+        "has_relic": "PaperKrane",
+        "character": "静默猎手",
+        "has_relic_cn": "纸鹤"
+      },
+      "action": "强化敏捷格挡流",
+      "priority": 8,
+      "reason": "虚弱时敌人-40%伤害→格挡需求降低"
+    },
+    {
+      "condition": {
+        "has_relic": "DataDisk",
+        "character": "缺陷体",
+        "has_relic_cn": "数据磁盘"
+      },
+      "action": "强化Focus全能流",
+      "priority": 8,
+      "reason": "★+1Focus常驻→等于免费Defragment。缺陷体最强遗物替换(老板给的遗物)"
+    },
+    {
+      "condition": {
+        "has_relic": "InfusedCore",
+        "character": "缺陷体",
+        "has_relic_cn": "注能核心"
+      },
+      "action": "强化Focus全能流",
+      "priority": 8,
+      "reason": "起始球效果+1→Focus效果基底提升"
+    },
+    {
+      "condition": {
+        "has_relic": "DataDisk",
+        "character": "缺陷体",
+        "has_relic_cn": "数据磁盘"
+      },
+      "action": "强化闪电流",
+      "priority": 8,
+      "reason": "+1Focus→所有闪电球+1伤害"
+    },
+    {
+      "condition": {
+        "has_relic": "DataDisk",
+        "character": "缺陷体",
+        "has_relic_cn": "数据磁盘"
+      },
+      "action": "强化黑暗爆发流",
+      "priority": 8,
+      "reason": "+1Focus→黑暗球每回合+7而非+6"
+    },
+    {
+      "condition": {
+        "has_relic": "LunarPastry",
+        "character": "储君",
+        "has_relic_cn": "月亮糕点"
+      },
+      "action": "强化星辰控制流",
+      "priority": 8,
+      "reason": "星辰产出增加→所有星辰牌强化"
+    },
+    {
+      "condition": {
+        "has_relic": "MiniRegent",
+        "character": "储君",
+        "has_relic_cn": "迷你储君"
+      },
+      "action": "强化力量星辰流",
+      "priority": 8,
+      "reason": "+力量→双scaling基底更高"
+    },
+    {
+      "condition": {
+        "has_relic": "LunarPastry",
+        "character": "储君",
+        "has_relic_cn": "月亮糕点"
+      },
+      "action": "强化力量星辰流",
+      "priority": 8,
+      "reason": "星辰→力量转换更多"
+    },
+    {
+      "condition": {
+        "has_relic": "FencingManual",
+        "character": "储君",
+        "has_relic_cn": "击剑指南"
+      },
+      "action": "强化锻造流",
+      "priority": 8,
+      "reason": "锻造专属遗物(纪元3解锁)"
+    },
+    {
+      "condition": {
+        "has_relic": "BoneFlute",
+        "character": "亡灵契约师",
+        "has_relic_cn": "骨笛"
+      },
+      "action": "强化Osty亲卫流",
+      "priority": 8,
+      "reason": "Osty死时+格挡→Osty死亡也有防御价值(纪元3解锁)"
+    },
+    {
+      "condition": {
+        "has_relic": "BeatingRemnant",
+        "character": "亡灵契约师",
+        "has_relic_cn": "律动残余"
+      },
+      "action": "强化Osty亲卫流",
+      "priority": 8,
+      "reason": "Osty专属遗物"
+    },
+    {
+      "condition": {
+        "has_relic": "BookRepairKnife",
+        "character": "亡灵契约师",
+        "has_relic_cn": "修书小刀"
+      },
+      "action": "强化末日流",
+      "priority": 8,
+      "reason": "末日专属遗物(纪元3解锁)"
+    },
+    {
+      "condition": {
+        "has_relic": "UndyingSigil",
+        "character": "亡灵契约师",
+        "has_relic_cn": "不死符文"
+      },
+      "action": "强化末日流",
+      "priority": 8,
+      "reason": "末日相关→商店可买"
+    },
+    {
+      "condition": {
+        "has_relic": "BoneFlute",
+        "character": "亡灵契约师",
+        "has_relic_cn": "骨笛"
+      },
+      "action": "强化死神形态混合流",
+      "priority": 8,
+      "reason": "Osty死→格挡+Doom双收益"
+    },
+    {
+      "condition": {
+        "has_relic": "Shuriken",
+        "character": "静默猎手",
+        "has_card_any": [
+          "Accuracy",
+          "InfiniteBlades"
+        ],
+        "has_relic_cn": "手里剑"
+      },
+      "action": "转飞刀流",
+      "priority": 8,
+      "reason": "手里剑+飞刀=每3刀+1力量，Accuracy提升每刀伤害"
+    },
+    {
+      "condition": {
+        "has_relic": "SneckoEye",
+        "character": "缺陷体",
+        "has_relic_cn": "异蛇之眼"
+      },
+      "action": "拿高费牌",
+      "priority": 7,
+      "reason": "蛇眼随机费用0-3→高费牌(Hyperbeam/Meteor等)期望值更低"
+    },
+    {
+      "condition": {
+        "has_relic": "Kunai",
+        "character": "静默猎手",
+        "has_card_any": [
+          "BladeDance",
+          "CloakAndDagger"
+        ],
+        "has_relic_cn": "苦无"
+      },
+      "action": "强化飞刀流",
+      "priority": 7,
+      "reason": "苦无+飞刀=每3次攻击+1敏捷，飞刀多次攻击快速触发"
+    },
+    {
+      "condition": {
+        "has_relic": "Shuriken",
+        "character": "铁甲战士",
+        "has_relic_cn": "手里剑"
+      },
+      "action": "强化力量流",
+      "priority": 6,
+      "reason": "手里剑+多次攻击=叠力量，但铁甲攻击频率一般"
+    }
+  ],
+  "relic_archetype_boost": {
+    "DeadBranch": {
+      "消耗流": "+3tier"
+    },
+    "RunicCube": {
+      "自伤流": "+3tier"
+    },
+    "SelfFormingClay": {
+      "自伤流": "+3tier",
+      "_name_cn": "自成型黏土"
+    },
+    "RedSkull": {
+      "力量流": "+3tier",
+      "自伤流": "+1tier",
+      "_name_cn": "红头骨"
+    },
+    "Vajra": {
+      "力量流": "+3tier",
+      "力量星辰流": "+1tier",
+      "_name_cn": "金刚杵"
+    },
+    "Shuriken": {
+      "力量流": "+1tier",
+      "飞刀流": "+3tier",
+      "弃牌流": "+1tier",
+      "_name_cn": "手里剑"
+    },
+    "Girya": {
+      "力量流": "+1tier",
+      "_name_cn": "壶铃"
+    },
+    "PhilosophersStone": {
+      "力量流": "+1tier",
+      "_name_cn": "贤者之石"
+    },
+    "CharonsAshes": {
+      "消耗流": "+3tier",
+      "_name_cn": "卡戎之灰"
+    },
+    "JossPaper": {
+      "消耗流": "+1tier",
+      "_name_cn": "金纸"
+    },
+    "ToughBandages": {
+      "消耗流": "+1tier",
+      "弃牌流": "+3tier",
+      "_name_cn": "结实绷带"
+    },
+    "Calipers": {
+      "格挡撞击流": "+3tier"
+    },
+    "HornCleat": {
+      "格挡撞击流": "+1tier",
+      "_name_cn": "船夹板"
+    },
+    "Orichalcum": {
+      "格挡撞击流": "+1tier",
+      "_name_cn": "奥利哈钢"
+    },
+    "Anchor": {
+      "格挡撞击流": "+1tier",
+      "_name_cn": "锚"
+    },
+    "Kunai": {
+      "飞刀流/敏捷格挡流": "+3tier",
+      "飞刀流": "+3tier",
+      "敏捷格挡流": "+3tier",
+      "_name_cn": "苦无"
+    },
+    "TwistedFunnel": {
+      "毒素流": "+3tier",
+      "毒素+格挡混合": "+3tier",
+      "_name_cn": "扭曲漏斗"
+    },
+    "SneckoSkull": {
+      "毒素流": "+3tier",
+      "_name_cn": "异蛇头骨"
+    },
+    "PaperPhrog": {
+      "毒素流": "+1tier",
+      "_name_cn": "纸蛙"
+    },
+    "PaperKrane": {
+      "毒素流": "+1tier",
+      "敏捷格挡流": "+3tier",
+      "_name_cn": "纸鹤"
+    },
+    "HelicalDart": {
+      "飞刀流": "+3tier",
+      "_name_cn": "螺线飞镖"
+    },
+    "PenNib": {
+      "飞刀流": "+1tier",
+      "Osty亲卫流": "+1tier",
+      "_name_cn": "钢笔尖"
+    },
+    "Nunchaku": {
+      "飞刀流": "+1tier",
+      "弃牌流": "+1tier",
+      "_name_cn": "双截棍"
+    },
+    "NinjaScroll": {
+      "飞刀流": "+1tier",
+      "_name_cn": "忍术卷轴"
+    },
+    "OddlySmoothStone": {
+      "敏捷格挡流": "+1tier",
+      "_name_cn": "意外光滑的石头"
+    },
+    "CaptainsWheel": {
+      "敏捷格挡流": "+1tier",
+      "_name_cn": "舵盘"
+    },
+    "DataDisk": {
+      "Focus全能流": "+3tier",
+      "闪电流": "+3tier",
+      "黑暗爆发流": "+3tier",
+      "_name_cn": "数据磁盘"
+    },
+    "InfusedCore": {
+      "Focus全能流": "+3tier",
+      "_name_cn": "注能核心"
+    },
+    "SymbioticVirus": {
+      "Focus全能流": "+1tier",
+      "_name_cn": "共生病毒"
+    },
+    "EmotionChip": {
+      "Focus全能流": "+1tier",
+      "闪电流": "+1tier",
+      "_name_cn": "情感芯片"
+    },
+    "LunarPastry": {
+      "星辰控制流": "+3tier",
+      "力量星辰流": "+3tier",
+      "锻造流": "+1tier",
+      "_name_cn": "月亮糕点"
+    },
+    "GalacticDust": {
+      "星辰控制流": "+1tier",
+      "_name_cn": "星系尘埃"
+    },
+    "MiniRegent": {
+      "力量星辰流": "+3tier",
+      "_name_cn": "迷你储君"
+    },
+    "FencingManual": {
+      "锻造流": "+3tier",
+      "_name_cn": "击剑指南"
+    },
+    "BoneFlute": {
+      "Osty亲卫流": "+3tier",
+      "死神形态混合流": "+3tier",
+      "_name_cn": "骨笛"
+    },
+    "BeatingRemnant": {
+      "Osty亲卫流": "+3tier",
+      "_name_cn": "律动残余"
+    },
+    "TungstenRod": {
+      "Osty亲卫流": "+1tier",
+      "_name_cn": "钨合金棍"
+    },
+    "BookRepairKnife": {
+      "末日流": "+3tier",
+      "死神形态混合流": "+1tier",
+      "_name_cn": "修书小刀"
+    },
+    "UndyingSigil": {
+      "末日流": "+3tier",
+      "_name_cn": "不死符文"
+    }
+  },
+  "combo_rules": [
+    {
+      "condition": {
+        "has_relics": [
+          "Shuriken",
+          "Kunai"
+        ],
+        "character": "静默猎手",
+        "has_relics_cn": [
+          "手里剑",
+          "苦无"
+        ]
+      },
+      "action": "飞刀流双引擎",
+      "priority": 9,
+      "reason": "手里剑(3攻+1力量) + 苦无(3攻+1敏捷) = 每3次攻击同时+力量+敏捷，飞刀越打越强且越挡越多",
+      "boost": {
+        "飞刀流": "+4"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "DataDisk",
+          "SymbioticVirus"
+        ],
+        "character": "缺陷体",
+        "has_relics_cn": [
+          "数据磁盘",
+          "共生病毒"
+        ]
+      },
+      "action": "Focus流完美开局",
+      "priority": 9,
+      "reason": "数据磁盘(+1Focus) + 共生病毒(战斗开始+1暗球) = Focus加成暗球被动积累伤害",
+      "boost": {
+        "Focus全能流": "+3",
+        "黑暗爆发流": "+2"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "BoneFlute",
+          "BookRepairKnife"
+        ],
+        "character": "亡灵契约师",
+        "has_relics_cn": [
+          "骨笛",
+          "修书小刀"
+        ]
+      },
+      "action": "亡灵双遗物体系",
+      "priority": 9,
+      "reason": "骨笛(Osty死→格挡) + 修书小刀(Doom增强) = Osty体系+Doom体系同时强化→混合流最优",
+      "boost": {
+        "死神形态混合流": "+3",
+        "Osty亲卫流": "+1",
+        "末日流": "+1"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "Shuriken",
+          "NinjaScroll"
+        ],
+        "character": "静默猎手",
+        "has_relics_cn": [
+          "手里剑",
+          "忍术卷轴"
+        ]
+      },
+      "action": "飞刀流速启",
+      "priority": 8,
+      "reason": "手里剑(3攻+力量) + 忍卷(战斗开始+3飞刀) = 第1回合就触发力量+有飞刀输出",
+      "boost": {
+        "飞刀流": "+3"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "TwistedFunnel",
+          "SneckoSkull"
+        ],
+        "character": "静默猎手",
+        "has_relics_cn": [
+          "扭曲漏斗",
+          "异蛇头骨"
+        ]
+      },
+      "action": "毒素流双倍",
+      "priority": 8,
+      "reason": "扭曲漏斗(战斗开始全体+3毒) + 异蛇头骨(上毒时+1) = 被动毒素加速",
+      "boost": {
+        "毒素流": "+3"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "DataDisk",
+          "EmotionChip"
+        ],
+        "character": "缺陷体",
+        "has_relics_cn": [
+          "数据磁盘",
+          "情感芯片"
+        ]
+      },
+      "action": "Focus防御反击",
+      "priority": 8,
+      "reason": "数据磁盘(+1Focus) + 情感芯片(受伤→触发球) = 被打→触发更强的球→反而赚",
+      "boost": {
+        "Focus全能流": "+3"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "HelicalDart",
+          "RuinedHelmet"
+        ],
+        "character": "静默猎手",
+        "has_relics_cn": [
+          "螺线飞镖",
+          "损毁头盔"
+        ]
+      },
+      "action": "飞刀流S级",
+      "priority": 8,
+      "reason": "HelicalDart(飞刀增强) + RuinedHelmet(+力量) = 每把飞刀伤害×2-3倍",
+      "boost": {
+        "飞刀流": "+3"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "NinjaScroll",
+          "RuinedHelmet"
+        ],
+        "character": "静默猎手",
+        "has_relics_cn": [
+          "忍术卷轴",
+          "损毁头盔"
+        ]
+      },
+      "action": "飞刀流S级",
+      "priority": 8,
+      "reason": "NinjaScroll(飞刀增强) + RuinedHelmet(+力量) = 每把飞刀伤害×2-3倍",
+      "boost": {
+        "飞刀流": "+3"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "UndyingSigil",
+          "PenNib"
+        ],
+        "character": "亡灵契约师",
+        "has_relics_cn": [
+          "不死符文",
+          "钢笔尖"
+        ]
+      },
+      "action": "死神混合流强化",
+      "priority": 8,
+      "reason": "UndyingSigil(Doom增强) + PenNib(Osty增强) = 双系统同时强化",
+      "boost": {
+        "死神形态混合流": "+2",
+        "Osty亲卫流": "+1",
+        "末日流": "+1"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "UndyingSigil",
+          "BeatingRemnant"
+        ],
+        "character": "亡灵契约师",
+        "has_relics_cn": [
+          "不死符文",
+          "律动残余"
+        ]
+      },
+      "action": "死神混合流强化",
+      "priority": 8,
+      "reason": "UndyingSigil(Doom增强) + BeatingRemnant(Osty增强) = 双系统同时强化",
+      "boost": {
+        "死神形态混合流": "+2",
+        "Osty亲卫流": "+1",
+        "末日流": "+1"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "UndyingSigil",
+          "TungstenRod"
+        ],
+        "character": "亡灵契约师",
+        "has_relics_cn": [
+          "不死符文",
+          "钨合金棍"
+        ]
+      },
+      "action": "死神混合流强化",
+      "priority": 8,
+      "reason": "UndyingSigil(Doom增强) + TungstenRod(Osty增强) = 双系统同时强化",
+      "boost": {
+        "死神形态混合流": "+2",
+        "Osty亲卫流": "+1",
+        "末日流": "+1"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "UndyingSigil",
+          "BoneFlute"
+        ],
+        "character": "亡灵契约师",
+        "has_relics_cn": [
+          "不死符文",
+          "骨笛"
+        ]
+      },
+      "action": "死神混合流强化",
+      "priority": 8,
+      "reason": "UndyingSigil(Doom增强) + BoneFlute(Osty增强) = 双系统同时强化",
+      "boost": {
+        "死神形态混合流": "+2",
+        "Osty亲卫流": "+1",
+        "末日流": "+1"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "UndyingSigil",
+          "BoundPhylactery"
+        ],
+        "character": "亡灵契约师",
+        "has_relics_cn": [
+          "不死符文",
+          "缚魂命匣"
+        ]
+      },
+      "action": "死神混合流强化",
+      "priority": 8,
+      "reason": "UndyingSigil(Doom增强) + BoundPhylactery(Osty增强) = 双系统同时强化",
+      "boost": {
+        "死神形态混合流": "+2",
+        "Osty亲卫流": "+1",
+        "末日流": "+1"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "PenNib",
+          "Shuriken"
+        ],
+        "character_any": [
+          "铁甲战士",
+          "静默猎手"
+        ],
+        "has_relics_cn": [
+          "钢笔尖",
+          "手里剑"
+        ]
+      },
+      "action": "攻击流爆发",
+      "priority": 7,
+      "reason": "笔尖(第10攻翻倍) + 手里剑(3攻+力量) = 力量叠高后第10攻造成巨额伤害",
+      "boost": {
+        "力量流": "+2",
+        "飞刀流": "+2"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "IceCream",
+          "ArtOfWar"
+        ],
+        "character_any": [
+          "铁甲战士",
+          "缺陷体"
+        ],
+        "has_relics_cn": [
+          "冰淇淋",
+          "孙子兵法"
+        ]
+      },
+      "action": "能量囤积流",
+      "priority": 7,
+      "reason": "冰淇淋(能量保留) + 兵法(不出攻击→下回合+能量) = 防御回合攒能量→爆发回合花掉",
+      "boost": {
+        "格挡撞击流": "+2",
+        "Focus全能流": "+1"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "DataDisk",
+          "HappyFlower"
+        ],
+        "character": "缺陷体",
+        "has_relics_cn": [
+          "数据磁盘",
+          "开心小花"
+        ]
+      },
+      "action": "Focus流+高能量",
+      "priority": 7,
+      "reason": "DataDisk(+Focus) + HappyFlower(+能量) = 更多球+更强球",
+      "boost": {
+        "Focus全能流": "+2"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "DataDisk",
+          "FakeVenerableTeaSet"
+        ],
+        "character": "缺陷体",
+        "has_relics_cn": [
+          "数据磁盘",
+          "古茶具套装？？？"
+        ]
+      },
+      "action": "Focus流+高能量",
+      "priority": 7,
+      "reason": "DataDisk(+Focus) + FakeVenerableTeaSet(+能量) = 更多球+更强球",
+      "boost": {
+        "Focus全能流": "+2"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "DataDisk",
+          "ArtOfWar"
+        ],
+        "character": "缺陷体",
+        "has_relics_cn": [
+          "数据磁盘",
+          "孙子兵法"
+        ]
+      },
+      "action": "Focus流+高能量",
+      "priority": 7,
+      "reason": "DataDisk(+Focus) + ArtOfWar(+能量) = 更多球+更强球",
+      "boost": {
+        "Focus全能流": "+2"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "DataDisk",
+          "FakeHappyFlower"
+        ],
+        "character": "缺陷体",
+        "has_relics_cn": [
+          "数据磁盘",
+          "开心小花？？？"
+        ]
+      },
+      "action": "Focus流+高能量",
+      "priority": 7,
+      "reason": "DataDisk(+Focus) + FakeHappyFlower(+能量) = 更多球+更强球",
+      "boost": {
+        "Focus全能流": "+2"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "DataDisk",
+          "VenerableTeaSet"
+        ],
+        "character": "缺陷体",
+        "has_relics_cn": [
+          "数据磁盘",
+          "古茶具套装"
+        ]
+      },
+      "action": "Focus流+高能量",
+      "priority": 7,
+      "reason": "DataDisk(+Focus) + VenerableTeaSet(+能量) = 更多球+更强球",
+      "boost": {
+        "Focus全能流": "+2"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "Vajra",
+          "BagOfMarbles"
+        ],
+        "character_any": [
+          "铁甲战士",
+          "静默猎手"
+        ],
+        "has_relics_cn": [
+          "金刚杵",
+          "弹珠袋"
+        ]
+      },
+      "action": "第1回合爆发",
+      "priority": 6,
+      "reason": "金刚杵(+1力量) + 弹珠袋(战斗开始敌人易伤) = 第1回合就有力量+易伤，强制抢血",
+      "boost": {
+        "力量流": "+1",
+        "飞刀流": "+1"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "GalacticDust",
+          "VitruvianMinion"
+        ],
+        "character_any": [
+          "铁甲战士",
+          "缺陷体"
+        ],
+        "has_relics_cn": [
+          "星系尘埃",
+          "维特鲁威仆从"
+        ]
+      },
+      "action": "格挡流强化",
+      "priority": 6,
+      "reason": "GalacticDust + VitruvianMinion = 格挡叠加增强",
+      "boost": {
+        "格挡撞击流": "+2",
+        "Focus全能流": "+1"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "GalacticDust",
+          "OrnamentalFan"
+        ],
+        "character_any": [
+          "铁甲战士",
+          "缺陷体"
+        ],
+        "has_relics_cn": [
+          "星系尘埃",
+          "精致折扇"
+        ]
+      },
+      "action": "格挡流强化",
+      "priority": 6,
+      "reason": "GalacticDust + OrnamentalFan = 格挡叠加增强",
+      "boost": {
+        "格挡撞击流": "+2",
+        "Focus全能流": "+1"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "GalacticDust",
+          "TheAbacus"
+        ],
+        "character_any": [
+          "铁甲战士",
+          "缺陷体"
+        ],
+        "has_relics_cn": [
+          "星系尘埃",
+          "算盘"
+        ]
+      },
+      "action": "格挡流强化",
+      "priority": 6,
+      "reason": "GalacticDust + TheAbacus = 格挡叠加增强",
+      "boost": {
+        "格挡撞击流": "+2",
+        "Focus全能流": "+1"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "GalacticDust",
+          "FakeAnchor"
+        ],
+        "character_any": [
+          "铁甲战士",
+          "缺陷体"
+        ],
+        "has_relics_cn": [
+          "星系尘埃",
+          "锚？？？"
+        ]
+      },
+      "action": "格挡流强化",
+      "priority": 6,
+      "reason": "GalacticDust + FakeAnchor = 格挡叠加增强",
+      "boost": {
+        "格挡撞击流": "+2",
+        "Focus全能流": "+1"
+      }
+    },
+    {
+      "condition": {
+        "has_relics": [
+          "GalacticDust",
+          "Anchor"
+        ],
+        "character_any": [
+          "铁甲战士",
+          "缺陷体"
+        ],
+        "has_relics_cn": [
+          "星系尘埃",
+          "锚"
+        ]
+      },
+      "action": "格挡流强化",
+      "priority": 6,
+      "reason": "GalacticDust + Anchor = 格挡叠加增强",
+      "boost": {
+        "格挡撞击流": "+2",
+        "Focus全能流": "+1"
+      }
+    }
+  ],
+  "_meta": {
+    "single_rules": 42,
+    "combo_rules": 26,
+    "total": 68,
+    "removed_invalid": "引用STS1不存在遗物的规则已清除"
+  }
+}

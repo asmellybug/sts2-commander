@@ -1,0 +1,431 @@
+[
+  {
+    "timestamp": "2026-03-14T21:29:48.960911",
+    "character": "静默猎手",
+    "ascension": 0,
+    "floors": 5,
+    "archetype": "飞刀流为第一优先。核心组件是精准+无限飞刃+飞刀陷阱。精准每层叠加飞刀伤害+4，无限飞刃每回合自动给你飞刀，成型后每回合自动输出大量伤害。毒流作为备选，如果前几场给恶毒或催化剂也可以转。",
+    "result": "第5层阵亡",
+    "review": "1. 构筑评价：第5层还没选任何新牌，说明奖励里没出现飞刀流核心件或者都跳过了。目前纯初始卡组，流派尚未起步，正常范围，不算失误。\n\n2. 操作评价：R1三费三张牌刚好清场效率很高，R2只剩中型怪用打击收掉没问题。零损血完美，操作无失误。\n\n3. 运气评价：遇到树叶史莱姆是第一幕最简单的怪之一，运气好。R1只抽到3张牌比较奇怪，可能有什么机制影响，但两回合零伤通过，结果很好。\n\n4. 关键转折点：这场太简单没有真正的转折点，关键在后续奖励选牌能否拿到精准或无限飞刃。\n\n5. 改进建议：前5层积极拿飞刀流组件，精准是第一优先。如果奖励一直不出核心件，第8层前考虑是否转毒流，不要死等。"
+  },
+  {
+    "lesson": "铁甲A0构筑优先拿PommelStrike作为万金油过渡牌——10局通关中6局选了PommelStrike，它1费攻击+抽牌兼顾输出和过牌，任何流派都不亏",
+    "character": "铁甲战士",
+    "priority": "high",
+    "context": "第一幕选牌阶段，尚未确定流派时"
+  },
+  {
+    "lesson": "铁甲A0应积极拿Feed(吸取)来滚雪球最大生命值——10局中4局选了Feed且全部通关，A0怪物伤害低容错高，Feed的长期生命收益在三幕中持续积累",
+    "character": "铁甲战士",
+    "priority": "high",
+    "context": "第一幕奖励出现Feed时，尤其是精英战前"
+  },
+  {
+    "lesson": "Barricade+BodySlam+Impervious是铁甲最稳定的通关组合——run4拿了双Barricade+BodySlam通关，run5拿了BodySlam+Impervious+TrueGrit通关，格挡撞击流核心件出现就拿，不需要等齐再转型",
+    "character": "铁甲战士",
+    "priority": "high",
+    "context": "中期出现Barricade或BodySlam时的选牌决策"
+  },
+  {
+    "lesson": "铁甲A0不需要强行凑流派——10局全部通关但流派栏均为空，说明A0难度下拿优质单卡(Impervious、Colossus、Aggression等)的goodstuff策略就足以通关，不必为了凑流派而放弃当前强力选项",
+    "character": "铁甲战士",
+    "priority": "medium",
+    "context": "A0难度下的整体构筑策略"
+  },
+  {
+    "lesson": "DemonForm在有费用支撑(Bloodletting/Offering)或长战斗(Boss)时才值得拿——run6搭配Bloodletting+Hemokinesis解决费用问题，run10搭配FiendFire作为爆发终结，单独拿DemonForm没有费用配合会卡手",
+    "character": "铁甲战士",
+    "priority": "medium",
+    "context": "出现DemonForm时评估当前牌组是否有足够费用支撑"
+  },
+  {
+    "lesson": "静默猎手A0不需要强制走飞刀流，10场全胜无一场拿精准或无限飞刃，灵活拿强力单卡（Adrenaline、CorrosiveWave、Malaise）即可通关",
+    "character": "静默猎手",
+    "priority": "high",
+    "context": "A0选牌策略，当飞刀流核心件未出现时不必强等"
+  },
+  {
+    "lesson": "Adrenaline(肾上腺素)是静默猎手最高优先级拾取卡之一，0费抽2张+2能量，10场胜局中4场拾取，任何流派都能用",
+    "character": "静默猎手",
+    "priority": "high",
+    "context": "奖励选牌时，Adrenaline优先级应与流派核心件持平"
+  },
+  {
+    "lesson": "CorrosiveWave(腐蚀波)是静默猎手A0万金油卡，10场胜局中3场拾取，提供AoE+毒+弱化，对精英和多怪场景都有效，不依赖流派成型",
+    "character": "静默猎手",
+    "priority": "medium",
+    "context": "第一幕奖励选牌，尤其面对多怪战斗频繁时"
+  },
+  {
+    "lesson": "Malaise(倦怠)可以重复拾取，10场中1场拿了2张Malaise，配合多能量回合可大幅削弱Boss的力量值，是静默猎手顶级Boss对策卡",
+    "character": "静默猎手",
+    "priority": "medium",
+    "context": "Boss战前奖励或商店，即使已有1张Malaise也值得再拿"
+  },
+  {
+    "lesson": "静默猎手A0保持精简牌组（全程仅加5张新牌）胜率极高，说明跳过弱牌比凑流派更重要，宁缺毋滥",
+    "character": "静默猎手",
+    "priority": "high",
+    "context": "奖励选牌时，如果三张牌都不够强，果断跳过"
+  },
+  {
+    "lesson": "缺陷体A0优先拿ColdSnap和BallLightning作为前期过渡攻击牌——10局通关中ColdSnap出现5次、BallLightning出现4次，这两张1费攻击+引导充能球的普通牌是最稳定的前期选择，既提供输出又开始积累充能球",
+    "character": "缺陷体",
+    "priority": "high",
+    "context": "第一幕选牌，尤其是前3次卡牌奖励时"
+  },
+  {
+    "lesson": "缺陷体不需要强行凑流派也能A0通关——10局全部通关且均未标记明确流派，说明混合拿优质单卡(Coolheaded全程A级、Hologram中后期A级、Defragment中后期S级)比强行凑套路更稳",
+    "character": "缺陷体",
+    "priority": "high",
+    "context": "A0构筑策略，卡牌奖励不给流派核心件时不要焦虑"
+  },
+  {
+    "lesson": "Defragment是缺陷体最关键的scaling牌，出现即拿——3局拿到Defragment的都通关了，1费+集中让所有充能球效果永久增强，中后期S级，且与任何充能球路线兼容(冰球、闪电、暗球都吃集中)",
+    "character": "缺陷体",
+    "priority": "high",
+    "context": "任何时候卡牌奖励出现Defragment"
+  },
+  {
+    "lesson": "Buffer在缺陷体Boss战中是保命王牌，中期以后遇到应该拿——3局选了Buffer(C/A/S级)，2费能力防止一次HP损失，对缺陷体这种前期偏慢需要setup的角色尤其重要，给你多一回合铺能力牌的容错",
+    "character": "缺陷体",
+    "priority": "medium",
+    "context": "第二幕之后的卡牌奖励，尤其是Boss战前"
+  },
+  {
+    "lesson": "EchoForm是缺陷体后期决定性牌但不要早拿——3局拿了EchoForm且都是作为第4-5张新牌拿的，3费虚无在前期是死牌，但中后期搭配已有的Defragment/Coolheaded等牌每回合翻倍收益，适合第二幕末到第三幕入手",
+    "character": "缺陷体",
+    "priority": "medium",
+    "context": "第二幕末期或第三幕卡牌奖励出现EchoForm时"
+  },
+  {
+    "lesson": "储君A0选牌优先拿AstralPulse——10局通关中5局(50%)都选了该牌，横跨各种构筑方向，说明它是万金油高价值牌，无论走星辰流、重击流还是杂食构筑都能用",
+    "character": "储君",
+    "priority": "high",
+    "context": "储君A0卡牌奖励选择，尤其是前两幕尚未确定流派时"
+  },
+  {
+    "lesson": "储君A0的CelestialMight出现在40%通关局中，且与AstralPulse、BigBang、Guards等不同风格牌共存，说明它作为强力攻击牌不挑流派，优先级仅次于AstralPulse",
+    "character": "储君",
+    "priority": "high",
+    "context": "储君A0卡牌奖励选择，需要补充输出时"
+  },
+  {
+    "lesson": "储君A0可以不锁定单一流派通关——10局全部通关且均未标记明确流派，构筑中混搭星辰牌(AstralPulse/SevenStars)、重击牌(CollisionCourse/KnockoutBlow)、铸造牌(BeatIntoShape/SpoilsOfBattle)均可，杂食好牌策略在A0足够强",
+    "character": "储君",
+    "priority": "medium",
+    "context": "储君A0构筑策略，当奖励中没有出现单一流派核心组件时"
+  },
+  {
+    "lesson": "CrashLanding和Guards各出现在30%通关局中，作为储君的防御/功能性牌，在缺少明确流派引擎时能有效补充生存能力，是好的过渡选择",
+    "character": "储君",
+    "priority": "medium",
+    "context": "储君A0前两幕选牌，需要补充防御或过渡战斗力时"
+  },
+  {
+    "lesson": "储君A0的CosmicIndifference(S级抽牌引擎)仅出现在20%通关局，说明在A0难度下输出/功能性牌比抽牌引擎更值得优先选择——牌组小时抽牌收益有限，不如直接拿强力战斗牌",
+    "character": "储君",
+    "priority": "low",
+    "context": "储君A0奖励中同时出现抽牌引擎和攻击牌时的取舍"
+  },
+  {
+    "lesson": "亡灵契约师前期优先拿Reave和GraveWarden这两张全阶段A级牌，它们不锁定流派且贯穿全程有用，9局胜局中7局至少含其一",
+    "character": "亡灵契约师",
+    "priority": "high",
+    "context": "第一幕选牌决策，尤其流派未定时"
+  },
+  {
+    "lesson": "Graveblast是亡灵契约师最稳定的1费攻击填充牌（B/B/B），50%胜局携带且不拖累任何流派，前期缺输出时可放心拿1-2张",
+    "character": "亡灵契约师",
+    "priority": "medium",
+    "context": "前期牌组缺少攻击牌时的过渡选择"
+  },
+  {
+    "lesson": "ReaperForm(D/A/S)是亡灵契约师后期最强能力牌，但3费前期是死牌。第一幕不拿，第二幕商店或精英后若已有BlightStrike/Countdown等灾厄基础件再拿",
+    "character": "亡灵契约师",
+    "priority": "high",
+    "context": "ReaperForm出现在卡牌奖励中的取舍判断"
+  },
+  {
+    "lesson": "Fear(1费上易伤)在亡灵契约师中是万金油前期牌(A/B/B)，4/9胜局携带。对精英战尤其重要，1费易伤让后续所有攻击增伤50%，比多拿一张攻击牌更高效",
+    "character": "亡灵契约师",
+    "priority": "medium",
+    "context": "前期精英战准备和第一幕选牌"
+  },
+  {
+    "lesson": "亡灵契约师不需要强行锁定单一流派也能A0通关——灵活混搭(如Doom件+Osty件+通用攻防)比纯流派更稳定，10局中无一局有明确单一流派标注但胜率90%",
+    "character": "亡灵契约师",
+    "priority": "high",
+    "context": "A0-A7构筑策略，避免过早放弃好牌只因不符合预设流派"
+  },
+  {
+    "lesson": "铁甲A5拿DemonForm+DarkEmbrace双高费能力容易暴毙——两张加起来5费，前期回合根本打不出有效输出和格挡。如果已拿DemonForm(3费)，不要再拿DarkEmbrace(2费)，除非有Bloodletting等费用支撑",
+    "character": "铁甲战士",
+    "priority": "high",
+    "context": "唯一阵亡局选了DarkEmbrace+DemonForm+Uppercut三张高费牌，层0即死，说明牌组完全缺乏前期战斗力"
+  },
+  {
+    "lesson": "铁甲A5不需要明确流派也能通关——9局通关都没有标注流派，靠OneTwoPunch(4次)、Aggression(3次)、Bloodletting(3次)等泛用好牌组成'good stuff'牌组即可。A5优先拿泛用强牌而非执着凑流派",
+    "character": "铁甲战士",
+    "priority": "high",
+    "context": "A5难度下10局9胜，所有通关局流派字段为空，证明灵活选牌优于强行凑流派"
+  },
+  {
+    "lesson": "Bloodletting(放血,0费)是铁甲高费牌的关键润滑剂——在拿了Barricade(3费)、FiendFire(2费)、Conflagration等高费核心牌时，优先补一张Bloodletting提供额外能量",
+    "character": "铁甲战士",
+    "priority": "medium",
+    "context": "3局通关含Bloodletting，这些局同时包含Barricade或多张高费牌；阵亡局有DemonForm(3费)+DarkEmbrace(2费)却没有任何费用支撑"
+  },
+  {
+    "lesson": "FiendFire(恶魔之焰)值得拿多张——有一局拿了2张FiendFire通关，配合ShrugItOff提供的抽牌和格挡，消耗手牌换高额伤害在Boss战尤其有效",
+    "character": "铁甲战士",
+    "priority": "medium",
+    "context": "2局通关含FiendFire(其中1局拿了2张)，tier评级mid-A/late-S，是铁甲后期最强输出牌之一"
+  },
+  {
+    "lesson": "A5攀登者之灾诅咒牌使牌组膨胀，铁甲应更重视瘦身和抽牌——Feed(狂宴)虽然tier不高但在3局通关中出现，说明A5下通过Feed击杀小怪涨血上限的策略有效，可作为对抗诅咒膨胀的生存手段",
+    "character": "铁甲战士",
+    "priority": "medium",
+    "context": "A5加入不可移除诅咒牌，Feed在3局通关中出现，提供了额外生存空间补偿诅咒带来的卡手"
+  },
+  {
+    "lesson": "铁甲A10优先拿PommelStrike作为抽牌引擎，9局胜利中5局带了PommelStrike，抽牌加速让铁甲更快找到关键牌",
+    "character": "铁甲战士",
+    "priority": "high",
+    "context": "选牌奖励出现PommelStrike时，几乎无条件优先拿"
+  },
+  {
+    "lesson": "TrueGrit是铁甲A10最稳定的防御牌，多局胜利中被重复选取（同一局拿2张），耗除机制同时瘦牌提高卡组质量",
+    "character": "铁甲战士",
+    "priority": "high",
+    "context": "防御牌选择时TrueGrit优先于ShrugItOff，尤其卡组有打击等废牌需要耗除时"
+  },
+  {
+    "lesson": "铁甲A10避免早期同时拿Barricade+DarkEmbrace等多张高费setup牌，唯一阵亡局（层0）正是选了Barricade+DarkEmbrace+Offering+Impervious，setup过重导致前期战斗力不足",
+    "character": "铁甲战士",
+    "priority": "high",
+    "context": "前两幕选牌时，高费combo件（Barricade、DarkEmbrace、DemonForm）最多拿一张，优先拿即战力牌"
+  },
+  {
+    "lesson": "Offering是铁甲A10的强力加速牌但需要配合即战力，3局胜利带Offering均搭配了PommelStrike或Bloodletting等低费输出牌，而阵亡局Offering配的是纯setup牌",
+    "character": "铁甲战士",
+    "priority": "medium",
+    "context": "拿Offering后确保卡组有足够低费攻击/防御牌来利用多出的抽牌和费用"
+  },
+  {
+    "lesson": "铁甲A10胜利构筑共性：攻防混合而非纯攻或纯防，典型搭配是TrueGrit/Impervious防御+Colossus/TearAsunder/BodySlam输出+PommelStrike抽牌，三者缺一不可",
+    "character": "铁甲战士",
+    "priority": "medium",
+    "context": "选牌时评估卡组攻防抽三个维度是否均衡，哪个最弱就优先补哪个"
+  },
+  {
+    "lesson": "静默猎手A5通关不需要锁定单一流派，10局全胜局的流派字段均为空，说明灵活混合构筑（抽牌+防御+输出均衡）比强行凑飞刀流或毒流更稳定",
+    "character": "静默猎手",
+    "priority": "high",
+    "context": "A5构筑策略，尤其是奖励选牌阶段不要因为等核心件而跳过优质通用牌"
+  },
+  {
+    "lesson": "Backflip是静默猎手最优先拿的通用牌，10局胜局中出现6次（60%），提供抽牌+格挡双重功能，无论什么流派都能用，看到就拿",
+    "character": "静默猎手",
+    "priority": "high",
+    "context": "任何奖励选牌界面出现Backflip时"
+  },
+  {
+    "lesson": "Afterimage（残影）是静默猎手A5的隐藏核心，10局胜局中出现5次（50%），被动每打一张牌获得格挡，与零费牌（Deflect/BladeDance）配合极强，优先级不低于流派核心件",
+    "character": "静默猎手",
+    "priority": "high",
+    "context": "奖励出现Afterimage时应高优先拿取，尤其是已有零费牌的情况下"
+  },
+  {
+    "lesson": "Malaise在A5胜局中出现4次（40%），是静默猎手对抗精英和Boss的关键手段，能大幅削减敌人攻击力，建议至少携带1张作为保险",
+    "character": "静默猎手",
+    "priority": "medium",
+    "context": "精英战和Boss战前的构筑准备，尤其是缺乏稳定防御体系时"
+  },
+  {
+    "lesson": "零费牌组合（Deflect出现4次+BladeDance出现4次）是静默A5胜局的常见配置，零费牌提供回合内灵活度，配合Afterimage产生额外格挡，配合Burst翻倍收益极高",
+    "character": "静默猎手",
+    "priority": "medium",
+    "context": "已有Afterimage或Burst时，零费牌的优先级应提升一档"
+  },
+  {
+    "lesson": "静默猎手A10通关不需要锁定单一流派，10局全胜局均无明确流派标签，混合低费攻击(Slice/DaggerSpray)+DeadlyPoison补伤+防御工具(PiercingWail/Afterimage)的杂食构筑比强行凑流派更稳定",
+    "character": "静默猎手",
+    "priority": "high",
+    "context": "A10选牌策略，当核心组件未出现时不要空等"
+  },
+  {
+    "lesson": "DeadlyPoison是静默猎手A10最通用的拿牌选择(50%胜局携带)，即使不走毒流，1费上14毒提供的持续伤害在Boss战中相当于每回合免费4-6点输出，性价比极高",
+    "character": "静默猎手",
+    "priority": "high",
+    "context": "非毒流局中看到DeadlyPoison也应优先拿取"
+  },
+  {
+    "lesson": "PiercingWail在A10静默猎手中是顶级防御牌(30%胜局携带)，对多敌战斗和Boss高伤回合都能救命，看到就拿不亏，尤其是杂食构筑中缺乏稳定格挡时",
+    "character": "静默猎手",
+    "priority": "medium",
+    "context": "A10防御工具选择，优先级高于大部分格挡牌"
+  },
+  {
+    "lesson": "Afterimage在A10胜局中出现率30%，被动每打一张牌获得格挡的机制与低费多牌打法(Slice/DaggerSpray/CloakAndDagger)天然配合，杂食构筑中是最强的能力牌之一",
+    "character": "静默猎手",
+    "priority": "medium",
+    "context": "当牌组已有多张0-1费牌时，Afterimage价值大幅提升"
+  },
+  {
+    "lesson": "A10静默猎手胜局平均只拿5张新牌，保持精简牌组(15-20张)比贪多更重要，每张牌必须立即有用或补足当前短板，宁可跳过奖励也不拿过渡废牌",
+    "character": "静默猎手",
+    "priority": "high",
+    "context": "全流程选牌纪律，尤其第一幕不要为凑流派拿弱牌"
+  },
+  {
+    "lesson": "缺陷体A5选牌优先ColdSnap——4/10局通关都拿了它，1费生成冰霜球兼顾防御和充能槽循环，是最灵活的早期拿牌",
+    "character": "缺陷体",
+    "priority": "high",
+    "context": "A5前两幕选牌奖励出现ColdSnap时"
+  },
+  {
+    "lesson": "SweepingBeam是缺陷体万金油AOE——4/10局选入，1费打全体+抽1牌，既解决多敌战斗又不卡手，任何流派都能塞",
+    "character": "缺陷体",
+    "priority": "high",
+    "context": "A5选牌奖励出现SweepingBeam时，尤其前两幕"
+  },
+  {
+    "lesson": "缺陷体A5不需要强制锁定流派——10局全胜但无一局标记明确流派，说明灵活拿优质单卡(ColdSnap/Coolheaded/BoostAway等)比强行凑套路更稳",
+    "character": "缺陷体",
+    "priority": "high",
+    "context": "A5全流程选牌策略"
+  },
+  {
+    "lesson": "BoostAway是被低估的防御工具——3/10局选入，1费8格挡+唤出1充能球，既防御又推进充能槽，比纯格挡牌多一层价值",
+    "character": "缺陷体",
+    "priority": "medium",
+    "context": "A5需要补充防御时优先考虑BoostAway而非纯格挡牌"
+  },
+  {
+    "lesson": "Defragment不必急拿但值得叠加——仅3/10局选入但其中一局拿了双Defragment，说明单张集中+1够用不急，但如果已有1张再来1张价值极高",
+    "character": "缺陷体",
+    "priority": "medium",
+    "context": "A5已有1张Defragment时奖励再次出现Defragment"
+  },
+  {
+    "lesson": "MeteorStrike是缺陷体A10最强高费牌，50%胜局携带，5费但引导3种充能球+高伤害，配合Turbo/ChargeBattery的费用支撑可在Boss战打出爆发回合，中后期看到应优先拿",
+    "character": "缺陷体",
+    "priority": "high",
+    "context": "A10第二幕后卡牌奖励出现MeteorStrike时，尤其已有Turbo或ChargeBattery提供额外费用"
+  },
+  {
+    "lesson": "Coolheaded是缺陷体A10最稳定的通用牌(50%胜局携带)，1费引导冰霜球+抽1牌，同时提供防御和过牌两大功能，比ColdSnap多一张抽牌使其在A10高压环境下更关键",
+    "character": "缺陷体",
+    "priority": "high",
+    "context": "A10选牌奖励出现Coolheaded时几乎无条件拿取，优先级高于ColdSnap"
+  },
+  {
+    "lesson": "CompileDriver是缺陷体A10的抽牌引擎(40%胜局携带)，1费攻击+每个充能球抽1牌，有3-4个充能球时单张牌就能抽3-4张，是充能球体系的核心加速器",
+    "character": "缺陷体",
+    "priority": "high",
+    "context": "A10已有2+充能球生成手段时，CompileDriver价值极高，看到即拿"
+  },
+  {
+    "lesson": "ChargeBattery是缺陷体A10的费用+防御双功能牌(40%胜局携带)，1费获得格挡+下回合额外1费，比Turbo(0费+1费但丢弃虚无)更稳定，适合需要持续费用补给的MeteorStrike/EchoForm构筑",
+    "character": "缺陷体",
+    "priority": "medium",
+    "context": "A10牌组含高费牌(MeteorStrike/EchoForm)时优先拿ChargeBattery作为费用润滑"
+  },
+  {
+    "lesson": "Hologram在缺陷体A10可以重复拾取(一局拿了2张Hologram通关)，1费从弃牌堆回收关键牌的能力在A10尤其重要，可循环MeteorStrike/Buffer等高价值牌，牌组精简时2张Hologram不嫌多",
+    "character": "缺陷体",
+    "priority": "medium",
+    "context": "A10已有1张Hologram且牌组含高价值消耗性目标(MeteorStrike等)时再拿第二张"
+  },
+  {
+    "lesson": "NeutronAegis是储君A5新晋核心防御牌(40%胜局携带，A0时0%)，说明A5伤害压力下储君需要强力格挡工具，NeutronAegis提供的大量格挡在高进阶战斗中不可或缺，中后期看到优先拿",
+    "character": "储君",
+    "priority": "high",
+    "context": "储君A5选牌奖励出现NeutronAegis时，尤其是第二幕后面对精英和Boss高伤害回合"
+  },
+  {
+    "lesson": "Glow在储君A5胜局中出现率40%且常被重复拾取(一局拿2张Glow)，作为★(星辰)资源的低费生成牌，在A5难度下★产出效率直接决定CelestialMight/AstralPulse等核心牌的发挥上限，已有1张时第二张价值不减",
+    "character": "储君",
+    "priority": "high",
+    "context": "储君A5选牌时已有★消费牌(AstralPulse/CelestialMight)但缺少★生成手段时"
+  },
+  {
+    "lesson": "Bombardment是储君A5的AOE解决方案(30%胜局携带)，提供全体伤害覆盖多敌场景，A5精英和多怪遭遇更致命，至少携带1张AOE手段避免多敌战拖长导致累积伤害过高",
+    "character": "储君",
+    "priority": "medium",
+    "context": "储君A5缺乏AOE时看到Bombardment应优先选取，尤其是进入多怪密集的第二幕前"
+  },
+  {
+    "lesson": "CosmicIndifference在A5的拾取率从A0的20%上升到30%，说明随着进阶提升牌组抽牌引擎变得更重要——A5诅咒牌膨胀卡组，抽牌加速能更快找到关键牌，不再是低优先级选择",
+    "character": "储君",
+    "priority": "medium",
+    "context": "储君A5选牌奖励中出现CosmicIndifference时，尤其是牌组已有15+张牌开始膨胀时"
+  },
+  {
+    "lesson": "储君A5胜局中多次出现关键牌重复拾取(2×CelestialMight、2×Glow、2×AstralPulse、2×HeavenlyDrill)，说明核心牌叠加效果强于拓展新牌种类，已有1张核心件时第二张优先级不应降低",
+    "character": "储君",
+    "priority": "medium",
+    "context": "储君A5奖励再次出现已拾取的核心牌时，不要因为已有一张就跳过"
+  },
+  {
+    "lesson": "BansheesCry是亡灵契约师A5最高频拾取牌(50%胜局携带)，提供灵魂资源生成+防御功能，是灵魂机制的核心润滑剂，无论走哪个方向都优先拿",
+    "character": "亡灵契约师",
+    "priority": "high",
+    "context": "A5选牌奖励出现BansheesCry时，尤其是牌组缺少灵魂生成手段时"
+  },
+  {
+    "lesson": "Defile在亡灵契约师A5胜局中出现率40%且常被重复拾取(一局拿2张Defile)，作为低费AOE/消耗工具，在A5多怪战斗和状态牌膨胀环境下价值突出，已有1张时第二张价值不减",
+    "character": "亡灵契约师",
+    "priority": "high",
+    "context": "A5选牌奖励出现Defile时，尤其是面对多怪遭遇或牌组开始膨胀时"
+  },
+  {
+    "lesson": "BlightStrike+Defile的灾厄(Blight)组合在A5胜局中稳定出现(BlightStrike 30%+Defile 40%)，BlightStrike提供单体灾厄输出而Defile提供AOE灾厄清场，两者互补形成亡灵契约师A5的实用攻击框架",
+    "character": "亡灵契约师",
+    "priority": "medium",
+    "context": "已有BlightStrike时优先拿Defile，反之亦然，灾厄组件相互增值"
+  },
+  {
+    "lesson": "SpiritOfAsh在30%胜局出现，作为灵魂系能力牌提供持续被动价值，与BansheesCry(50%)形成灵魂生成+灵魂消费的自洽体系，两者同时在手时引擎成型",
+    "character": "亡灵契约师",
+    "priority": "medium",
+    "context": "已有BansheesCry等灵魂生成牌时看到SpiritOfAsh优先级提升"
+  },
+  {
+    "lesson": "Snap在亡灵契约师A5胜局中出现率30%，作为低费攻击牌提供即时战斗力，在A5前期怪物伤害提升的环境下，比等待高费combo件更实用，是稳定的前期过渡拾取",
+    "character": "亡灵契约师",
+    "priority": "medium",
+    "context": "A5第一幕选牌缺少即时输出时，Snap是安全的低费攻击选择"
+  },
+  {
+    "lesson": "Misery是亡灵契约师A10新晋核心牌(40%胜局携带，A5时未上榜)，且可重复拾取(一局拿2张Misery通关)，说明A10伤害压力下Misery提供的功能不可替代，看到不应犹豫",
+    "character": "亡灵契约师",
+    "priority": "high",
+    "context": "A10选牌奖励出现Misery时优先拿取，已有1张时第二张价值不减"
+  },
+  {
+    "lesson": "Snap在A10从过渡牌升级为核心攻击件(40%胜局携带，一局拿2张Snap通关)，A10怪物血量和伤害都高，Snap的低费即时输出在前中期维持战斗节奏至关重要，不再只是早期过渡",
+    "character": "亡灵契约师",
+    "priority": "high",
+    "context": "A10全流程选牌，Snap可重复拾取作为低费攻击核心"
+  },
+  {
+    "lesson": "Defile在A10达到50%携带率(A5为40%，A0未上榜)，随进阶提升价值持续走高，A10多怪遭遇更致命且牌组膨胀更严重，Defile的AOE+消耗双重功能是亡灵契约师各进阶通用必拿牌",
+    "character": "亡灵契约师",
+    "priority": "high",
+    "context": "A10选牌Defile优先级应排在所有攻击牌之前"
+  },
+  {
+    "lesson": "亡灵契约师A10胜局中重复拾取同一张牌极其常见(2×Misery、2×Fear、2×Snap、2×Reave)，说明A10下核心低费牌叠加比拓展牌种更有效，第二张同名牌的优先级不应低于第一张",
+    "character": "亡灵契约师",
+    "priority": "medium",
+    "context": "A10奖励再次出现已拾取的核心低费牌时果断再拿"
+  },
+  {
+    "lesson": "EndOfDays在20%的A10胜局中出现且均搭配ReaperForm，两者组合提供后期高费爆发终结能力，适合在第二幕后期牌组已有足够低费过渡牌时作为Boss对策补入",
+    "character": "亡灵契约师",
+    "priority": "medium",
+    "context": "A10第二幕后若已有ReaperForm，EndOfDays作为终结手段值得拾取"
+  }
+]

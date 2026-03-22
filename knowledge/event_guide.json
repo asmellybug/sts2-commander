@@ -1,0 +1,1140 @@
+{
+  "_meta": {
+    "total": 66,
+    "source": "decompiled source code",
+    "note": "Excludes DeprecatedEvent, DeprecatedAncientEvent, and Mock files. Includes Ancient events (Neow, Darv, Nonupeipe, Orobas, Pael, Tanx, Tezcatara, Vakuu, TheArchitect). Values extracted from CanonicalVars, const fields, and method bodies."
+  },
+  "AbyssalBaths": {
+    "name_cn": "深渊浴场",
+    "options": [
+      {
+        "name": "Immerse (浸泡)",
+        "effect": "+2最大HP, 受3伤(不可格挡/不受力量影响), 伤害每次+1",
+        "can_repeat": true,
+        "note": "浸泡后进入分支: 可选继续浸泡(Linger)或离开(Exit). 每次浸泡+2最大HP但伤害递增(3,4,5,...). 最多浸泡10次. HP即将致死时有警告",
+        "rating": "★★推荐(前期HP足够时多泡几次)"
+      },
+      {
+        "name": "Abstain (放弃)",
+        "effect": "恢复10HP",
+        "rating": "○稳妥选择"
+      }
+    ],
+    "strategy": "HP>20时泡2-3次, 总收益+4~6最大HP减去累计伤害(3+4+5=12). HP低就直接治疗10HP"
+  },
+  "Amalgamator": {
+    "name_cn": "融合器",
+    "options": [
+      {
+        "name": "Combine Strikes (合并打击)",
+        "effect": "选择2张基础Strike牌移除, 获得1张UltimateStrike",
+        "condition": "需要至少2张基础Strike",
+        "rating": "★★强力(减少牌组臃肿+获得强力卡)"
+      },
+      {
+        "name": "Combine Defends (合并防御)",
+        "effect": "选择2张基础Defend牌移除, 获得1张UltimateDefend",
+        "condition": "需要至少2张基础Defend",
+        "rating": "★★强力(减少牌组臃肿+获得强力卡)"
+      }
+    ],
+    "strategy": "两个选项都很好。看哪种基础牌更多就合并哪种。通常合并Strike更好因为UltimateStrike伤害更高"
+  },
+  "AromaOfChaos": {
+    "name_cn": "混沌芳香",
+    "options": [
+      {
+        "name": "Let Go (放手)",
+        "effect": "选1张牌转化为随机牌",
+        "rating": "○风险选择(转化结果随机)"
+      },
+      {
+        "name": "Maintain Control (保持控制)",
+        "effect": "选1张牌升级",
+        "rating": "★推荐(稳定收益)"
+      }
+    ],
+    "strategy": "升级通常更稳。只有牌组中有不想要的牌时才考虑转化"
+  },
+  "BattlewornDummy": {
+    "name_cn": "破旧训练假人",
+    "is_shared": true,
+    "options": [
+      {
+        "name": "Setting 1 (设置1 - 简单)",
+        "effect": "进入战斗(BattleFriendV1). 胜利奖励: 1瓶药水",
+        "rating": "○最安全"
+      },
+      {
+        "name": "Setting 2 (设置2 - 中等)",
+        "effect": "进入战斗(BattleFriendV2). 胜利奖励: 升级2张牌",
+        "rating": "★推荐(升级很有价值)"
+      },
+      {
+        "name": "Setting 3 (设置3 - 困难)",
+        "effect": "进入战斗(BattleFriendV3). 胜利奖励: 获得1个遗物",
+        "note": "限时战斗, 超时算失败",
+        "rating": "★★高风险高回报"
+      }
+    ],
+    "strategy": "遗物最有价值但战斗最难。牌组强时选Setting 3, 否则Setting 2的2张升级也很好"
+  },
+  "BrainLeech": {
+    "name_cn": "脑蛭",
+    "options": [
+      {
+        "name": "Share Knowledge (分享知识)",
+        "effect": "从角色卡池的5张牌中选1张加入牌组",
+        "rating": "○普通选项"
+      },
+      {
+        "name": "Rip (撕下)",
+        "effect": "受5伤(不可格挡), 获得1次无色卡牌奖励(3选1)",
+        "condition": "仅Act 1-2可遇到",
+        "rating": "★推荐(无色卡通常有好卡)"
+      }
+    ],
+    "strategy": "如果HP充足, 撕下获得无色卡更有价值"
+  },
+  "Bugslayer": {
+    "name_cn": "杀虫者",
+    "options": [
+      {
+        "name": "Extermination (灭绝)",
+        "effect": "获得1张Exterminate卡",
+        "rating": "★看卡牌效果决定"
+      },
+      {
+        "name": "Squash (碾碎)",
+        "effect": "获得1张Squash卡",
+        "rating": "★看卡牌效果决定"
+      }
+    ],
+    "strategy": "根据当前牌组需求选择, 两张都是特殊卡牌"
+  },
+  "ByrdonisNest": {
+    "name_cn": "鸟巢",
+    "options": [
+      {
+        "name": "Eat (吃掉蛋)",
+        "effect": "+7最大HP",
+        "rating": "★推荐(7最大HP很可观)"
+      },
+      {
+        "name": "Take (带走蛋)",
+        "effect": "获得ByrdonisEgg卡(宠物蛋)",
+        "condition": "玩家不能已有宠物",
+        "rating": "★★宠物卡有长期价值"
+      }
+    ],
+    "strategy": "宠物蛋有长期成长价值, 但7最大HP也很实在。没宠物时优先拿蛋"
+  },
+  "ColorfulPhilosophers": {
+    "name_cn": "彩色哲学家",
+    "options": [
+      {
+        "name": "选择一种颜色(非本角色)",
+        "effect": "获得该颜色卡池的3个卡牌奖励(Common/Uncommon/Rare各一组, 每组3选1)",
+        "note": "可选颜色: Necrobinder/Ironclad/Regent/Silent/Defect(排除自己). 随机展示最多3个可选颜色",
+        "rating": "★★非常好(可以获得其他角色的强力卡)"
+      }
+    ],
+    "strategy": "选择与当前牌组最互补的颜色。3个奖励(普通+稀有+罕见)价值极高"
+  },
+  "ColossalFlower": {
+    "name_cn": "巨型花朵",
+    "options": [
+      {
+        "name": "Extract Prize 1 (提取奖励1)",
+        "effect": "+35金",
+        "rating": "○保守选择"
+      },
+      {
+        "name": "Reach Deeper 1 (深入1)",
+        "effect": "受5伤(不可格挡), 然后可选: 提取75金 或继续深入",
+        "rating": "★中等风险"
+      },
+      {
+        "name": "Reach Deeper 2 → Extract",
+        "effect": "再受6伤, 提取135金",
+        "rating": "★★好收益(总计11伤换135金)"
+      },
+      {
+        "name": "Reach Deeper 2 → Pollinous Core",
+        "effect": "再受7伤(总计5+6+7=18伤), 获得PollinousCore遗物",
+        "condition": "需要HP≥19才能触发此事件",
+        "rating": "★★★遗物价值极高"
+      }
+    ],
+    "strategy": "HP充足时一路深入拿遗物(总计18伤). HP不够就提取金币止损. 135金也是不错的选择"
+  },
+  "CrystalSphere": {
+    "name_cn": "水晶球",
+    "options": [
+      {
+        "name": "Uncover Future (揭示未来)",
+        "effect": "花费50+随机(1-49)金, 进行3次水晶球小游戏(预言)",
+        "condition": "需要100+金, Act 2+",
+        "rating": "★取决于小游戏结果"
+      },
+      {
+        "name": "Payment Plan (分期付款)",
+        "effect": "获得Debt诅咒卡, 进行6次水晶球小游戏(预言)",
+        "rating": "★★更多预言次数但要背诅咒"
+      }
+    ],
+    "strategy": "6次预言价值很高, 但Debt诅咒需要注意。金币紧张选分期, 否则直接花钱"
+  },
+  "Darv": {
+    "name_cn": "达夫(远古NPC)",
+    "type": "ancient",
+    "options": [
+      {
+        "name": "随机3个遗物选1",
+        "effect": "从遗物池中获得1个Boss遗物/特殊遗物",
+        "note": "遗物池: Astrolabe, BlackStar, CallingBell, EmptyCage, PandorasBox, RunicPyramid, SneckoEye, Ectoplasm/Sozu(Act2), PhilosophersStone/VelvetChoker(Act3). 有几率出现DustyTome",
+        "rating": "★★Boss遗物非常强力"
+      }
+    ],
+    "strategy": "远古事件, 3选1 Boss级遗物。根据当前build选择最合适的"
+  },
+  "DenseVegetation": {
+    "name_cn": "茂密植被",
+    "is_shared": true,
+    "options": [
+      {
+        "name": "Trudge On (强行通过)",
+        "effect": "选1张牌移除, 受11HP损失(不可格挡)",
+        "rating": "★移除牌+代价"
+      },
+      {
+        "name": "Rest (休息)",
+        "effect": "恢复等同于篝火治疗量的HP, 然后强制进入战斗(DenseVegetation遭遇战)",
+        "rating": "○治疗后打架"
+      }
+    ],
+    "strategy": "如果有想移除的牌且HP足够, 选强行通过。否则休息治疗(但要打架)"
+  },
+  "DollRoom": {
+    "name_cn": "人偶房间",
+    "options": [
+      {
+        "name": "Choose Random (随机选择)",
+        "effect": "随机获得3个遗物之一: DaughterOfTheWind / MrStruggles / BingBong",
+        "rating": "○赌运气"
+      },
+      {
+        "name": "Take Some Time (花时间观察)",
+        "effect": "受5伤(不可格挡), 从随机2个遗物中选1个",
+        "rating": "★稍好(2选1)"
+      },
+      {
+        "name": "Examine (仔细检查)",
+        "effect": "受15伤(不可格挡), 从3个遗物中选1个",
+        "condition": "仅Act 2可遇到",
+        "rating": "★★最好选择(3选1但代价大)"
+      }
+    ],
+    "strategy": "15伤换3选1遗物。HP充足选Examine, 否则Take Some Time的5伤换2选1也不错"
+  },
+  "DoorsOfLightAndDark": {
+    "name_cn": "光与暗之门",
+    "options": [
+      {
+        "name": "Light (光之门)",
+        "effect": "随机升级2张可升级的牌",
+        "rating": "★推荐(双升级)"
+      },
+      {
+        "name": "Dark (暗之门)",
+        "effect": "选1张牌移除",
+        "rating": "★推荐(移除也很有价值)"
+      }
+    ],
+    "strategy": "根据需求选择。有想移除的基础牌选Dark, 否则选Light获得2次升级"
+  },
+  "DrowningBeacon": {
+    "name_cn": "溺水灯塔",
+    "options": [
+      {
+        "name": "Bottle (装瓶)",
+        "effect": "获得GlowwaterPotion药水",
+        "rating": "○普通选项"
+      },
+      {
+        "name": "Climb (攀爬)",
+        "effect": "失去13最大HP, 获得FresnelLens遗物",
+        "rating": "★遗物换最大HP"
+      }
+    ],
+    "strategy": "FresnelLens遗物如果强力就值得13最大HP的代价"
+  },
+  "EndlessConveyor": {
+    "name_cn": "无尽传送带(寿司)",
+    "options": [
+      {
+        "name": "Grab Something (抓寿司)",
+        "effect": "花35金抓一个随机菜品. 菜品效果随机: Caviar(+4最大HP), ClamRoll(+10HP), SuspiciousCondiment(随机药水), JellyLiver(转化1张牌), FriedEel(无色卡), SpicySnappy(升级1张牌), SeapunkSalad(每5次强制获得FeedingFrenzy卡), GoldenFysh(+75金,不花钱)",
+        "can_repeat": true,
+        "note": "每次35金, 第5次必定是SeapunkSalad(FeedingFrenzy诅咒). GoldenFysh第2次起才可能出现且免费",
+        "condition": "需要105+金",
+        "rating": "★取决于运气和金币"
+      },
+      {
+        "name": "Observe Chef (观察厨师)",
+        "effect": "随机升级1张可升级的牌",
+        "rating": "○保守但免费"
+      }
+    ],
+    "strategy": "金币充裕时可以抓2-4次(避开第5次的诅咒). 金币紧张就观察厨师"
+  },
+  "FakeMerchant": {
+    "name_cn": "假商人",
+    "options": [
+      {
+        "name": "购买假遗物(50金/个)",
+        "effect": "花50金购买假遗物(FakeAnchor等9种之一). 可用FoulPotion扔向商人触发战斗",
+        "note": "扔FoulPotion: 进入战斗, 胜利获FakeMerchantsRug遗物+所有未购买遗物",
+        "condition": "需100+金或有FoulPotion, 仅Act2+, 仅单人",
+        "rating": "★★扔药水打战斗收益最大"
+      }
+    ],
+    "strategy": "有FoulPotion必扔! 打赢可以拿全部遗物+商人地毯遗物"
+  },
+  "FieldOfManSizedHoles": {
+    "name_cn": "人形洞穴",
+    "options": [
+      {
+        "name": "Resist (抵抗)",
+        "effect": "移除2张牌, 获得Normality诅咒",
+        "rating": "○风险大(Normality限制每回合3张牌)"
+      },
+      {
+        "name": "Enter Your Hole (进入你的洞)",
+        "effect": "选1张牌附魔PerfectFit",
+        "condition": "需要牌组中有可附魔PerfectFit的牌",
+        "rating": "★推荐(附魔有价值)"
+      }
+    ],
+    "strategy": "PerfectFit附魔通常更好。Normality诅咒非常致命, 除非急需移除2张牌"
+  },
+  "GraveOfTheForgotten": {
+    "name_cn": "被遗忘者之墓",
+    "options": [
+      {
+        "name": "Confront (面对)",
+        "effect": "获得Decay诅咒, 选1张牌附魔SoulsPower",
+        "condition": "需要牌组中有可附魔SoulsPower的牌",
+        "rating": "★附魔强力但要吃诅咒"
+      },
+      {
+        "name": "Accept (接受)",
+        "effect": "获得ForgottenSoul遗物",
+        "rating": "★★推荐(免费遗物)"
+      }
+    ],
+    "strategy": "ForgottenSoul遗物通常更好。SoulsPower附魔虽强但Decay诅咒代价很大"
+  },
+  "HungryForMushrooms": {
+    "name_cn": "饥饿的蘑菇",
+    "options": [
+      {
+        "name": "Big Mushroom (大蘑菇)",
+        "effect": "获得BigMushroom遗物",
+        "rating": "★看遗物效果"
+      },
+      {
+        "name": "Fragrant Mushroom (香蘑菇)",
+        "effect": "获得FragrantMushroom遗物, 受15伤",
+        "rating": "★看遗物效果减去15伤代价"
+      }
+    ],
+    "strategy": "根据两个蘑菇遗物的效果和当前HP选择"
+  },
+  "InfestedAutomaton": {
+    "name_cn": "感染的自动机",
+    "options": [
+      {
+        "name": "Study (研究)",
+        "effect": "获得1张随机Power(能力)类型的角色卡",
+        "rating": "★推荐(Power牌有长期价值)"
+      },
+      {
+        "name": "Touch Core (触碰核心)",
+        "effect": "获得1张随机0费的角色卡",
+        "rating": "★★推荐(0费卡很灵活)"
+      }
+    ],
+    "strategy": "两个都不错。0费卡通常更灵活, Power牌有长期价值"
+  },
+  "JungleMazeAdventure": {
+    "name_cn": "丛林迷宫冒险",
+    "is_shared": true,
+    "options": [
+      {
+        "name": "Solo Quest (单独探险)",
+        "effect": "受18伤(不可格挡), 获得~150金(±15随机)",
+        "rating": "★★高风险高回报"
+      },
+      {
+        "name": "Join Forces (联合行动)",
+        "effect": "获得~50金(±15随机)",
+        "rating": "○安全选择"
+      }
+    ],
+    "strategy": "HP充足时单独探险, 150金远超50金。HP不够就联合"
+  },
+  "LostWisp": {
+    "name_cn": "迷路的精灵",
+    "options": [
+      {
+        "name": "Claim (收服)",
+        "effect": "获得Decay诅咒 + LostWisp遗物",
+        "rating": "★遗物换诅咒"
+      },
+      {
+        "name": "Search (搜索)",
+        "effect": "获得~60金(±15随机)",
+        "rating": "○安全但收益一般"
+      }
+    ],
+    "strategy": "LostWisp遗物如果效果好就值得Decay诅咒的代价"
+  },
+  "LuminousChoir": {
+    "name_cn": "光辉唱诗班",
+    "options": [
+      {
+        "name": "Reach Into The Flesh (伸入肉中)",
+        "effect": "移除2张牌, 获得SporeMind诅咒",
+        "rating": "★移除2张但吃诅咒"
+      },
+      {
+        "name": "Offer Tribute (献贡品)",
+        "effect": "失去~149金(减去0-49随机), 获得下一个遗物",
+        "condition": "需要100+金, Act2+, 遗物池有遗物",
+        "rating": "★★推荐(遗物比金币更有价值)"
+      }
+    ],
+    "strategy": "金币足够选献贡品拿遗物。否则移除2张牌也行但SporeMind诅咒很烦"
+  },
+  "MorphicGrove": {
+    "name_cn": "变形树丛",
+    "options": [
+      {
+        "name": "Group (群体)",
+        "effect": "失去100金, 选2张牌转化",
+        "condition": "需要100+金",
+        "rating": "★转化有风险"
+      },
+      {
+        "name": "Loner (独行)",
+        "effect": "+5最大HP",
+        "rating": "★推荐(稳定收益)"
+      }
+    ],
+    "strategy": "+5最大HP简单稳定。转化2张牌+100金代价太大除非牌组急需改造"
+  },
+  "Neow": {
+    "name_cn": "尼奥(远古NPC - 开局)",
+    "type": "ancient",
+    "options": [
+      {
+        "name": "3选1遗物(2个正面+1个诅咒类)",
+        "effect": "从正面遗物池和诅咒遗物池各选, 提供3个选项",
+        "note": "正面遗物池: ArcaneScroll, BoomingConch, Pomander, GoldenPearl, LeadPaperweight, NewLeaf, NeowsTorment, PreciseScissors, LostCoffer, NutritiousOyster, StoneHumidifier, MassiveScroll, LavaRock, SmallCapsule. 诅咒遗物池: CursedPearl, LargeCapsule, LeafyPoultice, PrecariousShears, SilverCrucible, ScrollBoxes",
+        "rating": "★★开局定义性选择"
+      },
+      {
+        "name": "修改器选项(如果有修改器)",
+        "effect": "根据当前修改器提供特殊选项",
+        "condition": "仅在有运行修改器时",
+        "rating": "取决于修改器"
+      }
+    ],
+    "strategy": "开局事件, 必经。优先选与角色build最匹配的遗物"
+  },
+  "Nonupeipe": {
+    "name_cn": "诺纽佩佩(远古NPC)",
+    "type": "ancient",
+    "options": [
+      {
+        "name": "随机3个装饰遗物选1",
+        "effect": "从遗物池中选1个",
+        "note": "遗物池: BlessedAntler, BrilliantScarf, DelicateFrond, DiamondDiadem, FurCoat, Glitter, JewelryBox, LoomingFruit, SignetRing. 如果牌组中有4+张可附魔Swift的牌, 额外可选BeautifulBracelet",
+        "rating": "★★免费遗物"
+      }
+    ],
+    "strategy": "远古事件, 3选1免费遗物。选最适合当前build的"
+  },
+  "Orobas": {
+    "name_cn": "奥罗巴斯(远古NPC)",
+    "type": "ancient",
+    "options": [
+      {
+        "name": "3个遗物池各选1",
+        "effect": "Pool1(ElectricShrymp/GlassEye/SandCastle), Pool2(AlchemicalCoffer/Driftwood/RadiantPearl), Pool3(TouchOfOrobas/ArchaicTooth). 还可能出现SeaGlass(指定角色)或PrismaticGem(33%概率)",
+        "rating": "★★强力遗物选择"
+      }
+    ],
+    "strategy": "PrismaticGem非常稀有且强力。TouchOfOrobas和ArchaicTooth需要特定条件"
+  },
+  "Pael": {
+    "name_cn": "帕尔(远古NPC)",
+    "type": "ancient",
+    "options": [
+      {
+        "name": "3个遗物池各选1",
+        "effect": "Pool1(PaelsFlesh/PaelsHorn/PaelsTears), Pool2(PaelsWing, 可能+PaelsClaw/PaelsTooth/PaelsGrowth), Pool3(PaelsEye/PaelsBlood, 可能+PaelsLegion)",
+        "note": "PaelsClaw需3+张可附魔Goopy的牌, PaelsTooth需5+张可移除的牌, PaelsLegion需没有宠物",
+        "rating": "★★Pael系列遗物很独特"
+      }
+    ],
+    "strategy": "根据条件和牌组选择。PaelsLegion是宠物遗物, PaelsClaw/Tooth需要满足条件"
+  },
+  "PotionCourier": {
+    "name_cn": "药水快递",
+    "options": [
+      {
+        "name": "Grab Potions (拿药水)",
+        "effect": "获得3瓶FoulPotion",
+        "condition": "Act 2+",
+        "rating": "★FoulPotion可用于FakeMerchant事件"
+      },
+      {
+        "name": "Ransack (搜刮)",
+        "effect": "获得1瓶随机Uncommon药水",
+        "rating": "○一瓶Uncommon药水"
+      }
+    ],
+    "strategy": "如果还没遇到FakeMerchant, 拿FoulPotion很有战略价值。否则Uncommon药水也行"
+  },
+  "PunchOff": {
+    "name_cn": "拳击比赛",
+    "is_shared": true,
+    "options": [
+      {
+        "name": "Nab (偷窃)",
+        "effect": "获得Injury诅咒 + 1个遗物奖励",
+        "rating": "★诅咒换遗物"
+      },
+      {
+        "name": "Take Them (迎战) → Fight",
+        "effect": "进入战斗. 胜利奖励: 遗物+药水",
+        "condition": "需要6+层",
+        "rating": "★★打赢收益更好(遗物+药水, 无诅咒)"
+      }
+    ],
+    "strategy": "牌组强选迎战(无诅咒且奖励更好). 牌组弱或不想冒险选偷窃"
+  },
+  "RanwidTheElder": {
+    "name_cn": "长老兰维德",
+    "options": [
+      {
+        "name": "Give Potion (给药水)",
+        "effect": "失去1瓶随机药水, 获得下一个遗物",
+        "condition": "需有药水",
+        "rating": "★★推荐(药水换遗物很值)"
+      },
+      {
+        "name": "Give Gold (给金币)",
+        "effect": "失去100金, 获得下一个遗物",
+        "condition": "需100+金, Act2+",
+        "rating": "★遗物换100金"
+      },
+      {
+        "name": "Give Relic (给遗物)",
+        "effect": "失去1个随机可交易遗物, 获得2个遗物",
+        "condition": "需有可交易遗物",
+        "rating": "★★★最佳(1换2遗物)"
+      }
+    ],
+    "strategy": "给遗物换2个遗物是最优选择! 其次给药水换遗物。给100金是最后选择"
+  },
+  "Reflections": {
+    "name_cn": "倒影",
+    "options": [
+      {
+        "name": "Touch A Mirror (触摸镜子)",
+        "effect": "随机降级2张已升级的牌, 随机升级4张可升级的牌",
+        "rating": "★★推荐(净赚2次升级)"
+      },
+      {
+        "name": "Shatter (打碎)",
+        "effect": "复制整个牌组(每张牌复制一份), 获得BadLuck诅咒",
+        "rating": "○极端选择(牌组翻倍+诅咒)"
+      }
+    ],
+    "strategy": "触摸镜子净赚2次升级很好。打碎让牌组翻倍通常不可取除非特殊build"
+  },
+  "RelicTrader": {
+    "name_cn": "遗物交易商",
+    "options": [
+      {
+        "name": "Trade (交易 - 最多3组)",
+        "effect": "从3组交易中选1: 用你的1个遗物换1个新遗物",
+        "condition": "需5+可交易遗物, Act2+",
+        "rating": "★看具体交易内容"
+      }
+    ],
+    "strategy": "看你要失去的遗物和获得的遗物。如果有弱遗物可以换掉"
+  },
+  "RoomFullOfCheese": {
+    "name_cn": "满是奶酪的房间",
+    "options": [
+      {
+        "name": "Gorge (大吃)",
+        "effect": "从8张普通角色卡中选2张加入牌组",
+        "condition": "仅Act 1-2",
+        "rating": "○2张普通卡一般"
+      },
+      {
+        "name": "Search (搜索)",
+        "effect": "受14伤(不可格挡), 获得ChosenCheese遗物",
+        "rating": "★★遗物通常值14伤"
+      }
+    ],
+    "strategy": "HP足够选搜索拿遗物。14伤不小但遗物更有长期价值"
+  },
+  "RoundTeaParty": {
+    "name_cn": "圆桌茶会",
+    "options": [
+      {
+        "name": "Enjoy Tea (享受茶会)",
+        "effect": "获得RoyalPoison遗物 + 恢复到满HP",
+        "rating": "★★★极好(遗物+满血)"
+      },
+      {
+        "name": "Pick Fight (挑起争斗) → Continue Fight",
+        "effect": "第二步: 受11伤(不可格挡), 获得下一个遗物",
+        "rating": "★遗物但要受伤"
+      }
+    ],
+    "strategy": "享受茶会几乎总是最优: 免费遗物+满血治疗。除非RoyalPoison遗物特别差"
+  },
+  "SapphireSeed": {
+    "name_cn": "蓝宝石种子",
+    "options": [
+      {
+        "name": "Eat (吃)",
+        "effect": "恢复9HP + 选1张牌升级",
+        "rating": "★★推荐(治疗+升级)"
+      },
+      {
+        "name": "Plant (种植)",
+        "effect": "选1张牌附魔Sown",
+        "rating": "★附魔可能更有价值取决于Sown效果"
+      }
+    ],
+    "strategy": "吃的收益很稳定(9HP+1升级)。种植看Sown附魔对牌组的价值"
+  },
+  "SelfHelpBook": {
+    "name_cn": "自助书",
+    "options": [
+      {
+        "name": "Read The Back (读封底)",
+        "effect": "选1张Attack牌附魔Sharp(+2)",
+        "condition": "需要有可附魔Sharp的Attack牌",
+        "rating": "★Sharp对攻击牌有价值"
+      },
+      {
+        "name": "Read Passage (读章节)",
+        "effect": "选1张Skill牌附魔Nimble(+2)",
+        "condition": "需要有可附魔Nimble的Skill牌",
+        "rating": "★Nimble对技能牌有价值"
+      },
+      {
+        "name": "Read Entire Book (读完全书)",
+        "effect": "选1张Power牌附魔Swift(+2)",
+        "condition": "需要有可附魔Swift的Power牌",
+        "rating": "★★Swift对能力牌很有价值"
+      }
+    ],
+    "strategy": "根据牌组中最有价值的目标卡牌选择附魔类型。Swift加在Power牌上通常最好"
+  },
+  "SlipperyBridge": {
+    "name_cn": "湿滑桥梁",
+    "options": [
+      {
+        "name": "Overcome (克服)",
+        "effect": "失去1张随机非基础牌",
+        "rating": "○被动失去牌"
+      },
+      {
+        "name": "Hold On (坚持)",
+        "effect": "受3+N伤(N=坚持次数, 不可格挡), 换一张新的随机牌可以失去",
+        "can_repeat": true,
+        "note": "第1次3伤, 第2次4伤, 第3次5伤... 每次坚持后可选Overcome失去当前展示的牌, 或继续坚持换下一张",
+        "condition": "需7+层, 牌组中有可移除的牌",
+        "rating": "★坚持到展示不想要的牌再Overcome"
+      }
+    ],
+    "strategy": "如果当前展示的牌是你想移除的, 直接Overcome。否则花HP坚持换一张更好的目标"
+  },
+  "SpiralingWhirlpool": {
+    "name_cn": "螺旋漩涡",
+    "options": [
+      {
+        "name": "Observe (观察漩涡)",
+        "effect": "选1张牌附魔Spiral",
+        "condition": "需要牌组中有可附魔Spiral的牌",
+        "rating": "★★附魔通常很有价值"
+      },
+      {
+        "name": "Drink (喝水)",
+        "effect": "恢复33%最大HP",
+        "rating": "★治疗选择"
+      }
+    ],
+    "strategy": "有好的目标牌选附魔Spiral。需要治疗就喝水"
+  },
+  "SpiritGrafter": {
+    "name_cn": "灵魂嫁接者",
+    "options": [
+      {
+        "name": "Let It In (接纳)",
+        "effect": "恢复25HP + 获得Metamorphosis卡",
+        "rating": "★治疗很多但Metamorphosis看效果"
+      },
+      {
+        "name": "Rejection (拒绝)",
+        "effect": "选1张牌移除, 受9HP损失(不可格挡)",
+        "rating": "★移除牌有价值"
+      }
+    ],
+    "strategy": "25HP治疗量很大。如果Metamorphosis卡不想要, 就选拒绝移除1张牌"
+  },
+  "StoneOfAllTime": {
+    "name_cn": "万古之石",
+    "options": [
+      {
+        "name": "Lift (举起)",
+        "effect": "失去1瓶随机药水, +10最大HP",
+        "condition": "需要有药水, 仅Act 2",
+        "rating": "★★推荐(药水换10最大HP很值)"
+      },
+      {
+        "name": "Push (推动)",
+        "effect": "受6伤(不可格挡), 选1张牌附魔Vigorous(+8)",
+        "condition": "需要有可附魔Vigorous的牌",
+        "rating": "★★Vigorous+8是很大的附魔"
+      }
+    ],
+    "strategy": "两个都很好。10最大HP是永久增益, Vigorous+8附魔也很强"
+  },
+  "SunkenStatue": {
+    "name_cn": "沉没雕像",
+    "options": [
+      {
+        "name": "Grab Sword (拿剑)",
+        "effect": "获得SwordOfStone遗物",
+        "rating": "★★免费遗物"
+      },
+      {
+        "name": "Dive Into Water (潜入水中)",
+        "effect": "获得~111金(±10随机), 受7伤(不可格挡)",
+        "rating": "★金币+轻微伤害"
+      }
+    ],
+    "strategy": "SwordOfStone遗物通常比111金更有价值。除非急需金币"
+  },
+  "SunkenTreasury": {
+    "name_cn": "沉没宝库",
+    "options": [
+      {
+        "name": "First Chest (第一个箱子)",
+        "effect": "获得~60金(52-68随机)",
+        "rating": "○安全选择"
+      },
+      {
+        "name": "Second Chest (第二个箱子)",
+        "effect": "获得~333金(303-363随机), 获得Greed诅咒",
+        "rating": "★★大量金币但要诅咒"
+      }
+    ],
+    "strategy": "333金非常多, Greed诅咒值得承受。除非牌组已经有很多诅咒"
+  },
+  "Symbiote": {
+    "name_cn": "共生体",
+    "options": [
+      {
+        "name": "Approach (靠近)",
+        "effect": "选1张牌附魔Corrupted",
+        "condition": "需要有可附魔Corrupted的牌, Act2+",
+        "rating": "★附魔看效果"
+      },
+      {
+        "name": "Kill With Fire (用火烧)",
+        "effect": "选1张牌转化",
+        "rating": "○转化随机"
+      }
+    ],
+    "strategy": "Corrupted附魔如果效果好就选靠近。否则转化也行"
+  },
+  "TabletOfTruth": {
+    "name_cn": "真理石板",
+    "options": [
+      {
+        "name": "Decipher (破译) - 可重复最多5次",
+        "effect": "第1次: -3最大HP, 升级1张随机牌. 第2次: -6最大HP, 升级1张. 第3次: -12最大HP, 升级1张. 第4次: -24最大HP, 升级1张. 第5次(终极): -全部HP(致死), 升级全部牌",
+        "can_repeat": true,
+        "note": "每次可选继续破译或放弃(Give Up)。第5次会杀死玩家! 第4次升级1张, 如果选第5次升级全部牌但角色死亡",
+        "rating": "★★前2-3次性价比最高"
+      },
+      {
+        "name": "Smash (砸碎)",
+        "effect": "恢复20HP",
+        "rating": "○安全治疗"
+      }
+    ],
+    "strategy": "破译1-2次(-3/-6最大HP换2次升级)很划算。第3次-12开始性价比下降。绝对不要选第5次(死亡)。最大HP低就直接砸碎"
+  },
+  "Tanx": {
+    "name_cn": "坦克斯(远古NPC)",
+    "type": "ancient",
+    "options": [
+      {
+        "name": "随机3个武器遗物选1",
+        "effect": "从武器池中选1个",
+        "note": "遗物池: Claws, Crossbow, IronClub, MeatCleaver, Sai, SpikedGauntlets, TanxsWhistle, ThrowingAxe, WarHammer. 如果有3+张可附魔Instinct的牌, 额外可选TriBoomerang",
+        "rating": "★★免费武器遗物"
+      }
+    ],
+    "strategy": "选最适合当前build的武器遗物"
+  },
+  "TeaMaster": {
+    "name_cn": "茶艺师",
+    "options": [
+      {
+        "name": "Bone Tea (骨茶)",
+        "effect": "花50金, 获得BoneTea遗物",
+        "condition": "需50+金, Act 1-2",
+        "rating": "★便宜的遗物"
+      },
+      {
+        "name": "Ember Tea (余烬茶)",
+        "effect": "花150金, 获得EmberTea遗物",
+        "condition": "需150+金",
+        "rating": "★★更贵但可能更强"
+      },
+      {
+        "name": "Tea of Discourtesy (无礼茶)",
+        "effect": "免费获得TeaOfDiscourtesy遗物",
+        "rating": "★★★免费遗物!"
+      }
+    ],
+    "strategy": "无礼茶免费是最佳选项(除非效果不好)。骨茶50金便宜。余烬茶150金较贵"
+  },
+  "Tezcatara": {
+    "name_cn": "特兹卡塔拉(远古NPC)",
+    "type": "ancient",
+    "options": [
+      {
+        "name": "3个遗物池各随机1个选1",
+        "effect": "Pool1(NutritiousSoup/VeryHotCocoa/YummyCookie), Pool2(BiiigHug/Storybook/SealOfGold/ToastyMittens), Pool3(GoldenCompass/PumpkinCandle/ToyBox)",
+        "rating": "★★温暖系遗物"
+      }
+    ],
+    "strategy": "选最适合当前build的遗物"
+  },
+  "TheArchitect": {
+    "name_cn": "建筑师(最终事件)",
+    "type": "ancient",
+    "options": [
+      {
+        "name": "Proceed (继续) / 对话",
+        "effect": "胜利结算事件。对话内容根据角色和胜利次数变化",
+        "note": "最终Boss后的故事事件, 无实际选择影响",
+        "rating": "—剧情事件"
+      }
+    ],
+    "strategy": "这是胜利后的结算事件, 享受对话即可"
+  },
+  "TheFutureOfPotions": {
+    "name_cn": "药水的未来",
+    "options": [
+      {
+        "name": "Trade Potion (交易药水, 最多3个选项)",
+        "effect": "失去1瓶药水, 根据药水稀有度获得同等级的升级卡牌奖励(3选1). Rare/Event药水→Rare卡, Uncommon→Uncommon卡, Common/Token→Common卡. 卡牌类型随机(Attack/Skill/Power, Common药水不能出Power)",
+        "condition": "需2+瓶药水",
+        "rating": "★★升级的稀有卡很有价值"
+      }
+    ],
+    "strategy": "Rare药水换Rare升级卡是绝佳交易。尽量用最高稀有度的药水交易"
+  },
+  "TheLanternKey": {
+    "name_cn": "灯笼钥匙",
+    "is_shared": true,
+    "options": [
+      {
+        "name": "Return The Key (归还钥匙)",
+        "effect": "获得100金",
+        "rating": "○安全100金"
+      },
+      {
+        "name": "Keep The Key (保留钥匙) → Fight",
+        "effect": "进入战斗(MysteriousKnight). 胜利获得LanternKey特殊卡",
+        "rating": "★★LanternKey可能触发后续事件(WarHistorianRepy)"
+      }
+    ],
+    "strategy": "保留钥匙打战斗更有价值, LanternKey卡有后续事件链"
+  },
+  "TheLegendsWereTrue": {
+    "name_cn": "传说是真的",
+    "options": [
+      {
+        "name": "Nab The Map (抢地图)",
+        "effect": "获得SpoilsMap卡",
+        "condition": "仅Act 1, HP≥10",
+        "rating": "★SpoilsMap有特殊效果"
+      },
+      {
+        "name": "Slowly Find An Exit (慢慢找出口)",
+        "effect": "受8伤(不可格挡), 获得1瓶随机药水",
+        "rating": "○8伤换1药水一般"
+      }
+    ],
+    "strategy": "SpoilsMap卡通常比药水有价值。8伤也不少但至少保证一个药水"
+  },
+  "ThisOrThat": {
+    "name_cn": "这个或那个",
+    "options": [
+      {
+        "name": "Plain (朴素箱子)",
+        "effect": "受6伤(不可格挡), 获得~41-68金(随机)",
+        "rating": "★安全选择"
+      },
+      {
+        "name": "Ornate (华丽箱子)",
+        "effect": "获得下一个遗物 + Clumsy诅咒",
+        "rating": "★★遗物通常比金币更有价值"
+      }
+    ],
+    "strategy": "遗物+Clumsy诅咒通常比受伤+金币好。Clumsy诅咒相对温和"
+  },
+  "TinkerTime": {
+    "name_cn": "修补时间",
+    "options": [
+      {
+        "name": "Choose Card Type → Choose Rider → Obtain MadScience",
+        "effect": "两步选择: 1) 从Attack/Skill/Power中选2选1类型 2) 从对应Rider中选2选1效果. 获得定制的MadScience卡",
+        "note": "Attack riders: Sapping(Weak2+Vuln2), Violence(3次攻击), Choking(Strangle6). Skill riders: Energized(+2能量), Wisdom(+3抽牌), Chaos(随机). Power riders: Expertise(+2Str+2Dex), Curious(-1费用), Improvement(升级效果). 基础数值: 12伤/8格挡",
+        "rating": "★★定制卡牌很灵活"
+      }
+    ],
+    "strategy": "根据build需求选择类型和rider。Power+Expertise(+2力量+2敏捷)通常很强"
+  },
+  "TrashHeap": {
+    "name_cn": "垃圾堆",
+    "options": [
+      {
+        "name": "Dive In (跳进去)",
+        "effect": "受8HP损失(不可格挡), 获得随机遗物(DarkstonePeriapt/DreamCatcher/HandDrill/MawBank/TheBoot之一)",
+        "rating": "★遗物换8伤"
+      },
+      {
+        "name": "Grab (捡起来)",
+        "effect": "获得100金 + 1张随机特殊卡(Caltrops/Clash/Distraction/DualWield/Entrench/HelloWorld/Outmaneuver/Rebound/RipAndTear/Stack之一)",
+        "rating": "★★100金+1卡"
+      }
+    ],
+    "strategy": "两个都不错。100金+卡牌总收益通常更好, 但如果需要特定遗物可以跳进去"
+  },
+  "Trial": {
+    "name_cn": "审判",
+    "options": [
+      {
+        "name": "Accept (接受审判)",
+        "effect": "随机进入3种审判之一: Merchant(商人)/Noble(贵族)/Nondescript(普通人)",
+        "note": "商人审判: Guilty=Regret诅咒+2遗物, Innocent=Shame诅咒+升级2张牌. 贵族审判: Guilty=恢复10HP, Innocent=Regret诅咒+300金. 普通人审判: Guilty=Doubt诅咒+2个卡牌奖励, Innocent=Doubt诅咒+转化2张牌",
+        "rating": "★★结果丰富"
+      },
+      {
+        "name": "Reject (拒绝) → Accept / Double Down",
+        "effect": "拒绝后可选接受或Double Down(放弃本局)",
+        "rating": "—别选Double Down"
+      }
+    ],
+    "strategy": "商人: Guilty拿2遗物最好. 贵族: Innocent拿300金极好. 普通人: Guilty拿2卡牌奖励较好. 都要吃诅咒但收益很大"
+  },
+  "UnrestSite": {
+    "name_cn": "不安之地",
+    "options": [
+      {
+        "name": "Rest (休息)",
+        "effect": "恢复到满HP, 获得PoorSleep诅咒",
+        "condition": "HP≤70%最大HP时才能触发此事件",
+        "rating": "★满血但要诅咒"
+      },
+      {
+        "name": "Kill (杀死)",
+        "effect": "失去8最大HP, 获得下一个遗物",
+        "rating": "★★遗物换8最大HP"
+      }
+    ],
+    "strategy": "遗物通常值得8最大HP的代价。PoorSleep诅咒也不轻, 除非急需满血"
+  },
+  "Vakuu": {
+    "name_cn": "瓦库(远古NPC)",
+    "type": "ancient",
+    "options": [
+      {
+        "name": "3个遗物池各随机1个选1",
+        "effect": "Pool1(BloodSoakedRose/WhisperingEarring/Fiddle), Pool2(PreservedFog/SereTalon/DistinguishedCape[受9伤]), Pool3(ChoicesParadox/MusicBox/LordsParasol/JeweledMask)",
+        "note": "DistinguishedCape选项附带9伤",
+        "rating": "★★暗黑系遗物"
+      }
+    ],
+    "strategy": "注意DistinguishedCape会受9伤。选最适合build的遗物"
+  },
+  "WarHistorianRepy": {
+    "name_cn": "战争史学家瑞皮",
+    "is_shared": true,
+    "options": [
+      {
+        "name": "Unlock Cage (解锁笼子)",
+        "effect": "移除LanternKey卡, 获得HistoryCourse遗物, 设置FreedRepy标记",
+        "rating": "★★遗物+剧情"
+      },
+      {
+        "name": "Unlock Chest (解锁箱子)",
+        "effect": "移除LanternKey卡, 获得2药水+2遗物奖励",
+        "rating": "★★★4个奖励非常好"
+      }
+    ],
+    "condition": "需要有LanternKey卡(来自TheLanternKey事件)",
+    "strategy": "解锁箱子的4个奖励(2药水+2遗物)通常更好。解锁笼子有剧情价值"
+  },
+  "WaterloggedScriptorium": {
+    "name_cn": "泡水的经文室",
+    "options": [
+      {
+        "name": "Bloody Ink (血墨)",
+        "effect": "+6最大HP",
+        "rating": "★稳定选择"
+      },
+      {
+        "name": "Tentacle Quill (触手羽毛笔)",
+        "effect": "花65金, 选1张牌附魔Steady",
+        "condition": "需65+金",
+        "rating": "★★附魔有价值"
+      },
+      {
+        "name": "Prickly Sponge (刺海绵)",
+        "effect": "花155金, 选2张牌各附魔Steady",
+        "condition": "需155+金",
+        "rating": "★★★双附魔最佳"
+      }
+    ],
+    "strategy": "金币充足选刺海绵(155金换2个Steady附魔)。其次触手羽毛笔(65金1个)。缺金选血墨+6最大HP"
+  },
+  "WelcomeToWongos": {
+    "name_cn": "欢迎来到Wongo's",
+    "options": [
+      {
+        "name": "Bargain Bin (特价区)",
+        "effect": "花100金, 获得1个Common遗物 (+32 Wongo积分)",
+        "condition": "需100+金, 仅Act 2",
+        "rating": "○Common遗物一般"
+      },
+      {
+        "name": "Featured Item (精选商品)",
+        "effect": "花200金, 获得1个Rare遗物 (+16 Wongo积分)",
+        "condition": "需200+金",
+        "rating": "★★Rare遗物很好"
+      },
+      {
+        "name": "Mystery Box (神秘盒子)",
+        "effect": "花300金, 获得WongosMysteryTicket遗物(后续5场战斗中共获3个遗物) (+8 Wongo积分)",
+        "condition": "需300+金",
+        "rating": "★★★3个遗物极好"
+      },
+      {
+        "name": "Leave (离开)",
+        "effect": "随机降级1张已升级的牌",
+        "rating": "✗惩罚性选项"
+      }
+    ],
+    "note": "Wongo积分累计2000可获WongoCustomerAppreciationBadge遗物",
+    "strategy": "Mystery Box(300金换3遗物)性价比最高。其次Featured Item(200金换Rare遗物)。别离开(会降级牌)"
+  },
+  "Wellspring": {
+    "name_cn": "泉源",
+    "options": [
+      {
+        "name": "Bottle (装瓶)",
+        "effect": "获得1瓶随机药水",
+        "rating": "○安全但一般"
+      },
+      {
+        "name": "Bathe (沐浴)",
+        "effect": "移除1张牌, 获得1张Guilty诅咒",
+        "rating": "★移除好牌时值得但要吃诅咒"
+      }
+    ],
+    "strategy": "如果有特别想移除的牌, Guilty诅咒是可接受的代价。否则拿药水"
+  },
+  "WhisperingHollow": {
+    "name_cn": "低语洞穴",
+    "options": [
+      {
+        "name": "Gold (给金币)",
+        "effect": "花50金, 获得2瓶随机药水",
+        "condition": "需50+金",
+        "rating": "★2药水值50金"
+      },
+      {
+        "name": "Hug (拥抱)",
+        "effect": "转化1张牌, 受9HP损失(不可格挡)",
+        "rating": "○转化随机+受伤"
+      }
+    ],
+    "strategy": "50金换2药水通常更好。拥抱的转化太随机且要受伤"
+  },
+  "WoodCarvings": {
+    "name_cn": "木雕",
+    "options": [
+      {
+        "name": "Bird (鸟)",
+        "effect": "选1张基础牌转化为Peck卡",
+        "condition": "需要有可转化的基础牌",
+        "rating": "★★基础牌变特殊卡"
+      },
+      {
+        "name": "Snake (蛇)",
+        "effect": "选1张牌附魔Slither",
+        "condition": "需要有可附魔Slither的牌",
+        "rating": "★附魔看效果"
+      },
+      {
+        "name": "Torus (环面)",
+        "effect": "选1张基础牌转化为ToricToughness卡",
+        "condition": "需要有可转化的基础牌",
+        "rating": "★★基础牌变特殊卡"
+      }
+    ],
+    "strategy": "Peck和ToricToughness都比基础牌好。根据牌组需求选择攻击(Peck)或防御(ToricToughness)"
+  },
+  "ZenWeaver": {
+    "name_cn": "禅编织者",
+    "options": [
+      {
+        "name": "Breathing Techniques (呼吸技巧)",
+        "effect": "花50金, 获得2张Enlightenment卡",
+        "rating": "★2张特殊卡"
+      },
+      {
+        "name": "Emotional Awareness (情感觉知)",
+        "effect": "花125金, 移除1张牌",
+        "condition": "需125+金",
+        "rating": "★★移除牌有价值"
+      },
+      {
+        "name": "Arachnid Acupuncture (蜘蛛针灸)",
+        "effect": "花250金, 移除2张牌",
+        "condition": "需250+金",
+        "rating": "★★★移除2张最佳"
+      }
+    ],
+    "strategy": "金币充足选蜘蛛针灸(250金移除2张)。其次情感觉知(125金移除1张)。Enlightenment卡的价值取决于效果"
+  }
+}

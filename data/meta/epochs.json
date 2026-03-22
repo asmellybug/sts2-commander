@@ -1,0 +1,674 @@
+{
+  "COLORLESS1_EPOCH": {
+    "cards": [
+      {
+        "id": "Automation",
+        "name": "自动化"
+      },
+      {
+        "id": "Entropy",
+        "name": "熵"
+      },
+      {
+        "id": "Catastrophe",
+        "name": "横祸"
+      }
+    ]
+  },
+  "COLORLESS2_EPOCH": {
+    "cards": [
+      {
+        "id": "EternalArmor",
+        "name": "永恒铠甲"
+      },
+      {
+        "id": "Jackpot",
+        "name": "大奖"
+      },
+      {
+        "id": "PrepTime",
+        "name": "准备时间"
+      }
+    ]
+  },
+  "COLORLESS3_EPOCH": {
+    "cards": [
+      {
+        "id": "Rend",
+        "name": "撕碎"
+      },
+      {
+        "id": "BeatDown",
+        "name": "狠揍"
+      },
+      {
+        "id": "Prowess",
+        "name": "非凡技艺"
+      }
+    ]
+  },
+  "COLORLESS4_EPOCH": {
+    "cards": [
+      {
+        "id": "Alchemize",
+        "name": "炼制药水"
+      },
+      {
+        "id": "Nostalgia",
+        "name": "怀旧"
+      },
+      {
+        "id": "Scrawl",
+        "name": "潦草急就"
+      }
+    ]
+  },
+  "COLORLESS5_EPOCH": {
+    "cards": [
+      {
+        "id": "Splash",
+        "name": "飞溅"
+      },
+      {
+        "id": "Anointed",
+        "name": "天选"
+      },
+      {
+        "id": "Calamity",
+        "name": "灾祸"
+      }
+    ]
+  },
+  "DEFECT2_EPOCH": {
+    "cards": [
+      {
+        "id": "Loop",
+        "name": "循环"
+      },
+      {
+        "id": "Null",
+        "name": "空无"
+      },
+      {
+        "id": "ConsumingShadow",
+        "name": "吞噬暗影"
+      }
+    ]
+  },
+  "DEFECT3_EPOCH": {
+    "relics": [
+      {
+        "id": "DataDisk",
+        "name": "数据磁盘"
+      },
+      {
+        "id": "SymbioticVirus",
+        "name": "共生病毒"
+      },
+      {
+        "id": "Metronome",
+        "name": "节拍器"
+      }
+    ]
+  },
+  "DEFECT4_EPOCH": {
+    "potions": [
+      {
+        "id": "FocusPotion",
+        "name": "集中药水"
+      },
+      {
+        "id": "EssenceOfDarkness",
+        "name": "黑暗精华"
+      },
+      {
+        "id": "PotionOfCapacity",
+        "name": "扩容药水"
+      }
+    ]
+  },
+  "DEFECT5_EPOCH": {
+    "cards": [
+      {
+        "id": "Barrage",
+        "name": "弹幕齐射"
+      },
+      {
+        "id": "FlakCannon",
+        "name": "散射炮"
+      },
+      {
+        "id": "Smokestack",
+        "name": "烟囱"
+      }
+    ]
+  },
+  "DEFECT6_EPOCH": {
+    "relics": [
+      {
+        "id": "GoldPlatedCables",
+        "name": "镀金缆线"
+      },
+      {
+        "id": "EmotionChip",
+        "name": "情感芯片"
+      },
+      {
+        "id": "PowerCell",
+        "name": "能量电池"
+      }
+    ]
+  },
+  "DEFECT7_EPOCH": {
+    "cards": [
+      {
+        "id": "Turbo",
+        "name": "内核加速"
+      },
+      {
+        "id": "Scavenge",
+        "name": "再利用"
+      },
+      {
+        "id": "HelixDrill",
+        "name": "螺旋钻击"
+      }
+    ]
+  },
+  "IRONCLAD2_EPOCH": {
+    "cards": [
+      {
+        "id": "MoltenFist",
+        "name": "熔融之拳"
+      },
+      {
+        "id": "Cruelty",
+        "name": "残酷"
+      },
+      {
+        "id": "Dominate",
+        "name": "主宰"
+      }
+    ]
+  },
+  "IRONCLAD3_EPOCH": {
+    "relics": [
+      {
+        "id": "RedSkull",
+        "name": "红头骨"
+      },
+      {
+        "id": "PaperPhrog",
+        "name": "纸蛙"
+      },
+      {
+        "id": "RuinedHelmet",
+        "name": "损毁头盔"
+      }
+    ]
+  },
+  "IRONCLAD4_EPOCH": {
+    "potions": [
+      {
+        "id": "BloodPotion",
+        "name": "鲜血药水"
+      },
+      {
+        "id": "SoldiersStew",
+        "name": "士兵炖汤"
+      },
+      {
+        "id": "Ashwater",
+        "name": "灰水"
+      }
+    ]
+  },
+  "IRONCLAD5_EPOCH": {
+    "cards": [
+      {
+        "id": "Cinder",
+        "name": "余烬"
+      },
+      {
+        "id": "PactsEnd",
+        "name": "契约终结"
+      },
+      {
+        "id": "DrumOfBattle",
+        "name": "战鼓"
+      }
+    ]
+  },
+  "IRONCLAD6_EPOCH": {
+    "relics": [
+      {
+        "id": "SelfFormingClay",
+        "name": "自成型黏土"
+      },
+      {
+        "id": "CharonsAshes",
+        "name": "卡戎之灰"
+      },
+      {
+        "id": "DemonTongue",
+        "name": "恶魔之舌"
+      }
+    ]
+  },
+  "IRONCLAD7_EPOCH": {
+    "cards": [
+      {
+        "id": "BloodWall",
+        "name": "血墙"
+      },
+      {
+        "id": "TearAsunder",
+        "name": "扯碎"
+      },
+      {
+        "id": "Inferno",
+        "name": "狱火"
+      }
+    ]
+  },
+  "NECROBINDER2_EPOCH": {
+    "cards": [
+      {
+        "id": "Scourge",
+        "name": "鞭打"
+      },
+      {
+        "id": "Oblivion",
+        "name": "湮灭"
+      },
+      {
+        "id": "Countdown",
+        "name": "倒数计时"
+      }
+    ]
+  },
+  "NECROBINDER3_EPOCH": {
+    "relics": [
+      {
+        "id": "BoneFlute",
+        "name": "骨笛"
+      },
+      {
+        "id": "FuneraryMask",
+        "name": "葬礼面具"
+      },
+      {
+        "id": "BookRepairKnife",
+        "name": "修书小刀"
+      }
+    ]
+  },
+  "NECROBINDER4_EPOCH": {
+    "potions": [
+      {
+        "id": "PotionOfDoom",
+        "name": "灾厄药水"
+      },
+      {
+        "id": "PotOfGhouls",
+        "name": "尸鬼瓮"
+      },
+      {
+        "id": "BoneBrew",
+        "name": "骨头酿"
+      }
+    ]
+  },
+  "NECROBINDER5_EPOCH": {
+    "cards": [
+      {
+        "id": "Afterlife",
+        "name": "来生"
+      },
+      {
+        "id": "Sacrifice",
+        "name": "牺牲"
+      },
+      {
+        "id": "Calcify",
+        "name": "钙化"
+      }
+    ]
+  },
+  "NECROBINDER6_EPOCH": {
+    "relics": [
+      {
+        "id": "IvoryTile",
+        "name": "象牙麻将牌"
+      },
+      {
+        "id": "BigHat",
+        "name": "大帽子"
+      },
+      {
+        "id": "Bookmark",
+        "name": "书签"
+      }
+    ]
+  },
+  "NECROBINDER7_EPOCH": {
+    "cards": [
+      {
+        "id": "SculptingStrike",
+        "name": "雕琢打击"
+      },
+      {
+        "id": "Veilpiercer",
+        "name": "刺破帷幕"
+      },
+      {
+        "id": "BansheesCry",
+        "name": "女妖之嚎"
+      }
+    ]
+  },
+  "POTION1_EPOCH": {
+    "potions": [
+      {
+        "id": "BeetleJuice",
+        "name": "甲虫汁"
+      },
+      {
+        "id": "MazalethsGift",
+        "name": "马萨雷斯的赠礼"
+      },
+      {
+        "id": "DropletOfPrecognition",
+        "name": "预知之滴"
+      }
+    ]
+  },
+  "POTION2_EPOCH": {
+    "potions": [
+      {
+        "id": "PowderedDemise",
+        "name": "消亡粉末"
+      },
+      {
+        "id": "ShipInABottle",
+        "name": "ShipInABottle"
+      },
+      {
+        "id": "TouchOfInsanity",
+        "name": "癫狂之触"
+      }
+    ]
+  },
+  "REGENT2_EPOCH": {
+    "cards": [
+      {
+        "id": "SpoilsOfBattle",
+        "name": "战利品"
+      },
+      {
+        "id": "SwordSage",
+        "name": "剑圣"
+      },
+      {
+        "id": "Furnace",
+        "name": "熔炉"
+      }
+    ]
+  },
+  "REGENT3_EPOCH": {
+    "relics": [
+      {
+        "id": "FencingManual",
+        "name": "击剑指南"
+      },
+      {
+        "id": "GalacticDust",
+        "name": "星系尘埃"
+      },
+      {
+        "id": "LunarPastry",
+        "name": "月亮糕点"
+      }
+    ]
+  },
+  "REGENT4_EPOCH": {
+    "potions": [
+      {
+        "id": "StarPotion",
+        "name": "星星药水"
+      },
+      {
+        "id": "CosmicConcoction",
+        "name": "宇宙药剂"
+      },
+      {
+        "id": "KingsCourage",
+        "name": "王之勇气"
+      }
+    ]
+  },
+  "REGENT5_EPOCH": {
+    "cards": [
+      {
+        "id": "Begone",
+        "name": "下去！"
+      },
+      {
+        "id": "Arsenal",
+        "name": "武器库"
+      },
+      {
+        "id": "Supermassive",
+        "name": "超质量体"
+      }
+    ]
+  },
+  "REGENT6_EPOCH": {
+    "relics": [
+      {
+        "id": "Regalite",
+        "name": "君王矿石"
+      },
+      {
+        "id": "MiniRegent",
+        "name": "迷你储君"
+      },
+      {
+        "id": "OrangeDough",
+        "name": "橙色团块"
+      }
+    ]
+  },
+  "REGENT7_EPOCH": {
+    "cards": [
+      {
+        "id": "Patter",
+        "name": "星星点点"
+      },
+      {
+        "id": "HeavenlyDrill",
+        "name": "天际钻头"
+      },
+      {
+        "id": "LunarBlast",
+        "name": "月面射击"
+      }
+    ]
+  },
+  "RELIC1_EPOCH": {
+    "relics": [
+      {
+        "id": "UnsettlingLamp",
+        "name": "不安油灯"
+      },
+      {
+        "id": "IntimidatingHelmet",
+        "name": "骇人头盔"
+      },
+      {
+        "id": "ReptileTrinket",
+        "name": "爬行动物饰品"
+      }
+    ]
+  },
+  "RELIC2_EPOCH": {
+    "relics": [
+      {
+        "id": "BookOfFiveRings",
+        "name": "五轮书"
+      },
+      {
+        "id": "IceCream",
+        "name": "冰淇淋"
+      },
+      {
+        "id": "Kusarigama",
+        "name": "锁镰"
+      }
+    ]
+  },
+  "RELIC3_EPOCH": {
+    "relics": [
+      {
+        "id": "VexingPuzzlebox",
+        "name": "烦人机关盒"
+      },
+      {
+        "id": "RippleBasin",
+        "name": "波纹水盆"
+      },
+      {
+        "id": "FestivePopper",
+        "name": "节日拉炮"
+      }
+    ]
+  },
+  "RELIC4_EPOCH": {
+    "relics": [
+      {
+        "id": "MiniatureCannon",
+        "name": "微型大炮"
+      },
+      {
+        "id": "TungstenRod",
+        "name": "钨合金棍"
+      },
+      {
+        "id": "WhiteStar",
+        "name": "白星"
+      }
+    ]
+  },
+  "RELIC5_EPOCH": {
+    "relics": [
+      {
+        "id": "TinyMailbox",
+        "name": "小邮箱"
+      },
+      {
+        "id": "JossPaper",
+        "name": "金纸"
+      },
+      {
+        "id": "BeatingRemnant",
+        "name": "律动残余"
+      }
+    ]
+  },
+  "SILENT2_EPOCH": {
+    "cards": [
+      {
+        "id": "Snakebite",
+        "name": "蛇咬"
+      },
+      {
+        "id": "BubbleBubble",
+        "name": "咕嘟冒泡"
+      },
+      {
+        "id": "Accelerant",
+        "name": "触媒"
+      }
+    ]
+  },
+  "SILENT3_EPOCH": {
+    "relics": [
+      {
+        "id": "ToughBandages",
+        "name": "结实绷带"
+      },
+      {
+        "id": "PaperKrane",
+        "name": "纸鹤"
+      },
+      {
+        "id": "Tingsha",
+        "name": "铜钹"
+      }
+    ]
+  },
+  "SILENT4_EPOCH": {
+    "potions": [
+      {
+        "id": "PoisonPotion",
+        "name": "毒药水"
+      },
+      {
+        "id": "GhostInAJar",
+        "name": "GhostInAJar"
+      },
+      {
+        "id": "CunningPotion",
+        "name": "狡诈药水"
+      }
+    ]
+  },
+  "SILENT5_EPOCH": {
+    "cards": [
+      {
+        "id": "Reflex",
+        "name": "本能反应"
+      },
+      {
+        "id": "MasterPlanner",
+        "name": "谋划专家"
+      },
+      {
+        "id": "HandTrick",
+        "name": "手上技法"
+      }
+    ]
+  },
+  "SILENT6_EPOCH": {
+    "relics": [
+      {
+        "id": "TwistedFunnel",
+        "name": "扭曲漏斗"
+      },
+      {
+        "id": "SneckoSkull",
+        "name": "异蛇头骨"
+      },
+      {
+        "id": "HelicalDart",
+        "name": "螺线飞镖"
+      }
+    ]
+  },
+  "SILENT7_EPOCH": {
+    "cards": [
+      {
+        "id": "HiddenDaggers",
+        "name": "隐秘匕首"
+      },
+      {
+        "id": "BladeOfInk",
+        "name": "墨之刃"
+      },
+      {
+        "id": "PhantomBlades",
+        "name": "幻影之刃"
+      }
+    ]
+  }
+}
