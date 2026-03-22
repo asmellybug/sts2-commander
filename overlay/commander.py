@@ -120,9 +120,9 @@ class STS2Commander(DisplayMixin, AIAdvisorMixin, HistoryMixin, DataMixin):
     #  JS EVAL HELPER
     # ══════════════════════════════════════════
     def _js(self, call):
-        """Thread-safe JS evaluation. Waits for window ready."""
+        """Thread-safe JS evaluation."""
         if not self._window_ready.is_set():
-            self._window_ready.wait(timeout=10)
+            return  # Skip silently if window not ready yet
         try:
             if self._window:
                 self._window.evaluate_js(call)
@@ -234,11 +234,22 @@ class STS2Commander(DisplayMixin, AIAdvisorMixin, HistoryMixin, DataMixin):
         elif stype in ("card_reward", "card_select"):
             if type_changed:
                 self._card_analyzed = False
+                # Track if this came from an event
+                if stype == "card_select" and self.last_type == "event":
+                    self._card_select_from_event = getattr(self, '_last_event_context', None)
+                else:
+                    self._card_select_from_event = None
                 self._display_card_reward(state)
                 self._js('app.setTab("situation")')
 
         elif stype == "event":
             if type_changed:
+                # Store event context for subsequent card_select
+                ev = state.get("event", {})
+                self._last_event_context = {
+                    "event_name": ev.get("event_name", ""),
+                    "options": [o.get("title", "") for o in ev.get("options", []) if not o.get("is_locked")],
+                }
                 self._display_event(state)
 
         elif stype == "shop":
@@ -461,10 +472,20 @@ class STS2Commander(DisplayMixin, AIAdvisorMixin, HistoryMixin, DataMixin):
     #  RUN
     # ══════════════════════════════════════════
     def _on_window_ready(self):
+        import time
+        time.sleep(0.5)  # Small delay for DOM to be fully ready
         self._window_ready.set()
         threading.Thread(target=self._poll_loop, daemon=True).start()
 
     def run(self):
+        # Start polling thread immediately, don't wait for callback
+        def _startup():
+            import time
+            time.sleep(1.5)  # Give window 1.5s to load
+            if not self._window_ready.is_set():
+                self._window_ready.set()
+                threading.Thread(target=self._poll_loop, daemon=True).start()
+        threading.Thread(target=_startup, daemon=True).start()
         webview.start(self._on_window_ready, debug=False)
 
 

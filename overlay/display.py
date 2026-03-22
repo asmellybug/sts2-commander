@@ -38,7 +38,7 @@ class DisplayMixin:
     def _render_formatted_html(self, text, header=""):
         """Parse AI output and produce colored HTML string."""
         parts = []
-        self._last_recommended_option = None  # Track recommended option for highlighting
+        self._recommended_options = []  # Track ALL recommended options for highlighting
         if header:
             parts.append(f'<span class="gold" style="font-weight:600">{html.escape(header)}</span><br><br>')
 
@@ -105,14 +105,12 @@ class DisplayMixin:
                     reason_part = content[dash_pos+1:].strip().lstrip("—").strip()
                     parts.append(f'<span class="gold" style="font-weight:600">★ {html.escape(name_part)}</span>'
                                  f' — {self._colorize_desc(reason_part)}<br>')
-                    # Save for option highlighting
-                    self._last_recommended_option = name_part
+                    self._recommended_options.append(name_part)
                 else:
                     parts.append(f'<span class="gold" style="font-weight:600">★ {self._colorize_desc(content)}</span><br>')
-                    # Try to extract name before any punctuation
                     for sep in ['，', '。', '：', ',', '.']:
                         if sep in content:
-                            self._last_recommended_option = content[:content.index(sep)].strip()
+                            self._recommended_options.append(content[:content.index(sep)].strip())
                             break
 
             # Not recommended ✗
@@ -179,16 +177,48 @@ class DisplayMixin:
 
             i += 1
 
-        return "".join(parts)
+        result = "".join(parts)
+        # Post-process: wrap known card names with tooltip spans
+        result = self._add_card_tooltips(result)
+        return result
+
+    def _add_card_tooltips(self, html_str):
+        """Scan HTML for known card names and wrap them with data-desc tooltip spans."""
+        if not hasattr(self, '_card_db'):
+            return html_str
+        # Build name->description map from card_db and CARD_DICT
+        card_descs = {}
+        for cid, cdata in self._card_db.items():
+            name = cdata.get("name", cid)
+            desc = cdata.get("description", "")
+            if name and desc and len(name) >= 2:
+                card_descs[name] = desc
+        for name, desc in CARD_DICT.items():
+            if name and desc and len(name) >= 2 and name not in card_descs:
+                card_descs[name] = desc
+        # Sort by name length (longest first) to avoid partial matches
+        sorted_names = sorted(card_descs.keys(), key=len, reverse=True)
+        for name in sorted_names:
+            escaped_name = html.escape(name)
+            # Skip if already wrapped or too common
+            if name in ("打击", "防御"):
+                continue
+            if escaped_name in html_str and f'data-desc' not in html_str.split(escaped_name)[0][-50:]:
+                desc = html.escape(card_descs[name][:60])
+                html_str = html_str.replace(
+                    escaped_name,
+                    f'<span style="border-bottom:1px dotted var(--dim);cursor:help" data-desc="{desc}">{escaped_name}</span>',
+                    2  # Max 2 replacements to avoid over-wrapping
+                )
+        return html_str
 
     def _push_advice(self, text, header=""):
-        """Render AI advice HTML and push to UI, then highlight recommended option."""
+        """Render AI advice HTML and push to UI, then highlight ALL recommended options."""
         advice_html = self._render_formatted_html(text, header)
         self._js(f'app.updateAdvice({json.dumps(advice_html)})')
-        # Highlight recommended option if found
-        if getattr(self, '_last_recommended_option', None):
-            opt_name = json.dumps(self._last_recommended_option)
-            self._js(f'app.highlightOption({opt_name})')
+        # Highlight all recommended options
+        for opt_name in getattr(self, '_recommended_options', []):
+            self._js(f'app.highlightOption({json.dumps(opt_name)})')
 
     def _delayed_display_combat(self):
         """Delay then re-fetch latest state and display."""
@@ -383,41 +413,116 @@ class DisplayMixin:
         self._js('app.setTab("situation")')
 
     def _display_card_reward(self, state):
-        """Auto-display card reward (no LLM)."""
-        cr      = state.get("card_reward") or state.get("card_select") or {}
+        """Auto-display card reward or card removal (no LLM)."""
+        stype = state.get("state_type", "")
+        cr = state.get("card_reward") or state.get("card_select") or {}
         rewards = cr.get("cards", [])
 
-        TYPE_CN = {"attack": "攻击", "skill": "技能", "power": "能力"}
-        _type_cls = {"attack": "warn", "skill": "blue", "power": "buff"}
+        # Detect if this is card removal vs card reward
+        is_removal = stype == "card_select" or cr.get("is_removal", False)
+        title = "移除卡牌" if is_removal else "选牌奖励"
 
-        parts = ['<div class="section-title">选牌奖励</div>']
+        TYPE_CN = {"attack": "攻击", "skill": "技能", "power": "能力"}
+
+        # Card name color by rarity — matches in-game border colors
+        RARITY_COLOR = {
+            "basic": "var(--dim)",       # gray, unimportant
+            "common": "var(--text)",     # white/default
+            "uncommon": "var(--block)",  # blue
+            "rare": "var(--gold)",       # gold
+        }
+        UPGRADED_COLOR = "var(--buff)"   # green
+        TYPE_LABEL_COLOR = {
+            "attack": ("攻击", "var(--hp)"),
+            "skill": ("技能", "var(--block)"),
+            "power": ("能力", "var(--buff)"),
+        }
+
+        parts = [f'<div class="section-title">{title}</div>']
+
+        def _enrich_card(c):
+            """Return (name, upg, desc, ctype, cost, name_color) for a card."""
+            name = c.get("name", "?")
+            upg = "+" if c.get("is_upgraded") else ""
+            desc = c.get("description", "")
+            ctype = (c.get("type") or c.get("card_type") or "").lower()
+            cost = c.get("cost")
+            if hasattr(self, '_card_db'):
+                cid = c.get("id", "").replace("CARD.", "")
+                db = self._card_db.get(cid, self._card_db.get(name, {}))
+                if not ctype:
+                    ctype = db.get("type", "").lower()
+                if cost is None:
+                    cost = db.get("cost")
+            if cost is None:
+                cost = "?"
+            rarity = (c.get("rarity") or "").lower()
+            if not rarity and hasattr(self, '_card_db'):
+                cid_r = c.get("id", "").replace("CARD.", "")
+                rarity = self._card_db.get(cid_r, self._card_db.get(name, {})).get("rarity", "").lower()
+            if not rarity and hasattr(self, '_card_rarity_map'):
+                rarity = self._card_rarity_map.get(name, "").lower()
+            if upg:
+                name_color = UPGRADED_COLOR
+            elif rarity in RARITY_COLOR:
+                name_color = RARITY_COLOR[rarity]
+            else:
+                name_color = "var(--text)"
+            return name, upg, desc, ctype, cost, name_color
+
+        def _render_card_item(c, name, upg, desc, ctype, cost, name_color, show_type=False):
+            """Render a single card-item div. Single line: name + cost. Hover shows desc."""
+            hint = desc or CARD_DICT.get(name, "")
+            title_attr = f' data-desc="{html.escape(hint)}"' if hint else ""
+            cost_str = f"{cost}费" if cost != "?" else ""
+            type_cn = TYPE_CN.get(ctype, "") if show_type else ""
+            if type_cn and cost_str:
+                cost_str = f"{cost_str} · {type_cn}"
+            elif type_cn:
+                cost_str = type_cn
+            return (
+                f'<div class="card-item"{title_attr}>'
+                f'<span class="card-name" style="color:{name_color}">{html.escape(name)}{html.escape(upg)}</span>'
+                f' <span class="card-cost">{cost_str}</span>'
+                f'<div class="card-desc">{html.escape(hint[:40]) if hint else ""}</div>'
+                f'</div>'
+            )
 
         if rewards:
-            parts.append('<div class="card-grid">')
-            for c in rewards:
-                name = c.get("name", "?")
-                upg  = "+" if c.get("is_upgraded") else ""
-                hint_text = CARD_DICT.get(name, c.get("description", "")[:40])
-
-                ctype = (c.get("type") or c.get("card_type") or "").lower()
-                cost = "?"
-                if hasattr(self, '_card_db'):
-                    db = self._card_db.get(name, {})
-                    if not ctype:
-                        ctype = db.get("type", "").lower()
-                    cost = db.get("cost", "?")
-                type_cn = TYPE_CN.get(ctype, "")
-
-                parts.append('<div class="card-item">')
-                parts.append(f'<div class="card-name">{html.escape(name)}{html.escape(upg)}</div>')
-                cost_type = f"{cost}费"
-                if type_cn:
-                    cost_type += f" · {type_cn}"
-                parts.append(f'<div class="card-cost">{html.escape(cost_type)}</div>')
-                if hint_text:
-                    parts.append(f'<div class="card-desc">{html.escape(hint_text)}</div>')
+            if is_removal:
+                # Group by type with colored headers (like deck display)
+                TYPE_ORDER = ["attack", "skill", "power"]
+                grouped = {}
+                for c in rewards:
+                    _, _, _, ctype, _, _ = _enrich_card(c)
+                    grouped.setdefault(ctype, []).append(c)
+                for ct in TYPE_ORDER:
+                    cards_in_type = grouped.pop(ct, [])
+                    if not cards_in_type:
+                        continue
+                    label, color = TYPE_LABEL_COLOR.get(ct, ("其他", "var(--dim)"))
+                    parts.append(f'<div style="font-size:11px;color:{color};font-weight:600;margin:8px 0 4px;">{label} ({len(cards_in_type)})</div>')
+                    parts.append('<div class="card-grid">')
+                    for c in cards_in_type:
+                        parts.append(_render_card_item(c, *_enrich_card(c)))
+                    parts.append('</div>')
+                # Remaining types (curse, status, other)
+                for ct, cards_in_type in grouped.items():
+                    if not cards_in_type:
+                        continue
+                    label = TYPE_CN.get(ct, ct)
+                    parts.append(f'<div style="font-size:11px;color:var(--dim);font-weight:600;margin:8px 0 4px;">{label} ({len(cards_in_type)})</div>')
+                    parts.append('<div class="card-grid">')
+                    for c in cards_in_type:
+                        parts.append(_render_card_item(c, *_enrich_card(c)))
+                    parts.append('</div>')
+            else:
+                # Flat grid for post-battle reward (typically only 3 cards) — show type since not grouped
+                parts.append('<div class="card-grid">')
+                for c in rewards:
+                    n, u, d, ct, co, nc = _enrich_card(c)
+                    parts.append(_render_card_item(c, n, u, d, ct, co, nc, show_type=True))
                 parts.append('</div>')
-            parts.append('</div>')
         else:
             parts.append('<div class="textbox"><span class="dim">（无可选牌，可跳过）</span></div>')
 
@@ -508,9 +613,24 @@ class DisplayMixin:
         parts.append(f'  <span class="dim">金币: </span>')
         parts.append(f'<span style="font-weight:600">{html.escape(str(gold))}</span><br><br>')
 
+        # Card name color by rarity — matches in-game border colors
+        RARITY_COLOR_S = {
+            "basic": "var(--dim)",
+            "common": "var(--text)",
+            "uncommon": "var(--block)",
+            "rare": "var(--gold)",
+        }
+        UPGRADED_COLOR_S = "var(--buff)"
+        SHOP_TYPE_LABEL_COLOR = {
+            "attack": ("攻击", "var(--hp)"),
+            "skill": ("技能", "var(--block)"),
+            "power": ("能力", "var(--buff)"),
+        }
+
         if cards:
             parts.append('<div class="section-title">卡牌</div>')
-            parts.append('<div class="card-grid">')
+            # Enrich cards with type info for grouping
+            enriched = []
             for c in cards:
                 name = c.get("card_name", "?")
                 cost = c.get("cost", "?")
@@ -523,24 +643,79 @@ class DisplayMixin:
                     if not ctype:
                         ctype = db.get("type", "").lower()
                     card_cost = db.get("cost", "?")
-                type_cn = TYPE_CN.get(ctype, "")
 
-                parts.append('<div class="card-item">')
-                parts.append(f'<div class="card-name">{html.escape(name)}</div>')
-                cost_type = f"{card_cost}费"
-                if type_cn:
-                    cost_type += f" · {type_cn}"
-                parts.append(f'<div class="card-cost">{html.escape(cost_type)}</div>')
-                if hint_text:
-                    parts.append(f'<div class="card-desc">{html.escape(hint_text)}</div>')
-                price_str = f"{cost}金"
-                if c.get("on_sale"):
-                    price_str += " 折扣"
-                if not c.get("can_afford", True):
-                    price_str += " 买不起"
-                parts.append(f'<div class="card-price">{html.escape(price_str)}</div>')
+                rarity = (c.get("rarity") or "").lower()
+                if not rarity and hasattr(self, '_card_db'):
+                    rarity = self._card_db.get(name, {}).get("rarity", "").lower()
+                if not rarity and hasattr(self, '_card_rarity_map'):
+                    rarity = self._card_rarity_map.get(name, "").lower()
+                is_upg = "+" in name
+                if is_upg:
+                    name_color_s = UPGRADED_COLOR_S
+                elif rarity in RARITY_COLOR_S:
+                    name_color_s = RARITY_COLOR_S[rarity]
+                else:
+                    name_color_s = "var(--text)"
+
+                enriched.append((c, name, ctype, card_cost, hint_text, cost, name_color_s))
+
+            # Group by type with colored headers
+            SHOP_TYPE_ORDER = ["attack", "skill", "power"]
+            grouped_shop = {}
+            for item in enriched:
+                ct = item[2]  # ctype
+                grouped_shop.setdefault(ct, []).append(item)
+
+            for ct in SHOP_TYPE_ORDER:
+                items_in_type = grouped_shop.pop(ct, [])
+                if not items_in_type:
+                    continue
+                label, color = SHOP_TYPE_LABEL_COLOR.get(ct, ("其他", "var(--dim)"))
+                parts.append(f'<div style="font-size:11px;color:{color};font-weight:600;margin:8px 0 4px;">{label} ({len(items_in_type)})</div>')
+                parts.append('<div class="card-grid">')
+                for c, name, ctype, card_cost, hint_text, cost, name_color_s in items_in_type:
+                    type_cn = TYPE_CN.get(ctype, "")
+                    parts.append('<div class="card-item">')
+                    parts.append(f'<div class="card-name" style="color:{name_color_s}">{html.escape(name)}</div>')
+                    cost_type = f"{card_cost}费"
+                    if type_cn:
+                        cost_type += f" · {type_cn}"
+                    parts.append(f'<div class="card-cost">{html.escape(cost_type)}</div>')
+                    if hint_text:
+                        parts.append(f'<div class="card-desc">{html.escape(hint_text)}</div>')
+                    price_str = f"{cost}金"
+                    if c.get("on_sale"):
+                        price_str += " 折扣"
+                    if not c.get("can_afford", True):
+                        price_str += " 买不起"
+                    parts.append(f'<div class="card-price">{html.escape(price_str)}</div>')
+                    parts.append('</div>')
                 parts.append('</div>')
-            parts.append('</div>')
+            # Remaining types
+            for ct, items_in_type in grouped_shop.items():
+                if not items_in_type:
+                    continue
+                label = TYPE_CN.get(ct, ct)
+                parts.append(f'<div style="font-size:11px;color:var(--dim);font-weight:600;margin:8px 0 4px;">{label} ({len(items_in_type)})</div>')
+                parts.append('<div class="card-grid">')
+                for c, name, ctype, card_cost, hint_text, cost, name_color_s in items_in_type:
+                    type_cn = TYPE_CN.get(ctype, "")
+                    parts.append('<div class="card-item">')
+                    parts.append(f'<div class="card-name" style="color:{name_color_s}">{html.escape(name)}</div>')
+                    cost_type = f"{card_cost}费"
+                    if type_cn:
+                        cost_type += f" · {type_cn}"
+                    parts.append(f'<div class="card-cost">{html.escape(cost_type)}</div>')
+                    if hint_text:
+                        parts.append(f'<div class="card-desc">{html.escape(hint_text)}</div>')
+                    price_str = f"{cost}金"
+                    if c.get("on_sale"):
+                        price_str += " 折扣"
+                    if not c.get("can_afford", True):
+                        price_str += " 买不起"
+                    parts.append(f'<div class="card-price">{html.escape(price_str)}</div>')
+                    parts.append('</div>')
+                parts.append('</div>')
 
         if relics:
             parts.append('<div class="section-title">遗物</div>')

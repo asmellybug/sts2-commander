@@ -286,7 +286,7 @@ class AIAdvisorMixin:
         if self._system_prompt_cache:
             cmd += ["--system-prompt", self._system_prompt_cache]
         try:
-            r = subprocess.run(cmd, input=prompt, capture_output=True, text=True, timeout=45)
+            r = subprocess.run(cmd, input=prompt, capture_output=True, text=True, timeout=60)
         except FileNotFoundError:
             raise RuntimeError(f"LLM 无法执行：{LLM_CLI}")
         except subprocess.TimeoutExpired:
@@ -1421,7 +1421,9 @@ class AIAdvisorMixin:
 
     def _ai_card(self, state):
         self._busy_strat = True
-        self._show_analyzing("⏳  分析选牌中…")
+        stype = state.get("state_type", "")
+        is_removal = stype == "card_select"
+        self._show_analyzing("⏳  分析移除中…" if is_removal else "⏳  分析选牌中…")
         try:
             player  = self._get_player(state)
             cr      = state.get("card_reward") or state.get("card_select") or {}
@@ -1438,10 +1440,33 @@ class AIAdvisorMixin:
                 for i, c in enumerate(rewards)) or "  （无可选牌，可跳过）"
 
             char = player.get('character', '?')
-            # 智能上下文（0 token查表）
             smart_ctx = self._build_context("card_reward")
 
-            prompt = f"""杀戮尖塔2选牌建议。纯文字，不用markdown。所有牌名遗物名用中文。极简输出。
+            if is_removal:
+                event_ctx = getattr(self, '_card_select_from_event', None)
+                event_hint = ""
+                if event_ctx:
+                    event_hint = f"\n触发来源：事件「{event_ctx.get('event_name', '?')}」的移除卡牌选项。"
+
+                # Detect how many cards to remove
+                remove_count = cr.get("remove_count", cr.get("num_cards",
+                               cr.get("max_cards", cr.get("count", 2))))
+                # If we can't detect, default to 2 for events (most common), 1 for shops
+                if remove_count <= 1 and event_ctx:
+                    remove_count = 2
+
+                prompt = f"""杀戮尖塔2移除卡牌。只能删{remove_count}张。直接说删哪{remove_count}张。纯文字，中文牌名。
+{event_hint}
+{char} 幕{run.get('act')}层{run.get('floor')}  {arch_hint}
+
+可移除的牌：
+{cards_str}
+
+只输出{remove_count}行，每行一张要删的牌：
+★ 牌名 — 一句话理由
+💡 一句话总结"""
+            else:
+                prompt = f"""杀戮尖塔2选牌建议。纯文字，不用markdown。所有牌名遗物名用中文。极简输出。
 
 {smart_ctx}
 
@@ -1452,17 +1477,15 @@ class AIAdvisorMixin:
 {cards_str}
 
 格式（每行一条，不要多余解释）：
-★ [序号]牌名 — 一句话理由
-○ [序号]牌名 — 一句话理由
-✗ [序号]牌名 — 一句话理由
+★ 牌名 — 一句话理由（推荐拿的）
+○ 牌名 — 一句话理由（可以考虑的）
+✗ 牌名 — 一句话理由（不推荐的）
 方向：一句话当前流派+缺什么"""
 
             advice = self._ask_llm(prompt)
 
             if not self._analysis_stale():
-                full_text = (f"── 选牌分析 ──────────────\n\n"
-                             f"奖励牌：\n{cards_str}\n\n"
-                             + advice)
+                full_text = advice
                 self._push_advice(full_text)
 
                 # 同步更新卡组构建区方向摘要
@@ -1568,8 +1591,7 @@ class AIAdvisorMixin:
 删牌建议：（如果有删牌服务）"""
                 advice = self._ask_llm(prompt)
                 if not self._analysis_stale():
-                    advice_html = self._render_formatted_html(advice)
-                    self._js(f'app.updateAdvice({json.dumps(advice_html)})')
+                    self._push_advice(advice)
                     self._js('app.setTab("situation")')
                 return
             else:  # treasure
@@ -1577,8 +1599,7 @@ class AIAdvisorMixin:
 
             advice = self._ask_llm(prompt)
             if not self._analysis_stale():
-                advice_html = self._render_formatted_html(advice)
-                self._js(f'app.updateAdvice({json.dumps(advice_html)})')
+                self._push_advice(advice)
                 self._js('app.setTab("situation")')
         except Exception as e:
             if not self._analysis_stale():
@@ -1721,12 +1742,9 @@ class AIAdvisorMixin:
             removed = ", ".join(self.deck_removed) if self.deck_removed else "无"
             current_arch = self._deck_archetype or "未确定"
 
-            # 智能上下文构建（0 token查表）
             smart_ctx = self._build_context("deck")
-
-            # 历史教训
             lessons = self._get_relevant_lessons(char)
-            trend = self._get_player_trend()
+            trend = ""  # Skip trend to save tokens
 
             # 本局路线摘要
             route_summary = []
@@ -1741,8 +1759,8 @@ class AIAdvisorMixin:
                     route_summary.append(f"第{entry.get('floor','')}层战斗 vs {enemies} (损{hp_loss}HP)")
             route_text = "\n".join(route_summary) if route_summary else "刚开局"
 
-            prompt = f"""你是杀戮尖塔2卡组构建顾问。纯文字，不用markdown符号。所有牌名遗物名用中文。简洁扼要。
-【重要】所有牌名/遗物名必须用中文，禁止输出英文ID。
+            prompt = f"""你是杀戮尖塔2卡组构建顾问。纯文字，不用markdown符号。简洁扼要。
+【严禁英文】所有牌名、遗物名、角色名必须用中文，不许出现任何英文ID或英文括号注释。违反此规则的输出无效。
 
 {smart_ctx}
 {lessons}
@@ -1854,8 +1872,7 @@ class AIAdvisorMixin:
 请结合策略知识和当前游戏状态给出针对性的回答。简洁实用。"""
 
             answer = self._ask_llm(prompt)
-            full_text = (f"── 提问 ──────────────────────────────\n"
-                         f"❓ {question}\n\n{answer}")
+            full_text = f"❓ {question}\n\n{answer}"
             answer_html = self._render_formatted_html(full_text)
             self._js(f'app.updateScene({{type:"html",html:{json.dumps(answer_html)}}})')
             self._js('app.setTab("situation")')

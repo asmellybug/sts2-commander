@@ -244,58 +244,95 @@ class DataMixin:
 
         if api_deck:
             total = len(api_deck)
-            arch_label = _html.escape(self._deck_archetype) if self._deck_archetype else ""
+            # Only show archetype if player has picked cards (not initial deck)
+            arch_label = ""
+            if self._deck_archetype and self.deck_acquired:
+                arch_label = _html.escape(self._deck_archetype)
             if arch_label:
                 title = f'卡组一览 — {arch_label} ({total}张)'
             else:
                 title = f'卡组一览 ({total}张)'
 
-            html_parts = [f'<div class="section-title">{title}</div>']
-            html_parts.append('<div class="deck-grid">')
-
+            # Group cards by type
+            TYPE_ORDER = ["attack", "skill", "power", "curse", "status", "other"]
+            TYPE_LABEL_COLOR = {
+                "attack": ("攻击", "var(--hp)"),
+                "skill": ("技能", "var(--block)"),
+                "power": ("能力", "var(--buff)"),
+                "curse": ("诅咒", "var(--debuff)"),
+                "status": ("状态", "var(--dim)"),
+                "other": ("其他", "var(--dim)"),
+            }
+            grouped = {}
             for c in api_deck:
-                name = fmt_card_name(c)
-                is_upgraded = bool(c.get("is_upgraded") or c.get("upgraded") or c.get("upgrades", 0) > 0)
-                card_type = get_card_type(c)
-                rarity = get_card_rarity(c)
+                ct = get_card_type(c)
+                grouped.setdefault(ct, []).append(c)
 
-                # Display name with + suffix for upgraded
-                display_name = _html.escape(name + ("+" if is_upgraded else ""))
+            html_parts = [f'<div class="section-title">{title}</div>']
 
-                # Name color: upgraded → gold, rare → accent, default → accent2 (from .dc-name CSS)
-                if is_upgraded:
-                    name_style = ' style="color:var(--gold);"'
-                elif rarity == "rare":
-                    name_style = ' style="color:var(--accent);"'
-                else:
-                    name_style = ''
+            for ct in TYPE_ORDER:
+                cards_in_type = grouped.get(ct, [])
+                if not cards_in_type:
+                    continue
+                label, color = TYPE_LABEL_COLOR.get(ct, ("其他", "var(--dim)"))
+                html_parts.append(f'<div style="font-size:11px;color:{color};font-weight:600;margin:8px 0 4px;">{label} ({len(cards_in_type)})</div>')
+                html_parts.append('<div class="deck-grid">')
 
-                # Cost
-                cost = c.get("cost")
-                if cost is None and hasattr(self, '_card_db'):
-                    cid = c.get("id", "").replace("CARD.", "")
-                    db_entry = self._card_db.get(cid, {})
-                    cost = db_entry.get("cost", "?")
-                elif cost is None:
-                    cost = "?"
+                for c in cards_in_type:
+                    name = fmt_card_name(c)
+                    is_upgraded = bool(c.get("is_upgraded") or c.get("upgraded") or c.get("upgrades", 0) > 0)
+                    rarity = get_card_rarity(c)
 
-                # Type line: 类型 · 费用 N · 稀有度/已升级
-                type_cn = TYPE_CN.get(card_type, "其他")
-                if is_upgraded:
-                    rarity_text = "已升级"
-                else:
-                    rarity_text = RARITY_CN.get(rarity, rarity if rarity else "普通")
+                    display_name = _html.escape(name + ("+" if is_upgraded else ""))
 
-                type_line = f'{type_cn} &middot; 费用 {cost} &middot; {rarity_text}'
+                    # Card name color by rarity — matches in-game border colors
+                    RARITY_COLOR = {
+                        "basic": "var(--dim)",       # gray, unimportant
+                        "common": "var(--text)",     # white/default
+                        "uncommon": "var(--block)",  # blue
+                        "rare": "var(--gold)",       # gold
+                    }
+                    UPGRADED_COLOR = "var(--buff)"   # green
+                    if is_upgraded:
+                        name_style = f' style="color:{UPGRADED_COLOR};"'
+                    elif rarity in RARITY_COLOR:
+                        name_style = f' style="color:{RARITY_COLOR[rarity]};"'
+                    else:
+                        name_style = ''
 
-                html_parts.append(
-                    f'<div class="deck-card">'
-                    f'<div class="dc-name"{name_style}>{display_name}</div>'
-                    f'<div class="dc-type">{type_line}</div>'
-                    f'</div>'
-                )
+                    cost = c.get("cost")
+                    if cost is None and hasattr(self, '_card_db'):
+                        cid = c.get("id", "").replace("CARD.", "")
+                        db_entry = self._card_db.get(cid, {})
+                        cost = db_entry.get("cost", "?")
+                    elif cost is None:
+                        cost = "?"
 
-            html_parts.append('</div>')
+                    if is_upgraded:
+                        rarity_text = "已升级"
+                    else:
+                        rarity_text = RARITY_CN.get(rarity, rarity if rarity else "普通")
+
+                    # Get description for hover
+                    desc = c.get("description", "")
+                    if not desc:
+                        cid_d = c.get("id", "").replace("CARD.", "")
+                        desc = self._card_db.get(cid_d, {}).get("description", "")
+                    if not desc:
+                        from overlay.constants import CARD_DICT
+                        desc = CARD_DICT.get(name, "")
+
+                    # Single line: name + cost. Hover shows desc via CSS tooltip
+                    desc_attr = f' data-desc="{_html.escape(desc)}"' if desc else ""
+                    html_parts.append(
+                        f'<div class="deck-card"{desc_attr}>'
+                        f'<span class="dc-name"{name_style}>{display_name}</span>'
+                        f' <span style="color:var(--gold);font-size:10px">{cost}费</span>'
+                        f'</div>'
+                    )
+
+                html_parts.append('</div>')
+
             deck_html = "".join(html_parts)
             self._js(f'app.updateDeckList({json.dumps(deck_html)})')
             return

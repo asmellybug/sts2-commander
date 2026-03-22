@@ -150,17 +150,34 @@
 
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
-    gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 6px;
     margin-bottom: 10px;
   }
   .card-item {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 6px;
-    padding: 8px 10px;
-    font-size: 12px;
+    padding: 4px 8px;
+    font-size: 11px;
+    overflow: hidden;
+    transition: all 0.15s;
+    cursor: default;
+    position: relative;
   }
+  .card-item:hover {
+    border-color: var(--gold);
+    box-shadow: 0 0 8px rgba(212, 168, 64, 0.2);
+    transform: translateY(-2px);
+  }
+  .card-item .card-desc {
+    display: none;
+  }
+  .card-item:hover .card-desc {
+    display: block;
+    margin-top: 2px;
+  }
+  /* tooltip handled by generic [data-desc] rule */
   .card-item .card-name {
     color: var(--accent2);
     font-weight: 600;
@@ -172,8 +189,11 @@
   }
   .card-item .card-desc {
     color: var(--dim);
-    font-size: 11px;
-    margin-top: 3px;
+    font-size: 10px;
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .card-item .card-price {
     color: var(--gold);
@@ -368,7 +388,7 @@
 
   .deck-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 6px;
     margin-bottom: 10px;
   }
@@ -376,9 +396,18 @@
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 5px;
-    padding: 4px 7px;
+    padding: 3px 7px;
     font-size: 11px;
+    transition: all 0.15s;
+    cursor: default;
+    position: relative;
   }
+  .deck-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 0 8px rgba(212, 168, 64, 0.2);
+    transform: translateY(-2px);
+  }
+  /* tooltip handled by generic [data-desc] rule */
   .deck-card .dc-name {
     color: var(--accent2);
     font-weight: 600;
@@ -386,6 +415,10 @@
   .deck-card .dc-type {
     color: var(--dim);
     font-size: 11px;
+  }
+  .deck-card.recommended {
+    border-color: var(--gold);
+    box-shadow: 0 0 8px rgba(212, 168, 64, 0.2);
   }
 
   .timeline-item {
@@ -413,6 +446,30 @@
     flex: 1;
   }
   .tl-text .dim { color: var(--dim); }
+
+  /* Inline card tooltip (for AI advice text) */
+  [data-desc] {
+    position: relative;
+  }
+  [data-desc]:hover::after {
+    content: attr(data-desc);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background: #1a1030;
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: normal;
+    color: var(--text);
+    white-space: normal;
+    width: max-content;
+    max-width: 220px;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    pointer-events: none;
+  }
 
   .stats-grid {
     display: grid;
@@ -573,22 +630,40 @@ var app = {
   },
 
   highlightOption: function(optionName) {
-    // Find option-block whose option-label contains optionName, add gold border + star
-    var blocks = document.querySelectorAll('.option-block');
-    blocks.forEach(function(b) {
-      b.classList.remove('recommended');
+    if (!optionName) return;
+    var name = optionName.trim().replace(/\+$/, '');  // Remove trailing +
+    // Highlight option blocks (events)
+    document.querySelectorAll('.option-block').forEach(function(b) {
       var label = b.querySelector('.option-label');
-      if (label) {
-        // Remove existing stars
-        label.textContent = label.textContent.replace(/ ★$/, '');
+      if (label && label.textContent.indexOf(name) >= 0) {
+        b.classList.add('recommended');
+        if (!label.textContent.endsWith(' ★')) label.textContent += ' ★';
       }
     });
-    if (!optionName) return;
-    blocks.forEach(function(b) {
-      var label = b.querySelector('.option-label');
-      if (label && label.textContent.indexOf(optionName) >= 0) {
-        b.classList.add('recommended');
-        label.textContent = label.textContent + ' ★';
+    // Highlight card items — match FIRST card with exact name (one at a time)
+    var matched = false;
+    document.querySelectorAll('.card-item:not(.recommended)').forEach(function(b) {
+      if (matched) return;
+      var el = b.querySelector('.card-name');
+      if (el) {
+        var cardText = el.textContent.trim().replace(/\+$/, '');
+        if (cardText === name) {
+          b.classList.add('recommended');
+          matched = true;
+        }
+      }
+    });
+    // Highlight deck cards — same logic
+    matched = false;
+    document.querySelectorAll('.deck-card:not(.recommended)').forEach(function(b) {
+      if (matched) return;
+      var el = b.querySelector('.dc-name');
+      if (el) {
+        var cardText = el.textContent.trim().replace(/\+$/, '');
+        if (cardText === name) {
+          b.classList.add('recommended');
+          matched = true;
+        }
       }
     });
   },
@@ -610,6 +685,13 @@ var app = {
     }
   }
 };
+
+// Tooltip for any element with data-desc
+document.addEventListener('mouseover', function(e) {
+  var el = e.target.closest('[data-desc]');
+  if (!el) return;
+  // CSS handles ::after tooltip, no JS needed
+});
 
 function renderCombat(data) { return data.html || ''; }
 function renderEvent(data) { return data.html || ''; }
