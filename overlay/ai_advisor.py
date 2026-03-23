@@ -987,11 +987,13 @@ class AIAdvisorMixin:
         # Re-render scene to clear old highlights
         self._display_card_reward(state)
         try:
-            player  = self._get_player(state)
+            player  = self._get_player(state) or self.last_player or {}
             cr      = state.get("card_reward") or state.get("card_select") or {}
             rewards = cr.get("cards", [])
-            run     = state.get("run", {})
-            relics  = ', '.join(r['name'] for r in player.get('relics', [])) or '无'
+            run     = state.get("run", {}) or self.last_run or {}
+            # Relics may not be in current scene's player — fallback to cached
+            p_relics = player.get('relics') or self.last_player.get('relics', [])
+            relics  = ', '.join(r['name'] for r in p_relics) or '无'
             deck_info = f"已选牌：{', '.join(self.deck_acquired)}" if self.deck_acquired else "初始牌组"
             removed   = f"已移除：{', '.join(self.deck_removed)}" if self.deck_removed else ""
             arch_hint = f"期望流派：{self._deck_archetype}" if self._deck_archetype else ""

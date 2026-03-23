@@ -327,7 +327,7 @@ class STS2Commander(DisplayMixin, AIAdvisorMixin, HistoryMixin, DataMixin):
         asc   = run.get("ascension", 0)
 
         asc_str = f" A{asc}" if asc else ""
-        relics = len(p.get("relics", []))
+        relics = len(p.get("relics") or self.last_player.get("relics", []))
 
         header_data = {
             "char": f"{char}{asc_str}",
