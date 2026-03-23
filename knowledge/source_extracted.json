@@ -1,0 +1,6012 @@
+{
+  "cards": {
+    "Abrasive": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Accelerant": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Accuracy": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Acrobatics": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "AdaptiveStrike": {
+      "source_desc": "2费 18伤",
+      "damage": 18,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "Adrenaline": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Afterimage": {
+      "source_desc": "1费 [固有]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "Afterlife": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Aggression": {
+      "source_desc": "1费 [固有]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "Alchemize": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Alignment": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "AllForOne": {
+      "source_desc": "2费 10伤",
+      "damage": 10,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "Anger": {
+      "source_desc": "0费 6伤",
+      "damage": 6,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Anointed": {
+      "source_desc": "1费 [消耗/保留]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust",
+        "retain"
+      ]
+    },
+    "Anticipate": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Apotheosis": {
+      "source_desc": "2费 [消耗/固有]",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "ancient",
+      "mechanics": [
+        "exhaust",
+        "innate"
+      ]
+    },
+    "Apparition": {
+      "source_desc": "1费 [消耗/虚无]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "ancient",
+      "mechanics": [
+        "exhaust",
+        "ethereal"
+      ]
+    },
+    "Armaments": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Arsenal": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "AscendersBane": {
+      "source_desc": "[虚无]",
+      "rarity": "curse",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "AshenStrike": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Assassinate": {
+      "source_desc": "0费 10伤 [消耗/固有]",
+      "damage": 10,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust",
+        "innate"
+      ]
+    },
+    "AstralPulse": {
+      "source_desc": "0费 14伤 [AOE]",
+      "damage": 14,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "Automation": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Backflip": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Backstab": {
+      "source_desc": "0费 11伤 [消耗/固有]",
+      "damage": 11,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust",
+        "innate"
+      ]
+    },
+    "BallLightning": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "BansheesCry": {
+      "source_desc": "6费 33伤 [虚无/AOE]",
+      "damage": 33,
+      "cost": 6,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "ethereal",
+        "aoe"
+      ]
+    },
+    "Barrage": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Barricade": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Bash": {
+      "source_desc": "2费 8伤",
+      "damage": 8,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "basic"
+    },
+    "BattleTrance": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "BeaconOfHope": {
+      "source_desc": "1费 [固有]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "BeamCell": {
+      "source_desc": "0费 3伤",
+      "damage": 3,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "BeatDown": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "BeatIntoShape": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "Beckon": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "status",
+      "rarity": "status"
+    },
+    "Begone": {
+      "source_desc": "1费 4伤",
+      "damage": 4,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "BelieveInYou": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "BiasedCognition": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "ancient"
+    },
+    "BigBang": {
+      "source_desc": "0费 [消耗/固有]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust",
+        "innate"
+      ]
+    },
+    "BlackHole": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "BladeDance": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "BladeOfInk": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "BlightStrike": {
+      "source_desc": "1费 8伤",
+      "damage": 8,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "BloodWall": {
+      "source_desc": "2费 16伤",
+      "damage": 16,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Bloodletting": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Bludgeon": {
+      "source_desc": "3费 32伤",
+      "damage": 32,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Blur": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "BodySlam": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Bodyguard": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "basic"
+    },
+    "Bolas": {
+      "source_desc": "0费 3伤",
+      "damage": 3,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "Bombardment": {
+      "source_desc": "3费 18伤 [消耗]",
+      "damage": 18,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "BoneShards": {
+      "source_desc": "1费 9伤 [Osty攻击/AOE]",
+      "damage": 9,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "osty_attack",
+        "aoe"
+      ]
+    },
+    "BoostAway": {
+      "source_desc": "0费 6伤",
+      "damage": 6,
+      "cost": 0,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "BootSequence": {
+      "source_desc": "0费 10伤 [消耗/固有]",
+      "damage": 10,
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust",
+        "innate"
+      ]
+    },
+    "BorrowedTime": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "BouncingFlask": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon",
+      "hits": 3
+    },
+    "Brand": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Break": {
+      "source_desc": "2费 20伤",
+      "damage": 20,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "ancient"
+    },
+    "Breakthrough": {
+      "source_desc": "1费 9伤 [AOE]",
+      "damage": 9,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "BrightestFlame": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "ancient"
+    },
+    "BubbleBubble": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Buffer": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "BulkUp": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "BulletTime": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "Bully": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Bulwark": {
+      "source_desc": "2费 13伤",
+      "damage": 13,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "BundleOfJoy": {
+      "source_desc": "2费 [消耗]",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "BurningPact": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Burst": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "Bury": {
+      "source_desc": "4费 52伤",
+      "damage": 52,
+      "cost": 4,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "ByrdSwoop": {
+      "source_desc": "0费 14伤",
+      "damage": 14,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "event"
+    },
+    "Calamity": {
+      "source_desc": "3费 [灾厄]",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "calamity"
+      ]
+    },
+    "Calcify": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "CalculatedGamble": {
+      "source_desc": "0费 [消耗/保留]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust",
+        "retain"
+      ]
+    },
+    "CallOfTheVoid": {
+      "source_desc": "1费 [虚无/固有]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "ethereal",
+        "innate"
+      ]
+    },
+    "Caltrops": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "event"
+    },
+    "Capacitor": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon",
+      "hits": 2
+    },
+    "CaptureSpirit": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Cascade": {
+      "source_desc": "[消耗]",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Catastrophe": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "CelestialMight": {
+      "source_desc": "2费 6x3伤",
+      "damage": 6,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "common",
+      "hits": 3
+    },
+    "Chaos": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "hits": 1
+    },
+    "Charge": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "ChargeBattery": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "ChildOfTheStars": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Chill": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Cinder": {
+      "source_desc": "2费 17伤 [消耗]",
+      "damage": 17,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Clash": {
+      "source_desc": "0费 14伤",
+      "damage": 14,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "event"
+    },
+    "Claw": {
+      "source_desc": "0费 3伤",
+      "damage": 3,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Cleanse": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "CloakAndDagger": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "CloakOfStars": {
+      "source_desc": "0费 7伤",
+      "damage": 7,
+      "cost": 0,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Clumsy": {
+      "source_desc": "[虚无]",
+      "rarity": "curse",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "ColdSnap": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "CollisionCourse": {
+      "source_desc": "0费 9伤",
+      "damage": 9,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Colossus": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "Comet": {
+      "source_desc": "0费 33伤",
+      "damage": 33,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "Compact": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "CompileDriver": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Conflagration": {
+      "source_desc": "1费 [AOE]",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "Conqueror": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "ConsumingShadow": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare",
+      "hits": 2
+    },
+    "Convergence": {
+      "source_desc": "1费 [保留]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "Coolant": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Coolheaded": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Coordinate": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "CorrosiveWave": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "Corruption": {
+      "source_desc": "3费 [消耗]",
+      "cost": 3,
+      "type": "power",
+      "rarity": "ancient",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "CosmicIndifference": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Countdown": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "CrashLanding": {
+      "source_desc": "1费 21伤 [AOE]",
+      "damage": 21,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "CreativeAi": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "CrescentSpear": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "CrimsonMantle": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Cruelty": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "CrushUnder": {
+      "source_desc": "1费 7伤 [AOE]",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "DaggerSpray": {
+      "source_desc": "1费 4伤 [AOE]",
+      "damage": 4,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "DaggerThrow": {
+      "source_desc": "1费 9伤",
+      "damage": 9,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "DanseMacabre": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "DarkEmbrace": {
+      "source_desc": "2费 [消耗]",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "DarkShackles": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Darkness": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Dash": {
+      "source_desc": "2费 10伤",
+      "damage": 10,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Dazed": {
+      "source_desc": "[虚无]",
+      "rarity": "status",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "DeadlyPoison": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "DeathMarch": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Deathbringer": {
+      "source_desc": "2费 [AOE]",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "DeathsDoor": {
+      "source_desc": "1费 6x2伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "hits": 2
+    },
+    "Debilitate": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Debris": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "status",
+      "rarity": "status",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "DecisionsDecisions": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ],
+      "hits": 3
+    },
+    "DefendDefect": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "basic"
+    },
+    "DefendIronclad": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "basic"
+    },
+    "DefendNecrobinder": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "basic"
+    },
+    "DefendRegent": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "basic"
+    },
+    "DefendSilent": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "basic"
+    },
+    "Defile": {
+      "source_desc": "1费 13伤 [虚无]",
+      "damage": 13,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "Deflect": {
+      "source_desc": "0费 4伤",
+      "damage": 4,
+      "cost": 0,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Defragment": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Defy": {
+      "source_desc": "1费 6伤 [虚无]",
+      "damage": 6,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "Delay": {
+      "source_desc": "2费 11伤",
+      "damage": 11,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Demesne": {
+      "source_desc": "3费 [虚无]",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "DemonForm": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "DemonicShield": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Devastate": {
+      "source_desc": "1费 30伤",
+      "damage": 30,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "DevourLife": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Dirge": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Discovery": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Dismantle": {
+      "source_desc": "1费 8伤",
+      "damage": 8,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Distraction": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "event",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "DodgeAndRoll": {
+      "source_desc": "1费 4伤",
+      "damage": 4,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Dominate": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "DoubleEnergy": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "DrainPower": {
+      "source_desc": "1费 10伤",
+      "damage": 10,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "DramaticEntrance": {
+      "source_desc": "0费 11伤 [消耗/固有/AOE]",
+      "damage": 11,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust",
+        "innate",
+        "aoe"
+      ]
+    },
+    "Dredge": {
+      "source_desc": "1费 [消耗/保留]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust",
+        "retain"
+      ]
+    },
+    "DrumOfBattle": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "power",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "DualWield": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "event"
+    },
+    "Dualcast": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "basic"
+    },
+    "DyingStar": {
+      "source_desc": "1费 9伤 [虚无/AOE]",
+      "damage": 9,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "ethereal",
+        "aoe"
+      ]
+    },
+    "EchoForm": {
+      "source_desc": "3费 [虚无]",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "EchoingSlash": {
+      "source_desc": "1费 10伤 [AOE]",
+      "damage": 10,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "Eidolon": {
+      "source_desc": "2费 [消耗]",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "EndOfDays": {
+      "source_desc": "3费 [AOE]",
+      "cost": 3,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "EnergySurge": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "EnfeeblingTouch": {
+      "source_desc": "1费 [虚无]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "Enlightenment": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "event",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Enthralled": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "curse",
+      "rarity": "curse"
+    },
+    "Entrench": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "event"
+    },
+    "Entropy": {
+      "source_desc": "1费 [固有]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "Envenom": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Equilibrium": {
+      "source_desc": "2费 13伤 [保留]",
+      "damage": 13,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "Eradicate": {
+      "source_desc": "0费 11伤 [保留]",
+      "damage": 11,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "EscapePlan": {
+      "source_desc": "0费 3伤",
+      "damage": 3,
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "EternalArmor": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "EvilEye": {
+      "source_desc": "1费 8伤 [消耗]",
+      "damage": 8,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "ExpectAFight": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Expertise": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Expose": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Exterminate": {
+      "source_desc": "1费 3x4伤 [AOE]",
+      "damage": 3,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "event",
+      "mechanics": [
+        "aoe"
+      ],
+      "hits": 4
+    },
+    "FallingStar": {
+      "source_desc": "0费 7伤",
+      "damage": 7,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "basic"
+    },
+    "FanOfKnives": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Fasten": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Fear": {
+      "source_desc": "1费 7伤 [虚无]",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "Feed": {
+      "source_desc": "1费 10伤 [消耗]",
+      "damage": 10,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "FeedingFrenzy": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "event"
+    },
+    "FeelNoPain": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Feral": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Fetch": {
+      "source_desc": "0费 3伤 [Osty攻击]",
+      "damage": 3,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "osty_attack"
+      ]
+    },
+    "FiendFire": {
+      "source_desc": "2费 7伤 [消耗]",
+      "damage": 7,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "FightMe": {
+      "source_desc": "2费 5x2伤",
+      "damage": 5,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon",
+      "hits": 2
+    },
+    "FightThrough": {
+      "source_desc": "1费 13伤",
+      "damage": 13,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Finesse": {
+      "source_desc": "0费 4伤",
+      "damage": 4,
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Finisher": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Fisticuffs": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "FlakCannon": {
+      "source_desc": "2费 8伤 [消耗]",
+      "damage": 8,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "FlameBarrier": {
+      "source_desc": "2费 12伤",
+      "damage": 12,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Flanking": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "FlashOfSteel": {
+      "source_desc": "0费 5伤",
+      "damage": 5,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Flatten": {
+      "source_desc": "2费 12伤 [Osty攻击]",
+      "damage": 12,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "osty_attack"
+      ]
+    },
+    "Flechettes": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "FlickFlack": {
+      "source_desc": "1费 7伤 [AOE]",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "FocusedStrike": {
+      "source_desc": "1费 9伤",
+      "damage": 9,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "FollowThrough": {
+      "source_desc": "1费 6伤 [AOE]",
+      "damage": 6,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "Folly": {
+      "source_desc": "[固有]",
+      "rarity": "curse",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "Footwork": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "ForbiddenGrimoire": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "ancient"
+    },
+    "ForegoneConclusion": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "ForgottenRitual": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "FranticEscape": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "status",
+      "rarity": "status"
+    },
+    "Friendship": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Ftl": {
+      "source_desc": "0费 5伤",
+      "damage": 5,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Fuel": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "token",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Furnace": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Fusion": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "GammaBlast": {
+      "source_desc": "0费 13伤",
+      "damage": 13,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "GangUp": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "GatherLight": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Genesis": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "GeneticAlgorithm": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "GiantRock": {
+      "source_desc": "1费 16伤",
+      "damage": 16,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "token"
+    },
+    "Glacier": {
+      "source_desc": "2费 6伤",
+      "damage": 6,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Glasswork": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Glimmer": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "GlimpseBeyond": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Glitterstream": {
+      "source_desc": "2费 11伤",
+      "damage": 11,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Glow": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "GoForTheEyes": {
+      "source_desc": "0费 3伤",
+      "damage": 3,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "GoldAxe": {
+      "source_desc": "1费 [保留]",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "GrandFinale": {
+      "source_desc": "0费 50伤 [AOE]",
+      "damage": 50,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "Grapple": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "GraveWarden": {
+      "source_desc": "1费 8伤",
+      "damage": 8,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Graveblast": {
+      "source_desc": "1费 4伤 [消耗]",
+      "damage": 4,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Guards": {
+      "source_desc": "2费 [消耗]",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "GuidingStar": {
+      "source_desc": "1费 12伤",
+      "damage": 12,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "draw"
+      ]
+    },
+    "GunkUp": {
+      "source_desc": "1费 4x3伤",
+      "damage": 4,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "hits": 3
+    },
+    "Hailstorm": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "HammerTime": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "HandOfGreed": {
+      "source_desc": "2费 20伤",
+      "damage": 20,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "HandTrick": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Hang": {
+      "source_desc": "1费 10伤",
+      "damage": 10,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "Haunt": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Havoc": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Haze": {
+      "source_desc": "3费 [AOE]",
+      "cost": 3,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "Headbutt": {
+      "source_desc": "1费 9伤",
+      "damage": 9,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "HeavenlyDrill": {
+      "source_desc": "0费 8伤",
+      "damage": 8,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "Hegemony": {
+      "source_desc": "2费 15伤",
+      "damage": 15,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "HeirloomHammer": {
+      "source_desc": "2费 17伤",
+      "damage": 17,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "rare",
+      "hits": 1
+    },
+    "HelixDrill": {
+      "source_desc": "0费 3伤",
+      "damage": 3,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "HelloWorld": {
+      "source_desc": "1费 [固有]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "event",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "Hellraiser": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Hemokinesis": {
+      "source_desc": "1费 14伤",
+      "damage": 14,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "HiddenCache": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "HiddenDaggers": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "HiddenGem": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "HighFive": {
+      "source_desc": "2费 11伤 [Osty攻击/AOE]",
+      "damage": 11,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "osty_attack",
+        "aoe"
+      ]
+    },
+    "Hologram": {
+      "source_desc": "1费 3伤 [消耗]",
+      "damage": 3,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Hotfix": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "HowlFromBeyond": {
+      "source_desc": "3费 16伤 [消耗/AOE]",
+      "damage": 16,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust",
+        "aoe"
+      ]
+    },
+    "HuddleUp": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Hyperbeam": {
+      "source_desc": "2费 26伤 [AOE]",
+      "damage": 26,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "IAmInvincible": {
+      "source_desc": "1费 9伤 [消耗]",
+      "damage": 9,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "IceLance": {
+      "source_desc": "3费 19x3伤",
+      "damage": 19,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "rare",
+      "hits": 3
+    },
+    "Ignition": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Impatience": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Impervious": {
+      "source_desc": "2费 30伤 [消耗]",
+      "damage": 30,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "InfernalBlade": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Inferno": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "InfiniteBlades": {
+      "source_desc": "1费 [固有]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "Inflame": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Intercept": {
+      "source_desc": "1费 9伤",
+      "damage": 9,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Invoke": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "IronWave": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Iteration": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "JackOfAllTrades": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Jackpot": {
+      "source_desc": "3费 25伤",
+      "damage": 25,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "Juggernaut": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Juggling": {
+      "source_desc": "1费 [固有]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "KinglyKick": {
+      "source_desc": "4费 24伤",
+      "damage": 24,
+      "cost": 4,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "KinglyPunch": {
+      "source_desc": "1费 8伤",
+      "damage": 8,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "KnifeTrap": {
+      "source_desc": "2费 [消耗]",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Knockdown": {
+      "source_desc": "3费 10伤",
+      "damage": 10,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "KnockoutBlow": {
+      "source_desc": "3费 30伤",
+      "damage": 30,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "KnowThyPlace": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "common",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Largesse": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "LeadingStrike": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Leap": {
+      "source_desc": "1费 9伤",
+      "damage": 9,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "LegSweep": {
+      "source_desc": "2费 11伤",
+      "damage": 11,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "LegionOfBone": {
+      "source_desc": "2费 [消耗]",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Lethality": {
+      "source_desc": "1费 [虚无]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "Lift": {
+      "source_desc": "1费 11伤",
+      "damage": 11,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "LightningRod": {
+      "source_desc": "1费 4伤",
+      "damage": 4,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Loop": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Luminesce": {
+      "source_desc": "0费 [消耗/保留]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "token",
+      "mechanics": [
+        "exhaust",
+        "retain"
+      ]
+    },
+    "LunarBlast": {
+      "source_desc": "0费 4伤",
+      "damage": 4,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "MachineLearning": {
+      "source_desc": "1费 [固有]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "MadScience": {
+      "source_desc": "1费 12伤 [固有]",
+      "damage": 12,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "event",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "MakeItSo": {
+      "source_desc": "0费 6伤",
+      "damage": 6,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "Malaise": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Mangle": {
+      "source_desc": "3费 15伤",
+      "damage": 15,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "ManifestAuthority": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "MasterOfStrategy": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "MasterPlanner": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Maul": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "ancient"
+    },
+    "Mayhem": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Melancholy": {
+      "source_desc": "3费 13伤",
+      "damage": 13,
+      "cost": 3,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "MementoMori": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Metamorphosis": {
+      "source_desc": "2费 [消耗]",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "event",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "MeteorShower": {
+      "source_desc": "0费 14伤 [AOE]",
+      "damage": 14,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "ancient",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "MeteorStrike": {
+      "source_desc": "5费 24伤",
+      "damage": 24,
+      "cost": 5,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "Mimic": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "MindBlast": {
+      "source_desc": "1费 [固有]",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "MinionDiveBomb": {
+      "source_desc": "1费 13伤 [消耗]",
+      "damage": 13,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "token",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "MinionSacrifice": {
+      "source_desc": "0费 9伤 [消耗]",
+      "damage": 9,
+      "cost": 0,
+      "type": "skill",
+      "rarity": "token",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "MinionStrike": {
+      "source_desc": "0费 7伤 [消耗]",
+      "damage": 7,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "token",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Mirage": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Misery": {
+      "source_desc": "0费 7伤 [保留]",
+      "damage": 7,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "retain"
+      ],
+      "power_type": "debuff"
+    },
+    "Modded": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "hits": 1
+    },
+    "MoltenFist": {
+      "source_desc": "1费 10伤 [消耗]",
+      "damage": 10,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "MomentumStrike": {
+      "source_desc": "1费 10伤",
+      "damage": 10,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "MonarchsGaze": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Monologue": {
+      "source_desc": "0费 [保留]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "MultiCast": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "Murder": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "NecroMastery": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "NegativePulse": {
+      "source_desc": "1费 5伤 [AOE]",
+      "damage": 5,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "NeowsFury": {
+      "source_desc": "1费 10伤 [消耗]",
+      "damage": 10,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "ancient",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Neurosurge": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Neutralize": {
+      "source_desc": "0费 3伤",
+      "damage": 3,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "basic"
+    },
+    "NeutronAegis": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Nightmare": {
+      "source_desc": "3费 [消耗]",
+      "cost": 3,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "NoEscape": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Nostalgia": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "NoxiousFumes": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Null": {
+      "source_desc": "2费 10伤",
+      "damage": 10,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Oblivion": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "Offering": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Omnislice": {
+      "source_desc": "0费 8伤",
+      "damage": 8,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "OneTwoPunch": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "Orbit": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Outbreak": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon",
+      "hits": 3
+    },
+    "Outmaneuver": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "event"
+    },
+    "Overclock": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "PactsEnd": {
+      "source_desc": "0费 17伤 [消耗/AOE]",
+      "damage": 17,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust",
+        "aoe"
+      ]
+    },
+    "Pagestorm": {
+      "source_desc": "1费 [虚无]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "PaleBlueDot": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Panache": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "PanicButton": {
+      "source_desc": "0费 30伤 [消耗]",
+      "damage": 30,
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Parry": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Parse": {
+      "source_desc": "1费 [虚无]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "ParticleWall": {
+      "source_desc": "0费 9伤",
+      "damage": 9,
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Patter": {
+      "source_desc": "1费 8伤",
+      "damage": 8,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Peck": {
+      "source_desc": "1费 2x3伤",
+      "damage": 2,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "event",
+      "hits": 3
+    },
+    "PerfectedStrike": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "PhantomBlades": {
+      "source_desc": "1费 [保留]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "PhotonCut": {
+      "source_desc": "1费 10伤",
+      "damage": 10,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "PiercingWail": {
+      "source_desc": "1费 [消耗/AOE]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common",
+      "mechanics": [
+        "exhaust",
+        "aoe"
+      ]
+    },
+    "Pillage": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "PillarOfCreation": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Pinpoint": {
+      "source_desc": "3费 17伤",
+      "damage": 17,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "PoisonedStab": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Poke": {
+      "source_desc": "0费 6伤 [Osty攻击]",
+      "damage": 6,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "osty_attack"
+      ]
+    },
+    "PommelStrike": {
+      "source_desc": "1费 9伤",
+      "damage": 9,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "PoorSleep": {
+      "source_desc": "[保留]",
+      "rarity": "curse",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "Pounce": {
+      "source_desc": "2费 12伤",
+      "damage": 12,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "PreciseCut": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Predator": {
+      "source_desc": "2费 15伤 +2抽",
+      "damage": 15,
+      "draw": 2,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "draw"
+      ]
+    },
+    "PrepTime": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Prepared": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "PrimalForce": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "Production": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Prolong": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Prophesize": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Protector": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "ancient"
+    },
+    "Prowess": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "PullAggro": {
+      "source_desc": "2费 7伤",
+      "damage": 7,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "PullFromBelow": {
+      "source_desc": "1费 5伤 [虚无]",
+      "damage": 5,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "Purity": {
+      "source_desc": "0费 [消耗/保留]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust",
+        "retain"
+      ]
+    },
+    "Putrefy": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Pyre": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Quadcast": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "ancient",
+      "hits": 4
+    },
+    "Quasar": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Radiate": {
+      "source_desc": "0费 3伤 [AOE]",
+      "damage": 3,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "Rage": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Rainbow": {
+      "source_desc": "2费 [消耗]",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Rally": {
+      "source_desc": "2费 12伤",
+      "damage": 12,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "Rampage": {
+      "source_desc": "1费 9伤",
+      "damage": 9,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Rattle": {
+      "source_desc": "1费 7伤 [Osty攻击]",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "osty_attack"
+      ]
+    },
+    "Reanimate": {
+      "source_desc": "3费 [消耗]",
+      "cost": 3,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Reap": {
+      "source_desc": "3费 27伤 [保留]",
+      "damage": 27,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "ReaperForm": {
+      "source_desc": "3费 [保留]",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "Reave": {
+      "source_desc": "1费 9伤",
+      "damage": 9,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Reboot": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Rebound": {
+      "source_desc": "1费 9伤",
+      "damage": 9,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "event"
+    },
+    "RefineBlade": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Reflect": {
+      "source_desc": "1费 17伤",
+      "damage": 17,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Reflex": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Refract": {
+      "source_desc": "3费 9x2伤",
+      "damage": 9,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "uncommon",
+      "hits": 2
+    },
+    "Relax": {
+      "source_desc": "3费 15伤 [消耗]",
+      "damage": 15,
+      "cost": 3,
+      "type": "skill",
+      "rarity": "ancient",
+      "mechanics": [
+        "exhaust",
+        "draw"
+      ]
+    },
+    "Rend": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "attack",
+      "rarity": "rare",
+      "power_type": "debuff"
+    },
+    "Resonance": {
+      "source_desc": "1费 [AOE]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "Restlessness": {
+      "source_desc": "0费 [保留]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "Ricochet": {
+      "source_desc": "2费 3x4伤",
+      "damage": 3,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "common",
+      "hits": 4
+    },
+    "RightHandHand": {
+      "source_desc": "0费 4伤 [Osty攻击]",
+      "damage": 4,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "osty_attack"
+      ]
+    },
+    "RipAndTear": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "RocketPunch": {
+      "source_desc": "2费 13伤",
+      "damage": 13,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "RollingBoulder": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "RoyalGamble": {
+      "source_desc": "0费 [消耗/保留]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust",
+        "retain"
+      ]
+    },
+    "Royalties": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Rupture": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Sacrifice": {
+      "source_desc": "1费 [保留]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "Salvo": {
+      "source_desc": "1费 12伤 [保留]",
+      "damage": 12,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "Scavenge": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Scourge": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "Scrape": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Scrawl": {
+      "source_desc": "1费 [消耗/保留]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust",
+        "retain"
+      ]
+    },
+    "SculptingStrike": {
+      "source_desc": "1费 8伤 [虚无]",
+      "damage": 8,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "Seance": {
+      "source_desc": "0费 [虚无]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "SecondWind": {
+      "source_desc": "1费 5伤 [消耗]",
+      "damage": 5,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "SecretTechnique": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "SecretWeapon": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "SeekerStrike": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "SeekingEdge": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "SentryMode": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "SerpentForm": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "SetupStrike": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "SevenStars": {
+      "source_desc": "2费 7x7伤 [AOE]",
+      "damage": 7,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "aoe"
+      ],
+      "hits": 7
+    },
+    "Severance": {
+      "source_desc": "2费 13伤",
+      "damage": 13,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "ShadowShield": {
+      "source_desc": "2费 11伤",
+      "damage": 11,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "ShadowStep": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "Shadowmeld": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "SharedFate": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Shatter": {
+      "source_desc": "1费 11伤 [AOE]",
+      "damage": 11,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "ShiningStrike": {
+      "source_desc": "1费 8伤 [消耗]",
+      "damage": 8,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Shiv": {
+      "source_desc": "0费 4伤 [消耗/AOE]",
+      "damage": 4,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "token",
+      "mechanics": [
+        "exhaust",
+        "aoe"
+      ]
+    },
+    "Shockwave": {
+      "source_desc": "2费 [消耗/AOE]",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust",
+        "aoe"
+      ]
+    },
+    "Shroud": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "ShrugItOff": {
+      "source_desc": "1费 8伤",
+      "damage": 8,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "SicEm": {
+      "source_desc": "1费 5伤 [Osty攻击]",
+      "damage": 5,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "osty_attack"
+      ]
+    },
+    "SignalBoost": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Skewer": {
+      "source_desc": "0费 7伤",
+      "damage": 7,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Skim": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "SleightOfFlesh": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Slice": {
+      "source_desc": "0费 6伤",
+      "damage": 6,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Slimed": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "status",
+      "rarity": "status",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Smokestack": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Snakebite": {
+      "source_desc": "2费 [保留]",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "common",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "Snap": {
+      "source_desc": "1费 7伤 [保留/Osty攻击]",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "retain",
+        "osty_attack"
+      ]
+    },
+    "Sneaky": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "SolarStrike": {
+      "source_desc": "1费 8伤",
+      "damage": 8,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Soul": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "token",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "SoulStorm": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "SovereignBlade": {
+      "source_desc": "2费 10伤 [消耗/保留/AOE]",
+      "damage": 10,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "token",
+      "mechanics": [
+        "exhaust",
+        "retain",
+        "aoe"
+      ],
+      "hits": 1
+    },
+    "Sow": {
+      "source_desc": "1费 8伤 [保留/AOE]",
+      "damage": 8,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "retain",
+        "aoe"
+      ]
+    },
+    "SpectrumShift": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Speedster": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Spinner": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "SpiritOfAsh": {
+      "source_desc": "1费 [消耗/虚无]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust",
+        "ethereal"
+      ]
+    },
+    "Spite": {
+      "source_desc": "0费 6伤",
+      "damage": 6,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Splash": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "SpoilsOfBattle": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "SporeMind": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "curse",
+      "rarity": "curse",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Spur": {
+      "source_desc": "1费 [保留]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "Squash": {
+      "source_desc": "1费 10伤",
+      "damage": 10,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "event"
+    },
+    "Squeeze": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "attack",
+      "rarity": "rare"
+    },
+    "Stack": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "event"
+    },
+    "Stampede": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Stardust": {
+      "source_desc": "0费 5伤",
+      "damage": 5,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Stoke": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Stomp": {
+      "source_desc": "3费 12伤 [AOE]",
+      "damage": 12,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "StoneArmor": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Storm": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "StormOfSteel": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "Strangle": {
+      "source_desc": "1费 8伤",
+      "damage": 8,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Stratagem": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "StrikeDefect": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "basic"
+    },
+    "StrikeIronclad": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "basic"
+    },
+    "StrikeNecrobinder": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "basic"
+    },
+    "StrikeRegent": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "basic"
+    },
+    "StrikeSilent": {
+      "source_desc": "1费 6伤",
+      "damage": 6,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "basic"
+    },
+    "Subroutine": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "SuckerPunch": {
+      "source_desc": "1费 8伤",
+      "damage": 8,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "SummonForth": {
+      "source_desc": "1费 [保留]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "Sunder": {
+      "source_desc": "3费 24伤",
+      "damage": 24,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Supercritical": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Supermassive": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Suppress": {
+      "source_desc": "0费 11伤 [固有]",
+      "damage": 11,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "ancient",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "Survivor": {
+      "source_desc": "1费 8伤",
+      "damage": 8,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "basic"
+    },
+    "SweepingBeam": {
+      "source_desc": "1费 6伤 [AOE]",
+      "damage": 6,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "SweepingGaze": {
+      "source_desc": "0费 10伤 [消耗/虚无/Osty攻击]",
+      "damage": 10,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "token",
+      "mechanics": [
+        "exhaust",
+        "ethereal",
+        "osty_attack"
+      ]
+    },
+    "SwordBoomerang": {
+      "source_desc": "1费 3x3伤",
+      "damage": 3,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "hits": 3
+    },
+    "SwordSage": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Synchronize": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Synthesis": {
+      "source_desc": "2费 12伤",
+      "damage": 12,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Tactician": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "TagTeam": {
+      "source_desc": "2费 11伤",
+      "damage": 11,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Tank": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Taunt": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "TearAsunder": {
+      "source_desc": "2费 5伤",
+      "damage": 5,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "rare",
+      "hits": 1
+    },
+    "Tempest": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Terraforming": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "TeslaCoil": {
+      "source_desc": "0费 3伤",
+      "damage": 3,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "TheBomb": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "TheGambit": {
+      "source_desc": "0费 50伤",
+      "damage": 50,
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "TheHunt": {
+      "source_desc": "1费 10伤 [消耗]",
+      "damage": 10,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "TheScythe": {
+      "source_desc": "2费 [消耗]",
+      "cost": 2,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "TheSealedThrone": {
+      "source_desc": "1费 [固有]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "ancient",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "TheSmith": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "ThinkingAhead": {
+      "source_desc": "0费 [消耗]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Thrash": {
+      "source_desc": "1费 4伤 [消耗]",
+      "damage": 4,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "ThrummingHatchet": {
+      "source_desc": "1费 11伤",
+      "damage": 11,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Thunder": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Thunderclap": {
+      "source_desc": "1费 4伤 [AOE]",
+      "damage": 4,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "TimesUp": {
+      "source_desc": "2费 [消耗/保留]",
+      "cost": 2,
+      "type": "attack",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust",
+        "retain"
+      ]
+    },
+    "ToolsOfTheTrade": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "ToricToughness": {
+      "source_desc": "2费 5伤",
+      "damage": 5,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "event"
+    },
+    "Toxic": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "status",
+      "rarity": "status",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Tracking": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Transfigure": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "TrashToTreasure": {
+      "source_desc": "1费 [固有]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "Tremble": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "TrueGrit": {
+      "source_desc": "1费 7伤 [消耗]",
+      "damage": 7,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "common",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Turbo": {
+      "source_desc": "0费",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "TwinStrike": {
+      "source_desc": "1费 5伤",
+      "damage": 5,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Tyranny": {
+      "source_desc": "1费 [消耗/固有]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust",
+        "innate"
+      ]
+    },
+    "UltimateDefend": {
+      "source_desc": "1费 11伤",
+      "damage": 11,
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "UltimateStrike": {
+      "source_desc": "1费 14伤",
+      "damage": 14,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Undeath": {
+      "source_desc": "0费 7伤",
+      "damage": 7,
+      "cost": 0,
+      "type": "skill",
+      "rarity": "rare"
+    },
+    "Unleash": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "attack",
+      "rarity": "basic"
+    },
+    "Unmovable": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Unrelenting": {
+      "source_desc": "2费 12伤",
+      "damage": 12,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Untouchable": {
+      "source_desc": "2费 9伤",
+      "damage": 9,
+      "cost": 2,
+      "type": "skill",
+      "rarity": "common"
+    },
+    "UpMySleeve": {
+      "source_desc": "2费",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "uncommon"
+    },
+    "Uppercut": {
+      "source_desc": "2费 13伤",
+      "damage": 13,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Uproar": {
+      "source_desc": "2费 5伤",
+      "damage": 5,
+      "cost": 2,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Veilpiercer": {
+      "source_desc": "1费 10伤 [虚无]",
+      "damage": 10,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "Venerate": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "basic"
+    },
+    "Vicious": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon"
+    },
+    "Void": {
+      "source_desc": "[虚无]",
+      "rarity": "status",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "VoidForm": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "power",
+      "rarity": "rare"
+    },
+    "Volley": {
+      "source_desc": "0费 10伤",
+      "damage": 10,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon"
+    },
+    "Voltaic": {
+      "source_desc": "2费 [消耗]",
+      "cost": 2,
+      "type": "skill",
+      "rarity": "rare",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "WellLaidPlans": {
+      "source_desc": "1费 [保留]",
+      "cost": 1,
+      "type": "power",
+      "rarity": "uncommon",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "Whirlwind": {
+      "source_desc": "0费 5伤 [AOE]",
+      "damage": 5,
+      "cost": 0,
+      "type": "attack",
+      "rarity": "uncommon",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "Whistle": {
+      "source_desc": "3费 33伤 [消耗]",
+      "damage": 33,
+      "cost": 3,
+      "type": "attack",
+      "rarity": "ancient",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "WhiteNoise": {
+      "source_desc": "1费 [消耗]",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "uncommon",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Wish": {
+      "source_desc": "0费 [消耗/保留]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "ancient",
+      "mechanics": [
+        "exhaust",
+        "retain"
+      ]
+    },
+    "Wisp": {
+      "source_desc": "0费 [消耗/保留]",
+      "cost": 0,
+      "type": "skill",
+      "rarity": "common",
+      "mechanics": [
+        "exhaust",
+        "retain"
+      ]
+    },
+    "WraithForm": {
+      "source_desc": "3费",
+      "cost": 3,
+      "type": "power",
+      "rarity": "ancient"
+    },
+    "Writhe": {
+      "source_desc": "[固有]",
+      "rarity": "curse",
+      "mechanics": [
+        "innate"
+      ]
+    },
+    "WroughtInWar": {
+      "source_desc": "1费 7伤",
+      "damage": 7,
+      "cost": 1,
+      "type": "attack",
+      "rarity": "common"
+    },
+    "Zap": {
+      "source_desc": "1费",
+      "cost": 1,
+      "type": "skill",
+      "rarity": "basic"
+    }
+  },
+  "powers": {
+    "Accelerant": {
+      "power_type": "buff"
+    },
+    "Accuracy": {
+      "power_type": "buff"
+    },
+    "Adaptable": {
+      "power_type": "buff"
+    },
+    "Afterimage": {
+      "power_type": "buff"
+    },
+    "Aggression": {
+      "power_type": "buff"
+    },
+    "Anticipate": {
+      "power_type": "unknown"
+    },
+    "Arsenal": {
+      "power_type": "buff"
+    },
+    "Artifact": {
+      "power_type": "buff"
+    },
+    "Asleep": {
+      "power_type": "buff"
+    },
+    "Automation": {
+      "power_type": "buff"
+    },
+    "BackAttackLeft": {
+      "power_type": "buff"
+    },
+    "BackAttackRight": {
+      "power_type": "buff"
+    },
+    "Barricade": {
+      "power_type": "buff"
+    },
+    "BattlewornDummyTimeLimit": {
+      "power_type": "buff"
+    },
+    "BeaconOfHope": {
+      "power_type": "buff"
+    },
+    "BiasedCognition": {
+      "power_type": "debuff"
+    },
+    "BlackHole": {
+      "power_type": "buff",
+      "mechanics": [
+        "aoe"
+      ]
+    },
+    "BladeOfInk": {
+      "power_type": "buff"
+    },
+    "BlockNextTurn": {
+      "power_type": "buff"
+    },
+    "Blur": {
+      "power_type": "buff"
+    },
+    "Buffer": {
+      "power_type": "buff"
+    },
+    "Burrowed": {
+      "power_type": "buff"
+    },
+    "Burst": {
+      "power_type": "buff"
+    },
+    "Calamity": {
+      "power_type": "buff",
+      "mechanics": [
+        "calamity"
+      ]
+    },
+    "Calcify": {
+      "power_type": "buff"
+    },
+    "CallOfTheVoid": {
+      "power_type": "buff",
+      "rarity": "basic",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "ChainsOfBinding": {
+      "power_type": "debuff"
+    },
+    "ChildOfTheStars": {
+      "power_type": "buff"
+    },
+    "Clarity": {
+      "power_type": "buff"
+    },
+    "Colossus": {
+      "power_type": "buff"
+    },
+    "Confused": {
+      "power_type": "debuff"
+    },
+    "Conqueror": {
+      "power_type": "debuff"
+    },
+    "Constrict": {
+      "power_type": "debuff"
+    },
+    "ConsumingShadow": {
+      "power_type": "buff"
+    },
+    "Coolant": {
+      "power_type": "buff"
+    },
+    "Coordinate": {
+      "power_type": "unknown"
+    },
+    "CorrosiveWave": {
+      "power_type": "buff"
+    },
+    "Corruption": {
+      "power_type": "buff",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Countdown": {
+      "power_type": "buff"
+    },
+    "Covered": {
+      "power_type": "buff"
+    },
+    "CrabRage": {
+      "power_type": "buff"
+    },
+    "CreativeAi": {
+      "power_type": "buff"
+    },
+    "CrimsonMantle": {
+      "power_type": "buff"
+    },
+    "Cruelty": {
+      "power_type": "buff"
+    },
+    "CrushUnder": {
+      "power_type": "unknown"
+    },
+    "Curious": {
+      "power_type": "buff"
+    },
+    "CurlUp": {
+      "power_type": "buff"
+    },
+    "Dampen": {
+      "power_type": "debuff",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "DanseMacabre": {
+      "power_type": "buff"
+    },
+    "DarkEmbrace": {
+      "power_type": "buff",
+      "mechanics": [
+        "exhaust",
+        "ethereal"
+      ]
+    },
+    "DarkShackles": {
+      "power_type": "unknown"
+    },
+    "Debilitate": {
+      "power_type": "debuff"
+    },
+    "Demesne": {
+      "power_type": "buff"
+    },
+    "Demise": {
+      "power_type": "debuff"
+    },
+    "DemonForm": {
+      "power_type": "buff"
+    },
+    "DevourLife": {
+      "power_type": "buff"
+    },
+    "Dexterity": {
+      "power_type": "buff"
+    },
+    "DiamondDiadem": {
+      "power_type": "buff"
+    },
+    "DieForYou": {
+      "power_type": "buff"
+    },
+    "Disintegration": {
+      "power_type": "debuff"
+    },
+    "Doom": {
+      "power_type": "debuff"
+    },
+    "DoorRevival": {
+      "power_type": "buff"
+    },
+    "DoubleDamage": {
+      "power_type": "buff"
+    },
+    "DrawCardsNextTurn": {
+      "power_type": "buff",
+      "mechanics": [
+        "draw"
+      ]
+    },
+    "DrumOfBattle": {
+      "power_type": "buff",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Duplication": {
+      "power_type": "buff"
+    },
+    "DyingStar": {
+      "power_type": "unknown"
+    },
+    "EchoForm": {
+      "power_type": "buff"
+    },
+    "EnergyNextTurn": {
+      "power_type": "buff"
+    },
+    "EnfeeblingTouch": {
+      "power_type": "unknown"
+    },
+    "Enrage": {
+      "power_type": "buff"
+    },
+    "Entropy": {
+      "power_type": "buff"
+    },
+    "Envenom": {
+      "power_type": "buff"
+    },
+    "EscapeArtist": {
+      "power_type": "buff"
+    },
+    "FanOfKnives": {
+      "power_type": "buff"
+    },
+    "Fasten": {
+      "power_type": "buff"
+    },
+    "FeedingFrenzy": {
+      "power_type": "unknown"
+    },
+    "FeelNoPain": {
+      "power_type": "buff",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Feral": {
+      "power_type": "buff"
+    },
+    "FlameBarrier": {
+      "power_type": "buff"
+    },
+    "Flanking": {
+      "power_type": "debuff"
+    },
+    "FlexPotion": {
+      "power_type": "unknown"
+    },
+    "Flutter": {
+      "power_type": "buff"
+    },
+    "Focus": {
+      "power_type": "buff"
+    },
+    "FocusedStrike": {
+      "power_type": "unknown"
+    },
+    "ForbiddenGrimoire": {
+      "power_type": "buff"
+    },
+    "ForegoneConclusion": {
+      "power_type": "buff"
+    },
+    "Frail": {
+      "power_type": "debuff"
+    },
+    "FreeAttack": {
+      "power_type": "buff"
+    },
+    "Free": {
+      "power_type": "buff"
+    },
+    "FreeSkill": {
+      "power_type": "buff"
+    },
+    "Friendship": {
+      "power_type": "buff"
+    },
+    "Furnace": {
+      "power_type": "buff"
+    },
+    "Galvanic": {
+      "power_type": "buff"
+    },
+    "Genesis": {
+      "power_type": "buff"
+    },
+    "Gigantification": {
+      "power_type": "buff"
+    },
+    "Grapple": {
+      "power_type": "debuff"
+    },
+    "Gravity": {
+      "power_type": "buff"
+    },
+    "Guarded": {
+      "power_type": "buff"
+    },
+    "Hailstorm": {
+      "power_type": "buff"
+    },
+    "HammerTime": {
+      "power_type": "buff"
+    },
+    "Hang": {
+      "power_type": "debuff"
+    },
+    "HardToKill": {
+      "power_type": "buff"
+    },
+    "HardenedShell": {
+      "power_type": "buff"
+    },
+    "Hatch": {
+      "power_type": "buff"
+    },
+    "Haunt": {
+      "power_type": "buff"
+    },
+    "Heist": {
+      "power_type": "buff"
+    },
+    "HelicalDart": {
+      "power_type": "unknown"
+    },
+    "HelloWorld": {
+      "power_type": "buff",
+      "rarity": "common"
+    },
+    "Hellraiser": {
+      "power_type": "buff"
+    },
+    "Hex": {
+      "power_type": "debuff",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "HighVoltage": {
+      "power_type": "buff"
+    },
+    "Hotfix": {
+      "power_type": "unknown"
+    },
+    "Illusion": {
+      "power_type": "buff"
+    },
+    "Imbalanced": {
+      "power_type": "debuff"
+    },
+    "Improvement": {
+      "power_type": "buff"
+    },
+    "Inferno": {
+      "power_type": "buff"
+    },
+    "Infested": {
+      "power_type": "buff"
+    },
+    "InfiniteBlades": {
+      "power_type": "buff"
+    },
+    "Intangible": {
+      "power_type": "buff"
+    },
+    "Intercept": {
+      "power_type": "buff"
+    },
+    "Iteration": {
+      "power_type": "buff"
+    },
+    "Juggernaut": {
+      "power_type": "buff"
+    },
+    "Juggling": {
+      "power_type": "buff"
+    },
+    "Knockdown": {
+      "power_type": "debuff"
+    },
+    "Leadership": {
+      "power_type": "buff"
+    },
+    "Lethality": {
+      "power_type": "buff"
+    },
+    "LightningRod": {
+      "power_type": "buff"
+    },
+    "Loop": {
+      "power_type": "buff"
+    },
+    "MachineLearning": {
+      "power_type": "buff"
+    },
+    "MagicBomb": {
+      "power_type": "debuff"
+    },
+    "Mangle": {
+      "power_type": "unknown"
+    },
+    "MasterPlanner": {
+      "power_type": "buff"
+    },
+    "Mayhem": {
+      "power_type": "buff",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "MindRot": {
+      "power_type": "debuff"
+    },
+    "Minion": {
+      "power_type": "buff"
+    },
+    "MonarchsGaze": {
+      "power_type": "buff"
+    },
+    "MonarchsGazeStrengthDown": {
+      "power_type": "unknown"
+    },
+    "Monologue": {
+      "power_type": "buff"
+    },
+    "NecroMastery": {
+      "power_type": "buff"
+    },
+    "Nemesis": {
+      "power_type": "buff"
+    },
+    "Neurosurge": {
+      "power_type": "debuff"
+    },
+    "Nightmare": {
+      "power_type": "buff"
+    },
+    "NoBlock": {
+      "power_type": "debuff"
+    },
+    "NoDraw": {
+      "power_type": "debuff"
+    },
+    "Nostalgia": {
+      "power_type": "buff"
+    },
+    "NoxiousFumes": {
+      "power_type": "buff"
+    },
+    "Oblivion": {
+      "power_type": "debuff"
+    },
+    "OneTwoPunch": {
+      "power_type": "buff"
+    },
+    "Orbit": {
+      "power_type": "buff"
+    },
+    "Outbreak": {
+      "power_type": "buff",
+      "hits": 3
+    },
+    "Pagestorm": {
+      "power_type": "buff",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "PainfulStabs": {
+      "power_type": "buff"
+    },
+    "PaleBlueDot": {
+      "power_type": "buff"
+    },
+    "Panache": {
+      "power_type": "buff"
+    },
+    "PaperCuts": {
+      "power_type": "buff"
+    },
+    "Parry": {
+      "power_type": "buff"
+    },
+    "PersonalHive": {
+      "power_type": "buff"
+    },
+    "PhantomBlades": {
+      "power_type": "buff",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "PiercingWail": {
+      "power_type": "unknown"
+    },
+    "PillarOfCreation": {
+      "power_type": "buff"
+    },
+    "Plating": {
+      "power_type": "buff"
+    },
+    "Plow": {
+      "power_type": "debuff"
+    },
+    "Poison": {
+      "power_type": "debuff"
+    },
+    "PossessSpeed": {
+      "power_type": "buff"
+    },
+    "PossessStrength": {
+      "power_type": "buff"
+    },
+    "PrepTime": {
+      "power_type": "buff"
+    },
+    "Pyre": {
+      "power_type": "buff"
+    },
+    "Radiance": {
+      "power_type": "buff"
+    },
+    "Rage": {
+      "power_type": "buff"
+    },
+    "Rampart": {
+      "power_type": "buff"
+    },
+    "Ravenous": {
+      "power_type": "buff"
+    },
+    "ReaperForm": {
+      "power_type": "buff"
+    },
+    "Reattach": {
+      "power_type": "buff"
+    },
+    "Rebound": {
+      "power_type": "buff"
+    },
+    "Reflect": {
+      "power_type": "buff"
+    },
+    "Regen": {
+      "power_type": "buff"
+    },
+    "ReptileTrinket": {
+      "power_type": "unknown"
+    },
+    "RetainHand": {
+      "power_type": "buff",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "Ringing": {
+      "power_type": "debuff"
+    },
+    "Ritual": {
+      "power_type": "buff"
+    },
+    "RollingBoulder": {
+      "power_type": "buff"
+    },
+    "Royalties": {
+      "power_type": "buff"
+    },
+    "Rupture": {
+      "power_type": "buff"
+    },
+    "Sandpit": {
+      "power_type": "buff"
+    },
+    "SeekingEdge": {
+      "power_type": "buff"
+    },
+    "SelfFormingClay": {
+      "power_type": "buff"
+    },
+    "SentryMode": {
+      "power_type": "buff"
+    },
+    "SerpentForm": {
+      "power_type": "buff"
+    },
+    "SetupStrike": {
+      "power_type": "unknown"
+    },
+    "ShacklingPotion": {
+      "power_type": "unknown"
+    },
+    "ShadowStep": {
+      "power_type": "buff"
+    },
+    "Shadowmeld": {
+      "power_type": "buff"
+    },
+    "Shriek": {
+      "power_type": "debuff"
+    },
+    "Shrink": {
+      "power_type": "debuff"
+    },
+    "Shroud": {
+      "power_type": "buff"
+    },
+    "SicEm": {
+      "power_type": "debuff"
+    },
+    "SignalBoost": {
+      "power_type": "buff"
+    },
+    "Skittish": {
+      "power_type": "buff"
+    },
+    "SleightOfFlesh": {
+      "power_type": "buff"
+    },
+    "Slippery": {
+      "power_type": "buff"
+    },
+    "Sloth": {
+      "power_type": "debuff"
+    },
+    "Slow": {
+      "power_type": "debuff"
+    },
+    "Slumber": {
+      "power_type": "buff"
+    },
+    "Smoggy": {
+      "power_type": "debuff"
+    },
+    "Smokestack": {
+      "power_type": "buff"
+    },
+    "Sneaky": {
+      "power_type": "buff"
+    },
+    "Soar": {
+      "power_type": "buff"
+    },
+    "SpectrumShift": {
+      "power_type": "buff"
+    },
+    "SpeedPotion": {
+      "power_type": "unknown"
+    },
+    "Speedster": {
+      "power_type": "buff"
+    },
+    "Spinner": {
+      "power_type": "buff"
+    },
+    "SpiritOfAsh": {
+      "power_type": "buff",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "Stampede": {
+      "power_type": "buff"
+    },
+    "StarNextTurn": {
+      "power_type": "buff"
+    },
+    "SteamEruption": {
+      "power_type": "buff"
+    },
+    "Stock": {
+      "power_type": "buff"
+    },
+    "Storm": {
+      "power_type": "buff"
+    },
+    "Strangle": {
+      "power_type": "debuff"
+    },
+    "Stratagem": {
+      "power_type": "buff"
+    },
+    "Strength": {
+      "power_type": "buff"
+    },
+    "Subroutine": {
+      "power_type": "buff",
+      "energy": 1
+    },
+    "Suck": {
+      "power_type": "buff"
+    },
+    "SummonNextTurn": {
+      "power_type": "buff"
+    },
+    "Surprise": {
+      "power_type": "buff"
+    },
+    "Surrounded": {
+      "power_type": "debuff"
+    },
+    "Swipe": {
+      "power_type": "buff"
+    },
+    "SwordSage": {
+      "power_type": "buff",
+      "hits": 1
+    },
+    "Synchronize": {
+      "power_type": "unknown"
+    },
+    "TagTeam": {
+      "power_type": "debuff"
+    },
+    "Tangled": {
+      "power_type": "debuff"
+    },
+    "Tank": {
+      "power_type": "buff"
+    },
+    "TemporaryDexterity": {
+      "power_type": "buff"
+    },
+    "TemporaryFocus": {
+      "power_type": "buff"
+    },
+    "TemporaryStrength": {
+      "power_type": "buff"
+    },
+    "Tender": {
+      "power_type": "debuff"
+    },
+    "Territorial": {
+      "power_type": "buff"
+    },
+    "TheBomb": {
+      "power_type": "buff"
+    },
+    "TheGambit": {
+      "power_type": "debuff"
+    },
+    "TheHunt": {
+      "power_type": "buff"
+    },
+    "TheSealedThrone": {
+      "power_type": "buff"
+    },
+    "Thievery": {
+      "power_type": "buff"
+    },
+    "Thorns": {
+      "power_type": "buff"
+    },
+    "Thunder": {
+      "power_type": "buff"
+    },
+    "ToolsOfTheTrade": {
+      "power_type": "buff"
+    },
+    "ToricToughness": {
+      "power_type": "buff"
+    },
+    "Tracking": {
+      "power_type": "buff"
+    },
+    "TrashToTreasure": {
+      "power_type": "buff"
+    },
+    "Tyranny": {
+      "power_type": "buff",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "Unmovable": {
+      "power_type": "buff"
+    },
+    "Veilpiercer": {
+      "power_type": "buff",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "Vicious": {
+      "power_type": "buff"
+    },
+    "Vigor": {
+      "power_type": "buff"
+    },
+    "VitalSpark": {
+      "power_type": "buff"
+    },
+    "VoidForm": {
+      "power_type": "buff"
+    },
+    "Vulnerable": {
+      "power_type": "debuff"
+    },
+    "WasteAway": {
+      "power_type": "debuff"
+    },
+    "Weak": {
+      "power_type": "debuff"
+    },
+    "WellLaidPlans": {
+      "power_type": "buff",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "WraithForm": {
+      "power_type": "debuff"
+    }
+  },
+  "relics": {
+    "Akabeko": {
+      "class": "Akabeko"
+    },
+    "AlchemicalCoffer": {
+      "class": "AlchemicalCoffer"
+    },
+    "AmethystAubergine": {
+      "class": "AmethystAubergine"
+    },
+    "Anchor": {
+      "class": "Anchor"
+    },
+    "ArcaneScroll": {
+      "class": "ArcaneScroll",
+      "rarity": "rare"
+    },
+    "ArchaicTooth": {
+      "class": "ArchaicTooth"
+    },
+    "ArtOfWar": {
+      "class": "ArtOfWar"
+    },
+    "Astrolabe": {
+      "class": "Astrolabe"
+    },
+    "BagOfMarbles": {
+      "class": "BagOfMarbles"
+    },
+    "BagOfPreparation": {
+      "class": "BagOfPreparation"
+    },
+    "BeatingRemnant": {
+      "class": "BeatingRemnant"
+    },
+    "BeautifulBracelet": {
+      "class": "BeautifulBracelet"
+    },
+    "Bellows": {
+      "class": "Bellows"
+    },
+    "BeltBuckle": {
+      "class": "BeltBuckle"
+    },
+    "BigHat": {
+      "class": "BigHat",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "BigMushroom": {
+      "class": "BigMushroom"
+    },
+    "BiiigHug": {
+      "class": "BiiigHug"
+    },
+    "BingBong": {
+      "class": "BingBong"
+    },
+    "BlackBlood": {
+      "class": "BlackBlood"
+    },
+    "BlackStar": {
+      "class": "BlackStar"
+    },
+    "BlessedAntler": {
+      "class": "BlessedAntler"
+    },
+    "BloodSoakedRose": {
+      "class": "BloodSoakedRose"
+    },
+    "BloodVial": {
+      "class": "BloodVial"
+    },
+    "BoneFlute": {
+      "class": "BoneFlute"
+    },
+    "BoneTea": {
+      "class": "BoneTea"
+    },
+    "BookOfFiveRings": {
+      "class": "BookOfFiveRings"
+    },
+    "BookRepairKnife": {
+      "class": "BookRepairKnife"
+    },
+    "Bookmark": {
+      "class": "Bookmark",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "BoomingConch": {
+      "class": "BoomingConch"
+    },
+    "BoundPhylactery": {
+      "class": "BoundPhylactery"
+    },
+    "BowlerHat": {
+      "class": "BowlerHat"
+    },
+    "Bread": {
+      "class": "Bread",
+      "energy": 1
+    },
+    "BrilliantScarf": {
+      "class": "BrilliantScarf"
+    },
+    "Brimstone": {
+      "class": "Brimstone"
+    },
+    "BronzeScales": {
+      "class": "BronzeScales"
+    },
+    "BurningBlood": {
+      "class": "BurningBlood"
+    },
+    "BurningSticks": {
+      "class": "BurningSticks",
+      "mechanics": [
+        "exhaust",
+        "ethereal"
+      ]
+    },
+    "Byrdpip": {
+      "class": "Byrdpip"
+    },
+    "CallingBell": {
+      "class": "CallingBell"
+    },
+    "Candelabra": {
+      "class": "Candelabra"
+    },
+    "CaptainsWheel": {
+      "class": "CaptainsWheel"
+    },
+    "Cauldron": {
+      "class": "Cauldron"
+    },
+    "CentennialPuzzle": {
+      "class": "CentennialPuzzle"
+    },
+    "Chandelier": {
+      "class": "Chandelier"
+    },
+    "CharonsAshes": {
+      "class": "CharonsAshes",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "ChemicalX": {
+      "class": "ChemicalX"
+    },
+    "ChoicesParadox": {
+      "class": "ChoicesParadox",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "ChosenCheese": {
+      "class": "ChosenCheese"
+    },
+    "Circlet": {
+      "class": "Circlet"
+    },
+    "Claws": {
+      "class": "Claws"
+    },
+    "CloakClasp": {
+      "class": "CloakClasp"
+    },
+    "CrackedCore": {
+      "class": "CrackedCore"
+    },
+    "Crossbow": {
+      "class": "Crossbow"
+    },
+    "CursedPearl": {
+      "class": "CursedPearl"
+    },
+    "DarkstonePeriapt": {
+      "class": "DarkstonePeriapt"
+    },
+    "DataDisk": {
+      "class": "DataDisk"
+    },
+    "DaughterOfTheWind": {
+      "class": "DaughterOfTheWind"
+    },
+    "DelicateFrond": {
+      "class": "DelicateFrond"
+    },
+    "DemonTongue": {
+      "class": "DemonTongue"
+    },
+    "Deprecated": {
+      "class": "DeprecatedRelic"
+    },
+    "DiamondDiadem": {
+      "class": "DiamondDiadem"
+    },
+    "DingyRug": {
+      "class": "DingyRug"
+    },
+    "DistinguishedCape": {
+      "class": "DistinguishedCape"
+    },
+    "DivineDestiny": {
+      "class": "DivineDestiny"
+    },
+    "DivineRight": {
+      "class": "DivineRight"
+    },
+    "DollysMirror": {
+      "class": "DollysMirror"
+    },
+    "DragonFruit": {
+      "class": "DragonFruit"
+    },
+    "DreamCatcher": {
+      "class": "DreamCatcher"
+    },
+    "Driftwood": {
+      "class": "Driftwood"
+    },
+    "DustyTome": {
+      "class": "DustyTome",
+      "rarity": "ancient"
+    },
+    "Ectoplasm": {
+      "class": "Ectoplasm"
+    },
+    "ElectricShrymp": {
+      "class": "ElectricShrymp"
+    },
+    "EmberTea": {
+      "class": "EmberTea"
+    },
+    "EmotionChip": {
+      "class": "EmotionChip"
+    },
+    "EmptyCage": {
+      "class": "EmptyCage"
+    },
+    "EternalFeather": {
+      "class": "EternalFeather"
+    },
+    "FakeAnchor": {
+      "class": "FakeAnchor"
+    },
+    "FakeBloodVial": {
+      "class": "FakeBloodVial"
+    },
+    "FakeHappyFlower": {
+      "class": "FakeHappyFlower"
+    },
+    "FakeLeesWaffle": {
+      "class": "FakeLeesWaffle"
+    },
+    "FakeMango": {
+      "class": "FakeMango"
+    },
+    "FakeMerchantsRug": {
+      "class": "FakeMerchantsRug"
+    },
+    "FakeOrichalcum": {
+      "class": "FakeOrichalcum"
+    },
+    "FakeSneckoEye": {
+      "class": "FakeSneckoEye"
+    },
+    "FakeStrikeDummy": {
+      "class": "FakeStrikeDummy"
+    },
+    "FakeVenerableTeaSet": {
+      "class": "FakeVenerableTeaSet"
+    },
+    "FencingManual": {
+      "class": "FencingManual"
+    },
+    "FestivePopper": {
+      "class": "FestivePopper"
+    },
+    "Fiddle": {
+      "class": "Fiddle"
+    },
+    "ForgottenSoul": {
+      "class": "ForgottenSoul",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "FragrantMushroom": {
+      "class": "FragrantMushroom"
+    },
+    "FresnelLens": {
+      "class": "FresnelLens"
+    },
+    "FrozenEgg": {
+      "class": "FrozenEgg"
+    },
+    "FuneraryMask": {
+      "class": "FuneraryMask"
+    },
+    "FurCoat": {
+      "class": "FurCoat"
+    },
+    "GalacticDust": {
+      "class": "GalacticDust"
+    },
+    "GamblingChip": {
+      "class": "GamblingChip"
+    },
+    "GamePiece": {
+      "class": "GamePiece"
+    },
+    "GhostSeed": {
+      "class": "GhostSeed",
+      "rarity": "basic",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "Girya": {
+      "class": "Girya"
+    },
+    "GlassEye": {
+      "class": "GlassEye",
+      "rarity": "common"
+    },
+    "Glitter": {
+      "class": "Glitter"
+    },
+    "GnarledHammer": {
+      "class": "GnarledHammer"
+    },
+    "GoldPlatedCables": {
+      "class": "GoldPlatedCables"
+    },
+    "GoldenCompass": {
+      "class": "GoldenCompass"
+    },
+    "GoldenPearl": {
+      "class": "GoldenPearl"
+    },
+    "Gorget": {
+      "class": "Gorget"
+    },
+    "GremlinHorn": {
+      "class": "GremlinHorn"
+    },
+    "HandDrill": {
+      "class": "HandDrill"
+    },
+    "HappyFlower": {
+      "class": "HappyFlower"
+    },
+    "HelicalDart": {
+      "class": "HelicalDart"
+    },
+    "HistoryCourse": {
+      "class": "HistoryCourse"
+    },
+    "HornCleat": {
+      "class": "HornCleat"
+    },
+    "IceCream": {
+      "class": "IceCream"
+    },
+    "InfusedCore": {
+      "class": "InfusedCore"
+    },
+    "IntimidatingHelmet": {
+      "class": "IntimidatingHelmet"
+    },
+    "IronClub": {
+      "class": "IronClub"
+    },
+    "IvoryTile": {
+      "class": "IvoryTile"
+    },
+    "JeweledMask": {
+      "class": "JeweledMask"
+    },
+    "JewelryBox": {
+      "class": "JewelryBox"
+    },
+    "JossPaper": {
+      "class": "JossPaper",
+      "mechanics": [
+        "exhaust",
+        "ethereal"
+      ]
+    },
+    "JuzuBracelet": {
+      "class": "JuzuBracelet"
+    },
+    "Kifuda": {
+      "class": "Kifuda"
+    },
+    "Kunai": {
+      "class": "Kunai"
+    },
+    "Kusarigama": {
+      "class": "Kusarigama"
+    },
+    "Lantern": {
+      "class": "Lantern"
+    },
+    "LargeCapsule": {
+      "class": "LargeCapsule",
+      "rarity": "basic"
+    },
+    "LastingCandy": {
+      "class": "LastingCandy"
+    },
+    "LavaLamp": {
+      "class": "LavaLamp"
+    },
+    "LavaRock": {
+      "class": "LavaRock"
+    },
+    "LeadPaperweight": {
+      "class": "LeadPaperweight"
+    },
+    "LeafyPoultice": {
+      "class": "LeafyPoultice",
+      "rarity": "basic"
+    },
+    "LeesWaffle": {
+      "class": "LeesWaffle"
+    },
+    "LetterOpener": {
+      "class": "LetterOpener"
+    },
+    "LizardTail": {
+      "class": "LizardTail"
+    },
+    "LoomingFruit": {
+      "class": "LoomingFruit"
+    },
+    "LordsParasol": {
+      "class": "LordsParasol"
+    },
+    "LostCoffer": {
+      "class": "LostCoffer"
+    },
+    "LostWisp": {
+      "class": "LostWisp"
+    },
+    "LuckyFysh": {
+      "class": "LuckyFysh"
+    },
+    "LunarPastry": {
+      "class": "LunarPastry"
+    },
+    "Mango": {
+      "class": "Mango"
+    },
+    "MassiveScroll": {
+      "class": "MassiveScroll"
+    },
+    "MawBank": {
+      "class": "MawBank"
+    },
+    "MealTicket": {
+      "class": "MealTicket"
+    },
+    "MeatCleaver": {
+      "class": "MeatCleaver"
+    },
+    "MeatOnTheBone": {
+      "class": "MeatOnTheBone"
+    },
+    "MembershipCard": {
+      "class": "MembershipCard"
+    },
+    "MercuryHourglass": {
+      "class": "MercuryHourglass"
+    },
+    "Metronome": {
+      "class": "Metronome"
+    },
+    "MiniRegent": {
+      "class": "MiniRegent"
+    },
+    "MiniatureCannon": {
+      "class": "MiniatureCannon"
+    },
+    "MiniatureTent": {
+      "class": "MiniatureTent"
+    },
+    "MoltenEgg": {
+      "class": "MoltenEgg"
+    },
+    "MrStruggles": {
+      "class": "MrStruggles"
+    },
+    "MummifiedHand": {
+      "class": "MummifiedHand"
+    },
+    "MusicBox": {
+      "class": "MusicBox",
+      "mechanics": [
+        "ethereal"
+      ]
+    },
+    "MysticLighter": {
+      "class": "MysticLighter"
+    },
+    "NeowsTorment": {
+      "class": "NeowsTorment"
+    },
+    "NewLeaf": {
+      "class": "NewLeaf"
+    },
+    "NinjaScroll": {
+      "class": "NinjaScroll"
+    },
+    "Nunchaku": {
+      "class": "Nunchaku"
+    },
+    "NutritiousOyster": {
+      "class": "NutritiousOyster"
+    },
+    "NutritiousSoup": {
+      "class": "NutritiousSoup",
+      "rarity": "basic"
+    },
+    "OddlySmoothStone": {
+      "class": "OddlySmoothStone"
+    },
+    "OldCoin": {
+      "class": "OldCoin"
+    },
+    "OrangeDough": {
+      "class": "OrangeDough"
+    },
+    "Orichalcum": {
+      "class": "Orichalcum"
+    },
+    "OrnamentalFan": {
+      "class": "OrnamentalFan"
+    },
+    "Orrery": {
+      "class": "Orrery"
+    },
+    "PaelsBlood": {
+      "class": "PaelsBlood"
+    },
+    "PaelsClaw": {
+      "class": "PaelsClaw"
+    },
+    "PaelsEye": {
+      "class": "PaelsEye",
+      "mechanics": [
+        "exhaust"
+      ]
+    },
+    "PaelsFlesh": {
+      "class": "PaelsFlesh"
+    },
+    "PaelsGrowth": {
+      "class": "PaelsGrowth"
+    },
+    "PaelsHorn": {
+      "class": "PaelsHorn"
+    },
+    "PaelsLegion": {
+      "class": "PaelsLegion"
+    },
+    "PaelsTears": {
+      "class": "PaelsTears"
+    },
+    "PaelsTooth": {
+      "class": "PaelsTooth"
+    },
+    "PaelsWing": {
+      "class": "PaelsWing"
+    },
+    "PandorasBox": {
+      "class": "PandorasBox"
+    },
+    "Pantograph": {
+      "class": "Pantograph"
+    },
+    "PaperKrane": {
+      "class": "PaperKrane"
+    },
+    "PaperPhrog": {
+      "class": "PaperPhrog"
+    },
+    "ParryingShield": {
+      "class": "ParryingShield"
+    },
+    "Pear": {
+      "class": "Pear"
+    },
+    "PenNib": {
+      "class": "PenNib"
+    },
+    "Pendulum": {
+      "class": "Pendulum"
+    },
+    "Permafrost": {
+      "class": "Permafrost"
+    },
+    "PetrifiedToad": {
+      "class": "PetrifiedToad"
+    },
+    "PhilosophersStone": {
+      "class": "PhilosophersStone"
+    },
+    "PhylacteryUnbound": {
+      "class": "PhylacteryUnbound"
+    },
+    "Planisphere": {
+      "class": "Planisphere"
+    },
+    "Pocketwatch": {
+      "class": "Pocketwatch"
+    },
+    "PollinousCore": {
+      "class": "PollinousCore"
+    },
+    "Pomander": {
+      "class": "Pomander"
+    },
+    "PotionBelt": {
+      "class": "PotionBelt"
+    },
+    "PowerCell": {
+      "class": "PowerCell"
+    },
+    "PrayerWheel": {
+      "class": "PrayerWheel"
+    },
+    "PrecariousShears": {
+      "class": "PrecariousShears"
+    },
+    "PreciseScissors": {
+      "class": "PreciseScissors"
+    },
+    "PreservedFog": {
+      "class": "PreservedFog"
+    },
+    "PrismaticGem": {
+      "class": "PrismaticGem"
+    },
+    "PumpkinCandle": {
+      "class": "PumpkinCandle"
+    },
+    "PunchDagger": {
+      "class": "PunchDagger"
+    },
+    "RadiantPearl": {
+      "class": "RadiantPearl"
+    },
+    "RainbowRing": {
+      "class": "RainbowRing"
+    },
+    "RazorTooth": {
+      "class": "RazorTooth"
+    },
+    "RedMask": {
+      "class": "RedMask"
+    },
+    "RedSkull": {
+      "class": "RedSkull"
+    },
+    "RegalPillow": {
+      "class": "RegalPillow"
+    },
+    "Regalite": {
+      "class": "Regalite"
+    },
+    "ReptileTrinket": {
+      "class": "ReptileTrinket"
+    },
+    "RingOfTheDrake": {
+      "class": "RingOfTheDrake"
+    },
+    "RingOfTheSnake": {
+      "class": "RingOfTheSnake"
+    },
+    "RingingTriangle": {
+      "class": "RingingTriangle",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "RippleBasin": {
+      "class": "RippleBasin"
+    },
+    "RoyalPoison": {
+      "class": "RoyalPoison"
+    },
+    "RoyalStamp": {
+      "class": "RoyalStamp"
+    },
+    "RuinedHelmet": {
+      "class": "RuinedHelmet"
+    },
+    "RunicCapacitor": {
+      "class": "RunicCapacitor",
+      "hits": 3
+    },
+    "RunicPyramid": {
+      "class": "RunicPyramid"
+    },
+    "Sai": {
+      "class": "Sai"
+    },
+    "SandCastle": {
+      "class": "SandCastle"
+    },
+    "ScreamingFlagon": {
+      "class": "ScreamingFlagon"
+    },
+    "ScrollBoxes": {
+      "class": "ScrollBoxes",
+      "rarity": "common"
+    },
+    "SeaGlass": {
+      "class": "SeaGlass",
+      "rarity": "common"
+    },
+    "SealOfGold": {
+      "class": "SealOfGold"
+    },
+    "SelfFormingClay": {
+      "class": "SelfFormingClay"
+    },
+    "SereTalon": {
+      "class": "SereTalon"
+    },
+    "Shovel": {
+      "class": "Shovel"
+    },
+    "Shuriken": {
+      "class": "Shuriken"
+    },
+    "SignetRing": {
+      "class": "SignetRing"
+    },
+    "SilverCrucible": {
+      "class": "SilverCrucible"
+    },
+    "SlingOfCourage": {
+      "class": "SlingOfCourage"
+    },
+    "SmallCapsule": {
+      "class": "SmallCapsule"
+    },
+    "SneckoEye": {
+      "class": "SneckoEye"
+    },
+    "SneckoSkull": {
+      "class": "SneckoSkull"
+    },
+    "Sozu": {
+      "class": "Sozu"
+    },
+    "SparklingRouge": {
+      "class": "SparklingRouge"
+    },
+    "SpikedGauntlets": {
+      "class": "SpikedGauntlets"
+    },
+    "StoneCalendar": {
+      "class": "StoneCalendar"
+    },
+    "StoneCracker": {
+      "class": "StoneCracker"
+    },
+    "StoneHumidifier": {
+      "class": "StoneHumidifier"
+    },
+    "Storybook": {
+      "class": "Storybook"
+    },
+    "Strawberry": {
+      "class": "Strawberry"
+    },
+    "StrikeDummy": {
+      "class": "StrikeDummy"
+    },
+    "SturdyClamp": {
+      "class": "SturdyClamp",
+      "mechanics": [
+        "retain"
+      ]
+    },
+    "SwordOfJade": {
+      "class": "SwordOfJade"
+    },
+    "SwordOfStone": {
+      "class": "SwordOfStone"
+    },
+    "SymbioticVirus": {
+      "class": "SymbioticVirus"
+    },
+    "TanxsWhistle": {
+      "class": "TanxsWhistle"
+    },
+    "TeaOfDiscourtesy": {
+      "class": "TeaOfDiscourtesy"
+    },
+    "TheAbacus": {
+      "class": "TheAbacus"
+    },
+    "TheBoot": {
+      "class": "TheBoot"
+    },
+    "TheCourier": {
+      "class": "TheCourier"
+    },
+    "ThrowingAxe": {
+      "class": "ThrowingAxe"
+    },
+    "Tingsha": {
+      "class": "Tingsha"
+    },
+    "TinyMailbox": {
+      "class": "TinyMailbox"
+    },
+    "ToastyMittens": {
+      "class": "ToastyMittens",
+      "mechanics": [
+        "exhaust",
+        "innate"
+      ]
+    },
+    "Toolbox": {
+      "class": "Toolbox"
+    },
+    "TouchOfOrobas": {
+      "class": "TouchOfOrobas"
+    },
+    "ToughBandages": {
+      "class": "ToughBandages"
+    },
+    "ToxicEgg": {
+      "class": "ToxicEgg"
+    },
+    "ToyBox": {
+      "class": "ToyBox"
+    },
+    "TriBoomerang": {
+      "class": "TriBoomerang"
+    },
+    "TungstenRod": {
+      "class": "TungstenRod"
+    },
+    "TuningFork": {
+      "class": "TuningFork"
+    },
+    "TwistedFunnel": {
+      "class": "TwistedFunnel"
+    },
+    "UnceasingTop": {
+      "class": "UnceasingTop"
+    },
+    "UndyingSigil": {
+      "class": "UndyingSigil"
+    },
+    "UnsettlingLamp": {
+      "class": "UnsettlingLamp",
+      "power_type": "debuff"
+    },
+    "Vajra": {
+      "class": "Vajra"
+    },
+    "VakuuCardSelector": {
+      "class": "VakuuCardSelector"
+    },
+    "Vambrace": {
+      "class": "Vambrace"
+    },
+    "VelvetChoker": {
+      "class": "VelvetChoker"
+    },
+    "VenerableTeaSet": {
+      "class": "VenerableTeaSet"
+    },
+    "VeryHotCocoa": {
+      "class": "VeryHotCocoa"
+    },
+    "VexingPuzzlebox": {
+      "class": "VexingPuzzlebox"
+    },
+    "VitruvianMinion": {
+      "class": "VitruvianMinion"
+    },
+    "WarHammer": {
+      "class": "WarHammer"
+    },
+    "WarPaint": {
+      "class": "WarPaint"
+    },
+    "Whetstone": {
+      "class": "Whetstone"
+    },
+    "WhisperingEarring": {
+      "class": "WhisperingEarring"
+    },
+    "WhiteBeastStatue": {
+      "class": "WhiteBeastStatue"
+    },
+    "WhiteStar": {
+      "class": "WhiteStar"
+    },
+    "WingCharm": {
+      "class": "WingCharm"
+    },
+    "WongoCustomerAppreciationBadge": {
+      "class": "WongoCustomerAppreciationBadge"
+    },
+    "WongosMysteryTicket": {
+      "class": "WongosMysteryTicket",
+      "hits": 3
+    },
+    "YummyCookie": {
+      "class": "YummyCookie"
+    }
+  }
+}

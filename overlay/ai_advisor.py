@@ -97,6 +97,42 @@ class AIAdvisorMixin:
             parts.append(info["note"])
         return " ".join(parts)
 
+    def _card_prompt_line(self, c):
+        """Build a compact card description for AI prompts. Used by card_reward, combat hand, shop."""
+        name = c.get('name', '?')
+        upg = '+' if c.get('is_upgraded') else ''
+        cost = c.get('cost', '?')
+        parts = [f"{name}{upg}"]
+
+        if hasattr(self, 'cards'):
+            detail = self.cards.detail(name)
+            if detail:
+                if cost == '?': cost = detail.get('cost', '?')
+                # Source-extracted compact desc (most accurate, fewest tokens)
+                source = detail.get('source', '')
+                desc_cn = detail.get('desc_cn', '')
+                ctype = detail.get('type', '')
+                rarity = detail.get('rarity', '')
+                mechanics = detail.get('mechanics', [])
+
+                if source:
+                    parts.append(source)
+                else:
+                    parts.append(f"{cost}费")
+
+                if ctype:
+                    parts.append(f"[{ctype}]")
+
+                # Full description for context
+                if desc_cn:
+                    parts.append(desc_cn[:60])
+        else:
+            parts.append(f"{cost}费")
+            desc = c.get('description', '')
+            if desc: parts.append(desc[:40])
+
+        return ' '.join(parts)
+
     def _explain_potions(self, potion_list):
         """Look up potion effects for AI decision making."""
         db = self._load_knowledge_db('_potion_db', 'potion_effects.json')
@@ -472,19 +508,12 @@ class AIAdvisorMixin:
 
             hand_lines = []
             for c in hand:
-                name = c["name"]
-                upg  = "+" if c.get("is_upgraded") else ""
-                ok   = "✓" if c.get("can_play") else "✗"
-                hint = ""
-                if hasattr(self, 'cards'):
-                    d = self.cards.detail(name)
-                    if d: hint = d.get("desc_cn", "")
-                if not hint:
-                    hint = c.get("description", "")[:40]
-                ctype = (c.get("type") or "").lower()
+                ok = "✓" if c.get("can_play") else "✗"
+                base_line = self._card_prompt_line(c)
                 # Pre-calculate actual damage/block with all buffs applied
                 actual_hint = ""
                 base_dmg, base_blk = self._parse_card_values(c)
+                ctype = (c.get("type") or "").lower()
                 if ctype in ("attack", "攻击") and base_dmg:
                     actual = base_dmg + p_strength
                     if p_weak: actual = int(actual * 0.75)
@@ -494,7 +523,7 @@ class AIAdvisorMixin:
                 if base_blk:
                     actual_block = base_blk + p_dexterity
                     actual_hint += f" →实际{actual_block}挡"
-                hand_lines.append(f"  [{c['index']}]{ok} {name}{upg}  费:{c.get('cost','?')}  {hint}{actual_hint}")
+                hand_lines.append(f"  [{c.get('index',0)}]{ok} {base_line}{actual_hint}")
             hand_str = "\n".join(hand_lines) or "  （手牌为空）"
 
             # 敌人区分：同名敌人加编号
@@ -967,26 +996,10 @@ class AIAdvisorMixin:
             removed   = f"已移除：{', '.join(self.deck_removed)}" if self.deck_removed else ""
             arch_hint = f"期望流派：{self._deck_archetype}" if self._deck_archetype else ""
 
-            # Build card descriptions — use CardDB full desc for accurate AI reasoning
+            # Build card descriptions — source + desc_cn for accuracy
             card_lines = []
             for i, c in enumerate(rewards):
-                cname = c.get('name', '')
-                cupg = '+' if c.get('is_upgraded') else ''
-                desc = ""
-                if hasattr(self, 'cards'):
-                    detail = self.cards.detail(cname)
-                    if detail:
-                        desc = detail.get("desc_cn", "")
-                        ctype = detail.get("type", "")
-                        rarity = detail.get("rarity", "")
-                        kw = detail.get("keywords", "")
-                        if ctype or rarity:
-                            desc = f"[{ctype} {rarity}] {desc}"
-                        if kw:
-                            desc = f"{kw} {desc}"
-                if not desc:
-                    desc = self._clean_desc(c.get('description', ''))[:60]
-                card_lines.append(f"  [{i}] {cname}{cupg}  费:{c.get('cost','?')}  {desc}")
+                card_lines.append(f"  [{i}] {self._card_prompt_line(c)}")
             cards_str = "\n".join(card_lines) or "  （无可选牌，可跳过）"
 
             char = player.get('character', '?')
@@ -1143,15 +1156,9 @@ class AIAdvisorMixin:
                     cat = si.get("category", "")
                     cost = si.get("cost", "?")
                     if cat == "card":
-                        name = si.get("card_name", "?")
-                        hint = ""
-                        if hasattr(self, 'cards'):
-                            d = self.cards.detail(name)
-                            if d: hint = d.get("desc_cn", "")
-                        if not hint:
-                            hint = si.get("card_description", "")[:40]
-                        sale = " 🏷折扣" if si.get("on_sale") else ""
-                        items.append(f"  牌·{name}（{cost}金{sale}）：{hint}")
+                        sale = " 折扣" if si.get("on_sale") else ""
+                        card_desc = self._card_prompt_line({"name": si.get("card_name", "?")})
+                        items.append(f"  牌·{card_desc}（{cost}金{sale}）")
                     elif cat == "relic":
                         items.append(f"  遗物·{si.get('relic_name','?')}（{cost}金）：{si.get('relic_description','')[:30]}")
                     elif cat == "potion":
