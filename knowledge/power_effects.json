@@ -357,5 +357,1035 @@
     "type": "buff",
     "effect": "本回合+N敏捷,结束失去",
     "calc": "+dexterity_temp"
+  },
+  "Accelerant": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Accuracy": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "Adaptable": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "AfterDeath"
+  },
+  "Afterimage": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Anticipate": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "Arsenal": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Asleep": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Automation": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "BackAttackLeft": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "buff"
+  },
+  "BackAttackRight": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "buff"
+  },
+  "BattlewornDummyTimeLimit": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "BeaconOfHope": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "BiasedCognition": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "BlackHole": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "BladeOfInk": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "BlockNextTurn": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Blur": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Burrowed": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "buff"
+  },
+  "Calcify": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "CallOfTheVoid": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "ChainsOfBinding": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "ChildOfTheStars": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Clarity": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Conqueror": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "ModifyDamage"
+  },
+  "ConsumingShadow": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Coolant": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Coordinate": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "CorrosiveWave": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Countdown": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Covered": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage; AfterDeath: RemoveSelf"
+  },
+  "CrabRage": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "AfterDeath: GainBlock(N) + RemoveSelf"
+  },
+  "CreativeAi": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "CrimsonMantle": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Cruelty": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "CrushUnder": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "Dampen": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "AfterDeath"
+  },
+  "DanseMacabre": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "DarkEmbrace": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "DarkShackles": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "Debilitate": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "Demesne": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Demise": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "DevourLife": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "DiamondDiadem": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "Disintegration": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "DoorRevival": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "AfterDeath"
+  },
+  "DrumOfBattle": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "DyingStar": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "EnfeeblingTouch": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "Entropy": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Envenom": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "EscapeArtist": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "FanOfKnives": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "buff"
+  },
+  "Fasten": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyBlock"
+  },
+  "FeelNoPain": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Feral": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "FlexPotion": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "Flutter": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "FocusedStrike": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "ForbiddenGrimoire": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "ForegoneConclusion": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "FreeAttack": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "FreePower": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "FreeSkill": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Friendship": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Furnace": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Galvanic": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Genesis": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Gigantification": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "Grapple": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "Gravity": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Guarded": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage; AfterDeath: RemoveSelf"
+  },
+  "Hailstorm": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "HammerTime": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "buff"
+  },
+  "Hang": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "ModifyDamage"
+  },
+  "HardToKill": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "Hatch": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Haunt": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Heist": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "HelicalDart": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "HelloWorld": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "OnTurnStart"
+  },
+  "Hellraiser": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "buff"
+  },
+  "Hex": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "AfterDeath: RemoveSelf"
+  },
+  "HighVoltage": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Hotfix": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "Illusion": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "AfterDeath: Stun + Heal(N)"
+  },
+  "Imbalanced": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "debuff"
+  },
+  "Improvement": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Inferno": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Infested": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "AfterDeath"
+  },
+  "InfiniteBlades": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Intercept": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "Iteration": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Juggernaut": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Juggling": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Knockdown": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "ModifyDamage"
+  },
+  "Leadership": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "LightningRod": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Loop": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "MachineLearning": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "MagicBomb": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "AfterDeath: RemoveSelf"
+  },
+  "Mangle": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "MasterPlanner": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "buff"
+  },
+  "Mayhem": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "MonarchsGaze": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "MonarchsGazeStrengthDown": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "Monologue": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Nemesis": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "buff"
+  },
+  "Neurosurge": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "Nightmare": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Nostalgia": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Oblivion": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "OneTwoPunch": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Orbit": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Outbreak": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Pagestorm": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "PainfulStabs": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "AfterDeath"
+  },
+  "PaleBlueDot": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "PaperCuts": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Parry": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "PersonalHive": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "PhantomBlades": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "PiercingWail": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "PillarOfCreation": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Plow": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "PossessSpeed": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "AfterDeath"
+  },
+  "PossessStrength": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "AfterDeath"
+  },
+  "PrepTime": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Pyre": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Radiance": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Rage": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Rampart": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "ReaperForm": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Reattach": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "AfterDeath"
+  },
+  "Rebound": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Reflect": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "ReptileTrinket": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "RetainHand": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Ringing": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "debuff"
+  },
+  "Ritual": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "RollingBoulder": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Royalties": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Rupture": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Sandpit": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "SeekingEdge": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "buff"
+  },
+  "SelfFormingClay": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "SentryMode": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "SerpentForm": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "SetupStrike": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "ShacklingPotion": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "ShadowStep": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Shadowmeld": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyBlock"
+  },
+  "Shriek": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "AllowNegative; Stackable"
+  },
+  "Shroud": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "SignalBoost": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Skittish": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "SleightOfFlesh": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Slippery": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "Sloth": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "Smoggy": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "debuff"
+  },
+  "Smokestack": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Sneaky": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Soar": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "SpectrumShift": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "SpeedPotion": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "Speedster": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Spinner": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "SpiritOfAsh": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Stampede": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "StarNextTurn": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "SteamEruption": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "AfterDeath"
+  },
+  "Stock": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "AfterDeath"
+  },
+  "Storm": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Stratagem": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Subroutine": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Suck": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "SummonNextTurn": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "OnTurnStart: RemoveSelf"
+  },
+  "Surprise": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "AfterDeath"
+  },
+  "Surrounded": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "ModifyDamage; AfterDeath"
+  },
+  "Swipe": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "buff"
+  },
+  "SwordSage": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Synchronize": {
+    "name_cn": "",
+    "type": "neutral",
+    "effect": "neutral"
+  },
+  "TagTeam": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "Tangled": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "Tank": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "TemporaryFocus": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Tender": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
+  },
+  "Territorial": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "TheBomb": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "TheGambit": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "debuff"
+  },
+  "TheHunt": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "TheSealedThrone": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Thievery": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Thunder": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "ToolsOfTheTrade": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "ToricToughness": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Tracking": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyDamage"
+  },
+  "TrashToTreasure": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Tyranny": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Unmovable": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "ModifyBlock"
+  },
+  "Veilpiercer": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "Vicious": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "VitalSpark": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "VoidForm": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "WellLaidPlans": {
+    "name_cn": "",
+    "type": "buff",
+    "effect": "Stackable"
+  },
+  "WraithForm": {
+    "name_cn": "",
+    "type": "debuff",
+    "effect": "Stackable"
   }
 }

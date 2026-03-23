@@ -1,11 +1,11 @@
 {
   "Ashwater": {
     "name_cn": "灰水",
-    "desc": ""
+    "desc": "Choose1of3randomcards→hand(0cost this turn)"
   },
   "AttackPotion": {
     "name_cn": "攻击药水",
-    "desc": ""
+    "desc": "Choose1of3randomattackcards→hand(0cost this turn)"
   },
   "BeetleJuice": {
     "name_cn": "甲虫汁",
@@ -17,11 +17,11 @@
   },
   "BlockPotion": {
     "name_cn": "格挡药水",
-    "desc": ""
+    "desc": "GainBlock(12)"
   },
   "BloodPotion": {
     "name_cn": "鲜血药水",
-    "desc": ""
+    "desc": "Heal(20)"
   },
   "BoneBrew": {
     "name_cn": "骨头酿",
@@ -29,7 +29,7 @@
   },
   "BottledPotential": {
     "name_cn": "瓶装潜能",
-    "desc": ""
+    "desc": "FillEmptyPotionSlots"
   },
   "Clarity": {
     "name_cn": "明晰提取物",
@@ -37,11 +37,11 @@
   },
   "ColorlessPotion": {
     "name_cn": "无色药水",
-    "desc": ""
+    "desc": "Choose1of3randomcards→hand(0cost this turn)"
   },
   "CosmicConcoction": {
     "name_cn": "宇宙药剂",
-    "desc": ""
+    "desc": "Choose1of3randomcards→hand(0cost this turn)"
   },
   "CunningPotion": {
     "name_cn": "狡诈药水",
@@ -49,7 +49,7 @@
   },
   "CureAll": {
     "name_cn": "痊愈药水",
-    "desc": ""
+    "desc": "+Energy(N)"
   },
   "DeprecatedPotion": {
     "name_cn": "废弃药水",
@@ -65,7 +65,7 @@
   },
   "DropletOfPrecognition": {
     "name_cn": "预知之滴",
-    "desc": ""
+    "desc": "Choose1of3randomcards→hand(0cost this turn)"
   },
   "Duplicator": {
     "name_cn": "复制药水",
@@ -73,11 +73,11 @@
   },
   "EnergyPotion": {
     "name_cn": "能量药水",
-    "desc": ""
+    "desc": "+Energy(N)"
   },
   "EntropicBrew": {
     "name_cn": "混沌药水",
-    "desc": ""
+    "desc": "RandomPotionEffects"
   },
   "EssenceOfDarkness": {
     "name_cn": "黑暗精华",
@@ -85,7 +85,7 @@
   },
   "ExplosiveAmpoule": {
     "name_cn": "爆炸安瓿",
-    "desc": ""
+    "desc": "AOE"
   },
   "FirePotion": {
     "name_cn": "火焰药水",
@@ -97,19 +97,19 @@
   },
   "FocusPotion": {
     "name_cn": "集中药水",
-    "desc": ""
+    "desc": "+Focus(2)"
   },
   "Fortifier": {
     "name_cn": "固化药水",
-    "desc": ""
+    "desc": "GainBlock(N)"
   },
   "FoulPotion": {
     "name_cn": "污浊药水",
-    "desc": ""
+    "desc": "AOE; +Gold(12)"
   },
   "FruitJuice": {
     "name_cn": "果汁",
-    "desc": ""
+    "desc": "+MaxHP(5); +MaxHP(5)"
   },
   "FyshOil": {
     "name_cn": "异鱼之油",
@@ -117,7 +117,7 @@
   },
   "GamblersBrew": {
     "name_cn": "赌徒特酿",
-    "desc": ""
+    "desc": "Choose1of3randomcards→hand(0cost this turn)"
   },
   "GigantificationPotion": {
     "name_cn": "超巨化药水",
@@ -129,7 +129,7 @@
   },
   "HeartOfIron": {
     "name_cn": "铁心药水",
-    "desc": ""
+    "desc": "Plating(7)"
   },
   "KingsCourage": {
     "name_cn": "王之勇气",
@@ -137,11 +137,11 @@
   },
   "LiquidBronze": {
     "name_cn": "流动铜液",
-    "desc": ""
+    "desc": "Thorns(3)"
   },
   "LiquidMemories": {
     "name_cn": "液态记忆",
-    "desc": ""
+    "desc": "Choose1of3randomcards→hand(0cost this turn)"
   },
   "LuckyTonic": {
     "name_cn": "幸运补剂",
@@ -153,11 +153,11 @@
   },
   "OrobicAcid": {
     "name_cn": "欧洛巴斯之酸",
-    "desc": ""
+    "desc": "Choose1of1randomattackcards→hand(0cost this turn)"
   },
   "PoisonPotion": {
     "name_cn": "毒药水",
-    "desc": ""
+    "desc": "Poison(6)"
   },
   "PotOfGhouls": {
     "name_cn": "尸鬼瓮",
@@ -165,7 +165,7 @@
   },
   "PotionOfBinding": {
     "name_cn": "缚魂药水",
-    "desc": ""
+    "desc": "ApplyWeak(1); ApplyVulnerable(1); AOE"
   },
   "PotionOfCapacity": {
     "name_cn": "扩容药水",
@@ -185,23 +185,23 @@
   },
   "PowerPotion": {
     "name_cn": "能力药水",
-    "desc": ""
+    "desc": "Choose1of3randompowercards→hand(0cost this turn)"
   },
   "RadiantTincture": {
     "name_cn": "明耀酊剂",
-    "desc": ""
+    "desc": "+Energy(3)"
   },
   "RegenPotion": {
     "name_cn": "再生药水",
-    "desc": ""
+    "desc": "Regen(5)"
   },
   "ShacklingPotion": {
     "name_cn": "镣铐药水",
-    "desc": ""
+    "desc": "AOE"
   },
   "SkillPotion": {
     "name_cn": "技能药水",
-    "desc": ""
+    "desc": "Choose1of3randomskillcards→hand(0cost this turn)"
   },
   "SneckoOil": {
     "name_cn": "异蛇之油",
@@ -233,14 +233,26 @@
   },
   "TouchOfInsanity": {
     "name_cn": "癫狂之触",
-    "desc": ""
+    "desc": "Choose1of3randomcards→hand(0cost this turn)"
   },
   "VulnerablePotion": {
     "name_cn": "易伤药水",
-    "desc": ""
+    "desc": "ApplyVulnerable(3)"
   },
   "WeakPotion": {
     "name_cn": "虚弱药水",
-    "desc": ""
+    "desc": "ApplyWeak(3)"
+  },
+  "FairyInABottle": {
+    "name_cn": "",
+    "desc": "Heal(3)"
+  },
+  "GhostInAJar": {
+    "name_cn": "",
+    "desc": "Intangible(1)"
+  },
+  "ShipInABottle": {
+    "name_cn": "",
+    "desc": "GainBlock(10)"
   }
 }
