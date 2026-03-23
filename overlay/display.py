@@ -87,6 +87,15 @@ class DisplayMixin:
         names = Counter(c.get("name", "?") for c in pile)
         return " ".join(f"{n}×{cnt}" if cnt > 1 else n for n, cnt in names.most_common())
 
+    def _render_option(self, label, desc=""):
+        """Render a single option-block. THE one method for all options (event/rest/shop/etc)."""
+        parts = ['<div class="option-block">']
+        parts.append(f'<div class="option-label">{html.escape(str(label))}</div>')
+        if desc:
+            parts.append(f'<div class="option-desc">{self._colorize_desc(str(desc))}</div>')
+        parts.append('</div>')
+        return ''.join(parts)
+
     # ══════════════════════════════════════════
     #  ATOMIC HELPERS (Layer 0)
     # ══════════════════════════════════════════
@@ -112,7 +121,15 @@ class DisplayMixin:
         # Buffs/debuffs: 2力量, 3敏捷, 虚弱, 易伤
         escaped = _re.sub(r'(\d+)\s*(力量|敏捷|集中|能量)', r'<span style="color:var(--buff);font-weight:600">\1 \2</span>', escaped)
         escaped = _re.sub(r'(\d+)\s*(虚弱|易伤)', r'<span style="color:var(--debuff);font-weight:600">\1 \2</span>', escaped)
-        escaped = _re.sub(r'(减益|虚弱|易伤)', r'<span style="color:var(--debuff)">\1</span>', escaped)
+        escaped = _re.sub(r'(减益|虚弱|易伤|脆弱)', r'<span style="color:var(--debuff)">\1</span>', escaped)
+        # Healing: 回复, 生命, 治疗
+        escaped = _re.sub(r'(回复|恢复|治疗)\s*(?:最大)?(?:生命值的?)?\s*(\d+%?(?:\s*[（(]\d+[)）])?)',
+                          r'<span style="color:var(--buff);font-weight:600">\1 \2</span>', escaped)
+        escaped = _re.sub(r'(\d+)\s*(?:点)?(生命|最大生命值)', r'<span style="color:var(--buff);font-weight:600">\1 \2</span>', escaped)
+        # Upgrade/锻造
+        escaped = _re.sub(r'(升级|锻造)', r'<span style="color:var(--gold);font-weight:600">\1</span>', escaped)
+        # Remove/删牌
+        escaped = _re.sub(r'(移除|删除|删牌)', r'<span style="color:var(--hp);font-weight:600">\1</span>', escaped)
         # Items in「」
         escaped = _re.sub(r'「([^」]+)」', r'<span style="color:var(--accent2);font-weight:600">「\1」</span>', escaped)
         # Relic/card type labels (only specific terms, avoid over-matching)
@@ -815,12 +832,9 @@ class DisplayMixin:
             if o.get("is_locked"):
                 continue
             idx = o.get("index", 0)
-            parts.append('<div class="option-block">')
-            parts.append(f'<div class="option-label">选项 {idx + 1}: {html.escape(o["title"])}</div>')
-            desc = o.get("description", "")
-            if desc:
-                parts.append(f'<div class="option-desc">{self._colorize_desc(desc)}</div>')
-            parts.append('</div>')
+            parts.append(self._render_option(
+                f"选项 {idx + 1}: {o.get('title', '?')}",
+                o.get("description", "")))
 
         # Knowledge base guide
         event_id = ev.get("event_id") or ev.get("id") or ev.get("event_name", "")
@@ -829,16 +843,12 @@ class DisplayMixin:
             parts.append('<div class="section-title">知识库建议</div>')
             for go in guide.get("options", []):
                 rating = go.get("rating", "")
-                parts.append(f'<div class="option-block">')
-                parts.append(f'<span style="font-weight:600">{html.escape(rating)}</span> ')
-                parts.append(f'<span class="highlight">{html.escape(go.get("name", "?"))}</span>')
+                name = go.get("name", "?")
                 effect = go.get("effect", "")[:60]
-                if effect:
-                    parts.append(f'  <span class="dim">{html.escape(effect)}</span>')
-                parts.append('</div>')
+                parts.append(self._render_option(f"{rating} {name}", effect))
             strat = guide.get("strategy", "")
             if strat:
-                parts.append(f'<div class="option-block"><span class="dim">策略: {html.escape(strat[:100])}</span></div>')
+                parts.append(self._render_option("策略", strat[:100]))
 
         self._push_scene(parts)
 
@@ -957,10 +967,6 @@ class DisplayMixin:
                 title = o.get("label") or o.get("name") or o.get("title") or key
                 desc = o.get("description", "")
 
-            parts.append('<div class="option-block">')
-            parts.append(f'<div class="option-label">选项 {oi + 1}: {html.escape(str(title))}</div>')
-            if desc:
-                parts.append(f'<div class="option-desc">{self._colorize_desc(str(desc))}</div>')
-            parts.append('</div>')
+            parts.append(self._render_option(f"选项 {oi + 1}: {title}", desc))
 
         self._push_scene(parts)
