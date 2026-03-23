@@ -119,6 +119,10 @@ class DisplayMixin:
         escaped = _re.sub(r'(稀有遗物|稀有卡牌|随机遗物)', r'<span style="color:var(--accent2)">\1</span>', escaped)
         # Numbers for 张牌
         escaped = _re.sub(r'(\d+)\s*(张牌|张)', r'<span style="font-weight:600">\1</span>\2', escaped)
+        # Enchantments/附魔 — accent color
+        escaped = _re.sub(r'附魔[：:]\s*(\S+)', r'附魔: <span style="color:var(--accent2);font-weight:600">\1</span>', escaped)
+        escaped = _re.sub(r'(涡旋|烈焰|冰霜|雷电|暗影|圣光|毒素|荆棘|吸血|穿透|连锁|分裂|回响)',
+                          r'<span style="color:var(--accent2);font-weight:600">\1</span>', escaped)
         # Map node types — colored to match route display
         escaped = _re.sub(r'(精英战斗|精英怪|精英)', r'<span class="node-elite">\1</span>', escaped)
         escaped = _re.sub(r'(篝火|休息点)', r'<span class="node-rest">\1</span>', escaped)
@@ -939,21 +943,33 @@ class DisplayMixin:
         opts = rest.get("options", [])
         if opts:
             for oi, o in enumerate(opts):
-                key = o.get("type", o.get("label", "?"))
+                # Try multiple field names the API might use
+                key = o.get("type") or o.get("id") or o.get("action") or o.get("label") or "?"
+                key_lower = key.lower().replace("_", "")
+
+                # Match against known rest options
                 label_pair = self._REST_LABELS.get(key)
+                if not label_pair:
+                    # Try fuzzy match
+                    for rk, rv in self._REST_LABELS.items():
+                        if rk in key_lower:
+                            label_pair = rv
+                            key = rk
+                            break
 
                 if label_pair:
                     title, desc = label_pair
                     if key == "rest":
                         desc = f"回复35%最大HP（约+{heal_amt} HP）"
                 else:
-                    title = o.get("label", key)
-                    desc = ""
+                    # Fallback: show whatever the API gives us
+                    title = o.get("label") or o.get("name") or o.get("title") or key
+                    desc = o.get("description", "")
 
                 parts.append(f'<span style="font-weight:600">选项 {oi + 1}: </span>')
-                parts.append(f'<span class="highlight">{html.escape(title)}</span><br>')
+                parts.append(f'<span class="highlight">{html.escape(str(title))}</span><br>')
                 if desc:
-                    parts.append(f'  <span class="dim">{html.escape(desc)}</span><br>')
+                    parts.append(f'  <span class="dim">{self._colorize_desc(str(desc))}</span><br>')
                 parts.append('<br>')
         else:
             rest_title, rest_desc = self._REST_LABELS["rest"]
