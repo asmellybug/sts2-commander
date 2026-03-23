@@ -87,6 +87,17 @@ class DisplayMixin:
         names = Counter(c.get("name", "?") for c in pile)
         return " ".join(f"{n}×{cnt}" if cnt > 1 else n for n, cnt in names.most_common())
 
+    @staticmethod
+    def _render_shop_item(name, cost, desc, color_var, label):
+        """Render a single shop item (relic or potion) as a card-grid card-item div."""
+        tooltip = (f'<div class="card-tooltip"><span class="ct-desc">'
+                   f'{html.escape(desc)}</span></div>') if desc else ""
+        return (f'<div class="card-item">'
+                f'<span class="card-name" style="color:{color_var}">{html.escape(name)}</span>'
+                f' <span class="card-cost" style="color:{color_var}">{label}</span>'
+                f'<div class="card-price">{cost}金</div>'
+                f'{tooltip}</div>')
+
     def _render_option(self, label, desc=""):
         """Render a single option-block. THE one method for all options (event/rest/shop/etc)."""
         parts = ['<div class="option-block">']
@@ -903,30 +914,15 @@ class DisplayMixin:
             parts.append('<div class="section-title">遗物 & 药水</div>')
             parts.append('<div class="card-grid">')
             for r in relics:
-                rname = _cn_relic(r.get('relic_name', '?'))
-                rcost = r.get('cost', '?')
-                rdesc = self._clean_desc(r.get('relic_description', ''))
-                tooltip = f'<div class="card-tooltip"><span class="ct-desc">{html.escape(rdesc)}</span></div>' if rdesc else ""
-                parts.append(
-                    f'<div class="card-item">'
-                    f'<span class="card-name" style="color:var(--accent2)">{html.escape(rname)}</span>'
-                    f' <span class="card-cost" style="color:var(--accent)">遗物</span>'
-                    f'<div class="card-price">{rcost}金</div>'
-                    f'{tooltip}'
-                    f'</div>')
+                parts.append(self._render_shop_item(
+                    _cn_relic(r.get('relic_name', '?')), r.get('cost', '?'),
+                    self._clean_desc(r.get('relic_description', '')),
+                    'var(--accent2)', '遗物'))
             for p in potions:
-                pname = _cn_potion(p.get('potion_name', '?'))
-                pcost = p.get('cost', '?')
-                pdesc = self._clean_desc(
-                    p.get('potion_description', '') or p.get('description', ''))
-                tooltip = f'<div class="card-tooltip"><span class="ct-desc">{html.escape(pdesc)}</span></div>' if pdesc else ""
-                parts.append(
-                    f'<div class="card-item">'
-                    f'<span class="card-name" style="color:var(--buff)">{html.escape(pname)}</span>'
-                    f' <span class="card-cost" style="color:var(--buff)">药水</span>'
-                    f'<div class="card-price">{pcost}金</div>'
-                    f'{tooltip}'
-                    f'</div>')
+                parts.append(self._render_shop_item(
+                    _cn_potion(p.get('potion_name', '?')), p.get('cost', '?'),
+                    self._clean_desc(p.get('potion_description', '') or p.get('description', '')),
+                    'var(--buff)', '药水'))
             parts.append('</div>')
 
         self._push_scene(parts)

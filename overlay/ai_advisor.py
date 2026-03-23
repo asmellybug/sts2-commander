@@ -151,6 +151,13 @@ class AIAdvisorMixin:
 
     # ───── 智能上下文构建器（0 token 查表）─────
 
+    def _deck_context(self):
+        """返回 (deck_info, removed, arch_hint) 字符串，供各 prompt 复用。"""
+        deck_info = f"已选牌：{', '.join(self.deck_acquired)}" if self.deck_acquired else "初始牌组"
+        removed   = f"已移除：{', '.join(self.deck_removed)}" if self.deck_removed else ""
+        arch_hint = f"流派方向：{self._deck_archetype}" if self._deck_archetype else ""
+        return deck_info, removed, arch_hint
+
     def _build_context(self, context_type="combat"):
         """根据当前状态查本地数据库，返回精准上下文字符串（0 token开销）。
 
@@ -994,9 +1001,7 @@ class AIAdvisorMixin:
             # Relics may not be in current scene's player — fallback to cached
             p_relics = player.get('relics') or self.last_player.get('relics', [])
             relics  = ', '.join(r['name'] for r in p_relics) or '无'
-            deck_info = f"已选牌：{', '.join(self.deck_acquired)}" if self.deck_acquired else "初始牌组"
-            removed   = f"已移除：{', '.join(self.deck_removed)}" if self.deck_removed else ""
-            arch_hint = f"期望流派：{self._deck_archetype}" if self._deck_archetype else ""
+            deck_info, removed, arch_hint = self._deck_context()
 
             # Build card descriptions — source + desc_cn for accuracy
             card_lines = []
@@ -1171,9 +1176,7 @@ class AIAdvisorMixin:
                     elif cat == "purge":
                         items.append(f"  删牌服务（{cost}金）")
                 items_str = chr(10).join(items) or '（无物品）'
-                deck_info = f"已选牌：{', '.join(self.deck_acquired)}" if self.deck_acquired else "初始牌组"
-                removed = f"已移除：{', '.join(self.deck_removed)}" if self.deck_removed else ""
-                arch_hint = f"流派方向：{self._deck_archetype}" if self._deck_archetype else ""
+                deck_info, removed, arch_hint = self._deck_context()
 
                 prompt = f"""杀戮尖塔2商店购买建议。纯文字，不用markdown。所有牌名遗物名用中文。极简输出。
 
@@ -1235,9 +1238,7 @@ class AIAdvisorMixin:
                 return
             relics  = ", ".join(r["name"] for r in player.get("relics", [])) or "无"
             potions = ", ".join(p["name"] for p in player.get("potions", [])) or "无"
-            deck_info = f"已选牌：{', '.join(self.deck_acquired)}" if self.deck_acquired else "初始牌组"
-            removed   = f"已移除：{', '.join(self.deck_removed)}" if self.deck_removed else ""
-            arch      = f"上次流派：{self._deck_archetype}" if self._deck_archetype else ""
+            deck_info, removed, arch = self._deck_context()
 
             # 遗物详细描述
             relic_details = "\n".join(

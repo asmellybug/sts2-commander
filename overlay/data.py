@@ -365,22 +365,9 @@ class DataMixin:
         return {}, []
 
     def _get_relics_from_save(self):
-        """Read current relics from save file (lightweight)."""
-        from overlay.constants import _SAVE_BASE
-        if not _SAVE_BASE:
-            return []
-        for sub in ("modded/profile1/saves/current_run.save", "profile1/saves/current_run.save"):
-            path = os.path.join(_SAVE_BASE, sub)
-            try:
-                with open(path) as f:
-                    data = json.load(f)
-                players = data.get("players", [])
-                if players:
-                    return [{"name": r.get("id", "?").replace("RELIC.", "")}
-                            for r in players[0].get("relics", [])]
-            except Exception:
-                pass
-        return []
+        """Read current relics from save file."""
+        player, _ = self._load_save_data()
+        return player.get("relics", [])
 
     def _get_player(self, state):
         return (state.get("battle", {}).get("player") or

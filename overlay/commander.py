@@ -66,6 +66,8 @@ class BridgeAPI:
 
 class STS2Commander(DisplayMixin, AIAdvisorMixin, HistoryMixin, DataMixin):
 
+    _ACTIVE_SCENES = ("rest", "rest_site", "event", "shop")
+
     def __init__(self):
         # State
         self.last_state    = None
@@ -251,9 +253,8 @@ class STS2Commander(DisplayMixin, AIAdvisorMixin, HistoryMixin, DataMixin):
             # Only render map when there are actual route choices (not just viewing map)
             mdata = state.get("map", {})
             has_choices = bool(mdata.get("next_options"))
-            active_scenes = ("rest", "rest_site", "event", "shop")
             if type_changed and has_choices:
-                if self.last_type in active_scenes:
+                if self.last_type in self._ACTIVE_SCENES:
                     # Might be map-view — wait for stable map state before rendering
                     self._map_stable_count = 1
                 else:
@@ -278,8 +279,8 @@ class STS2Commander(DisplayMixin, AIAdvisorMixin, HistoryMixin, DataMixin):
                 self._js('app.setTab("situation")')
 
         elif stype == "event":
-            self._map_stable_count = 0
             if type_changed:
+                self._map_stable_count = 0
                 # Store event context for subsequent card_select
                 ev = state.get("event", {})
                 self._last_event_context = {
@@ -289,13 +290,13 @@ class STS2Commander(DisplayMixin, AIAdvisorMixin, HistoryMixin, DataMixin):
                 self._display_event(state)
 
         elif stype == "shop":
-            self._map_stable_count = 0
             if type_changed:
+                self._map_stable_count = 0
                 self._display_shop(state)
 
         elif stype in ("rest", "rest_site"):
-            self._map_stable_count = 0
             if type_changed:
+                self._map_stable_count = 0
                 self._display_rest(state)
 
         elif stype == "treasure":
