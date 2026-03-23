@@ -30,6 +30,7 @@ class AIAdvisorMixin:
     _power_db = None
     _relic_db = None
     _potion_db = None
+    _char_mechanics_db = None
 
     @classmethod
     def _load_knowledge_db(cls, attr, filename):
@@ -82,6 +83,19 @@ class AIAdvisorMixin:
                 continue
             lines.append(f"{cn}: {rdata['desc']}")
         return "\n".join(lines)
+
+    def _get_char_mechanic(self, char_name):
+        """Get character-specific mechanic description from knowledge base."""
+        db = self._load_knowledge_db('_char_mechanics_db', 'character_mechanics.json')
+        info = db.get(char_name, {})
+        if not info:
+            return ""
+        parts = []
+        if info.get("innate"):
+            parts.append(info["innate"])
+        if info.get("note"):
+            parts.append(info["note"])
+        return " ".join(parts)
 
     def _explain_potions(self, potion_list):
         """Look up potion effects for AI decision making."""
@@ -637,6 +651,7 @@ class AIAdvisorMixin:
             tactical_info = "\n".join(x for x in [lethal_info, kill_info, shuffle_info] if x)
 
             char = player.get('character', '?')
+            char_mechanic = self._get_char_mechanic(char)
 
             # 智能上下文构建（0 token查表）
             smart_ctx = self._build_context("combat")
@@ -667,6 +682,7 @@ class AIAdvisorMixin:
 {"怪物行为规律：" + chr(10) + monster_info if monster_info else ""}
 
 角色：{player.get('character')}  HP：{player.get('hp')}/{player.get('max_hp')}  格挡：{player.get('block')}
+{"角色机制：" + char_mechanic if char_mechanic else ""}
 能量：{player.get('energy')}/{player.get('max_energy')}  幕{run.get('act')}层{run.get('floor')}  第{rnd}回合
 {"增减益：" + dmg_hint if dmg_hint else ""}
 遗物：{relics}
@@ -974,6 +990,7 @@ class AIAdvisorMixin:
             cards_str = "\n".join(card_lines) or "  （无可选牌，可跳过）"
 
             char = player.get('character', '?')
+            char_mechanic = self._get_char_mechanic(char)
             smart_ctx = self._build_context("card_reward")
 
             if is_removal:
@@ -1025,7 +1042,12 @@ class AIAdvisorMixin:
 奖励牌：
 {cards_str}
 
-重要：必须结合当前牌组构成和流派方向来选牌。不只看单张牌强度，要看它和现有牌组的配合。
+{"角色机制：" + char_mechanic if char_mechanic else ""}
+
+重要：
+- 必须结合当前牌组构成和流派方向来选牌，不只看单张牌强度，要看它和现有牌组的配合。
+- 仔细阅读上方牌组列表，确认牌组中已有哪些牌。
+- 阅读每张奖励牌的完整描述来判断，不要凭牌名猜测效果。
 格式（每行一条，不要多余解释）：
 ★ 牌名 — 理由（结合流派和牌组构成分析，为什么这张最适合当前构建）
 ○ 牌名 — 理由（可以考虑的备选）
