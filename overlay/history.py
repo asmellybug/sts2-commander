@@ -334,7 +334,7 @@ class HistoryMixin:
                 entry = f"[{ts}]  幕{act}·层{floor}  ✦ 选牌（跳过）"
 
         elif leaving_type in ("rest", "rest_site"):
-            rest   = leaving_state.get("rest_site", state.get("rest", {}))
+            rest   = leaving_state.get("rest_site", leaving_state.get("rest", {}))
             opts   = rest.get("options", [])
             chosen = next((o.get("label", o.get("type","")) for o in opts if o.get("was_chosen")), None)
             action = self._REST_LABELS[chosen][0] if chosen and chosen in self._REST_LABELS else (chosen or "离开")
