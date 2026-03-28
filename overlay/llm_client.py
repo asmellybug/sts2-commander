@@ -53,18 +53,18 @@ class LLMClient:
             else:
                 print(f"[LLM] CLI mode: {self._cli}")
 
-    def ask(self, prompt: str, timeout: int = 60) -> str:
+    def ask(self, prompt: str) -> str:
         """Call LLM and return response text."""
         if self._mode == "api":
-            result = self._ask_api(prompt, timeout)
+            result = self._ask_api(prompt)
         else:
-            result = self._ask_cli(prompt, timeout)
+            result = self._ask_cli(prompt)
 
         if self._post_process:
             result = self._post_process(result)
         return result
 
-    def _ask_cli(self, prompt: str, timeout: int) -> str:
+    def _ask_cli(self, prompt: str) -> str:
         if not os.path.exists(self._cli) and not shutil.which(self._cli):
             raise RuntimeError(f"LLM not found: {self._cli}")
 
@@ -77,18 +77,16 @@ class LLMClient:
 
         try:
             r = subprocess.run(cmd, input=prompt, capture_output=True,
-                               text=True, timeout=timeout)
+                               text=True)
         except FileNotFoundError:
             raise RuntimeError(f"LLM cannot execute: {self._cli}")
-        except subprocess.TimeoutExpired:
-            raise RuntimeError("Analysis timeout, please retry")
 
         if r.returncode != 0:
             raise RuntimeError(r.stderr.strip() or "LLM call failed")
 
         return r.stdout.strip()
 
-    def _ask_api(self, prompt: str, timeout: int) -> str:
+    def _ask_api(self, prompt: str) -> str:
         import requests
 
         if self._system_prompt is None:
@@ -113,7 +111,7 @@ class LLMClient:
                 "messages": [{"role": "user", "content": prompt}],
             }
             url = self._api_base.rstrip("/") + "/messages"
-            r = requests.post(url, headers=headers, json=body, timeout=timeout)
+            r = requests.post(url, headers=headers, json=body)
             r.raise_for_status()
             data = r.json()
             return data.get("content", [{}])[0].get("text", "").strip()
@@ -126,7 +124,7 @@ class LLMClient:
                 "max_tokens": 2048,
             }
             url = self._api_base.rstrip("/") + "/chat/completions"
-            r = requests.post(url, headers=headers, json=body, timeout=timeout)
+            r = requests.post(url, headers=headers, json=body)
             r.raise_for_status()
             data = r.json()
             return data["choices"][0]["message"]["content"].strip()

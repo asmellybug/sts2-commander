@@ -754,7 +754,7 @@ class AIAdvisorMixin:
 
 💡 核心思路（一句话：为什么这样出牌）"""
 
-            advice = self.llm.ask(prompt, timeout=90)
+            advice = self.llm.ask(prompt)
 
             # ── 极简排版 ──
             lines = [f"◆ 第{rnd}回合"]
