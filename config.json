@@ -1,7 +1,7 @@
 {
   "_comment": "STS2 Advisor 配置文件 — 修改此文件适配你的环境",
   "api_url": "http://localhost:15526/api/v1/singleplayer",
-  "llm_cli": "/opt/homebrew/bin/claude",
+  "llm_cli": "/Users/cengyaohua/.local/bin/claude",
   "llm_args": ["--print", "--permission-mode", "bypassPermissions"],
   "python_bin": "python3",
   "poll_interval_seconds": 2.5,

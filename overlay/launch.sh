@@ -2,9 +2,9 @@
 # STS2 AI Advisor — 一键启动
 # 用法: ./launch.sh 或 双击运行
 
-PYTHON="/opt/homebrew/bin/python3.12"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
+PYTHON="$PROJECT_DIR/.venv/bin/python3"
 API_URL="http://localhost:15526/api/v1/singleplayer"
 
 RED='\033[0;31m'
@@ -16,7 +16,7 @@ echo "🗡️  STS2 AI Advisor"
 echo "===================="
 
 # 1. 检查依赖
-echo -n "  Python 3.12... "
+echo -n "  Python... "
 if [ -x "$PYTHON" ]; then
     echo -e "${GREEN}✅${NC}"
 else
